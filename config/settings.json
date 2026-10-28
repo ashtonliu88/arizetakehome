@@ -1,0 +1,18 @@
+{
+  "decision_model": "gpt-6-luna",
+  "llm_model": "gpt-6.1-sol",
+  "reasoning_effort": "low",
+  "max_output_tokens": 512,
+  "answer_max_output_tokens": 2048,
+  "timeout_seconds": 30,
+  "max_retries": 2,
+  "repetitions": 3,
+  "budget_usd": 50,
+  "reserve_usd": 5,
+  "seed": 1729,
+  "pricing": {
+    "decisions": {"input": 0.10, "cache_read": 0.01, "cache_write": 0.125, "output": 0},
+    "llm": {"input": 2, "cache_read": 0.10, "cache_write": 2.50, "output": 10}
+  },
+  "pricing_note": "USD per million tokens, standard processing, short context, no regional premium. Verify before paid runs. Decisions output is free; cache tokens are subsets of input. Sources accessed 2026-10-28: https://developers.openai.com/api/docs/guides/decisions and model pages."
+}

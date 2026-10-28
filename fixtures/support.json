@@ -1,0 +1,30 @@
+{
+  "docs": [
+    {"id": "retry-guide", "title": "Retry configuration", "text": "The SDK retry policy defaults to two retries. Set max_retries=0 to disable SDK retries when the application owns retries."},
+    {"id": "auth-guide", "title": "Authentication", "text": "Set the SUPPORT_API_KEY environment variable. Send it as a Bearer token in the Authorization header."},
+    {"id": "deployment-guide", "title": "Deployment rollback runbook", "text": "Check the service and environment deployment record before proposing a rollback. This fixture system does not modify deployments."},
+    {"id": "pagination-guide", "title": "Pagination", "text": "Use cursor pagination with limit at most 100. The next_cursor is null at the end."},
+    {"id": "cache-guide", "title": "Cache TTL", "text": "The documented default cache TTL is 300 seconds. Use cache_ttl_seconds to override it."}
+  ],
+  "code": [
+    {"id": "retry.py", "text": "def retry_delay(attempt): return min(2 ** attempt, 8)"},
+    {"id": "auth.py", "text": "def auth_headers(key): return {'Authorization': f'Bearer {key}'}"},
+    {"id": "pagination.py", "text": "def next_page(response): return response.get('next_cursor')"},
+    {"id": "cache.py", "text": "def cache_key(service, environment): return f'{service}:{environment}'"}
+  ],
+  "issues": {
+    "ENG-101": {"status": "open", "title": "Staging cursor regression", "workaround": "Use SDK version 2.3.1."},
+    "ENG-202": {"status": "resolved", "title": "Retry storm", "fix_version": "2.4.0"},
+    "ENG-303": {"status": "investigating", "title": "Cache invalidation delay"}
+  },
+  "deployments": {
+    "payments/staging": {"version": "2.4.0", "status": "healthy", "commit": "abc1234"},
+    "payments/production": {"version": "2.3.1", "status": "healthy", "commit": "def5678"},
+    "gateway/production": {"version": "1.8.2", "status": "degraded", "commit": "fed4321"}
+  },
+  "test_runs": {
+    "TR-101": {"passed": 48, "failed": 2, "status": "failed", "failure": "test_cursor_expiry"},
+    "TR-202": {"passed": 120, "failed": 0, "status": "passed"},
+    "TR-303": {"passed": 90, "failed": 1, "status": "failed", "failure": "test_retry_cap"}
+  }
+}

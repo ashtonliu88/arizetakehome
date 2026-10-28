@@ -1,0 +1,8 @@
+{
+  "measurement": "SYNTHETIC FIXTURE — no model calls",
+  "purpose": "Exercise offline analysis and charts. No scientific finding can be inferred.",
+  "questions": 8,
+  "repetitions": 3,
+  "threshold": 0.7,
+  "seed": 1729
+}

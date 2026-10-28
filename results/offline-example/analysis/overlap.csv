@@ -1,0 +1,5 @@
+outcome,count
+both_correct,12
+decision_only_correct,3
+llm_only_correct,6
+both_wrong,3

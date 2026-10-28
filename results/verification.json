@@ -1,0 +1,61 @@
+{
+  "timestamp": "2026-10-28T17:06:44.979044+00:00",
+  "python": "3.12.15",
+  "tests": 59,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "pytest_report": "results/test-report.xml",
+  "pytest_report_hash": "a0af009a8758ec8e5ae3df7dbbe134d28d5da5cd7e5b409569a12e894f013452",
+  "ruff_check": "passed",
+  "ruff_format_check": "passed",
+  "uv_sync_locked": "passed",
+  "dataset": {
+    "examples": 120,
+    "dev": 40,
+    "test": 80,
+    "actions": {
+      "search_docs": 15,
+      "search_code": 15,
+      "lookup_issue": 15,
+      "lookup_deployment": 15,
+      "lookup_test_results": 15,
+      "calculate": 15,
+      "answer_directly": 15,
+      "ask_for_clarification": 15
+    },
+    "label_review": "pending human review; see data/review.jsonl"
+  },
+  "source_hash": "8b148017030b4eccd8f42f3d6251deb7d20f5f12a287c6ed3b04f904dabe02e6",
+  "lock_hash": "a79a868e59bd6bfe074665f7d1b3f748ebe9bcfa4224acd20b552696c8d29fc4",
+  "packages": {
+    "openai": "3.40.0",
+    "arize-phoenix": "20.26.1",
+    "arize-phoenix-client": "3.5.0",
+    "arize-phoenix-otel": "0.17.2",
+    "arize-phoenix-evals": "3.9.5",
+    "openinference-instrumentation-openai": "0.1.66",
+    "pydantic": "2.14.1",
+    "pandas": "3.1.0",
+    "numpy": "2.5.4"
+  },
+  "local_integration": [
+    "real Phoenix server restart preserves experiment grades and traces",
+    "120 examples and 40/80 dataset splits",
+    "scores attach to initial, selected and policy spans",
+    "80-row fake-provider benchmark resumes with no duplicate calls",
+    "24-case fake-provider demo executes 18 local tools",
+    "mock HTTP SDK calls produce automatic DECISION and LLM spans"
+  ],
+  "live_model_calls": 0,
+  "api_spend_usd": 0,
+  "research_results": "pending credentials and human label review",
+  "screenshots": "docs/evidence/README.md",
+  "synthetic_offline_example": "results/offline-example/",
+  "limitations": [
+    "Live Decisions and Responses account access untested",
+    "Human label, development trace and demo reviews pending",
+    "No selected threshold or measured held-out conclusion",
+    "Live trace screenshots and backup recording pending"
+  ]
+}

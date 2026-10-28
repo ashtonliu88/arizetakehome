@@ -1,0 +1,19 @@
+{
+  "timestamp": "2026-10-28T16:50:30.761852+00:00",
+  "dataset_id": "RGF0YXNldDox",
+  "experiment_id": "RXhwZXJpbWVudDo1",
+  "mock_scores": [
+    0.0,
+    1.0
+  ],
+  "policy_span_ids": [
+    "bb9a6628342f92ac",
+    "2d73b63190fcfbc6"
+  ],
+  "live": [],
+  "live_verified": false,
+  "persistence_verified": true,
+  "endpoint_hash": "6c61b6ec3bdde2b9bf8cc23ac16668566feae08134646c4b72fc2071fa5b6c06",
+  "status": "persistent local Phoenix passed; live pending",
+  "persistence_checked_at": "2026-10-28T16:56:54.722136+00:00"
+}

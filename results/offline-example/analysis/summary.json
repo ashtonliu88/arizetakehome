@@ -1,0 +1,192 @@
+{
+  "measurement": "SYNTHETIC FIXTURE — no model calls",
+  "policies": [
+    {
+      "policy": "llm",
+      "requests": 24,
+      "independent_questions": 8,
+      "accuracy": 0.75,
+      "accuracy_ci": [
+        0.375,
+        1.0
+      ],
+      "cost_per_request": 0.0015199999999999999,
+      "cost_ci": [
+        0.0015199999999999999,
+        0.0015199999999999999
+      ],
+      "p50_latency_ms": 203.5,
+      "p95_latency_ms": 220.7,
+      "p50_latency_ci": [
+        192.5,
+        214.5
+      ],
+      "p95_latency_ci": [
+        210.54999999999998,
+        224.0
+      ],
+      "fallback_rate": 0.0,
+      "calls_per_request": 1.0,
+      "rescues": 0,
+      "regressions": 0,
+      "operational_failure_rate": 0.0,
+      "operational_error_rate": 0.0,
+      "usage_unknown_cost_rows": 0
+    },
+    {
+      "policy": "decisions",
+      "requests": 24,
+      "independent_questions": 8,
+      "accuracy": 0.625,
+      "accuracy_ci": [
+        0.25,
+        0.875
+      ],
+      "cost_per_request": 5.1e-05,
+      "cost_ci": [
+        5.1e-05,
+        5.1e-05
+      ],
+      "p50_latency_ms": 45.5,
+      "p95_latency_ms": 49.0,
+      "p50_latency_ci": [
+        43.0,
+        48.0
+      ],
+      "p95_latency_ci": [
+        46.99625,
+        50.0
+      ],
+      "fallback_rate": 0.0,
+      "calls_per_request": 1.0,
+      "rescues": 0,
+      "regressions": 0,
+      "operational_failure_rate": 0.0,
+      "operational_error_rate": 0.0,
+      "usage_unknown_cost_rows": 0
+    },
+    {
+      "policy": "hybrid",
+      "requests": 24,
+      "independent_questions": 8,
+      "accuracy": 0.75,
+      "accuracy_ci": [
+        0.375,
+        1.0
+      ],
+      "cost_per_request": 0.0008110000000000001,
+      "cost_ci": [
+        0.00024100000000000003,
+        0.0013810000000000003
+      ],
+      "p50_latency_ms": 140.0,
+      "p95_latency_ms": 263.4,
+      "p50_latency_ci": [
+        45.5,
+        250.0
+      ],
+      "p95_latency_ci": [
+        239.39999999999998,
+        268.0
+      ],
+      "fallback_rate": 0.5,
+      "calls_per_request": 1.5,
+      "rescues": 6,
+      "regressions": 3,
+      "operational_failure_rate": 0.0,
+      "operational_error_rate": 0.0,
+      "usage_unknown_cost_rows": 0
+    }
+  ],
+  "paired_comparisons": {
+    "hybrid_minus_llm_correct": {
+      "difference": 0.0,
+      "paired_cluster_bootstrap_ci": [
+        0.0,
+        0.0
+      ]
+    },
+    "hybrid_minus_llm_cost_usd": {
+      "difference": -0.000709,
+      "paired_cluster_bootstrap_ci": [
+        -0.0012790000000000002,
+        -0.00013899999999999996
+      ]
+    },
+    "hybrid_minus_llm_latency_ms": {
+      "difference": -56.875,
+      "paired_cluster_bootstrap_ci": [
+        -132.0,
+        18.878124999999983
+      ]
+    },
+    "hybrid_minus_decisions_correct": {
+      "difference": 0.125,
+      "paired_cluster_bootstrap_ci": [
+        -0.25,
+        0.5
+      ]
+    },
+    "hybrid_minus_decisions_cost_usd": {
+      "difference": 0.0007599999999999999,
+      "paired_cluster_bootstrap_ci": [
+        0.00018999999999999998,
+        0.00133
+      ]
+    },
+    "hybrid_minus_decisions_latency_ms": {
+      "difference": 101.125,
+      "paired_cluster_bootstrap_ci": [
+        27.0,
+        175.26562499999991
+      ]
+    }
+  },
+  "overlap": {
+    "both_correct": 12,
+    "decision_only_correct": 3,
+    "llm_only_correct": 6,
+    "both_wrong": 3
+  },
+  "calibration": {
+    "multiclass_brier_sum_over_classes": 0.5957142857142858,
+    "brier_valid_rows": 24,
+    "confidence_valid_rows": 24,
+    "excluded_confidence_rows": 0,
+    "exploratory_confidence_calibration_error": 0.15,
+    "secondary_max_probability_ece": 0.07499999999999984,
+    "note": "Descriptive diagnostics on balanced authored traffic; no test threshold retuning."
+  },
+  "random_fallback_control": {
+    "measurement": "seeded matched-rate random replay, not live latency",
+    "seed": 1729,
+    "samples": 1000,
+    "mandatory_operational_fallbacks": 0,
+    "accuracy_mean": 0.687875,
+    "accuracy_randomization_interval": [
+      0.5833333333333334,
+      0.7916666666666666
+    ],
+    "cost_per_request_mean": 0.0008109999999999998,
+    "confidence_gate_accuracy": 0.75
+  },
+  "selected_gate_replay": {
+    "threshold": 0.7,
+    "always_fallback": false,
+    "accuracy": 0.75,
+    "cost_per_request": 0.000811,
+    "fallback_rate": 0.5,
+    "fallbacks": 12,
+    "rescues": 6,
+    "regressions": 3,
+    "measurement": "offline replay estimate",
+    "requests": 24
+  },
+  "bootstrap": {
+    "unit": "example",
+    "independent_questions": 8,
+    "samples": 2000,
+    "seed": 1729
+  },
+  "limitations": "Balanced authored requests, model pair and fixed catalog only. Repetitions are clustered, not independent questions. Latency includes provider retry backoff, excludes grading/export. Calls with unavailable usage retain conservative estimated charges."
+}
