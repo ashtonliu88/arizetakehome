@@ -2,7 +2,7 @@
 
 A Python prototype testing **when recurring agent requests can reuse a tool workflow while preserving intent and fetching current facts.** The completed workflow-reuse study compares fresh planning with exact and semantic plan reuse. Phoenix connects the decisions to model calls, current tool executions, and evaluation results. Privacy evaluation and confidence routing are secondary explorations.
 
-**Start with the [four-page project overview](project-overview.pdf).** It explains the entire project, the measured findings, the failure case, and the remaining work.
+Look at the [project overview](project-overview.pdf) for an overall idea of the project. This explains the entire project, the measured findings, the failure case, and the remaining work.
 
 ## What the project shows
 
