@@ -1,0 +1,64 @@
+{
+  "run_id": "c62287bf397c6a118a8cb173",
+  "policy": "ordinary",
+  "bank_state": "warm",
+  "status": "clarified",
+  "bindings": {
+    "slots": {
+      "number0": 10423.0
+    },
+    "slot_types": {
+      "number0": "number"
+    },
+    "skeleton": "add <number0> to",
+    "namespace": "ea951e30ddc2e3fbc06eb8d343acee8d3e1b560636c67748159d683fa73a5e54",
+    "unresolved": [
+      "missing arithmetic operand"
+    ],
+    "semantics": [
+      "add",
+      "count:number:1"
+    ]
+  },
+  "answer": "What number would you like to add 10423 to?",
+  "calls": [
+    {
+      "reservation": "c6d2929420b54b949a321594b7fd7d66",
+      "stage": "core",
+      "run_id": "c62287bf397c6a118a8cb173",
+      "kind": "planning",
+      "state": "measured",
+      "cost_usd": 0.0004397,
+      "timestamp": "2026-10-29T09:36:06.604718+00:00",
+      "cost_estimated": false,
+      "usage": {
+        "input_tokens": 1240,
+        "output_tokens": 31,
+        "cache_read_tokens": 1237,
+        "cache_write_tokens": 0
+      },
+      "error": null,
+      "latency_ms": 1602.188374963589,
+      "response_id": "resp_02cb9e34c77c1a5e016ae31386c2e087d0bbf42ff2667e40f1",
+      "output": "{\"kind\":\"clarify\",\"steps\":[],\"response\":\"What number would you like to add 10423 to?\"}"
+    }
+  ],
+  "executions": [],
+  "cache_hit": false,
+  "candidate": null,
+  "retrieval_score": 0,
+  "retrieval_margin": 0,
+  "rejection": null,
+  "replans": 0,
+  "error": null,
+  "timings_ms": {
+    "binding": 0.12970808893442154,
+    "retrieval_validation": 0.00033294782042503357,
+    "planning": 1602.188374963589,
+    "answer": 0,
+    "tools": 0,
+    "runtime": 1618.3867499930784
+  },
+  "cost_usd": 0.0004397,
+  "trace_id": null
+}

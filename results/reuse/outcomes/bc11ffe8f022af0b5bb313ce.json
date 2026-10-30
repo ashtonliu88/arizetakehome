@@ -1,0 +1,105 @@
+{
+  "run_id": "bc11ffe8f022af0b5bb313ce",
+  "policy": "fused",
+  "bank_state": "warm",
+  "status": "completed",
+  "bindings": {
+    "slots": {
+      "query0": "retry policy"
+    },
+    "slot_types": {
+      "query0": "query"
+    },
+    "skeleton": "search documentation for <query0>",
+    "namespace": "ea951e30ddc2e3fbc06eb8d343acee8d3e1b560636c67748159d683fa73a5e54",
+    "unresolved": [],
+    "semantics": [
+      "count:query:1",
+      "docs"
+    ]
+  },
+  "answer": "`retry-guide`: Retry policy: use exponential backoff.",
+  "calls": [
+    {
+      "reservation": "08322720f4a14e07bd858d10e278929a",
+      "stage": "pilot",
+      "run_id": "bc11ffe8f022af0b5bb313ce",
+      "kind": "planning",
+      "state": "measured",
+      "cost_usd": 0.0007767000000000001,
+      "timestamp": "2026-10-29T08:58:07.214766+00:00",
+      "cost_estimated": false,
+      "usage": {
+        "input_tokens": 1210,
+        "output_tokens": 65,
+        "cache_read_tokens": 1207,
+        "cache_write_tokens": 0
+      },
+      "error": null,
+      "latency_ms": 1826.5295829623938,
+      "response_id": "resp_00d2372bbb833f39016ae30a9f6b5887d083bc957f494df503",
+      "output": "{\"kind\":\"tools\",\"steps\":[{\"tool\":\"search_docs\",\"arguments\":{\"issue_id\":null,\"test_run_id\":null,\"service\":null,\"environment\":null,\"query\":\"$slot.query0\",\"operation\":null,\"left\":null,\"right\":null}}],\"response\":\"\"}"
+    },
+    {
+      "reservation": "bdc09394af6e41789282bf0da79a4a37",
+      "stage": "pilot",
+      "run_id": "bc11ffe8f022af0b5bb313ce",
+      "kind": "answer",
+      "state": "measured",
+      "cost_usd": 0.00057,
+      "timestamp": "2026-10-29T08:58:09.045636+00:00",
+      "cost_estimated": false,
+      "usage": {
+        "input_tokens": 205,
+        "output_tokens": 16,
+        "cache_read_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "error": null,
+      "latency_ms": 1386.6002090508118,
+      "response_id": "resp_0985f103d9c0dced016ae30aa140d087d08cb971a328b683db",
+      "output": "`retry-guide`: Retry policy: use exponential backoff."
+    }
+  ],
+  "executions": [
+    {
+      "tool": "search_docs",
+      "arguments": {
+        "query": "retry policy"
+      },
+      "bindings": {
+        "query": "retry policy"
+      },
+      "tenant": "acme",
+      "state_version": "173d27df7dc4801671eb534ae075aec0d5d7ee4920ac44d1b807df804ca8d266",
+      "result": {
+        "found": true,
+        "records": [
+          {
+            "id": "retry-guide",
+            "text": "Retry policy: use exponential backoff."
+          }
+        ],
+        "error": null
+      },
+      "latency_ms": 0.7615829817950726
+    }
+  ],
+  "cache_hit": false,
+  "candidate": null,
+  "retrieval_score": 0,
+  "retrieval_margin": 0,
+  "rejection": null,
+  "replans": 0,
+  "error": null,
+  "timings_ms": {
+    "binding": 0.08058303501456976,
+    "retrieval_validation": 0.00016600824892520905,
+    "planning": 1826.5295829623938,
+    "answer": 1386.6002090508118,
+    "tools": 0.7615829817950726,
+    "runtime": 3225.1418749801815
+  },
+  "cost_usd": 0.0013467000000000002,
+  "trace_id": null
+}

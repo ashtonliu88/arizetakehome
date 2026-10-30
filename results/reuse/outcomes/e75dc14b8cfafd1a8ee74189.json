@@ -1,0 +1,83 @@
+{
+  "run_id": "e75dc14b8cfafd1a8ee74189",
+  "policy": "verified",
+  "bank_state": "warm",
+  "status": "completed",
+  "bindings": {
+    "slots": {
+      "test0": "TR-10200"
+    },
+    "slot_types": {
+      "test0": "test"
+    },
+    "skeleton": "get stored test results <test0>",
+    "namespace": "ea951e30ddc2e3fbc06eb8d343acee8d3e1b560636c67748159d683fa73a5e54",
+    "unresolved": [],
+    "semantics": [
+      "count:test:1"
+    ]
+  },
+  "answer": "TR-10200 — stored outcome: **passed**.",
+  "calls": [
+    {
+      "reservation": "bf4eb267b677403183e9362c1dc6122c",
+      "stage": "core",
+      "run_id": "e75dc14b8cfafd1a8ee74189",
+      "kind": "answer",
+      "state": "measured",
+      "cost_usd": 0.000586,
+      "timestamp": "2026-10-29T09:22:26.640459+00:00",
+      "cost_estimated": false,
+      "usage": {
+        "input_tokens": 213,
+        "output_tokens": 16,
+        "cache_read_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "error": null,
+      "latency_ms": 1725.467749987729,
+      "response_id": "resp_099657b2fc80785c016ae31052cb3887d0957ff4dd06129902",
+      "output": "TR-10200 — stored outcome: **passed**."
+    }
+  ],
+  "executions": [
+    {
+      "tool": "lookup_test_results",
+      "arguments": {
+        "test_run_id": "TR-10200"
+      },
+      "bindings": {
+        "test_run_id": "TR-10200"
+      },
+      "tenant": "acme",
+      "state_version": "4b3390e27ddc11ab568119af21f8cd63f076422a7751aba34beefd9d53110011",
+      "result": {
+        "found": true,
+        "record": {
+          "test_run_id": "TR-10200",
+          "outcome": "passed"
+        },
+        "error": null
+      },
+      "latency_ms": 0.6844579475000501,
+      "started_at": "2026-10-29T09:22:26.631438+00:00"
+    }
+  ],
+  "cache_hit": true,
+  "candidate": "eed78624419f7e11d474",
+  "retrieval_score": 1.0,
+  "retrieval_margin": 0.7361327236389976,
+  "rejection": null,
+  "replans": 0,
+  "error": null,
+  "timings_ms": {
+    "binding": 0.08925003930926323,
+    "retrieval_validation": 0.9622920770198107,
+    "planning": 0,
+    "answer": 1725.467749987729,
+    "tools": 0.6844579475000501,
+    "runtime": 1747.3068330436945
+  },
+  "cost_usd": 0.000586,
+  "trace_id": null
+}

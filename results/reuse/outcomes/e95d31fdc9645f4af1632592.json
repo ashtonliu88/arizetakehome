@@ -1,0 +1,60 @@
+{
+  "run_id": "e95d31fdc9645f4af1632592",
+  "policy": "fused",
+  "bank_state": "empty",
+  "status": "clarified",
+  "bindings": {
+    "slots": {},
+    "slot_types": {},
+    "skeleton": "get issue and associated tests",
+    "namespace": "ea951e30ddc2e3fbc06eb8d343acee8d3e1b560636c67748159d683fa73a5e54",
+    "unresolved": [
+      "missing issue identifier"
+    ],
+    "semantics": [
+      "linked",
+      "unknown:tests"
+    ]
+  },
+  "answer": "What is the issue ID (for example, ENG-123) whose details and associated stored test results you want?",
+  "calls": [
+    {
+      "reservation": "551d475d736d4c10bd18ae0dfe7833da",
+      "stage": "core",
+      "run_id": "e95d31fdc9645f4af1632592",
+      "kind": "planning",
+      "state": "measured",
+      "cost_usd": 0.000548,
+      "timestamp": "2026-10-29T09:45:15.751399+00:00",
+      "cost_estimated": false,
+      "usage": {
+        "input_tokens": 1223,
+        "output_tokens": 42,
+        "cache_read_tokens": 1220,
+        "cache_write_tokens": 0
+      },
+      "error": null,
+      "latency_ms": 2708.9580839965492,
+      "response_id": "resp_07eb54f008e0e23a016ae315abe83487d0b44b39cc906c8abd",
+      "output": "{\"kind\":\"clarify\",\"steps\":[],\"response\":\"What is the issue ID (for example, ENG-123) whose details and associated stored test results you want?\"}"
+    }
+  ],
+  "executions": [],
+  "cache_hit": false,
+  "candidate": null,
+  "retrieval_score": 0,
+  "retrieval_margin": 0,
+  "rejection": null,
+  "replans": 0,
+  "error": null,
+  "timings_ms": {
+    "binding": 0.07504201494157314,
+    "retrieval_validation": 0.00012491364032030106,
+    "planning": 2708.9580839965492,
+    "answer": 0,
+    "tools": 0,
+    "runtime": 2731.616917066276
+  },
+  "cost_usd": 0.000548,
+  "trace_id": null
+}

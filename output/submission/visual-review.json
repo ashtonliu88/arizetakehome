@@ -1,0 +1,43 @@
+{
+  "method": "Rendered every page with Poppler and visually inspected the PNGs",
+  "pdfs": [
+    {
+      "path": "output/pdf/arize-submission-overview.pdf",
+      "sha256": "e16ccb85a71f84a31de7af77b4fb32eb95ad9cc8a334c0998c04bf9d065a67dc",
+      "pages_inspected": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "path": "output/cookbook/trace-evidence-lab.pdf",
+      "sha256": "6e6fbd0cedf4c47e58e559c12f547b7ca5fc8abb54bf699a41371801df62590f",
+      "pages_inspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ]
+    }
+  ],
+  "captions_and_pagination": "passed; six cookbook figure captions kept with their images",
+  "screenshots": "four native Phoenix captures inspected; two readable captures included in overview",
+  "clipping_or_overlap": "none observed",
+  "links": "local targets checked by verify_submission.py; links styled and retained in both PDFs"
+}

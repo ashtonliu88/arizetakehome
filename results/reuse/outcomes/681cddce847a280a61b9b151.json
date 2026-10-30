@@ -1,0 +1,83 @@
+{
+  "run_id": "681cddce847a280a61b9b151",
+  "policy": "verified",
+  "bank_state": "warm",
+  "status": "completed",
+  "bindings": {
+    "slots": {
+      "test0": "TR-10212"
+    },
+    "slot_types": {
+      "test0": "test"
+    },
+    "skeleton": "get stored test results <test0>",
+    "namespace": "ea951e30ddc2e3fbc06eb8d343acee8d3e1b560636c67748159d683fa73a5e54",
+    "unresolved": [],
+    "semantics": [
+      "count:test:1"
+    ]
+  },
+  "answer": "Stored test results for **TR-10212**: **failed**.",
+  "calls": [
+    {
+      "reservation": "166ce278e3a24f57a391dece0da4777a",
+      "stage": "core",
+      "run_id": "681cddce847a280a61b9b151",
+      "kind": "answer",
+      "state": "measured",
+      "cost_usd": 0.000626,
+      "timestamp": "2026-10-29T09:25:05.333241+00:00",
+      "cost_estimated": false,
+      "usage": {
+        "input_tokens": 218,
+        "output_tokens": 19,
+        "cache_read_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "error": null,
+      "latency_ms": 1395.3065830282867,
+      "response_id": "resp_07af38365a4a2557016ae310f17b4c87d094c7e8c407d4dd3b",
+      "output": "Stored test results for **TR-10212**: **failed**."
+    }
+  ],
+  "executions": [
+    {
+      "tool": "lookup_test_results",
+      "arguments": {
+        "test_run_id": "TR-10212"
+      },
+      "bindings": {
+        "test_run_id": "TR-10212"
+      },
+      "tenant": "acme",
+      "state_version": "a2d8fedcc510d826fcff45a8ae5a0131c07c47ef35168d5cbc5cf0a8932e138f",
+      "result": {
+        "found": true,
+        "record": {
+          "test_run_id": "TR-10212",
+          "outcome": "failed"
+        },
+        "error": null
+      },
+      "latency_ms": 0.8526669116690755,
+      "started_at": "2026-10-29T09:25:05.315907+00:00"
+    }
+  ],
+  "cache_hit": true,
+  "candidate": "eed78624419f7e11d474",
+  "retrieval_score": 1.0,
+  "retrieval_margin": 0.7361327236389976,
+  "rejection": null,
+  "replans": 0,
+  "error": null,
+  "timings_ms": {
+    "binding": 0.11266604997217655,
+    "retrieval_validation": 1.3302089646458626,
+    "planning": 0,
+    "answer": 1395.3065830282867,
+    "tools": 0.8526669116690755,
+    "runtime": 1415.5471660196781
+  },
+  "cost_usd": 0.000626,
+  "trace_id": null
+}

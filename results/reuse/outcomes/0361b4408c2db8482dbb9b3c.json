@@ -1,0 +1,94 @@
+{
+  "run_id": "0361b4408c2db8482dbb9b3c",
+  "policy": "ordinary",
+  "bank_state": "warm",
+  "status": "completed",
+  "bindings": {
+    "slots": {
+      "service0": "gateway",
+      "environment0": "staging",
+      "environment1": "production"
+    },
+    "slot_types": {
+      "service0": "service",
+      "environment0": "environment",
+      "environment1": "environment"
+    },
+    "skeleton": "show deployment for service <service0> in <environment0>, not <environment1>",
+    "namespace": "ea951e30ddc2e3fbc06eb8d343acee8d3e1b560636c67748159d683fa73a5e54",
+    "unresolved": [],
+    "semantics": [
+      "constraint",
+      "count:environment:2",
+      "count:service:1",
+      "unknown:not"
+    ]
+  },
+  "answer": "Service `gateway` in **staging**: version `v4.2`, status `healthy`.",
+  "calls": [
+    {
+      "reservation": "053a29c8147040bb868ed76ab8942e08",
+      "stage": "core",
+      "run_id": "0361b4408c2db8482dbb9b3c",
+      "kind": "answer",
+      "state": "measured",
+      "cost_usd": 0.000714,
+      "timestamp": "2026-10-29T09:19:13.849403+00:00",
+      "cost_estimated": false,
+      "usage": {
+        "input_tokens": 232,
+        "output_tokens": 25,
+        "cache_read_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "error": null,
+      "latency_ms": 1461.5808749804273,
+      "response_id": "resp_0af1373e4be77ae5016ae30f91fd6c87d0a0402395793a5cc2",
+      "output": "Service `gateway` in **staging**: version `v4.2`, status `healthy`."
+    }
+  ],
+  "executions": [
+    {
+      "tool": "lookup_deployment",
+      "arguments": {
+        "service": "gateway",
+        "environment": "staging"
+      },
+      "bindings": {
+        "service": "gateway",
+        "environment": "staging"
+      },
+      "tenant": "acme",
+      "state_version": "34415187ebc3badc88859039dd45613f5683c4f927c4f555ee69f6c7f57c6029",
+      "result": {
+        "found": true,
+        "record": {
+          "service": "gateway",
+          "environment": "staging",
+          "version": "v4.2",
+          "status": "healthy"
+        },
+        "error": null
+      },
+      "latency_ms": 0.7552909664809704,
+      "started_at": "2026-10-29T09:19:13.821451+00:00"
+    }
+  ],
+  "cache_hit": true,
+  "candidate": "9b9ba1104e3b1eda934e",
+  "retrieval_score": 0.7905569822936591,
+  "retrieval_margin": 0.6839398569763326,
+  "rejection": null,
+  "replans": 0,
+  "error": null,
+  "timings_ms": {
+    "binding": 0.12029206845909357,
+    "retrieval_validation": 0.33062510192394257,
+    "planning": 0,
+    "answer": 1461.5808749804273,
+    "tools": 0.7552909664809704,
+    "runtime": 1490.4951670905575
+  },
+  "cost_usd": 0.000714,
+  "trace_id": null
+}

@@ -1,0 +1,130 @@
+{
+  "run_id": "76812312e51ab9990a74b8ad",
+  "policy": "fused",
+  "bank_state": "empty",
+  "status": "completed",
+  "bindings": {
+    "slots": {
+      "issue0": "ENG-1500",
+      "issue1": "ENG-1501"
+    },
+    "slot_types": {
+      "issue0": "issue",
+      "issue1": "issue"
+    },
+    "skeleton": "compare source <issue0> with target <issue1>",
+    "namespace": "ea951e30ddc2e3fbc06eb8d343acee8d3e1b560636c67748159d683fa73a5e54",
+    "unresolved": [],
+    "semantics": [
+      "code",
+      "compare",
+      "count:issue:2",
+      "role:source:issue0",
+      "role:target:issue1"
+    ]
+  },
+  "answer": "| Role | Issue | Stored status | Test run |\n|---|---|---|---|\n| Source | ENG-1500 | open | TR-1500 |\n| Target | ENG-1501 | resolved | TR-1501 |",
+  "calls": [
+    {
+      "reservation": "e40c1c359fdc4b19924af621d8c480be",
+      "stage": "pilot",
+      "run_id": "76812312e51ab9990a74b8ad",
+      "kind": "planning",
+      "state": "measured",
+      "cost_usd": 0.0012415999999999998,
+      "timestamp": "2026-10-29T08:53:21.082946+00:00",
+      "cost_estimated": false,
+      "usage": {
+        "input_tokens": 1259,
+        "output_tokens": 111,
+        "cache_read_tokens": 1256,
+        "cache_write_tokens": 0
+      },
+      "error": null,
+      "latency_ms": 2627.680458012037,
+      "response_id": "resp_0d5e61e2785d6c90016ae30981511487d0958b526c2de5fde0",
+      "output": "{\"kind\":\"tools\",\"steps\":[{\"tool\":\"lookup_issue\",\"arguments\":{\"issue_id\":\"$slot.issue0\",\"test_run_id\":null,\"service\":null,\"environment\":null,\"query\":null,\"operation\":null,\"left\":null,\"right\":null}},{\"tool\":\"lookup_issue\",\"arguments\":{\"issue_id\":\"$slot.issue1\",\"test_run_id\":null,\"service\":null,\"environment\":null,\"query\":null,\"operation\":null,\"left\":null,\"right\":null}}],\"response\":\"\"}"
+    },
+    {
+      "reservation": "96bd070628db4763b659dbc641e80504",
+      "stage": "pilot",
+      "run_id": "76812312e51ab9990a74b8ad",
+      "kind": "answer",
+      "state": "measured",
+      "cost_usd": 0.001242,
+      "timestamp": "2026-10-29T08:53:23.726140+00:00",
+      "cost_estimated": false,
+      "usage": {
+        "input_tokens": 351,
+        "output_tokens": 54,
+        "cache_read_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "error": null,
+      "latency_ms": 1665.4010829515755,
+      "response_id": "resp_0e6bf0c10fa3b4ab016ae30983f3d487d0b956b2bbd05070f8",
+      "output": "| Role | Issue | Stored status | Test run |\n|---|---|---|---|\n| Source | ENG-1500 | open | TR-1500 |\n| Target | ENG-1501 | resolved | TR-1501 |"
+    }
+  ],
+  "executions": [
+    {
+      "tool": "lookup_issue",
+      "arguments": {
+        "issue_id": "ENG-1500"
+      },
+      "bindings": {
+        "issue_id": "ENG-1500"
+      },
+      "tenant": "acme",
+      "state_version": "a5c4be88de39ca947c53a25902d74399a777947921c8dcdc6651d367e58d08a5",
+      "result": {
+        "found": true,
+        "record": {
+          "issue_id": "ENG-1500",
+          "status": "open",
+          "test_run_id": "TR-1500"
+        },
+        "error": null
+      },
+      "latency_ms": 2.0955828949809074
+    },
+    {
+      "tool": "lookup_issue",
+      "arguments": {
+        "issue_id": "ENG-1501"
+      },
+      "bindings": {
+        "issue_id": "ENG-1501"
+      },
+      "tenant": "acme",
+      "state_version": "a5c4be88de39ca947c53a25902d74399a777947921c8dcdc6651d367e58d08a5",
+      "result": {
+        "found": true,
+        "record": {
+          "issue_id": "ENG-1501",
+          "status": "resolved",
+          "test_run_id": "TR-1501"
+        },
+        "error": null
+      },
+      "latency_ms": 1.1547079775482416
+    }
+  ],
+  "cache_hit": false,
+  "candidate": null,
+  "retrieval_score": 0,
+  "retrieval_margin": 0,
+  "rejection": null,
+  "replans": 0,
+  "error": null,
+  "timings_ms": {
+    "binding": 0.13562501408159733,
+    "retrieval_validation": 0.00016693957149982452,
+    "planning": 2627.680458012037,
+    "answer": 1665.4010829515755,
+    "tools": 3.250290872529149,
+    "runtime": 4318.609624984674
+  },
+  "cost_usd": 0.0024836,
+  "trace_id": null
+}

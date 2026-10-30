@@ -1,0 +1,60 @@
+{
+  "run_id": "226e96d45c0492ff7b093c7e",
+  "policy": "fused",
+  "bank_state": "warm",
+  "status": "clarified",
+  "bindings": {
+    "slots": {},
+    "slot_types": {},
+    "skeleton": "show issue incident",
+    "namespace": "ea951e30ddc2e3fbc06eb8d343acee8d3e1b560636c67748159d683fa73a5e54",
+    "unresolved": [
+      "ambiguous alias: incident",
+      "missing issue identifier"
+    ],
+    "semantics": [
+      "unknown:incident"
+    ]
+  },
+  "answer": "Which issue do you mean by “incident”: ENG-10009 or ENG-10010?",
+  "calls": [
+    {
+      "reservation": "86aed9fa1d40447d8cb32d3afba1dfd9",
+      "stage": "core",
+      "run_id": "226e96d45c0492ff7b093c7e",
+      "kind": "planning",
+      "state": "measured",
+      "cost_usd": 0.0005095,
+      "timestamp": "2026-10-29T09:14:53.559123+00:00",
+      "cost_estimated": false,
+      "usage": {
+        "input_tokens": 1238,
+        "output_tokens": 38,
+        "cache_read_tokens": 1235,
+        "cache_write_tokens": 0
+      },
+      "error": null,
+      "latency_ms": 1767.6052909810096,
+      "response_id": "resp_0a2d5e626029d89f016ae30e8db7a087d0a3f8964d2748ecae",
+      "output": "{\"kind\":\"clarify\",\"steps\":[],\"response\":\"Which issue do you mean by “incident”: ENG-10009 or ENG-10010?\"}"
+    }
+  ],
+  "executions": [],
+  "cache_hit": false,
+  "candidate": null,
+  "retrieval_score": 0,
+  "retrieval_margin": 0,
+  "rejection": null,
+  "replans": 0,
+  "error": null,
+  "timings_ms": {
+    "binding": 0.14045799616724253,
+    "retrieval_validation": 0.0002919696271419525,
+    "planning": 1767.6052909810096,
+    "answer": 0,
+    "tools": 0,
+    "runtime": 1777.9216250637546
+  },
+  "cost_usd": 0.0005095,
+  "trace_id": null
+}

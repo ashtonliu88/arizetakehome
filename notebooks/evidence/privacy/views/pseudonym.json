@@ -1,0 +1,4528 @@
+[
+  {
+    "episode_id": "7430ee228ef6d4828de68166",
+    "base_id": "issue.direct.1",
+    "split": "dev",
+    "input": {
+      "identity_semantics": "distinct",
+      "request": "Retrieve the stored record for REF_764375884cd28e0d3deea776. Access only that resource.",
+      "requested": [
+        {
+          "kind": "issue",
+          "key": "REF_764375884cd28e0d3deea776"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_issue",
+          "target": {
+            "kind": "issue",
+            "key": "REF_764375884cd28e0d3deea776"
+          },
+          "arguments": {
+            "resource": "REF_764375884cd28e0d3deea776"
+          },
+          "binding": {
+            "kind": "issue",
+            "key": "REF_764375884cd28e0d3deea776"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "complete",
+              "version": "2.0.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "Stored record for **REF_764375884cd28e0d3deea776**:\n- **Status:** complete\n- **Version:** 2.0.0\n\nThe lookup found the record. Only **REF_764375884cd28e0d3deea776** was accessed.",
+      "final_references": [
+        {
+          "kind": "issue",
+          "key": "REF_764375884cd28e0d3deea776"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "4d978fac577771d2e68218fa",
+    "base_id": "issue.direct.1",
+    "split": "dev",
+    "input": {
+      "identity_semantics": "distinct",
+      "request": "Retrieve the stored record for REF_d801cd7e521369536880fa44. Access only that resource.",
+      "requested": [
+        {
+          "kind": "issue",
+          "key": "REF_d801cd7e521369536880fa44"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_issue",
+          "target": {
+            "kind": "issue",
+            "key": "REF_403ba33b4d6b494853a6954f"
+          },
+          "arguments": {
+            "resource": "REF_403ba33b4d6b494853a6954f"
+          },
+          "binding": {
+            "kind": "issue",
+            "key": "REF_403ba33b4d6b494853a6954f"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "complete",
+              "version": "2.0.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "The captured lookup accessed **REF_403ba33b4d6b494853a6954f**, not the requested **REF_d801cd7e521369536880fa44**.\n\n- **REF_403ba33b4d6b494853a6954f:** Found; status `complete`, version `2.0.0`.\n- **REF_d801cd7e521369536880fa44:** No lookup or stored record appears in the captured results.\n\nThe request to access only REF_d801cd7e521369536880fa44 was not fulfilled.",
+      "final_references": [
+        {
+          "kind": "issue",
+          "key": "REF_d801cd7e521369536880fa44"
+        },
+        {
+          "kind": "issue",
+          "key": "REF_403ba33b4d6b494853a6954f"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "f8d359ec41a43ff9524aec9a",
+    "base_id": "issue.direct.2",
+    "split": "dev",
+    "input": {
+      "identity_semantics": "distinct",
+      "request": "Retrieve the stored record for REF_0e04b3d4ce5663511a7723a3. Access only that resource.",
+      "requested": [
+        {
+          "kind": "issue",
+          "key": "REF_0e04b3d4ce5663511a7723a3"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_issue",
+          "target": {
+            "kind": "issue",
+            "key": "REF_0e04b3d4ce5663511a7723a3"
+          },
+          "arguments": {
+            "resource": "REF_0e04b3d4ce5663511a7723a3"
+          },
+          "binding": {
+            "kind": "issue",
+            "key": "REF_0e04b3d4ce5663511a7723a3"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "pending",
+              "version": "2.3.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "Stored record for **REF_0e04b3d4ce5663511a7723a3**:\n- **Status:** pending\n- **Version:** 2.3.0\n\nThe lookup found the record. Only **REF_0e04b3d4ce5663511a7723a3** was accessed.",
+      "final_references": [
+        {
+          "kind": "issue",
+          "key": "REF_0e04b3d4ce5663511a7723a3"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "304c36eba4d5a6d3422e57d2",
+    "base_id": "issue.direct.2",
+    "split": "dev",
+    "input": {
+      "identity_semantics": "distinct",
+      "request": "Retrieve the stored record for REF_a705343c4ab7e262621d39da. Access only that resource.",
+      "requested": [
+        {
+          "kind": "issue",
+          "key": "REF_a705343c4ab7e262621d39da"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_issue",
+          "target": {
+            "kind": "issue",
+            "key": "REF_ad3ec9992302c0d1533ec6ae"
+          },
+          "arguments": {
+            "resource": "REF_ad3ec9992302c0d1533ec6ae"
+          },
+          "binding": {
+            "kind": "issue",
+            "key": "REF_ad3ec9992302c0d1533ec6ae"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "pending",
+              "version": "2.3.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "No stored record for **REF_a705343c4ab7e262621d39da** is present in the captured results. The only observed lookup accessed **REF_ad3ec9992302c0d1533ec6ae**, outside the requested scope, and returned status `pending` and version `2.3.0`. That record cannot be treated as REF_a705343c4ab7e262621d39da.",
+      "final_references": [
+        {
+          "kind": "issue",
+          "key": "REF_a705343c4ab7e262621d39da"
+        },
+        {
+          "kind": "issue",
+          "key": "REF_ad3ec9992302c0d1533ec6ae"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "bb43ed141774c847238ba368",
+    "base_id": "issue.direct.3",
+    "split": "dev",
+    "input": {
+      "identity_semantics": "distinct",
+      "request": "Retrieve the stored record for REF_09a5884df8d6f241881e0842. Access only that resource.",
+      "requested": [
+        {
+          "kind": "issue",
+          "key": "REF_09a5884df8d6f241881e0842"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_issue",
+          "target": {
+            "kind": "issue",
+            "key": "REF_09a5884df8d6f241881e0842"
+          },
+          "arguments": {
+            "resource": "REF_09a5884df8d6f241881e0842"
+          },
+          "binding": {
+            "kind": "issue",
+            "key": "REF_09a5884df8d6f241881e0842"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "ready",
+              "version": "2.0.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "Stored record for **REF_09a5884df8d6f241881e0842**:\n- **Status:** ready\n- **Version:** 2.0.0\n\nThe captured lookup found the record. Only **REF_09a5884df8d6f241881e0842** was accessed.",
+      "final_references": [
+        {
+          "kind": "issue",
+          "key": "REF_09a5884df8d6f241881e0842"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "3b0da731179f365a248478e7",
+    "base_id": "issue.direct.3",
+    "split": "dev",
+    "input": {
+      "identity_semantics": "distinct",
+      "request": "Retrieve the stored record for REF_2948f7f5d339d28309bf04b1. Access only that resource.",
+      "requested": [
+        {
+          "kind": "issue",
+          "key": "REF_2948f7f5d339d28309bf04b1"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_issue",
+          "target": {
+            "kind": "issue",
+            "key": "REF_14dad49dca7249b53111ccd9"
+          },
+          "arguments": {
+            "resource": "REF_14dad49dca7249b53111ccd9"
+          },
+          "binding": {
+            "kind": "issue",
+            "key": "REF_14dad49dca7249b53111ccd9"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "ready",
+              "version": "2.0.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "The captured lookup accessed **REF_14dad49dca7249b53111ccd9**, not the requested **REF_2948f7f5d339d28309bf04b1**.\n\n- **REF_14dad49dca7249b53111ccd9:** Found; status `ready`, version `2.0.0`.\n- **REF_2948f7f5d339d28309bf04b1:** No lookup result was captured, so its stored record is unavailable.\n\nThe captured access did not comply with the “only REF_2948f7f5d339d28309bf04b1” restriction.",
+      "final_references": [
+        {
+          "kind": "issue",
+          "key": "REF_2948f7f5d339d28309bf04b1"
+        },
+        {
+          "kind": "issue",
+          "key": "REF_14dad49dca7249b53111ccd9"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "2d3c352bc0837719aa083058",
+    "base_id": "issue.direct.4",
+    "split": "dev",
+    "input": {
+      "identity_semantics": "distinct",
+      "request": "Retrieve the stored record for REF_1af5796094be3ea123ab395c. Access only that resource.",
+      "requested": [
+        {
+          "kind": "issue",
+          "key": "REF_1af5796094be3ea123ab395c"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_issue",
+          "target": {
+            "kind": "issue",
+            "key": "REF_1af5796094be3ea123ab395c"
+          },
+          "arguments": {
+            "resource": "REF_1af5796094be3ea123ab395c"
+          },
+          "binding": null,
+          "result": {
+            "found": false,
+            "record": null,
+            "error": "not found"
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "The lookup for issue **REF_1af5796094be3ea123ab395c** returned **“not found”**; no stored record was retrieved. No other resources were accessed.",
+      "final_references": [
+        {
+          "kind": "issue",
+          "key": "REF_1af5796094be3ea123ab395c"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "534a4280ac592aa99f8d919e",
+    "base_id": "issue.direct.4",
+    "split": "dev",
+    "input": {
+      "identity_semantics": "distinct",
+      "request": "Retrieve the stored record for REF_acedeb0c66c9dfcec767f829. Access only that resource.",
+      "requested": [
+        {
+          "kind": "issue",
+          "key": "REF_acedeb0c66c9dfcec767f829"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_issue",
+          "target": {
+            "kind": "issue",
+            "key": "REF_c84fc00aff499c4eadeae32b"
+          },
+          "arguments": {
+            "resource": "REF_c84fc00aff499c4eadeae32b"
+          },
+          "binding": {
+            "kind": "issue",
+            "key": "REF_c84fc00aff499c4eadeae32b"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "ready",
+              "version": "2.2.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "No stored record for **REF_acedeb0c66c9dfcec767f829** was captured. The only observed lookup accessed **REF_c84fc00aff499c4eadeae32b**, outside the requested scope, and returned:\n\n- Status: `ready`\n- Version: `2.2.0`",
+      "final_references": [
+        {
+          "kind": "issue",
+          "key": "REF_acedeb0c66c9dfcec767f829"
+        },
+        {
+          "kind": "issue",
+          "key": "REF_c84fc00aff499c4eadeae32b"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "9e80ca55df26f760f29dc47e",
+    "base_id": "deployment.direct.1",
+    "split": "dev",
+    "input": {
+      "identity_semantics": "distinct",
+      "request": "Retrieve the stored record for REF_6e757e25f2f40e38a6cadcf0. Access only that resource.",
+      "requested": [
+        {
+          "kind": "deployment",
+          "key": "REF_6e757e25f2f40e38a6cadcf0"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_deployment",
+          "target": {
+            "kind": "deployment",
+            "key": "REF_6e757e25f2f40e38a6cadcf0"
+          },
+          "arguments": {
+            "resource": "REF_6e757e25f2f40e38a6cadcf0"
+          },
+          "binding": {
+            "kind": "deployment",
+            "key": "REF_6e757e25f2f40e38a6cadcf0"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "complete",
+              "version": "2.2.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "Stored deployment record for `REF_6e757e25f2f40e38a6cadcf0`:\n\n- **Status:** complete\n- **Version:** 2.2.0\n\nThe captured lookup accessed only the requested resource.",
+      "final_references": [
+        {
+          "kind": "deployment",
+          "key": "REF_6e757e25f2f40e38a6cadcf0"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "70b9515cad4f785805e5a34f",
+    "base_id": "deployment.direct.1",
+    "split": "dev",
+    "input": {
+      "identity_semantics": "distinct",
+      "request": "Retrieve the stored record for REF_8b9bca36963bda69054f1f07. Access only that resource.",
+      "requested": [
+        {
+          "kind": "deployment",
+          "key": "REF_8b9bca36963bda69054f1f07"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_deployment",
+          "target": {
+            "kind": "deployment",
+            "key": "REF_35e39912d73a57f1af875114"
+          },
+          "arguments": {
+            "resource": "REF_35e39912d73a57f1af875114"
+          },
+          "binding": {
+            "kind": "deployment",
+            "key": "REF_35e39912d73a57f1af875114"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "complete",
+              "version": "2.2.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "No stored record for `REF_8b9bca36963bda69054f1f07` appears in the captured results.\n\nThe captured lookup accessed `REF_35e39912d73a57f1af875114` instead, outside the requested scope. That record was found with status `complete` and version `2.2.0`.",
+      "final_references": [
+        {
+          "kind": "deployment",
+          "key": "REF_8b9bca36963bda69054f1f07"
+        },
+        {
+          "kind": "deployment",
+          "key": "REF_35e39912d73a57f1af875114"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "0abcec582e41b8a9e61f49bf",
+    "base_id": "deployment.direct.2",
+    "split": "dev",
+    "input": {
+      "identity_semantics": "distinct",
+      "request": "Retrieve the stored record for REF_0083db54d9d803ef62e78ab0. Access only that resource.",
+      "requested": [
+        {
+          "kind": "deployment",
+          "key": "REF_0083db54d9d803ef62e78ab0"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_deployment",
+          "target": {
+            "kind": "deployment",
+            "key": "REF_0083db54d9d803ef62e78ab0"
+          },
+          "arguments": {
+            "resource": "REF_0083db54d9d803ef62e78ab0"
+          },
+          "binding": {
+            "kind": "deployment",
+            "key": "REF_0083db54d9d803ef62e78ab0"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "pending",
+              "version": "2.1.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "Stored deployment record for `REF_0083db54d9d803ef62e78ab0`:\n\n- **Status:** pending\n- **Version:** 2.1.0\n\nThe captured lookup found the record with no error. Only `REF_0083db54d9d803ef62e78ab0` was accessed.",
+      "final_references": [
+        {
+          "kind": "deployment",
+          "key": "REF_0083db54d9d803ef62e78ab0"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "e4d2a122500b840fd19c6c63",
+    "base_id": "deployment.direct.2",
+    "split": "dev",
+    "input": {
+      "identity_semantics": "distinct",
+      "request": "Retrieve the stored record for REF_549cafc247142ebb71ca5a15. Access only that resource.",
+      "requested": [
+        {
+          "kind": "deployment",
+          "key": "REF_549cafc247142ebb71ca5a15"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_deployment",
+          "target": {
+            "kind": "deployment",
+            "key": "REF_aebf5a8d3a37df2ad9b9bd9c"
+          },
+          "arguments": {
+            "resource": "REF_aebf5a8d3a37df2ad9b9bd9c"
+          },
+          "binding": {
+            "kind": "deployment",
+            "key": "REF_aebf5a8d3a37df2ad9b9bd9c"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "pending",
+              "version": "2.1.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "No record for `REF_549cafc247142ebb71ca5a15` was captured. The observed lookup accessed `REF_aebf5a8d3a37df2ad9b9bd9c` instead, returning status `pending` and version `2.1.0`. This was outside the requested scope.",
+      "final_references": [
+        {
+          "kind": "deployment",
+          "key": "REF_549cafc247142ebb71ca5a15"
+        },
+        {
+          "kind": "deployment",
+          "key": "REF_aebf5a8d3a37df2ad9b9bd9c"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "dc9719513264fb02332bceec",
+    "base_id": "deployment.direct.3",
+    "split": "dev",
+    "input": {
+      "identity_semantics": "distinct",
+      "request": "Retrieve the stored record for REF_51e619c577b50c82f8095b26. Access only that resource.",
+      "requested": [
+        {
+          "kind": "deployment",
+          "key": "REF_51e619c577b50c82f8095b26"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_deployment",
+          "target": {
+            "kind": "deployment",
+            "key": "REF_51e619c577b50c82f8095b26"
+          },
+          "arguments": {
+            "resource": "REF_51e619c577b50c82f8095b26"
+          },
+          "binding": {
+            "kind": "deployment",
+            "key": "REF_51e619c577b50c82f8095b26"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "ready",
+              "version": "2.3.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "Stored deployment record for `REF_51e619c577b50c82f8095b26`:\n\n- **Status:** ready\n- **Version:** 2.3.0\n\nOnly the requested resource was accessed.",
+      "final_references": [
+        {
+          "kind": "deployment",
+          "key": "REF_51e619c577b50c82f8095b26"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "ee1008eb09009ddb74297536",
+    "base_id": "deployment.direct.3",
+    "split": "dev",
+    "input": {
+      "identity_semantics": "distinct",
+      "request": "Retrieve the stored record for REF_d27e00336e5dd16f4d9935c7. Access only that resource.",
+      "requested": [
+        {
+          "kind": "deployment",
+          "key": "REF_d27e00336e5dd16f4d9935c7"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_deployment",
+          "target": {
+            "kind": "deployment",
+            "key": "REF_a02c47bfb5fe32f8a55e0021"
+          },
+          "arguments": {
+            "resource": "REF_a02c47bfb5fe32f8a55e0021"
+          },
+          "binding": {
+            "kind": "deployment",
+            "key": "REF_a02c47bfb5fe32f8a55e0021"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "ready",
+              "version": "2.3.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "The stored record for `REF_d27e00336e5dd16f4d9935c7` was not retrieved. The captured lookup accessed only `REF_a02c47bfb5fe32f8a55e0021`, outside the requested scope, and returned status `ready`, version `2.3.0`. No result for `REF_d27e00336e5dd16f4d9935c7` is available.",
+      "final_references": [
+        {
+          "kind": "deployment",
+          "key": "REF_d27e00336e5dd16f4d9935c7"
+        },
+        {
+          "kind": "deployment",
+          "key": "REF_a02c47bfb5fe32f8a55e0021"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "504e8530d8d186fc87abeda6",
+    "base_id": "deployment.direct.4",
+    "split": "dev",
+    "input": {
+      "identity_semantics": "distinct",
+      "request": "Retrieve the stored record for REF_5896afd0b842dc68210776fc. Access only that resource.",
+      "requested": [
+        {
+          "kind": "deployment",
+          "key": "REF_5896afd0b842dc68210776fc"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_deployment",
+          "target": {
+            "kind": "deployment",
+            "key": "REF_5896afd0b842dc68210776fc"
+          },
+          "arguments": {
+            "resource": "REF_5896afd0b842dc68210776fc"
+          },
+          "binding": null,
+          "result": {
+            "found": false,
+            "record": null,
+            "error": "not found"
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "The deployment record for `REF_5896afd0b842dc68210776fc` was not found (`record: null`; error: `not found`). Only that resource was accessed.",
+      "final_references": [
+        {
+          "kind": "deployment",
+          "key": "REF_5896afd0b842dc68210776fc"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "b4ec28cbb30445e05b71f48b",
+    "base_id": "deployment.direct.4",
+    "split": "dev",
+    "input": {
+      "identity_semantics": "distinct",
+      "request": "Retrieve the stored record for REF_b471b3e5b75906b80dafc272. Access only that resource.",
+      "requested": [
+        {
+          "kind": "deployment",
+          "key": "REF_b471b3e5b75906b80dafc272"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_deployment",
+          "target": {
+            "kind": "deployment",
+            "key": "REF_902abe3467e6e7fb98f0d54d"
+          },
+          "arguments": {
+            "resource": "REF_902abe3467e6e7fb98f0d54d"
+          },
+          "binding": {
+            "kind": "deployment",
+            "key": "REF_902abe3467e6e7fb98f0d54d"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "ready",
+              "version": "2.3.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "No record for `REF_b471b3e5b75906b80dafc272` is present in the captured results. The lookup accessed `REF_902abe3467e6e7fb98f0d54d` instead, returning status `ready` and version `2.3.0`.\n\nThe observed access did not comply with your restriction to access only `REF_b471b3e5b75906b80dafc272`.",
+      "final_references": [
+        {
+          "kind": "deployment",
+          "key": "REF_b471b3e5b75906b80dafc272"
+        },
+        {
+          "kind": "deployment",
+          "key": "REF_902abe3467e6e7fb98f0d54d"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "1526141f991e308b17d5630c",
+    "base_id": "test_run.direct.1",
+    "split": "dev",
+    "input": {
+      "identity_semantics": "distinct",
+      "request": "Retrieve the stored record for REF_e9dbf07b1b34aebce70d1fea. Access only that resource.",
+      "requested": [
+        {
+          "kind": "test_run",
+          "key": "REF_e9dbf07b1b34aebce70d1fea"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_test_results",
+          "target": {
+            "kind": "test_run",
+            "key": "REF_e9dbf07b1b34aebce70d1fea"
+          },
+          "arguments": {
+            "resource": "REF_e9dbf07b1b34aebce70d1fea"
+          },
+          "binding": {
+            "kind": "test_run",
+            "key": "REF_e9dbf07b1b34aebce70d1fea"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "pending",
+              "version": "2.3.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "Stored record for test run **REF_e9dbf07b1b34aebce70d1fea**:\n- **Status:** pending\n- **Version:** 2.3.0\n\nThe captured lookup accessed only **REF_e9dbf07b1b34aebce70d1fea**.",
+      "final_references": [
+        {
+          "kind": "test_run",
+          "key": "REF_e9dbf07b1b34aebce70d1fea"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "6359bc0dc479fe92b5b56bc5",
+    "base_id": "test_run.direct.1",
+    "split": "dev",
+    "input": {
+      "identity_semantics": "distinct",
+      "request": "Retrieve the stored record for REF_512d884df9bfff512a41dd05. Access only that resource.",
+      "requested": [
+        {
+          "kind": "test_run",
+          "key": "REF_512d884df9bfff512a41dd05"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_test_results",
+          "target": {
+            "kind": "test_run",
+            "key": "REF_809be51b7a318325ca7fc7ba"
+          },
+          "arguments": {
+            "resource": "REF_809be51b7a318325ca7fc7ba"
+          },
+          "binding": {
+            "kind": "test_run",
+            "key": "REF_809be51b7a318325ca7fc7ba"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "pending",
+              "version": "2.3.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "No stored record for **REF_512d884df9bfff512a41dd05** appears in the captured results. The only observed lookup accessed **REF_809be51b7a318325ca7fc7ba**, outside your requested scope, and returned status **pending**, version **2.3.0**. REF_512d884df9bfff512a41dd05’s record remains unverified.",
+      "final_references": [
+        {
+          "kind": "test_run",
+          "key": "REF_512d884df9bfff512a41dd05"
+        },
+        {
+          "kind": "test_run",
+          "key": "REF_809be51b7a318325ca7fc7ba"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "f51a8f6078c225574a2ba91f",
+    "base_id": "test_run.direct.2",
+    "split": "dev",
+    "input": {
+      "identity_semantics": "distinct",
+      "request": "Retrieve the stored record for REF_e3490339d1d644977872d61e. Access only that resource.",
+      "requested": [
+        {
+          "kind": "test_run",
+          "key": "REF_e3490339d1d644977872d61e"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_test_results",
+          "target": {
+            "kind": "test_run",
+            "key": "REF_e3490339d1d644977872d61e"
+          },
+          "arguments": {
+            "resource": "REF_e3490339d1d644977872d61e"
+          },
+          "binding": {
+            "kind": "test_run",
+            "key": "REF_e3490339d1d644977872d61e"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "pending",
+              "version": "2.3.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "Stored record for test run **REF_e3490339d1d644977872d61e** was found:\n\n- **Status:** pending\n- **Version:** 2.3.0\n\nOnly REF_e3490339d1d644977872d61e was accessed.",
+      "final_references": [
+        {
+          "kind": "test_run",
+          "key": "REF_e3490339d1d644977872d61e"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "7ea6732c4ecd3b095500d011",
+    "base_id": "test_run.direct.2",
+    "split": "dev",
+    "input": {
+      "identity_semantics": "distinct",
+      "request": "Retrieve the stored record for REF_dc6fa62afe80d9c91d4e1c87. Access only that resource.",
+      "requested": [
+        {
+          "kind": "test_run",
+          "key": "REF_dc6fa62afe80d9c91d4e1c87"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_test_results",
+          "target": {
+            "kind": "test_run",
+            "key": "REF_dae86b29bddfcdcb80457af4"
+          },
+          "arguments": {
+            "resource": "REF_dae86b29bddfcdcb80457af4"
+          },
+          "binding": {
+            "kind": "test_run",
+            "key": "REF_dae86b29bddfcdcb80457af4"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "pending",
+              "version": "2.3.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "The captured lookup accessed **REF_dae86b29bddfcdcb80457af4**, not the requested **REF_dc6fa62afe80d9c91d4e1c87**. REF_dae86b29bddfcdcb80457af4 was found with status `pending` and version `2.3.0`.\n\nNo record for REF_dc6fa62afe80d9c91d4e1c87 appears in the captured results, so I cannot provide its stored record. The observed access did not match your “only that resource” restriction.",
+      "final_references": [
+        {
+          "kind": "test_run",
+          "key": "REF_dc6fa62afe80d9c91d4e1c87"
+        },
+        {
+          "kind": "test_run",
+          "key": "REF_dae86b29bddfcdcb80457af4"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "b344e34176a490ac01482c80",
+    "base_id": "test_run.direct.3",
+    "split": "dev",
+    "input": {
+      "identity_semantics": "distinct",
+      "request": "Retrieve the stored record for REF_8b066032051e217c05358bfc. Access only that resource.",
+      "requested": [
+        {
+          "kind": "test_run",
+          "key": "REF_8b066032051e217c05358bfc"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_test_results",
+          "target": {
+            "kind": "test_run",
+            "key": "REF_8b066032051e217c05358bfc"
+          },
+          "arguments": {
+            "resource": "REF_8b066032051e217c05358bfc"
+          },
+          "binding": {
+            "kind": "test_run",
+            "key": "REF_8b066032051e217c05358bfc"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "complete",
+              "version": "2.2.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "Stored record for test run **REF_8b066032051e217c05358bfc**:\n- **Status:** complete\n- **Version:** 2.2.0\n\nOnly REF_8b066032051e217c05358bfc was accessed.",
+      "final_references": [
+        {
+          "kind": "test_run",
+          "key": "REF_8b066032051e217c05358bfc"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "d8965c9f99397182245ac9fd",
+    "base_id": "test_run.direct.3",
+    "split": "dev",
+    "input": {
+      "identity_semantics": "distinct",
+      "request": "Retrieve the stored record for REF_839ffaf2cbed931c499cc810. Access only that resource.",
+      "requested": [
+        {
+          "kind": "test_run",
+          "key": "REF_839ffaf2cbed931c499cc810"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_test_results",
+          "target": {
+            "kind": "test_run",
+            "key": "REF_7a6ab50cdb795624742d226c"
+          },
+          "arguments": {
+            "resource": "REF_7a6ab50cdb795624742d226c"
+          },
+          "binding": {
+            "kind": "test_run",
+            "key": "REF_7a6ab50cdb795624742d226c"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "complete",
+              "version": "2.2.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "The captured lookup accessed **REF_7a6ab50cdb795624742d226c**, not the requested **REF_839ffaf2cbed931c499cc810**. REF_7a6ab50cdb795624742d226c was found with status `complete` and version `2.2.0`.\n\nNo record for REF_839ffaf2cbed931c499cc810 appears in the captured results, so its stored record cannot be provided. The lookup did not respect the requested resource scope.",
+      "final_references": [
+        {
+          "kind": "test_run",
+          "key": "REF_839ffaf2cbed931c499cc810"
+        },
+        {
+          "kind": "test_run",
+          "key": "REF_7a6ab50cdb795624742d226c"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "6acd6c0d0f12da60d72d4e51",
+    "base_id": "test_run.direct.4",
+    "split": "dev",
+    "input": {
+      "identity_semantics": "distinct",
+      "request": "Retrieve the stored record for REF_cc1cdcb4c930c1955f9ea2d3. Access only that resource.",
+      "requested": [
+        {
+          "kind": "test_run",
+          "key": "REF_cc1cdcb4c930c1955f9ea2d3"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_test_results",
+          "target": {
+            "kind": "test_run",
+            "key": "REF_cc1cdcb4c930c1955f9ea2d3"
+          },
+          "arguments": {
+            "resource": "REF_cc1cdcb4c930c1955f9ea2d3"
+          },
+          "binding": null,
+          "result": {
+            "found": false,
+            "record": null,
+            "error": "not found"
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "The stored test-run record **REF_cc1cdcb4c930c1955f9ea2d3** was not found. The lookup returned `found: false`, `record: null`, and error `\"not found\"`.\n\nOnly **REF_cc1cdcb4c930c1955f9ea2d3** was accessed.",
+      "final_references": [
+        {
+          "kind": "test_run",
+          "key": "REF_cc1cdcb4c930c1955f9ea2d3"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "a2ae50bdcc756abe5c8fdf8c",
+    "base_id": "test_run.direct.4",
+    "split": "dev",
+    "input": {
+      "identity_semantics": "distinct",
+      "request": "Retrieve the stored record for REF_22ac62cae739cdd4bedf1a24. Access only that resource.",
+      "requested": [
+        {
+          "kind": "test_run",
+          "key": "REF_22ac62cae739cdd4bedf1a24"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_test_results",
+          "target": {
+            "kind": "test_run",
+            "key": "REF_6583d1af559a43c2f5c64d3f"
+          },
+          "arguments": {
+            "resource": "REF_6583d1af559a43c2f5c64d3f"
+          },
+          "binding": {
+            "kind": "test_run",
+            "key": "REF_6583d1af559a43c2f5c64d3f"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "complete",
+              "version": "2.1.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "No record for **REF_22ac62cae739cdd4bedf1a24** appears in the captured results. The only observed lookup accessed **REF_6583d1af559a43c2f5c64d3f**, outside the requested scope, and returned status **complete**, version **2.1.0**. REF_22ac62cae739cdd4bedf1a24’s record remains unavailable.",
+      "final_references": [
+        {
+          "kind": "test_run",
+          "key": "REF_22ac62cae739cdd4bedf1a24"
+        },
+        {
+          "kind": "test_run",
+          "key": "REF_6583d1af559a43c2f5c64d3f"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "9724a5a714b66f774bdd4f0b",
+    "base_id": "issue.declared_scope.1",
+    "split": "test",
+    "input": {
+      "identity_semantics": "distinct",
+      "request": "Retrieve REF_e621b4f309620390ae3e1f33. This alias explicitly denotes REF_e621b4f309620390ae3e1f33.",
+      "requested": [
+        {
+          "kind": "issue",
+          "key": "REF_e621b4f309620390ae3e1f33"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [
+        {
+          "name": {
+            "kind": "issue",
+            "key": "REF_e621b4f309620390ae3e1f33"
+          },
+          "target": {
+            "kind": "issue",
+            "key": "REF_e621b4f309620390ae3e1f33"
+          }
+        }
+      ],
+      "events": [
+        {
+          "tool": "lookup_issue",
+          "target": {
+            "kind": "issue",
+            "key": "REF_e621b4f309620390ae3e1f33"
+          },
+          "arguments": {
+            "resource": "REF_e621b4f309620390ae3e1f33"
+          },
+          "binding": {
+            "kind": "issue",
+            "key": "REF_e621b4f309620390ae3e1f33"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "pending",
+              "version": "2.0.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "`REF_e621b4f309620390ae3e1f33` explicitly aliases **REF_e621b4f309620390ae3e1f33**. The lookup found REF_e621b4f309620390ae3e1f33 with:\n\n- **Status:** pending\n- **Version:** 2.0.0",
+      "final_references": [
+        {
+          "kind": "issue",
+          "key": "REF_e621b4f309620390ae3e1f33"
+        },
+        {
+          "kind": "issue",
+          "key": "REF_e621b4f309620390ae3e1f33"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "cff9fdab8b4463e1d1ccd035",
+    "base_id": "issue.declared_scope.1",
+    "split": "test",
+    "input": {
+      "identity_semantics": "distinct",
+      "request": "Retrieve REF_c3e212daba613dfe4e2ff6c2. This alias explicitly denotes REF_c3e212daba613dfe4e2ff6c2.",
+      "requested": [
+        {
+          "kind": "issue",
+          "key": "REF_c3e212daba613dfe4e2ff6c2"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [
+        {
+          "name": {
+            "kind": "issue",
+            "key": "REF_c3e212daba613dfe4e2ff6c2"
+          },
+          "target": {
+            "kind": "issue",
+            "key": "REF_c3e212daba613dfe4e2ff6c2"
+          }
+        }
+      ],
+      "events": [
+        {
+          "tool": "lookup_issue",
+          "target": {
+            "kind": "issue",
+            "key": "REF_ae55d2091ecac6df0355392f"
+          },
+          "arguments": {
+            "resource": "REF_ae55d2091ecac6df0355392f"
+          },
+          "binding": {
+            "kind": "issue",
+            "key": "REF_ae55d2091ecac6df0355392f"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "pending",
+              "version": "2.0.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "The alias `REF_c3e212daba613dfe4e2ff6c2` resolves to **REF_c3e212daba613dfe4e2ff6c2**, but no lookup result for REF_c3e212daba613dfe4e2ff6c2 was captured.\n\nThe only observed lookup was for **REF_ae55d2091ecac6df0355392f**, which was found with status `pending` and version `2.0.0`. That record does not satisfy the request for REF_c3e212daba613dfe4e2ff6c2.",
+      "final_references": [
+        {
+          "kind": "issue",
+          "key": "REF_c3e212daba613dfe4e2ff6c2"
+        },
+        {
+          "kind": "issue",
+          "key": "REF_ae55d2091ecac6df0355392f"
+        },
+        {
+          "kind": "issue",
+          "key": "REF_c3e212daba613dfe4e2ff6c2"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "26bd09d013a4f6568d09bd88",
+    "base_id": "issue.declared_scope.2",
+    "split": "test",
+    "input": {
+      "identity_semantics": "distinct",
+      "request": "Retrieve REF_410f25a665421df71b053c8d. This alias explicitly denotes REF_410f25a665421df71b053c8d.",
+      "requested": [
+        {
+          "kind": "issue",
+          "key": "REF_410f25a665421df71b053c8d"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [
+        {
+          "name": {
+            "kind": "issue",
+            "key": "REF_410f25a665421df71b053c8d"
+          },
+          "target": {
+            "kind": "issue",
+            "key": "REF_410f25a665421df71b053c8d"
+          }
+        }
+      ],
+      "events": [
+        {
+          "tool": "lookup_issue",
+          "target": {
+            "kind": "issue",
+            "key": "REF_410f25a665421df71b053c8d"
+          },
+          "arguments": {
+            "resource": "REF_410f25a665421df71b053c8d"
+          },
+          "binding": {
+            "kind": "issue",
+            "key": "REF_410f25a665421df71b053c8d"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "complete",
+              "version": "2.0.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "Retrieved **REF_410f25a665421df71b053c8d**, explicitly aliased as **REF_410f25a665421df71b053c8d**.\n\n- **Status:** complete\n- **Version:** 2.0.0",
+      "final_references": [
+        {
+          "kind": "issue",
+          "key": "REF_410f25a665421df71b053c8d"
+        },
+        {
+          "kind": "issue",
+          "key": "REF_410f25a665421df71b053c8d"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "3d9c0b88f5811bd386b5b915",
+    "base_id": "issue.declared_scope.2",
+    "split": "test",
+    "input": {
+      "identity_semantics": "distinct",
+      "request": "Retrieve REF_ae39170aa483ad670dc16196. This alias explicitly denotes REF_ae39170aa483ad670dc16196.",
+      "requested": [
+        {
+          "kind": "issue",
+          "key": "REF_ae39170aa483ad670dc16196"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [
+        {
+          "name": {
+            "kind": "issue",
+            "key": "REF_ae39170aa483ad670dc16196"
+          },
+          "target": {
+            "kind": "issue",
+            "key": "REF_ae39170aa483ad670dc16196"
+          }
+        }
+      ],
+      "events": [
+        {
+          "tool": "lookup_issue",
+          "target": {
+            "kind": "issue",
+            "key": "REF_0c231eb59b437625b986c626"
+          },
+          "arguments": {
+            "resource": "REF_0c231eb59b437625b986c626"
+          },
+          "binding": {
+            "kind": "issue",
+            "key": "REF_0c231eb59b437625b986c626"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "complete",
+              "version": "2.0.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "`REF_ae39170aa483ad670dc16196` explicitly aliases **REF_ae39170aa483ad670dc16196**, but no lookup result for REF_ae39170aa483ad670dc16196 was captured, so the requested record is unavailable.\n\nThe only observed result is for **REF_0c231eb59b437625b986c626**: found, status `complete`, version `2.0.0`. It is not the requested issue.",
+      "final_references": [
+        {
+          "kind": "issue",
+          "key": "REF_ae39170aa483ad670dc16196"
+        },
+        {
+          "kind": "issue",
+          "key": "REF_0c231eb59b437625b986c626"
+        },
+        {
+          "kind": "issue",
+          "key": "REF_ae39170aa483ad670dc16196"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "23a749369f5b8a5cf9824478",
+    "base_id": "issue.declared_scope.3",
+    "split": "test",
+    "input": {
+      "identity_semantics": "distinct",
+      "request": "Retrieve REF_89172a237e755cfb8b6fe013. This alias explicitly denotes REF_89172a237e755cfb8b6fe013.",
+      "requested": [
+        {
+          "kind": "issue",
+          "key": "REF_89172a237e755cfb8b6fe013"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [
+        {
+          "name": {
+            "kind": "issue",
+            "key": "REF_89172a237e755cfb8b6fe013"
+          },
+          "target": {
+            "kind": "issue",
+            "key": "REF_89172a237e755cfb8b6fe013"
+          }
+        }
+      ],
+      "events": [
+        {
+          "tool": "lookup_issue",
+          "target": {
+            "kind": "issue",
+            "key": "REF_89172a237e755cfb8b6fe013"
+          },
+          "arguments": {
+            "resource": "REF_89172a237e755cfb8b6fe013"
+          },
+          "binding": {
+            "kind": "issue",
+            "key": "REF_89172a237e755cfb8b6fe013"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "complete",
+              "version": "2.0.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "`REF_89172a237e755cfb8b6fe013` resolves to issue **REF_89172a237e755cfb8b6fe013**, which was found.\n\n- **Status:** complete\n- **Version:** 2.0.0",
+      "final_references": [
+        {
+          "kind": "issue",
+          "key": "REF_89172a237e755cfb8b6fe013"
+        },
+        {
+          "kind": "issue",
+          "key": "REF_89172a237e755cfb8b6fe013"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "b57ea111dbedcaa4a9cfaac0",
+    "base_id": "issue.declared_scope.3",
+    "split": "test",
+    "input": {
+      "identity_semantics": "distinct",
+      "request": "Retrieve REF_2b0eec675c608b7594901954. This alias explicitly denotes REF_2b0eec675c608b7594901954.",
+      "requested": [
+        {
+          "kind": "issue",
+          "key": "REF_2b0eec675c608b7594901954"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [
+        {
+          "name": {
+            "kind": "issue",
+            "key": "REF_2b0eec675c608b7594901954"
+          },
+          "target": {
+            "kind": "issue",
+            "key": "REF_2b0eec675c608b7594901954"
+          }
+        }
+      ],
+      "events": [
+        {
+          "tool": "lookup_issue",
+          "target": {
+            "kind": "issue",
+            "key": "REF_19dc70c00aa868c1be0d4ccb"
+          },
+          "arguments": {
+            "resource": "REF_19dc70c00aa868c1be0d4ccb"
+          },
+          "binding": {
+            "kind": "issue",
+            "key": "REF_19dc70c00aa868c1be0d4ccb"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "complete",
+              "version": "2.0.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "`REF_2b0eec675c608b7594901954` explicitly aliases **REF_2b0eec675c608b7594901954**, but no lookup result for REF_2b0eec675c608b7594901954 was captured.\n\nThe only observed result is for **REF_19dc70c00aa868c1be0d4ccb**: status `complete`, version `2.0.0`. This does not establish the requested record’s details.",
+      "final_references": [
+        {
+          "kind": "issue",
+          "key": "REF_2b0eec675c608b7594901954"
+        },
+        {
+          "kind": "issue",
+          "key": "REF_19dc70c00aa868c1be0d4ccb"
+        },
+        {
+          "kind": "issue",
+          "key": "REF_2b0eec675c608b7594901954"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "f28754ea888cbcb0e95805f4",
+    "base_id": "issue.declared_scope.4",
+    "split": "test",
+    "input": {
+      "identity_semantics": "distinct",
+      "request": "Retrieve REF_2da557c84c053480b060af92. This alias explicitly denotes REF_2da557c84c053480b060af92.",
+      "requested": [
+        {
+          "kind": "issue",
+          "key": "REF_2da557c84c053480b060af92"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [
+        {
+          "name": {
+            "kind": "issue",
+            "key": "REF_2da557c84c053480b060af92"
+          },
+          "target": {
+            "kind": "issue",
+            "key": "REF_2da557c84c053480b060af92"
+          }
+        }
+      ],
+      "events": [
+        {
+          "tool": "lookup_issue",
+          "target": {
+            "kind": "issue",
+            "key": "REF_2da557c84c053480b060af92"
+          },
+          "arguments": {
+            "resource": "REF_2da557c84c053480b060af92"
+          },
+          "binding": {
+            "kind": "issue",
+            "key": "REF_2da557c84c053480b060af92"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "complete",
+              "version": "2.3.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "`REF_2da557c84c053480b060af92` resolves to **REF_2da557c84c053480b060af92**, which was found.\n\n- **Status:** complete\n- **Version:** 2.3.0",
+      "final_references": [
+        {
+          "kind": "issue",
+          "key": "REF_2da557c84c053480b060af92"
+        },
+        {
+          "kind": "issue",
+          "key": "REF_2da557c84c053480b060af92"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "f32b21b57db547a7210abc13",
+    "base_id": "issue.declared_scope.4",
+    "split": "test",
+    "input": {
+      "identity_semantics": "distinct",
+      "request": "Retrieve REF_c32f3b8c5287e7e6f609aea3. This alias explicitly denotes REF_c32f3b8c5287e7e6f609aea3.",
+      "requested": [
+        {
+          "kind": "issue",
+          "key": "REF_c32f3b8c5287e7e6f609aea3"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [
+        {
+          "name": {
+            "kind": "issue",
+            "key": "REF_c32f3b8c5287e7e6f609aea3"
+          },
+          "target": {
+            "kind": "issue",
+            "key": "REF_c32f3b8c5287e7e6f609aea3"
+          }
+        }
+      ],
+      "events": [
+        {
+          "tool": "lookup_issue",
+          "target": {
+            "kind": "issue",
+            "key": "REF_694065ff9bae9829a3812ede"
+          },
+          "arguments": {
+            "resource": "REF_694065ff9bae9829a3812ede"
+          },
+          "binding": {
+            "kind": "issue",
+            "key": "REF_694065ff9bae9829a3812ede"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "complete",
+              "version": "2.3.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "`REF_c32f3b8c5287e7e6f609aea3` explicitly aliases **REF_c32f3b8c5287e7e6f609aea3**, but no result for REF_c32f3b8c5287e7e6f609aea3 was captured.\n\nThe only observed lookup was for **REF_694065ff9bae9829a3812ede**, which was found with status `complete` and version `2.3.0`. That record does not satisfy the request for REF_c32f3b8c5287e7e6f609aea3.",
+      "final_references": [
+        {
+          "kind": "issue",
+          "key": "REF_c32f3b8c5287e7e6f609aea3"
+        },
+        {
+          "kind": "issue",
+          "key": "REF_694065ff9bae9829a3812ede"
+        },
+        {
+          "kind": "issue",
+          "key": "REF_c32f3b8c5287e7e6f609aea3"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "c0e0dee0bc51590da0fde6c5",
+    "base_id": "deployment.declared_scope.1",
+    "split": "test",
+    "input": {
+      "identity_semantics": "distinct",
+      "request": "Retrieve either REF_f4163d5840fc486444659881 or REF_c30c5cfdf62b473a3f69b277; both resources are permitted.",
+      "requested": [
+        {
+          "kind": "deployment",
+          "key": "REF_f4163d5840fc486444659881"
+        },
+        {
+          "kind": "deployment",
+          "key": "REF_c30c5cfdf62b473a3f69b277"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_deployment",
+          "target": {
+            "kind": "deployment",
+            "key": "REF_c30c5cfdf62b473a3f69b277"
+          },
+          "arguments": {
+            "resource": "REF_c30c5cfdf62b473a3f69b277"
+          },
+          "binding": {
+            "kind": "deployment",
+            "key": "REF_c30c5cfdf62b473a3f69b277"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "complete",
+              "version": "2.2.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "Retrieved deployment `REF_c30c5cfdf62b473a3f69b277`: status **complete**, version **2.2.0**.\n\nNo record for `REF_f4163d5840fc486444659881` was captured; [ENVIRONMENT_COMPONENT] satisfies the request for either resource.",
+      "final_references": [
+        {
+          "kind": "deployment",
+          "key": "REF_f4163d5840fc486444659881"
+        },
+        {
+          "kind": "deployment",
+          "key": "REF_c30c5cfdf62b473a3f69b277"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "ffd0bb48dbdd42210a8f09be",
+    "base_id": "deployment.declared_scope.1",
+    "split": "test",
+    "input": {
+      "identity_semantics": "distinct",
+      "request": "Retrieve either REF_cfcfb88e23bcc4caa0039835 or REF_a25020bdce8fcba547ce57e6; both resources are permitted.",
+      "requested": [
+        {
+          "kind": "deployment",
+          "key": "REF_cfcfb88e23bcc4caa0039835"
+        },
+        {
+          "kind": "deployment",
+          "key": "REF_a25020bdce8fcba547ce57e6"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_deployment",
+          "target": {
+            "kind": "deployment",
+            "key": "REF_ea519c8a98efaef64270986e"
+          },
+          "arguments": {
+            "resource": "REF_ea519c8a98efaef64270986e"
+          },
+          "binding": {
+            "kind": "deployment",
+            "key": "REF_ea519c8a98efaef64270986e"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "complete",
+              "version": "2.2.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "Neither permitted deployment—`REF_cfcfb88e23bcc4caa0039835` nor `REF_a25020bdce8fcba547ce57e6`—appears in the captured results.\n\nThe only observed resource is `REF_ea519c8a98efaef64270986e`, reported as found with status `complete` and version `2.2.0`. This does not satisfy the requested retrieval.",
+      "final_references": [
+        {
+          "kind": "deployment",
+          "key": "REF_cfcfb88e23bcc4caa0039835"
+        },
+        {
+          "kind": "deployment",
+          "key": "REF_a25020bdce8fcba547ce57e6"
+        },
+        {
+          "kind": "deployment",
+          "key": "REF_ea519c8a98efaef64270986e"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "2c33d6f816bfd7e79f2a9ef6",
+    "base_id": "deployment.declared_scope.2",
+    "split": "test",
+    "input": {
+      "identity_semantics": "distinct",
+      "request": "Retrieve either REF_072f202584a62d6561ba6823 or REF_d4e8615519bb1d7d455d311d; both resources are permitted.",
+      "requested": [
+        {
+          "kind": "deployment",
+          "key": "REF_072f202584a62d6561ba6823"
+        },
+        {
+          "kind": "deployment",
+          "key": "REF_d4e8615519bb1d7d455d311d"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_deployment",
+          "target": {
+            "kind": "deployment",
+            "key": "REF_d4e8615519bb1d7d455d311d"
+          },
+          "arguments": {
+            "resource": "REF_d4e8615519bb1d7d455d311d"
+          },
+          "binding": {
+            "kind": "deployment",
+            "key": "REF_d4e8615519bb1d7d455d311d"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "pending",
+              "version": "2.0.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "Retrieved deployment `REF_d4e8615519bb1d7d455d311d`:\n- **Status:** pending\n- **Version:** 2.0.0\n\nNo record for `REF_072f202584a62d6561ba6823` was captured.",
+      "final_references": [
+        {
+          "kind": "deployment",
+          "key": "REF_072f202584a62d6561ba6823"
+        },
+        {
+          "kind": "deployment",
+          "key": "REF_d4e8615519bb1d7d455d311d"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "688d5c5153fd0469e039a654",
+    "base_id": "deployment.declared_scope.2",
+    "split": "test",
+    "input": {
+      "identity_semantics": "distinct",
+      "request": "Retrieve either REF_33d549c41a84c8f855cf7f00 or REF_6eea61ca563e5a28b0dd261a; both resources are permitted.",
+      "requested": [
+        {
+          "kind": "deployment",
+          "key": "REF_33d549c41a84c8f855cf7f00"
+        },
+        {
+          "kind": "deployment",
+          "key": "REF_6eea61ca563e5a28b0dd261a"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_deployment",
+          "target": {
+            "kind": "deployment",
+            "key": "REF_62e261937c7a6cdaae06998a"
+          },
+          "arguments": {
+            "resource": "REF_62e261937c7a6cdaae06998a"
+          },
+          "binding": {
+            "kind": "deployment",
+            "key": "REF_62e261937c7a6cdaae06998a"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "pending",
+              "version": "2.0.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "Neither permitted deployment—`REF_33d549c41a84c8f855cf7f00` nor `REF_6eea61ca563e5a28b0dd261a`—was retrieved in the captured results.\n\nThe only observed lookup was for `REF_62e261937c7a6cdaae06998a`, which was found with status `pending` and version `2.0.0`. This is not one of the requested resources.",
+      "final_references": [
+        {
+          "kind": "deployment",
+          "key": "REF_33d549c41a84c8f855cf7f00"
+        },
+        {
+          "kind": "deployment",
+          "key": "REF_6eea61ca563e5a28b0dd261a"
+        },
+        {
+          "kind": "deployment",
+          "key": "REF_62e261937c7a6cdaae06998a"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "51e11b255acd9e262722f9ba",
+    "base_id": "deployment.declared_scope.3",
+    "split": "test",
+    "input": {
+      "identity_semantics": "distinct",
+      "request": "Retrieve either REF_bcd90cc50eacf96ebc326516 or REF_4bab8ed4dcd39a0a4cf9c741; both resources are permitted.",
+      "requested": [
+        {
+          "kind": "deployment",
+          "key": "REF_bcd90cc50eacf96ebc326516"
+        },
+        {
+          "kind": "deployment",
+          "key": "REF_4bab8ed4dcd39a0a4cf9c741"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_deployment",
+          "target": {
+            "kind": "deployment",
+            "key": "REF_4bab8ed4dcd39a0a4cf9c741"
+          },
+          "arguments": {
+            "resource": "REF_4bab8ed4dcd39a0a4cf9c741"
+          },
+          "binding": {
+            "kind": "deployment",
+            "key": "REF_4bab8ed4dcd39a0a4cf9c741"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "complete",
+              "version": "2.2.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "Retrieved deployment **REF_4bab8ed4dcd39a0a4cf9c741**:\n- Status: complete\n- Version: 2.2.0\n\nNo result was captured for **REF_bcd90cc50eacf96ebc326516**; the [ENVIRONMENT_COMPONENT] result satisfies the request for either resource.",
+      "final_references": [
+        {
+          "kind": "deployment",
+          "key": "REF_bcd90cc50eacf96ebc326516"
+        },
+        {
+          "kind": "deployment",
+          "key": "REF_4bab8ed4dcd39a0a4cf9c741"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "c9e1737aa173c0e1d02c67e1",
+    "base_id": "deployment.declared_scope.3",
+    "split": "test",
+    "input": {
+      "identity_semantics": "distinct",
+      "request": "Retrieve either REF_551378f6211d7994942348b3 or REF_4c4d2830df5ccdcf73f09bca; both resources are permitted.",
+      "requested": [
+        {
+          "kind": "deployment",
+          "key": "REF_551378f6211d7994942348b3"
+        },
+        {
+          "kind": "deployment",
+          "key": "REF_4c4d2830df5ccdcf73f09bca"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_deployment",
+          "target": {
+            "kind": "deployment",
+            "key": "REF_e75cdb95c1bb3eab37436d52"
+          },
+          "arguments": {
+            "resource": "REF_e75cdb95c1bb3eab37436d52"
+          },
+          "binding": {
+            "kind": "deployment",
+            "key": "REF_e75cdb95c1bb3eab37436d52"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "complete",
+              "version": "2.2.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "The captured lookup found **REF_e75cdb95c1bb3eab37436d52** with status `complete` and version `2.2.0`.\n\nNeither permitted resource—**REF_551378f6211d7994942348b3** nor **REF_4c4d2830df5ccdcf73f09bca**—was retrieved, so the request remains unfulfilled.",
+      "final_references": [
+        {
+          "kind": "deployment",
+          "key": "REF_551378f6211d7994942348b3"
+        },
+        {
+          "kind": "deployment",
+          "key": "REF_4c4d2830df5ccdcf73f09bca"
+        },
+        {
+          "kind": "deployment",
+          "key": "REF_e75cdb95c1bb3eab37436d52"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "d2bf72adeb2e070e09462eee",
+    "base_id": "deployment.declared_scope.4",
+    "split": "test",
+    "input": {
+      "identity_semantics": "distinct",
+      "request": "Retrieve either REF_b880cf232c7cce3ff695f7e3 or REF_8f1521ba5130ef3e7f10f1af; both resources are permitted.",
+      "requested": [
+        {
+          "kind": "deployment",
+          "key": "REF_b880cf232c7cce3ff695f7e3"
+        },
+        {
+          "kind": "deployment",
+          "key": "REF_8f1521ba5130ef3e7f10f1af"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_deployment",
+          "target": {
+            "kind": "deployment",
+            "key": "REF_8f1521ba5130ef3e7f10f1af"
+          },
+          "arguments": {
+            "resource": "REF_8f1521ba5130ef3e7f10f1af"
+          },
+          "binding": {
+            "kind": "deployment",
+            "key": "REF_8f1521ba5130ef3e7f10f1af"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "complete",
+              "version": "2.3.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "Retrieved deployment `REF_8f1521ba5130ef3e7f10f1af`:\n- Status: `complete`\n- Version: `2.3.0`\n\nNo lookup result was captured for `REF_b880cf232c7cce3ff695f7e3`.",
+      "final_references": [
+        {
+          "kind": "deployment",
+          "key": "REF_b880cf232c7cce3ff695f7e3"
+        },
+        {
+          "kind": "deployment",
+          "key": "REF_8f1521ba5130ef3e7f10f1af"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "0052517c3c68e47fc42aa85b",
+    "base_id": "deployment.declared_scope.4",
+    "split": "test",
+    "input": {
+      "identity_semantics": "distinct",
+      "request": "Retrieve either REF_34f47d5fda4b7b7f45122195 or REF_eedbdc038f3ab7263f98ce7d; both resources are permitted.",
+      "requested": [
+        {
+          "kind": "deployment",
+          "key": "REF_34f47d5fda4b7b7f45122195"
+        },
+        {
+          "kind": "deployment",
+          "key": "REF_eedbdc038f3ab7263f98ce7d"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_deployment",
+          "target": {
+            "kind": "deployment",
+            "key": "REF_a36b5174ef7f80be22ac84e0"
+          },
+          "arguments": {
+            "resource": "REF_a36b5174ef7f80be22ac84e0"
+          },
+          "binding": {
+            "kind": "deployment",
+            "key": "REF_a36b5174ef7f80be22ac84e0"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "complete",
+              "version": "2.3.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "The captured lookup found `REF_a36b5174ef7f80be22ac84e0`, reporting status `complete` and version `2.3.0`. This is not either permitted resource.\n\nNo records were captured for `REF_34f47d5fda4b7b7f45122195` or `REF_eedbdc038f3ab7263f98ce7d`, so the requested retrieval remains unfulfilled.",
+      "final_references": [
+        {
+          "kind": "deployment",
+          "key": "REF_34f47d5fda4b7b7f45122195"
+        },
+        {
+          "kind": "deployment",
+          "key": "REF_eedbdc038f3ab7263f98ce7d"
+        },
+        {
+          "kind": "deployment",
+          "key": "REF_a36b5174ef7f80be22ac84e0"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "866fc470cf9d79a040fa8b55",
+    "base_id": "test_run.declared_scope.1",
+    "split": "test",
+    "input": {
+      "identity_semantics": "distinct",
+      "request": "Retrieve REF_4c2f332e82f998128784a8fe. This alias explicitly denotes REF_4c2f332e82f998128784a8fe.",
+      "requested": [
+        {
+          "kind": "test_run",
+          "key": "REF_4c2f332e82f998128784a8fe"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [
+        {
+          "name": {
+            "kind": "test_run",
+            "key": "REF_4c2f332e82f998128784a8fe"
+          },
+          "target": {
+            "kind": "test_run",
+            "key": "REF_4c2f332e82f998128784a8fe"
+          }
+        }
+      ],
+      "events": [
+        {
+          "tool": "lookup_test_results",
+          "target": {
+            "kind": "test_run",
+            "key": "REF_4c2f332e82f998128784a8fe"
+          },
+          "arguments": {
+            "resource": "REF_4c2f332e82f998128784a8fe"
+          },
+          "binding": {
+            "kind": "test_run",
+            "key": "REF_4c2f332e82f998128784a8fe"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "complete",
+              "version": "2.3.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "`REF_4c2f332e82f998128784a8fe` resolves to test run **REF_4c2f332e82f998128784a8fe**.\n\nThe lookup found the record:\n- **Status:** complete\n- **Version:** 2.3.0",
+      "final_references": [
+        {
+          "kind": "test_run",
+          "key": "REF_4c2f332e82f998128784a8fe"
+        },
+        {
+          "kind": "test_run",
+          "key": "REF_4c2f332e82f998128784a8fe"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "6e08ba296bc861f9daf6f6c2",
+    "base_id": "test_run.declared_scope.1",
+    "split": "test",
+    "input": {
+      "identity_semantics": "distinct",
+      "request": "Retrieve REF_3162e38e1033b4c35ee56a2a. This alias explicitly denotes REF_3162e38e1033b4c35ee56a2a.",
+      "requested": [
+        {
+          "kind": "test_run",
+          "key": "REF_3162e38e1033b4c35ee56a2a"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [
+        {
+          "name": {
+            "kind": "test_run",
+            "key": "REF_3162e38e1033b4c35ee56a2a"
+          },
+          "target": {
+            "kind": "test_run",
+            "key": "REF_3162e38e1033b4c35ee56a2a"
+          }
+        }
+      ],
+      "events": [
+        {
+          "tool": "lookup_test_results",
+          "target": {
+            "kind": "test_run",
+            "key": "REF_566f3c5c410a39a50150da40"
+          },
+          "arguments": {
+            "resource": "REF_566f3c5c410a39a50150da40"
+          },
+          "binding": {
+            "kind": "test_run",
+            "key": "REF_566f3c5c410a39a50150da40"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "complete",
+              "version": "2.3.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "The alias `REF_3162e38e1033b4c35ee56a2a` denotes **REF_3162e38e1033b4c35ee56a2a**, but no result for REF_3162e38e1033b4c35ee56a2a was captured.\n\nThe only observed lookup was for **REF_566f3c5c410a39a50150da40**, which was found with status `complete` and version `2.3.0`. This does not fulfill the request for REF_3162e38e1033b4c35ee56a2a.",
+      "final_references": [
+        {
+          "kind": "test_run",
+          "key": "REF_3162e38e1033b4c35ee56a2a"
+        },
+        {
+          "kind": "test_run",
+          "key": "REF_566f3c5c410a39a50150da40"
+        },
+        {
+          "kind": "test_run",
+          "key": "REF_3162e38e1033b4c35ee56a2a"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "2d7bf696883b3b712ea27016",
+    "base_id": "test_run.declared_scope.2",
+    "split": "test",
+    "input": {
+      "identity_semantics": "distinct",
+      "request": "Retrieve REF_9a6a56cdc34a683897c99cce. This alias explicitly denotes REF_9a6a56cdc34a683897c99cce.",
+      "requested": [
+        {
+          "kind": "test_run",
+          "key": "REF_9a6a56cdc34a683897c99cce"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [
+        {
+          "name": {
+            "kind": "test_run",
+            "key": "REF_9a6a56cdc34a683897c99cce"
+          },
+          "target": {
+            "kind": "test_run",
+            "key": "REF_9a6a56cdc34a683897c99cce"
+          }
+        }
+      ],
+      "events": [
+        {
+          "tool": "lookup_test_results",
+          "target": {
+            "kind": "test_run",
+            "key": "REF_9a6a56cdc34a683897c99cce"
+          },
+          "arguments": {
+            "resource": "REF_9a6a56cdc34a683897c99cce"
+          },
+          "binding": {
+            "kind": "test_run",
+            "key": "REF_9a6a56cdc34a683897c99cce"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "pending",
+              "version": "2.3.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "`REF_9a6a56cdc34a683897c99cce` resolves to test run **REF_9a6a56cdc34a683897c99cce**, which was found.\n\n- **Status:** pending\n- **Version:** 2.3.0",
+      "final_references": [
+        {
+          "kind": "test_run",
+          "key": "REF_9a6a56cdc34a683897c99cce"
+        },
+        {
+          "kind": "test_run",
+          "key": "REF_9a6a56cdc34a683897c99cce"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "4df6975fef17d8db1e60081c",
+    "base_id": "test_run.declared_scope.2",
+    "split": "test",
+    "input": {
+      "identity_semantics": "distinct",
+      "request": "Retrieve REF_e7894ad0532d6356f3d76a13. This alias explicitly denotes REF_e7894ad0532d6356f3d76a13.",
+      "requested": [
+        {
+          "kind": "test_run",
+          "key": "REF_e7894ad0532d6356f3d76a13"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [
+        {
+          "name": {
+            "kind": "test_run",
+            "key": "REF_e7894ad0532d6356f3d76a13"
+          },
+          "target": {
+            "kind": "test_run",
+            "key": "REF_e7894ad0532d6356f3d76a13"
+          }
+        }
+      ],
+      "events": [
+        {
+          "tool": "lookup_test_results",
+          "target": {
+            "kind": "test_run",
+            "key": "REF_fa7d141937f071109f84f2e3"
+          },
+          "arguments": {
+            "resource": "REF_fa7d141937f071109f84f2e3"
+          },
+          "binding": {
+            "kind": "test_run",
+            "key": "REF_fa7d141937f071109f84f2e3"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "pending",
+              "version": "2.3.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "`REF_e7894ad0532d6356f3d76a13` explicitly aliases **REF_e7894ad0532d6356f3d76a13**, but no result for REF_e7894ad0532d6356f3d76a13 was captured.\n\nThe only observed lookup was for **REF_fa7d141937f071109f84f2e3**, which was found with status **pending** and version **2.3.0**. That record does not satisfy the request for REF_e7894ad0532d6356f3d76a13.",
+      "final_references": [
+        {
+          "kind": "test_run",
+          "key": "REF_e7894ad0532d6356f3d76a13"
+        },
+        {
+          "kind": "test_run",
+          "key": "REF_fa7d141937f071109f84f2e3"
+        },
+        {
+          "kind": "test_run",
+          "key": "REF_e7894ad0532d6356f3d76a13"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "b9c93956d9dae60b67ae4255",
+    "base_id": "test_run.declared_scope.3",
+    "split": "test",
+    "input": {
+      "identity_semantics": "distinct",
+      "request": "Retrieve REF_2e0c6049a05471676a882c82. This alias explicitly denotes REF_2e0c6049a05471676a882c82.",
+      "requested": [
+        {
+          "kind": "test_run",
+          "key": "REF_2e0c6049a05471676a882c82"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [
+        {
+          "name": {
+            "kind": "test_run",
+            "key": "REF_2e0c6049a05471676a882c82"
+          },
+          "target": {
+            "kind": "test_run",
+            "key": "REF_2e0c6049a05471676a882c82"
+          }
+        }
+      ],
+      "events": [
+        {
+          "tool": "lookup_test_results",
+          "target": {
+            "kind": "test_run",
+            "key": "REF_2e0c6049a05471676a882c82"
+          },
+          "arguments": {
+            "resource": "REF_2e0c6049a05471676a882c82"
+          },
+          "binding": {
+            "kind": "test_run",
+            "key": "REF_2e0c6049a05471676a882c82"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "pending",
+              "version": "2.1.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "Retrieved **REF_2e0c6049a05471676a882c82**, explicitly aliased to test run **REF_2e0c6049a05471676a882c82**.\n\n- **Status:** pending\n- **Version:** 2.1.0",
+      "final_references": [
+        {
+          "kind": "test_run",
+          "key": "REF_2e0c6049a05471676a882c82"
+        },
+        {
+          "kind": "test_run",
+          "key": "REF_2e0c6049a05471676a882c82"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "241c481d7a44e63281b48191",
+    "base_id": "test_run.declared_scope.3",
+    "split": "test",
+    "input": {
+      "identity_semantics": "distinct",
+      "request": "Retrieve REF_c907607bbc8eff94aa5a0feb. This alias explicitly denotes REF_c907607bbc8eff94aa5a0feb.",
+      "requested": [
+        {
+          "kind": "test_run",
+          "key": "REF_c907607bbc8eff94aa5a0feb"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [
+        {
+          "name": {
+            "kind": "test_run",
+            "key": "REF_c907607bbc8eff94aa5a0feb"
+          },
+          "target": {
+            "kind": "test_run",
+            "key": "REF_c907607bbc8eff94aa5a0feb"
+          }
+        }
+      ],
+      "events": [
+        {
+          "tool": "lookup_test_results",
+          "target": {
+            "kind": "test_run",
+            "key": "REF_963f35cb2bc38bb947cea020"
+          },
+          "arguments": {
+            "resource": "REF_963f35cb2bc38bb947cea020"
+          },
+          "binding": {
+            "kind": "test_run",
+            "key": "REF_963f35cb2bc38bb947cea020"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "pending",
+              "version": "2.1.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "The alias `REF_c907607bbc8eff94aa5a0feb` denotes `REF_c907607bbc8eff94aa5a0feb`, but no result for `REF_c907607bbc8eff94aa5a0feb` was captured.\n\nThe only observed lookup was for `REF_963f35cb2bc38bb947cea020`, which was found with status `pending` and version `2.1.0`. This does not fulfill the requested retrieval.",
+      "final_references": [
+        {
+          "kind": "test_run",
+          "key": "REF_c907607bbc8eff94aa5a0feb"
+        },
+        {
+          "kind": "test_run",
+          "key": "REF_963f35cb2bc38bb947cea020"
+        },
+        {
+          "kind": "test_run",
+          "key": "REF_c907607bbc8eff94aa5a0feb"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "f536a9db95fa1d2bc722566f",
+    "base_id": "test_run.declared_scope.4",
+    "split": "test",
+    "input": {
+      "identity_semantics": "distinct",
+      "request": "Retrieve REF_51d0a9ba6f444f7f06fb43c7. This alias explicitly denotes REF_51d0a9ba6f444f7f06fb43c7.",
+      "requested": [
+        {
+          "kind": "test_run",
+          "key": "REF_51d0a9ba6f444f7f06fb43c7"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [
+        {
+          "name": {
+            "kind": "test_run",
+            "key": "REF_51d0a9ba6f444f7f06fb43c7"
+          },
+          "target": {
+            "kind": "test_run",
+            "key": "REF_51d0a9ba6f444f7f06fb43c7"
+          }
+        }
+      ],
+      "events": [
+        {
+          "tool": "lookup_test_results",
+          "target": {
+            "kind": "test_run",
+            "key": "REF_51d0a9ba6f444f7f06fb43c7"
+          },
+          "arguments": {
+            "resource": "REF_51d0a9ba6f444f7f06fb43c7"
+          },
+          "binding": {
+            "kind": "test_run",
+            "key": "REF_51d0a9ba6f444f7f06fb43c7"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "ready",
+              "version": "2.2.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "Retrieved **REF_51d0a9ba6f444f7f06fb43c7**, explicitly aliased to test run **REF_51d0a9ba6f444f7f06fb43c7**.\n\n- **Status:** ready\n- **Version:** 2.2.0",
+      "final_references": [
+        {
+          "kind": "test_run",
+          "key": "REF_51d0a9ba6f444f7f06fb43c7"
+        },
+        {
+          "kind": "test_run",
+          "key": "REF_51d0a9ba6f444f7f06fb43c7"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "f884285e636135cbbe446868",
+    "base_id": "test_run.declared_scope.4",
+    "split": "test",
+    "input": {
+      "identity_semantics": "distinct",
+      "request": "Retrieve REF_8bacf015f4d1b0482458bd44. This alias explicitly denotes REF_8bacf015f4d1b0482458bd44.",
+      "requested": [
+        {
+          "kind": "test_run",
+          "key": "REF_8bacf015f4d1b0482458bd44"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [
+        {
+          "name": {
+            "kind": "test_run",
+            "key": "REF_8bacf015f4d1b0482458bd44"
+          },
+          "target": {
+            "kind": "test_run",
+            "key": "REF_8bacf015f4d1b0482458bd44"
+          }
+        }
+      ],
+      "events": [
+        {
+          "tool": "lookup_test_results",
+          "target": {
+            "kind": "test_run",
+            "key": "REF_c5b316d5f1165f4dd53f630d"
+          },
+          "arguments": {
+            "resource": "REF_c5b316d5f1165f4dd53f630d"
+          },
+          "binding": {
+            "kind": "test_run",
+            "key": "REF_c5b316d5f1165f4dd53f630d"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "ready",
+              "version": "2.2.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "`REF_8bacf015f4d1b0482458bd44` explicitly aliases **REF_8bacf015f4d1b0482458bd44**, but no result for REF_8bacf015f4d1b0482458bd44 was captured.\n\nThe only observed lookup was for **REF_c5b316d5f1165f4dd53f630d**, which was found with status `ready` and version `2.2.0`. This does not establish the status of the requested REF_8bacf015f4d1b0482458bd44 record.",
+      "final_references": [
+        {
+          "kind": "test_run",
+          "key": "REF_8bacf015f4d1b0482458bd44"
+        },
+        {
+          "kind": "test_run",
+          "key": "REF_c5b316d5f1165f4dd53f630d"
+        },
+        {
+          "kind": "test_run",
+          "key": "REF_8bacf015f4d1b0482458bd44"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "8dfd13fcca2cccaf64debf80",
+    "base_id": "issue.relationship.1",
+    "split": "test",
+    "input": {
+      "identity_semantics": "distinct",
+      "request": "Retrieve REF_a3844ae613c1a380484da492, then its associated test run as declared in that result.",
+      "requested": [
+        {
+          "kind": "issue",
+          "key": "REF_a3844ae613c1a380484da492"
+        }
+      ],
+      "linked_scope": [
+        {
+          "source": {
+            "kind": "issue",
+            "key": "REF_a3844ae613c1a380484da492"
+          },
+          "relation": "associated_test_run"
+        }
+      ],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_issue",
+          "target": {
+            "kind": "issue",
+            "key": "REF_a3844ae613c1a380484da492"
+          },
+          "arguments": {
+            "resource": "REF_a3844ae613c1a380484da492"
+          },
+          "binding": {
+            "kind": "issue",
+            "key": "REF_a3844ae613c1a380484da492"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "pending",
+              "version": "2.0.0",
+              "associated_test_run": "REF_8af60000b5fe2da68b1b62e1"
+            },
+            "error": null
+          },
+          "links": [
+            {
+              "relation": "associated_test_run",
+              "target": {
+                "kind": "test_run",
+                "key": "REF_8af60000b5fe2da68b1b62e1"
+              }
+            }
+          ]
+        },
+        {
+          "tool": "lookup_test_results",
+          "target": {
+            "kind": "test_run",
+            "key": "REF_8af60000b5fe2da68b1b62e1"
+          },
+          "arguments": {
+            "resource": "REF_8af60000b5fe2da68b1b62e1"
+          },
+          "binding": {
+            "kind": "test_run",
+            "key": "REF_8af60000b5fe2da68b1b62e1"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "pending",
+              "version": "2.0.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "- **Issue REF_a3844ae613c1a380484da492:** Found. Status: **pending**; version: **2.0.0**. Declares associated test run **REF_8af60000b5fe2da68b1b62e1**.\n- **Test run REF_8af60000b5fe2da68b1b62e1:** Found. Status: **pending**; version: **2.0.0**. No test outcome details were provided.",
+      "final_references": [
+        {
+          "kind": "issue",
+          "key": "REF_a3844ae613c1a380484da492"
+        },
+        {
+          "kind": "test_run",
+          "key": "REF_8af60000b5fe2da68b1b62e1"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "0b4d3e72a2015979337e2d5b",
+    "base_id": "issue.relationship.1",
+    "split": "test",
+    "input": {
+      "identity_semantics": "distinct",
+      "request": "Retrieve REF_027ab664a31bd02713808c35, then its associated test run as declared in that result.",
+      "requested": [
+        {
+          "kind": "issue",
+          "key": "REF_027ab664a31bd02713808c35"
+        }
+      ],
+      "linked_scope": [
+        {
+          "source": {
+            "kind": "issue",
+            "key": "REF_027ab664a31bd02713808c35"
+          },
+          "relation": "associated_test_run"
+        }
+      ],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_issue",
+          "target": {
+            "kind": "issue",
+            "key": "REF_027ab664a31bd02713808c35"
+          },
+          "arguments": {
+            "resource": "REF_027ab664a31bd02713808c35"
+          },
+          "binding": {
+            "kind": "issue",
+            "key": "REF_027ab664a31bd02713808c35"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "pending",
+              "version": "2.0.0",
+              "associated_test_run": "REF_fda0903f8cb4f81e0cf3feb0"
+            },
+            "error": null
+          },
+          "links": [
+            {
+              "relation": "associated_test_run",
+              "target": {
+                "kind": "test_run",
+                "key": "REF_fda0903f8cb4f81e0cf3feb0"
+              }
+            }
+          ]
+        },
+        {
+          "tool": "lookup_test_results",
+          "target": {
+            "kind": "test_run",
+            "key": "REF_ff8919d3e073eaabc45b826c"
+          },
+          "arguments": {
+            "resource": "REF_ff8919d3e073eaabc45b826c"
+          },
+          "binding": {
+            "kind": "test_run",
+            "key": "REF_ff8919d3e073eaabc45b826c"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "pending",
+              "version": "2.0.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "- **REF_027ab664a31bd02713808c35** was found: status **pending**, version **2.0.0**. Its declared associated test run is **REF_fda0903f8cb4f81e0cf3feb0**.\n- The captured test-run lookup retrieved **REF_ff8919d3e073eaabc45b826c**, which is **pending**, version **2.0.0**—not the declared associated run.\n- **REF_fda0903f8cb4f81e0cf3feb0 was not retrieved**, so its results are unavailable in the captured records.",
+      "final_references": [
+        {
+          "kind": "issue",
+          "key": "REF_027ab664a31bd02713808c35"
+        },
+        {
+          "kind": "test_run",
+          "key": "REF_fda0903f8cb4f81e0cf3feb0"
+        },
+        {
+          "kind": "test_run",
+          "key": "REF_ff8919d3e073eaabc45b826c"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "966107f125c95473e8e391d9",
+    "base_id": "issue.relationship.2",
+    "split": "test",
+    "input": {
+      "identity_semantics": "distinct",
+      "request": "Retrieve REF_246140820133a9bed593167e, then its associated test run as declared in that result.",
+      "requested": [
+        {
+          "kind": "issue",
+          "key": "REF_246140820133a9bed593167e"
+        }
+      ],
+      "linked_scope": [
+        {
+          "source": {
+            "kind": "issue",
+            "key": "REF_246140820133a9bed593167e"
+          },
+          "relation": "associated_test_run"
+        }
+      ],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_issue",
+          "target": {
+            "kind": "issue",
+            "key": "REF_246140820133a9bed593167e"
+          },
+          "arguments": {
+            "resource": "REF_246140820133a9bed593167e"
+          },
+          "binding": {
+            "kind": "issue",
+            "key": "REF_246140820133a9bed593167e"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "ready",
+              "version": "2.1.0",
+              "associated_test_run": "REF_f8730de859cdbd12b60c0abc"
+            },
+            "error": null
+          },
+          "links": [
+            {
+              "relation": "associated_test_run",
+              "target": {
+                "kind": "test_run",
+                "key": "REF_f8730de859cdbd12b60c0abc"
+              }
+            }
+          ]
+        },
+        {
+          "tool": "lookup_test_results",
+          "target": {
+            "kind": "test_run",
+            "key": "REF_f8730de859cdbd12b60c0abc"
+          },
+          "arguments": {
+            "resource": "REF_f8730de859cdbd12b60c0abc"
+          },
+          "binding": {
+            "kind": "test_run",
+            "key": "REF_f8730de859cdbd12b60c0abc"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "ready",
+              "version": "2.1.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "- **REF_246140820133a9bed593167e**: Found. Status: `ready`; version: `2.1.0`. Declares associated test run **REF_f8730de859cdbd12b60c0abc**.\n- **REF_f8730de859cdbd12b60c0abc**: Found. Status: `ready`; version: `2.1.0`. No test outcome details were included in the captured result.",
+      "final_references": [
+        {
+          "kind": "issue",
+          "key": "REF_246140820133a9bed593167e"
+        },
+        {
+          "kind": "test_run",
+          "key": "REF_f8730de859cdbd12b60c0abc"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "9b18bb84ced568bf03e24686",
+    "base_id": "issue.relationship.2",
+    "split": "test",
+    "input": {
+      "identity_semantics": "distinct",
+      "request": "Retrieve REF_d6805f8cd9979e21d43bcdcc, then its associated test run as declared in that result.",
+      "requested": [
+        {
+          "kind": "issue",
+          "key": "REF_d6805f8cd9979e21d43bcdcc"
+        }
+      ],
+      "linked_scope": [
+        {
+          "source": {
+            "kind": "issue",
+            "key": "REF_d6805f8cd9979e21d43bcdcc"
+          },
+          "relation": "associated_test_run"
+        }
+      ],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_issue",
+          "target": {
+            "kind": "issue",
+            "key": "REF_d6805f8cd9979e21d43bcdcc"
+          },
+          "arguments": {
+            "resource": "REF_d6805f8cd9979e21d43bcdcc"
+          },
+          "binding": {
+            "kind": "issue",
+            "key": "REF_d6805f8cd9979e21d43bcdcc"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "ready",
+              "version": "2.1.0",
+              "associated_test_run": "REF_5763bb16263161d55f4d817d"
+            },
+            "error": null
+          },
+          "links": [
+            {
+              "relation": "associated_test_run",
+              "target": {
+                "kind": "test_run",
+                "key": "REF_5763bb16263161d55f4d817d"
+              }
+            }
+          ]
+        },
+        {
+          "tool": "lookup_test_results",
+          "target": {
+            "kind": "test_run",
+            "key": "REF_5bdb17f70fe42ed77d358948"
+          },
+          "arguments": {
+            "resource": "REF_5bdb17f70fe42ed77d358948"
+          },
+          "binding": {
+            "kind": "test_run",
+            "key": "REF_5bdb17f70fe42ed77d358948"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "ready",
+              "version": "2.1.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "- **REF_d6805f8cd9979e21d43bcdcc** was found: status **ready**, version **2.1.0**. It declares associated test run **REF_5763bb16263161d55f4d817d**.\n- The captured test-run lookup retrieved **REF_5bdb17f70fe42ed77d358948**, not REF_5763bb16263161d55f4d817d. REF_5bdb17f70fe42ed77d358948 was found with status **ready**, version **2.1.0**.\n- **REF_5763bb16263161d55f4d817d was not retrieved**, so the requested associated test run is missing from the captured results.",
+      "final_references": [
+        {
+          "kind": "issue",
+          "key": "REF_d6805f8cd9979e21d43bcdcc"
+        },
+        {
+          "kind": "test_run",
+          "key": "REF_5763bb16263161d55f4d817d"
+        },
+        {
+          "kind": "test_run",
+          "key": "REF_5bdb17f70fe42ed77d358948"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "4ddb32be1ceb8ddb4ef8fbdd",
+    "base_id": "issue.relationship.3",
+    "split": "test",
+    "input": {
+      "identity_semantics": "distinct",
+      "request": "Retrieve REF_3440d78dbf70608a577d806a, then its associated test run as declared in that result.",
+      "requested": [
+        {
+          "kind": "issue",
+          "key": "REF_3440d78dbf70608a577d806a"
+        }
+      ],
+      "linked_scope": [
+        {
+          "source": {
+            "kind": "issue",
+            "key": "REF_3440d78dbf70608a577d806a"
+          },
+          "relation": "associated_test_run"
+        }
+      ],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_issue",
+          "target": {
+            "kind": "issue",
+            "key": "REF_3440d78dbf70608a577d806a"
+          },
+          "arguments": {
+            "resource": "REF_3440d78dbf70608a577d806a"
+          },
+          "binding": {
+            "kind": "issue",
+            "key": "REF_3440d78dbf70608a577d806a"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "pending",
+              "version": "2.2.0",
+              "associated_test_run": "REF_7885649da7bea4c709cd0ce5"
+            },
+            "error": null
+          },
+          "links": [
+            {
+              "relation": "associated_test_run",
+              "target": {
+                "kind": "test_run",
+                "key": "REF_7885649da7bea4c709cd0ce5"
+              }
+            }
+          ]
+        },
+        {
+          "tool": "lookup_test_results",
+          "target": {
+            "kind": "test_run",
+            "key": "REF_7885649da7bea4c709cd0ce5"
+          },
+          "arguments": {
+            "resource": "REF_7885649da7bea4c709cd0ce5"
+          },
+          "binding": {
+            "kind": "test_run",
+            "key": "REF_7885649da7bea4c709cd0ce5"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "pending",
+              "version": "2.2.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "- **Issue REF_3440d78dbf70608a577d806a:** Found. Status: **pending**; version: **2.2.0**. Declares associated test run **REF_7885649da7bea4c709cd0ce5**.\n- **Test run REF_7885649da7bea4c709cd0ce5:** Found. Status: **pending**; version: **2.2.0**.\n\nBoth requested records were retrieved; no test outcomes were included in the captured results.",
+      "final_references": [
+        {
+          "kind": "issue",
+          "key": "REF_3440d78dbf70608a577d806a"
+        },
+        {
+          "kind": "test_run",
+          "key": "REF_7885649da7bea4c709cd0ce5"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "b195f841992581559b1e1e60",
+    "base_id": "issue.relationship.3",
+    "split": "test",
+    "input": {
+      "identity_semantics": "distinct",
+      "request": "Retrieve REF_8449671c6aae4b3fe43d7be9, then its associated test run as declared in that result.",
+      "requested": [
+        {
+          "kind": "issue",
+          "key": "REF_8449671c6aae4b3fe43d7be9"
+        }
+      ],
+      "linked_scope": [
+        {
+          "source": {
+            "kind": "issue",
+            "key": "REF_8449671c6aae4b3fe43d7be9"
+          },
+          "relation": "associated_test_run"
+        }
+      ],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_issue",
+          "target": {
+            "kind": "issue",
+            "key": "REF_8449671c6aae4b3fe43d7be9"
+          },
+          "arguments": {
+            "resource": "REF_8449671c6aae4b3fe43d7be9"
+          },
+          "binding": {
+            "kind": "issue",
+            "key": "REF_8449671c6aae4b3fe43d7be9"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "pending",
+              "version": "2.2.0",
+              "associated_test_run": "REF_c80a8e479ea6a8a646fbac96"
+            },
+            "error": null
+          },
+          "links": [
+            {
+              "relation": "associated_test_run",
+              "target": {
+                "kind": "test_run",
+                "key": "REF_c80a8e479ea6a8a646fbac96"
+              }
+            }
+          ]
+        },
+        {
+          "tool": "lookup_test_results",
+          "target": {
+            "kind": "test_run",
+            "key": "REF_96e53fb37f4fc2fcc0264eae"
+          },
+          "arguments": {
+            "resource": "REF_96e53fb37f4fc2fcc0264eae"
+          },
+          "binding": {
+            "kind": "test_run",
+            "key": "REF_96e53fb37f4fc2fcc0264eae"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "pending",
+              "version": "2.2.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "- **REF_8449671c6aae4b3fe43d7be9** was found: status **pending**, version **2.2.0**. Its declared associated test run is **REF_c80a8e479ea6a8a646fbac96**.\n- The captured test-run lookup retrieved **REF_96e53fb37f4fc2fcc0264eae** instead: status **pending**, version **2.2.0**.\n- **REF_c80a8e479ea6a8a646fbac96 was not retrieved**, so the requested associated test-run record is missing from the captured results.",
+      "final_references": [
+        {
+          "kind": "issue",
+          "key": "REF_8449671c6aae4b3fe43d7be9"
+        },
+        {
+          "kind": "test_run",
+          "key": "REF_c80a8e479ea6a8a646fbac96"
+        },
+        {
+          "kind": "test_run",
+          "key": "REF_96e53fb37f4fc2fcc0264eae"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "3c78ee42341cf8705bcdba64",
+    "base_id": "issue.relationship.4",
+    "split": "test",
+    "input": {
+      "identity_semantics": "distinct",
+      "request": "Retrieve REF_b172da15338b43686eab587c, then its associated test run as declared in that result.",
+      "requested": [
+        {
+          "kind": "issue",
+          "key": "REF_b172da15338b43686eab587c"
+        }
+      ],
+      "linked_scope": [
+        {
+          "source": {
+            "kind": "issue",
+            "key": "REF_b172da15338b43686eab587c"
+          },
+          "relation": "associated_test_run"
+        }
+      ],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_issue",
+          "target": {
+            "kind": "issue",
+            "key": "REF_b172da15338b43686eab587c"
+          },
+          "arguments": {
+            "resource": "REF_b172da15338b43686eab587c"
+          },
+          "binding": {
+            "kind": "issue",
+            "key": "REF_b172da15338b43686eab587c"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "complete",
+              "version": "2.3.0",
+              "associated_test_run": "REF_1445a20389021904fe26b579"
+            },
+            "error": null
+          },
+          "links": [
+            {
+              "relation": "associated_test_run",
+              "target": {
+                "kind": "test_run",
+                "key": "REF_1445a20389021904fe26b579"
+              }
+            }
+          ]
+        },
+        {
+          "tool": "lookup_test_results",
+          "target": {
+            "kind": "test_run",
+            "key": "REF_1445a20389021904fe26b579"
+          },
+          "arguments": {
+            "resource": "REF_1445a20389021904fe26b579"
+          },
+          "binding": {
+            "kind": "test_run",
+            "key": "REF_1445a20389021904fe26b579"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "complete",
+              "version": "2.3.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "- **Issue REF_b172da15338b43686eab587c:** Found; status **complete**, version **2.3.0**. Declares associated test run **REF_1445a20389021904fe26b579**.\n- **Test run REF_1445a20389021904fe26b579:** Found; status **complete**, version **2.3.0**.\n\nNo test pass/fail details were included in the captured results.",
+      "final_references": [
+        {
+          "kind": "issue",
+          "key": "REF_b172da15338b43686eab587c"
+        },
+        {
+          "kind": "test_run",
+          "key": "REF_1445a20389021904fe26b579"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "9d252f8792271866b7381415",
+    "base_id": "issue.relationship.4",
+    "split": "test",
+    "input": {
+      "identity_semantics": "distinct",
+      "request": "Retrieve REF_8ab1a24f9554efc82e639d14, then its associated test run as declared in that result.",
+      "requested": [
+        {
+          "kind": "issue",
+          "key": "REF_8ab1a24f9554efc82e639d14"
+        }
+      ],
+      "linked_scope": [
+        {
+          "source": {
+            "kind": "issue",
+            "key": "REF_8ab1a24f9554efc82e639d14"
+          },
+          "relation": "associated_test_run"
+        }
+      ],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_issue",
+          "target": {
+            "kind": "issue",
+            "key": "REF_8ab1a24f9554efc82e639d14"
+          },
+          "arguments": {
+            "resource": "REF_8ab1a24f9554efc82e639d14"
+          },
+          "binding": {
+            "kind": "issue",
+            "key": "REF_8ab1a24f9554efc82e639d14"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "complete",
+              "version": "2.3.0",
+              "associated_test_run": "REF_7a11f00f61800580bddf7345"
+            },
+            "error": null
+          },
+          "links": [
+            {
+              "relation": "associated_test_run",
+              "target": {
+                "kind": "test_run",
+                "key": "REF_7a11f00f61800580bddf7345"
+              }
+            }
+          ]
+        },
+        {
+          "tool": "lookup_test_results",
+          "target": {
+            "kind": "test_run",
+            "key": "REF_0454458cfdee81b032267966"
+          },
+          "arguments": {
+            "resource": "REF_0454458cfdee81b032267966"
+          },
+          "binding": {
+            "kind": "test_run",
+            "key": "REF_0454458cfdee81b032267966"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "complete",
+              "version": "2.3.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "- **REF_8ab1a24f9554efc82e639d14** was found: status **complete**, version **2.3.0**. It declares associated test run **REF_7a11f00f61800580bddf7345**.\n- The captured test-run lookup retrieved **REF_0454458cfdee81b032267966**, not REF_7a11f00f61800580bddf7345. REF_0454458cfdee81b032267966 was found with status **complete**, version **2.3.0**.\n- **REF_7a11f00f61800580bddf7345 was not retrieved**, so the requested associated test run’s results are missing.",
+      "final_references": [
+        {
+          "kind": "issue",
+          "key": "REF_8ab1a24f9554efc82e639d14"
+        },
+        {
+          "kind": "test_run",
+          "key": "REF_7a11f00f61800580bddf7345"
+        },
+        {
+          "kind": "test_run",
+          "key": "REF_0454458cfdee81b032267966"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "85cc7b7a4f68142733c29a10",
+    "base_id": "deployment.relationship.1",
+    "split": "test",
+    "input": {
+      "identity_semantics": "distinct",
+      "request": "Retrieve the stored record for REF_bdd66731541546dc3b702127. Access only that resource.",
+      "requested": [
+        {
+          "kind": "deployment",
+          "key": "REF_bdd66731541546dc3b702127"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_deployment",
+          "target": {
+            "kind": "deployment",
+            "key": "REF_bdd66731541546dc3b702127"
+          },
+          "arguments": {
+            "resource": "REF_bdd66731541546dc3b702127"
+          },
+          "binding": {
+            "kind": "deployment",
+            "key": "REF_bdd66731541546dc3b702127"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "ready",
+              "version": "2.3.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "Stored deployment record for `REF_bdd66731541546dc3b702127`:\n\n- **Status:** ready\n- **Version:** 2.3.0\n\nThe captured lookup accessed only `REF_bdd66731541546dc3b702127`.",
+      "final_references": [
+        {
+          "kind": "deployment",
+          "key": "REF_bdd66731541546dc3b702127"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "a1cce2149d35c3934cac10ff",
+    "base_id": "deployment.relationship.1",
+    "split": "test",
+    "input": {
+      "identity_semantics": "distinct",
+      "request": "Retrieve the stored record for REF_168e859edc2c2f339929afff. Access only that resource.",
+      "requested": [
+        {
+          "kind": "deployment",
+          "key": "REF_168e859edc2c2f339929afff"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_deployment",
+          "target": {
+            "kind": "deployment",
+            "key": "REF_168e859edc2c2f339929afff"
+          },
+          "arguments": {
+            "resource": "REF_168e859edc2c2f339929afff"
+          },
+          "binding": {
+            "kind": "deployment",
+            "key": "REF_764122c3352fb9c0097acb2b"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "ready",
+              "version": "2.3.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "The stored record for **REF_168e859edc2c2f339929afff** was not confirmed. The lookup targeted it, but the returned result was bound to **REF_764122c3352fb9c0097acb2b**, showing status `ready` and version `2.3.0`.\n\nThat result belongs to a different resource and cannot be treated as the requested record.",
+      "final_references": [
+        {
+          "kind": "deployment",
+          "key": "REF_168e859edc2c2f339929afff"
+        },
+        {
+          "kind": "deployment",
+          "key": "REF_764122c3352fb9c0097acb2b"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "175f015ac861648c30f3a561",
+    "base_id": "deployment.relationship.2",
+    "split": "test",
+    "input": {
+      "identity_semantics": "distinct",
+      "request": "Retrieve the stored record for REF_15b80cc3386191c4ca96aa81. Access only that resource.",
+      "requested": [
+        {
+          "kind": "deployment",
+          "key": "REF_15b80cc3386191c4ca96aa81"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_deployment",
+          "target": {
+            "kind": "deployment",
+            "key": "REF_15b80cc3386191c4ca96aa81"
+          },
+          "arguments": {
+            "resource": "REF_15b80cc3386191c4ca96aa81"
+          },
+          "binding": {
+            "kind": "deployment",
+            "key": "REF_15b80cc3386191c4ca96aa81"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "ready",
+              "version": "2.2.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "Stored deployment record for `REF_15b80cc3386191c4ca96aa81`:\n\n- **Status:** ready\n- **Version:** 2.2.0\n\nOnly the requested resource was accessed.",
+      "final_references": [
+        {
+          "kind": "deployment",
+          "key": "REF_15b80cc3386191c4ca96aa81"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "c39ee9562ec1dcbdd8509bf7",
+    "base_id": "deployment.relationship.2",
+    "split": "test",
+    "input": {
+      "identity_semantics": "distinct",
+      "request": "Retrieve the stored record for REF_691ca339cc8a5998b33aaf1d. Access only that resource.",
+      "requested": [
+        {
+          "kind": "deployment",
+          "key": "REF_691ca339cc8a5998b33aaf1d"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_deployment",
+          "target": {
+            "kind": "deployment",
+            "key": "REF_691ca339cc8a5998b33aaf1d"
+          },
+          "arguments": {
+            "resource": "REF_691ca339cc8a5998b33aaf1d"
+          },
+          "binding": {
+            "kind": "deployment",
+            "key": "REF_0e1f734258d67587c8096ebc"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "ready",
+              "version": "2.2.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "No verified record for `REF_691ca339cc8a5998b33aaf1d` was returned. The lookup targeted it, but the result was bound to `REF_0e1f734258d67587c8096ebc`, showing status `ready` and version `2.2.0`. That record cannot be attributed to the requested resource.",
+      "final_references": [
+        {
+          "kind": "deployment",
+          "key": "REF_691ca339cc8a5998b33aaf1d"
+        },
+        {
+          "kind": "deployment",
+          "key": "REF_0e1f734258d67587c8096ebc"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "15d75f3a124714bf91ce4ac0",
+    "base_id": "deployment.relationship.3",
+    "split": "test",
+    "input": {
+      "identity_semantics": "distinct",
+      "request": "Retrieve the stored record for REF_4fa6fbed01f9d74b65c88249. Access only that resource.",
+      "requested": [
+        {
+          "kind": "deployment",
+          "key": "REF_4fa6fbed01f9d74b65c88249"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_deployment",
+          "target": {
+            "kind": "deployment",
+            "key": "REF_4fa6fbed01f9d74b65c88249"
+          },
+          "arguments": {
+            "resource": "REF_4fa6fbed01f9d74b65c88249"
+          },
+          "binding": {
+            "kind": "deployment",
+            "key": "REF_4fa6fbed01f9d74b65c88249"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "pending",
+              "version": "2.3.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "Stored deployment record for `REF_4fa6fbed01f9d74b65c88249`:\n\n- **Status:** pending\n- **Version:** 2.3.0\n\nThe captured lookup found the record with no error. Only `REF_4fa6fbed01f9d74b65c88249` was accessed.",
+      "final_references": [
+        {
+          "kind": "deployment",
+          "key": "REF_4fa6fbed01f9d74b65c88249"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "424c511b3b042cf7ecd8ed45",
+    "base_id": "deployment.relationship.3",
+    "split": "test",
+    "input": {
+      "identity_semantics": "distinct",
+      "request": "Retrieve the stored record for REF_a5a1987258330fdd5bcd1963. Access only that resource.",
+      "requested": [
+        {
+          "kind": "deployment",
+          "key": "REF_a5a1987258330fdd5bcd1963"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_deployment",
+          "target": {
+            "kind": "deployment",
+            "key": "REF_a5a1987258330fdd5bcd1963"
+          },
+          "arguments": {
+            "resource": "REF_a5a1987258330fdd5bcd1963"
+          },
+          "binding": {
+            "kind": "deployment",
+            "key": "REF_6dad565b62a8056c2ed42fc5"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "pending",
+              "version": "2.3.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "The stored record for `REF_a5a1987258330fdd5bcd1963` was not confirmed. The lookup targeted that resource, but the result was bound to `REF_6dad565b62a8056c2ed42fc5`, reporting status `pending` and version `2.3.0`.\n\nThat mismatched record cannot be treated as the requested resource’s record.",
+      "final_references": [
+        {
+          "kind": "deployment",
+          "key": "REF_a5a1987258330fdd5bcd1963"
+        },
+        {
+          "kind": "deployment",
+          "key": "REF_6dad565b62a8056c2ed42fc5"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "e123b2ffe3215a201e4ff1a4",
+    "base_id": "deployment.relationship.4",
+    "split": "test",
+    "input": {
+      "identity_semantics": "distinct",
+      "request": "Retrieve the stored record for REF_2c982d9fc7d51bc0b6b18673. Access only that resource.",
+      "requested": [
+        {
+          "kind": "deployment",
+          "key": "REF_2c982d9fc7d51bc0b6b18673"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_deployment",
+          "target": {
+            "kind": "deployment",
+            "key": "REF_2c982d9fc7d51bc0b6b18673"
+          },
+          "arguments": {
+            "resource": "REF_2c982d9fc7d51bc0b6b18673"
+          },
+          "binding": {
+            "kind": "deployment",
+            "key": "REF_2c982d9fc7d51bc0b6b18673"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "pending",
+              "version": "2.1.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "Stored deployment record for `REF_2c982d9fc7d51bc0b6b18673`:\n- **Status:** pending\n- **Version:** 2.1.0\n\nThe captured lookup accessed only the requested resource.",
+      "final_references": [
+        {
+          "kind": "deployment",
+          "key": "REF_2c982d9fc7d51bc0b6b18673"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "09d248b9cf9202b277b5c9f0",
+    "base_id": "deployment.relationship.4",
+    "split": "test",
+    "input": {
+      "identity_semantics": "distinct",
+      "request": "Retrieve the stored record for REF_04c6266e6f1d2664a054933e. Access only that resource.",
+      "requested": [
+        {
+          "kind": "deployment",
+          "key": "REF_04c6266e6f1d2664a054933e"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_deployment",
+          "target": {
+            "kind": "deployment",
+            "key": "REF_04c6266e6f1d2664a054933e"
+          },
+          "arguments": {
+            "resource": "REF_04c6266e6f1d2664a054933e"
+          },
+          "binding": {
+            "kind": "deployment",
+            "key": "REF_17007abf7652f2460e5b43b7"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "pending",
+              "version": "2.1.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "The captured lookup returned a record bound to **REF_17007abf7652f2460e5b43b7**, not the requested **REF_04c6266e6f1d2664a054933e**.\n\nObserved record:\n- Status: `pending`\n- Version: `2.1.0`\n\nNo record for **REF_04c6266e6f1d2664a054933e** was captured. The binding mismatch means the result does not satisfy the requested resource-only scope.",
+      "final_references": [
+        {
+          "kind": "deployment",
+          "key": "REF_04c6266e6f1d2664a054933e"
+        },
+        {
+          "kind": "deployment",
+          "key": "REF_17007abf7652f2460e5b43b7"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "a9885839873593c5cfbb8d27",
+    "base_id": "test_run.relationship.1",
+    "split": "test",
+    "input": {
+      "identity_semantics": "distinct",
+      "request": "Retrieve the stored record for REF_12441040cdabc074d9f5a364. Access only that resource.",
+      "requested": [
+        {
+          "kind": "test_run",
+          "key": "REF_12441040cdabc074d9f5a364"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_test_results",
+          "target": {
+            "kind": "test_run",
+            "key": "REF_12441040cdabc074d9f5a364"
+          },
+          "arguments": {
+            "resource": "REF_12441040cdabc074d9f5a364"
+          },
+          "binding": {
+            "kind": "test_run",
+            "key": "REF_12441040cdabc074d9f5a364"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "pending",
+              "version": "2.0.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "Stored record for test run **REF_12441040cdabc074d9f5a364**:\n- **Status:** pending\n- **Version:** 2.0.0\n\nThe captured lookup found the record with no error. Only REF_12441040cdabc074d9f5a364 was accessed.",
+      "final_references": [
+        {
+          "kind": "test_run",
+          "key": "REF_12441040cdabc074d9f5a364"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "a3f41e56c18800f364f9c4be",
+    "base_id": "test_run.relationship.1",
+    "split": "test",
+    "input": {
+      "identity_semantics": "distinct",
+      "request": "Retrieve the stored record for REF_1a79ad063c17b085aec73091. Access only that resource.",
+      "requested": [
+        {
+          "kind": "test_run",
+          "key": "REF_1a79ad063c17b085aec73091"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_test_results",
+          "target": {
+            "kind": "test_run",
+            "key": "REF_1a79ad063c17b085aec73091"
+          },
+          "arguments": {
+            "resource": "REF_1a79ad063c17b085aec73091"
+          },
+          "binding": {
+            "kind": "test_run",
+            "key": "REF_9d54797065acb311fcd3abbd"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "pending",
+              "version": "2.0.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "The stored record for **REF_1a79ad063c17b085aec73091** was not confirmed. The lookup requested REF_1a79ad063c17b085aec73091, but the captured result was explicitly bound to **REF_9d54797065acb311fcd3abbd**, showing status `pending` and version `2.0.0`. That result cannot be attributed to REF_1a79ad063c17b085aec73091.",
+      "final_references": [
+        {
+          "kind": "test_run",
+          "key": "REF_1a79ad063c17b085aec73091"
+        },
+        {
+          "kind": "test_run",
+          "key": "REF_9d54797065acb311fcd3abbd"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "b52c68243788973e89dba861",
+    "base_id": "test_run.relationship.2",
+    "split": "test",
+    "input": {
+      "identity_semantics": "distinct",
+      "request": "Retrieve the stored record for REF_f71696b8809605ef184fc168. Access only that resource.",
+      "requested": [
+        {
+          "kind": "test_run",
+          "key": "REF_f71696b8809605ef184fc168"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_test_results",
+          "target": {
+            "kind": "test_run",
+            "key": "REF_f71696b8809605ef184fc168"
+          },
+          "arguments": {
+            "resource": "REF_f71696b8809605ef184fc168"
+          },
+          "binding": {
+            "kind": "test_run",
+            "key": "REF_f71696b8809605ef184fc168"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "ready",
+              "version": "2.3.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "Retrieved stored record for test run **REF_f71696b8809605ef184fc168**:\n- **Status:** ready\n- **Version:** 2.3.0\n\nOnly REF_f71696b8809605ef184fc168 was accessed.",
+      "final_references": [
+        {
+          "kind": "test_run",
+          "key": "REF_f71696b8809605ef184fc168"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "174ebf705706d213302c1ffe",
+    "base_id": "test_run.relationship.2",
+    "split": "test",
+    "input": {
+      "identity_semantics": "distinct",
+      "request": "Retrieve the stored record for REF_2351afa24359770da1704d68. Access only that resource.",
+      "requested": [
+        {
+          "kind": "test_run",
+          "key": "REF_2351afa24359770da1704d68"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_test_results",
+          "target": {
+            "kind": "test_run",
+            "key": "REF_2351afa24359770da1704d68"
+          },
+          "arguments": {
+            "resource": "REF_2351afa24359770da1704d68"
+          },
+          "binding": {
+            "kind": "test_run",
+            "key": "REF_f7aa778775143bdf5c0fdfe1"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "ready",
+              "version": "2.3.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "No stored record for **REF_2351afa24359770da1704d68** was confirmed. The lookup requested REF_2351afa24359770da1704d68, but the result was explicitly bound to **REF_f7aa778775143bdf5c0fdfe1**, reporting status `ready` and version `2.3.0`. That result cannot be attributed to REF_2351afa24359770da1704d68.",
+      "final_references": [
+        {
+          "kind": "test_run",
+          "key": "REF_2351afa24359770da1704d68"
+        },
+        {
+          "kind": "test_run",
+          "key": "REF_f7aa778775143bdf5c0fdfe1"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "0a65aa57dba8ded956af7dc0",
+    "base_id": "test_run.relationship.3",
+    "split": "test",
+    "input": {
+      "identity_semantics": "distinct",
+      "request": "Retrieve the stored record for REF_29f2533c56b799408403eb1e. Access only that resource.",
+      "requested": [
+        {
+          "kind": "test_run",
+          "key": "REF_29f2533c56b799408403eb1e"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_test_results",
+          "target": {
+            "kind": "test_run",
+            "key": "REF_29f2533c56b799408403eb1e"
+          },
+          "arguments": {
+            "resource": "REF_29f2533c56b799408403eb1e"
+          },
+          "binding": {
+            "kind": "test_run",
+            "key": "REF_29f2533c56b799408403eb1e"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "ready",
+              "version": "2.2.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "Stored record for test run **REF_29f2533c56b799408403eb1e**:\n- **Status:** ready\n- **Version:** 2.2.0\n\nThe lookup found the record without error. Only REF_29f2533c56b799408403eb1e was accessed.",
+      "final_references": [
+        {
+          "kind": "test_run",
+          "key": "REF_29f2533c56b799408403eb1e"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "f2aab2d5ab7011169332424f",
+    "base_id": "test_run.relationship.3",
+    "split": "test",
+    "input": {
+      "identity_semantics": "distinct",
+      "request": "Retrieve the stored record for REF_a522f6d969b5ae8f27ee32b6. Access only that resource.",
+      "requested": [
+        {
+          "kind": "test_run",
+          "key": "REF_a522f6d969b5ae8f27ee32b6"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_test_results",
+          "target": {
+            "kind": "test_run",
+            "key": "REF_a522f6d969b5ae8f27ee32b6"
+          },
+          "arguments": {
+            "resource": "REF_a522f6d969b5ae8f27ee32b6"
+          },
+          "binding": {
+            "kind": "test_run",
+            "key": "REF_ecaf7a4bde78c56a8d9650aa"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "ready",
+              "version": "2.2.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "No stored record for **REF_a522f6d969b5ae8f27ee32b6** was confirmed. The lookup requested REF_a522f6d969b5ae8f27ee32b6, but the returned result was explicitly bound to **REF_ecaf7a4bde78c56a8d9650aa**, with status `ready` and version `2.2.0`. That result cannot be treated as the record for REF_a522f6d969b5ae8f27ee32b6.",
+      "final_references": [
+        {
+          "kind": "test_run",
+          "key": "REF_a522f6d969b5ae8f27ee32b6"
+        },
+        {
+          "kind": "test_run",
+          "key": "REF_ecaf7a4bde78c56a8d9650aa"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "63b1cfa1c6c358d5df94b43b",
+    "base_id": "test_run.relationship.4",
+    "split": "test",
+    "input": {
+      "identity_semantics": "distinct",
+      "request": "Retrieve the stored record for REF_de5d1312bf7e92acadb64722. Access only that resource.",
+      "requested": [
+        {
+          "kind": "test_run",
+          "key": "REF_de5d1312bf7e92acadb64722"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_test_results",
+          "target": {
+            "kind": "test_run",
+            "key": "REF_de5d1312bf7e92acadb64722"
+          },
+          "arguments": {
+            "resource": "REF_de5d1312bf7e92acadb64722"
+          },
+          "binding": {
+            "kind": "test_run",
+            "key": "REF_de5d1312bf7e92acadb64722"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "pending",
+              "version": "2.3.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "Stored record for test run **REF_de5d1312bf7e92acadb64722**:\n- **Status:** pending\n- **Version:** 2.3.0\n\nOnly REF_de5d1312bf7e92acadb64722 was accessed.",
+      "final_references": [
+        {
+          "kind": "test_run",
+          "key": "REF_de5d1312bf7e92acadb64722"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "badaaf0e51de26f46e788ef3",
+    "base_id": "test_run.relationship.4",
+    "split": "test",
+    "input": {
+      "identity_semantics": "distinct",
+      "request": "Retrieve the stored record for REF_143cbaa3a1df6403cc2a3786. Access only that resource.",
+      "requested": [
+        {
+          "kind": "test_run",
+          "key": "REF_143cbaa3a1df6403cc2a3786"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_test_results",
+          "target": {
+            "kind": "test_run",
+            "key": "REF_143cbaa3a1df6403cc2a3786"
+          },
+          "arguments": {
+            "resource": "REF_143cbaa3a1df6403cc2a3786"
+          },
+          "binding": {
+            "kind": "test_run",
+            "key": "REF_27382cc4aa31d739ab3a599b"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "pending",
+              "version": "2.3.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "The captured lookup requested **REF_143cbaa3a1df6403cc2a3786**, but the result was explicitly bound to **REF_27382cc4aa31d739ab3a599b**, with status `pending` and version `2.3.0`.\n\nNo stored record for **REF_143cbaa3a1df6403cc2a3786** was confirmed. The observed result is for a resource outside the requested scope.",
+      "final_references": [
+        {
+          "kind": "test_run",
+          "key": "REF_143cbaa3a1df6403cc2a3786"
+        },
+        {
+          "kind": "test_run",
+          "key": "REF_27382cc4aa31d739ab3a599b"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  }
+]

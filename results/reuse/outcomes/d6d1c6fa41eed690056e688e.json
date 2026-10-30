@@ -1,0 +1,84 @@
+{
+  "run_id": "d6d1c6fa41eed690056e688e",
+  "policy": "exact",
+  "bank_state": "warm",
+  "status": "completed",
+  "bindings": {
+    "slots": {
+      "issue0": "ENG-10003"
+    },
+    "slot_types": {
+      "issue0": "issue"
+    },
+    "skeleton": "please retrieve current status for ticket <issue0>",
+    "namespace": "ea951e30ddc2e3fbc06eb8d343acee8d3e1b560636c67748159d683fa73a5e54",
+    "unresolved": [],
+    "semantics": [
+      "count:issue:1"
+    ]
+  },
+  "answer": "Ticket ENG-10003 is currently **open**.",
+  "calls": [
+    {
+      "reservation": "5be31796efd94e5f966cd13bbf1ad91e",
+      "stage": "core",
+      "run_id": "d6d1c6fa41eed690056e688e",
+      "kind": "answer",
+      "state": "measured",
+      "cost_usd": 0.000604,
+      "timestamp": "2026-10-29T09:13:20.416407+00:00",
+      "cost_estimated": false,
+      "usage": {
+        "input_tokens": 227,
+        "output_tokens": 15,
+        "cache_read_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "error": null,
+      "latency_ms": 1507.3707499541342,
+      "response_id": "resp_00483255e3bce57b016ae30e30905887d08fdfc0d76f922362",
+      "output": "Ticket ENG-10003 is currently **open**."
+    }
+  ],
+  "executions": [
+    {
+      "tool": "lookup_issue",
+      "arguments": {
+        "issue_id": "ENG-10003"
+      },
+      "bindings": {
+        "issue_id": "ENG-10003"
+      },
+      "tenant": "acme",
+      "state_version": "30f27d88ffab4d54b8fec8f0b386013cc7a9a19527100a40b5c7114f9db86904",
+      "result": {
+        "found": true,
+        "record": {
+          "issue_id": "ENG-10003",
+          "status": "open",
+          "test_run_id": "TR-10003"
+        },
+        "error": null
+      },
+      "latency_ms": 0.8054579375311732,
+      "started_at": "2026-10-29T09:13:20.409776+00:00"
+    }
+  ],
+  "cache_hit": true,
+  "candidate": "4966afc017e4dd1c54d6",
+  "retrieval_score": 1.0,
+  "retrieval_margin": 1.0,
+  "rejection": null,
+  "replans": 0,
+  "error": null,
+  "timings_ms": {
+    "binding": 0.11366698890924454,
+    "retrieval_validation": 1.0752499802038074,
+    "planning": 0,
+    "answer": 1507.3707499541342,
+    "tools": 0.8054579375311732,
+    "runtime": 1516.0611249739304
+  },
+  "cost_usd": 0.000604,
+  "trace_id": null
+}

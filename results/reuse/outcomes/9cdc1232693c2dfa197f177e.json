@@ -1,0 +1,90 @@
+{
+  "run_id": "9cdc1232693c2dfa197f177e",
+  "policy": "exact",
+  "bank_state": "warm",
+  "status": "completed",
+  "bindings": {
+    "slots": {
+      "service0": "gateway",
+      "environment0": "staging"
+    },
+    "slot_types": {
+      "service0": "service",
+      "environment0": "environment"
+    },
+    "skeleton": "show deployment for service <service0> in <environment0>",
+    "namespace": "ea951e30ddc2e3fbc06eb8d343acee8d3e1b560636c67748159d683fa73a5e54",
+    "unresolved": [],
+    "semantics": [
+      "count:environment:1",
+      "count:service:1"
+    ]
+  },
+  "answer": "Service `gateway` in `staging`: version `v4.2`, status `healthy`.",
+  "calls": [
+    {
+      "reservation": "e2c19fff7f73443e98b3b90f5a4aee81",
+      "stage": "core",
+      "run_id": "9cdc1232693c2dfa197f177e",
+      "kind": "answer",
+      "state": "measured",
+      "cost_usd": 0.000708,
+      "timestamp": "2026-10-29T09:21:47.405747+00:00",
+      "cost_estimated": false,
+      "usage": {
+        "input_tokens": 234,
+        "output_tokens": 24,
+        "cache_read_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "error": null,
+      "latency_ms": 2095.5127499764785,
+      "response_id": "resp_03d354efafb0763c016ae3102b8d6887d0861b49a14c16bde0",
+      "output": "Service `gateway` in `staging`: version `v4.2`, status `healthy`."
+    }
+  ],
+  "executions": [
+    {
+      "tool": "lookup_deployment",
+      "arguments": {
+        "service": "gateway",
+        "environment": "staging"
+      },
+      "bindings": {
+        "service": "gateway",
+        "environment": "staging"
+      },
+      "tenant": "acme",
+      "state_version": "cdb23f5ac30aed4ce788db681d1c8d6dbbf7363f1c1a31b63f598fe75e5e83d5",
+      "result": {
+        "found": true,
+        "record": {
+          "service": "gateway",
+          "environment": "staging",
+          "version": "v4.2",
+          "status": "healthy"
+        },
+        "error": null
+      },
+      "latency_ms": 0.7357090944424272,
+      "started_at": "2026-10-29T09:21:47.395470+00:00"
+    }
+  ],
+  "cache_hit": true,
+  "candidate": "9b9ba1104e3b1eda934e",
+  "retrieval_score": 1.0,
+  "retrieval_margin": 1.0,
+  "rejection": null,
+  "replans": 0,
+  "error": null,
+  "timings_ms": {
+    "binding": 0.1129580195993185,
+    "retrieval_validation": 1.506166998296976,
+    "planning": 0,
+    "answer": 2095.5127499764785,
+    "tools": 0.7357090944424272,
+    "runtime": 2108.121250057593
+  },
+  "cost_usd": 0.000708,
+  "trace_id": null
+}

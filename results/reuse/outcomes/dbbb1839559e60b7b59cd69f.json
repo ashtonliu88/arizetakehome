@@ -1,0 +1,110 @@
+{
+  "run_id": "dbbb1839559e60b7b59cd69f",
+  "policy": "verified",
+  "bank_state": "warm",
+  "status": "completed",
+  "bindings": {
+    "slots": {
+      "issue0": "ENG-1500",
+      "issue1": "ENG-1501"
+    },
+    "slot_types": {
+      "issue0": "issue",
+      "issue1": "issue"
+    },
+    "skeleton": "compare source <issue0> with target <issue1>",
+    "namespace": "ea951e30ddc2e3fbc06eb8d343acee8d3e1b560636c67748159d683fa73a5e54",
+    "unresolved": [],
+    "semantics": [
+      "code",
+      "compare",
+      "count:issue:2",
+      "role:source:issue0",
+      "role:target:issue1"
+    ]
+  },
+  "answer": "| Role | Issue | Stored status | Test run |\n|---|---|---|---|\n| Source | ENG-1500 | open | TR-1500 |\n| Target | ENG-1501 | resolved | TR-1501 |",
+  "calls": [
+    {
+      "reservation": "a2a8e1ffc66f4f5f98c8811d20f7ff62",
+      "stage": "pilot",
+      "run_id": "dbbb1839559e60b7b59cd69f",
+      "kind": "answer",
+      "state": "measured",
+      "cost_usd": 0.001242,
+      "timestamp": "2026-10-29T08:58:36.244001+00:00",
+      "cost_estimated": false,
+      "usage": {
+        "input_tokens": 351,
+        "output_tokens": 54,
+        "cache_read_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "error": null,
+      "latency_ms": 1677.920666988939,
+      "response_id": "resp_02d56ef1e3badf46016ae30abc6e3887d0bc138204011ca362",
+      "output": "| Role | Issue | Stored status | Test run |\n|---|---|---|---|\n| Source | ENG-1500 | open | TR-1500 |\n| Target | ENG-1501 | resolved | TR-1501 |"
+    }
+  ],
+  "executions": [
+    {
+      "tool": "lookup_issue",
+      "arguments": {
+        "issue_id": "ENG-1500"
+      },
+      "bindings": {
+        "issue_id": "ENG-1500"
+      },
+      "tenant": "acme",
+      "state_version": "a5c4be88de39ca947c53a25902d74399a777947921c8dcdc6651d367e58d08a5",
+      "result": {
+        "found": true,
+        "record": {
+          "issue_id": "ENG-1500",
+          "status": "open",
+          "test_run_id": "TR-1500"
+        },
+        "error": null
+      },
+      "latency_ms": 0.9697499917820096
+    },
+    {
+      "tool": "lookup_issue",
+      "arguments": {
+        "issue_id": "ENG-1501"
+      },
+      "bindings": {
+        "issue_id": "ENG-1501"
+      },
+      "tenant": "acme",
+      "state_version": "a5c4be88de39ca947c53a25902d74399a777947921c8dcdc6651d367e58d08a5",
+      "result": {
+        "found": true,
+        "record": {
+          "issue_id": "ENG-1501",
+          "status": "resolved",
+          "test_run_id": "TR-1501"
+        },
+        "error": null
+      },
+      "latency_ms": 0.6582909263670444
+    }
+  ],
+  "cache_hit": true,
+  "candidate": "6470de3612218f6307d0",
+  "retrieval_score": 1.0,
+  "retrieval_margin": 0.9377420050514549,
+  "rejection": null,
+  "replans": 0,
+  "error": null,
+  "timings_ms": {
+    "binding": 0.14124996960163116,
+    "retrieval_validation": 1.739540952257812,
+    "planning": 0,
+    "answer": 1677.920666988939,
+    "tools": 1.628040918149054,
+    "runtime": 1687.4062080169097
+  },
+  "cost_usd": 0.001242,
+  "trace_id": null
+}

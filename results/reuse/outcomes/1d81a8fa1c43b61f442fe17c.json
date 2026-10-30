@@ -1,0 +1,67 @@
+{
+  "run_id": "1d81a8fa1c43b61f442fe17c",
+  "policy": "exact",
+  "bank_state": "warm",
+  "status": "abstained",
+  "bindings": {
+    "slots": {
+      "issue0": "ENG-10515",
+      "issue1": "ENG-10516"
+    },
+    "slot_types": {
+      "issue0": "issue",
+      "issue1": "issue"
+    },
+    "skeleton": "compare source <issue0> with target <issue1>",
+    "namespace": "ea3b7f78b95d3b260b590ca2c3c9f9a150005718c966aa304aa26d77566106d3",
+    "unresolved": [],
+    "semantics": [
+      "code",
+      "compare",
+      "count:issue:2",
+      "role:source:issue0",
+      "role:target:issue1"
+    ]
+  },
+  "answer": "I can’t compare source ENG-10515 with target ENG-10516 because access is granted only to ENG-10515, not ENG-10516.",
+  "calls": [
+    {
+      "reservation": "1d2aa7ef115b4b1e81be80133f8e7056",
+      "stage": "core",
+      "run_id": "1d81a8fa1c43b61f442fe17c",
+      "kind": "planning",
+      "state": "measured",
+      "cost_usd": 0.0006547,
+      "timestamp": "2026-10-29T09:39:18.597730+00:00",
+      "cost_estimated": false,
+      "usage": {
+        "input_tokens": 1290,
+        "output_tokens": 52,
+        "cache_read_tokens": 1287,
+        "cache_write_tokens": 0
+      },
+      "error": null,
+      "latency_ms": 1995.3477500239387,
+      "response_id": "resp_0dc6b26bf554fa41016ae31446bb9c87d0a37ee99bfce81f85",
+      "output": "{\"kind\":\"abstain\",\"steps\":[],\"response\":\"I can’t compare source ENG-10515 with target ENG-10516 because access is granted only to ENG-10515, not ENG-10516.\"}"
+    }
+  ],
+  "executions": [],
+  "cache_hit": false,
+  "candidate": "6470de3612218f6307d0",
+  "retrieval_score": 1.0,
+  "retrieval_margin": 1.0,
+  "rejection": "namespace",
+  "replans": 0,
+  "error": null,
+  "timings_ms": {
+    "binding": 0.09204202797263861,
+    "retrieval_validation": 0.2596249105408788,
+    "planning": 1995.3477500239387,
+    "answer": 0,
+    "tools": 0,
+    "runtime": 2009.6357919974253
+  },
+  "cost_usd": 0.0006547,
+  "trace_id": null
+}

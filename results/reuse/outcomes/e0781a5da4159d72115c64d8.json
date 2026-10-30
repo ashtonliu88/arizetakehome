@@ -1,0 +1,112 @@
+{
+  "run_id": "e0781a5da4159d72115c64d8",
+  "policy": "verified",
+  "bank_state": "warm",
+  "status": "completed",
+  "bindings": {
+    "slots": {
+      "issue0": "ENG-10509",
+      "issue1": "ENG-10510"
+    },
+    "slot_types": {
+      "issue0": "issue",
+      "issue1": "issue"
+    },
+    "skeleton": "compare source <issue0> with target <issue1>",
+    "namespace": "ea951e30ddc2e3fbc06eb8d343acee8d3e1b560636c67748159d683fa73a5e54",
+    "unresolved": [],
+    "semantics": [
+      "code",
+      "compare",
+      "count:issue:2",
+      "role:source:issue0",
+      "role:target:issue1"
+    ]
+  },
+  "answer": "- Source **ENG-10509**: status **open**; test run **TR-10509**.\n- Target **ENG-10510**: status **resolved**; test run **TR-10510**.\n\nThe source is open, while the target is resolved.",
+  "calls": [
+    {
+      "reservation": "8923f91ef09c4c77a6d2888207c54379",
+      "stage": "core",
+      "run_id": "e0781a5da4159d72115c64d8",
+      "kind": "answer",
+      "state": "measured",
+      "cost_usd": 0.001324,
+      "timestamp": "2026-10-29T09:38:31.852203+00:00",
+      "cost_estimated": false,
+      "usage": {
+        "input_tokens": 357,
+        "output_tokens": 61,
+        "cache_read_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "error": null,
+      "latency_ms": 1794.9170840438455,
+      "response_id": "resp_0cf5c6c4a915bcab016ae31418024c87d0a0dfe43f3f1df467",
+      "output": "- Source **ENG-10509**: status **open**; test run **TR-10509**.\n- Target **ENG-10510**: status **resolved**; test run **TR-10510**.\n\nThe source is open, while the target is resolved."
+    }
+  ],
+  "executions": [
+    {
+      "tool": "lookup_issue",
+      "arguments": {
+        "issue_id": "ENG-10509"
+      },
+      "bindings": {
+        "issue_id": "ENG-10509"
+      },
+      "tenant": "acme",
+      "state_version": "a19ddb2c6013ba4fe8c79206aa16f1e0e139f6d54cfe652a687915ab1e61a14f",
+      "result": {
+        "found": true,
+        "record": {
+          "issue_id": "ENG-10509",
+          "status": "open",
+          "test_run_id": "TR-10509"
+        },
+        "error": null
+      },
+      "latency_ms": 0.8301250636577606,
+      "started_at": "2026-10-29T09:38:31.836024+00:00"
+    },
+    {
+      "tool": "lookup_issue",
+      "arguments": {
+        "issue_id": "ENG-10510"
+      },
+      "bindings": {
+        "issue_id": "ENG-10510"
+      },
+      "tenant": "acme",
+      "state_version": "a19ddb2c6013ba4fe8c79206aa16f1e0e139f6d54cfe652a687915ab1e61a14f",
+      "result": {
+        "found": true,
+        "record": {
+          "issue_id": "ENG-10510",
+          "status": "resolved",
+          "test_run_id": "TR-10510"
+        },
+        "error": null
+      },
+      "latency_ms": 0.7035419112071395,
+      "started_at": "2026-10-29T09:38:31.836861+00:00"
+    }
+  ],
+  "cache_hit": true,
+  "candidate": "6470de3612218f6307d0",
+  "retrieval_score": 1.0,
+  "retrieval_margin": 0.9377420050514549,
+  "rejection": null,
+  "replans": 0,
+  "error": null,
+  "timings_ms": {
+    "binding": 0.10254094377160072,
+    "retrieval_validation": 1.1141670402139425,
+    "planning": 0,
+    "answer": 1794.9170840438455,
+    "tools": 1.5336669748649001,
+    "runtime": 1813.9105410082266
+  },
+  "cost_usd": 0.001324,
+  "trace_id": null
+}

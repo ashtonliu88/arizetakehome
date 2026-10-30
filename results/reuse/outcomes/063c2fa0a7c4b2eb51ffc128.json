@@ -1,0 +1,105 @@
+{
+  "run_id": "063c2fa0a7c4b2eb51ffc128",
+  "policy": "ordinary",
+  "bank_state": "warm",
+  "status": "completed",
+  "bindings": {
+    "slots": {
+      "issue0": "ENG-10018"
+    },
+    "slot_types": {
+      "issue0": "issue"
+    },
+    "skeleton": "get issue <issue0>",
+    "namespace": "a7fd4bedcb1fbdf3658161b12260f895955fcc3525d591c0e91299da727d0207",
+    "unresolved": [],
+    "semantics": [
+      "count:issue:1"
+    ]
+  },
+  "answer": "Issue **ENG-10018** has status **triaged**. Its linked test run **TR-10018** has outcome **passed**.",
+  "calls": [
+    {
+      "reservation": "f45ea3c52f40423aa8025d466ec41aeb",
+      "stage": "core",
+      "run_id": "063c2fa0a7c4b2eb51ffc128",
+      "kind": "answer",
+      "state": "measured",
+      "cost_usd": 0.001016,
+      "timestamp": "2026-10-29T09:16:22.632257+00:00",
+      "cost_estimated": false,
+      "usage": {
+        "input_tokens": 338,
+        "output_tokens": 34,
+        "cache_read_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "error": null,
+      "latency_ms": 1747.8127910289913,
+      "response_id": "resp_0a15da5f81feaf6d016ae30ee6c7c487d08c1d116f2ba7ca46",
+      "output": "Issue **ENG-10018** has status **triaged**. Its linked test run **TR-10018** has outcome **passed**."
+    }
+  ],
+  "executions": [
+    {
+      "tool": "lookup_issue",
+      "arguments": {
+        "issue_id": "ENG-10018"
+      },
+      "bindings": {
+        "issue_id": "ENG-10018"
+      },
+      "tenant": "beta",
+      "state_version": "fd6a6b3ccfc8e1473bd18d398032f17b807ad5c17708cc967db933488a05e3dc",
+      "result": {
+        "found": true,
+        "record": {
+          "issue_id": "ENG-10018",
+          "status": "triaged",
+          "test_run_id": "TR-10018"
+        },
+        "error": null
+      },
+      "latency_ms": 0.8032919140532613,
+      "started_at": "2026-10-29T09:16:22.623481+00:00"
+    },
+    {
+      "tool": "lookup_test_results",
+      "arguments": {
+        "test_run_id": "TR-10018"
+      },
+      "bindings": {
+        "test_run_id": "TR-10018"
+      },
+      "tenant": "beta",
+      "state_version": "fd6a6b3ccfc8e1473bd18d398032f17b807ad5c17708cc967db933488a05e3dc",
+      "result": {
+        "found": true,
+        "record": {
+          "test_run_id": "TR-10018",
+          "outcome": "passed"
+        },
+        "error": null
+      },
+      "latency_ms": 0.5656250286847353,
+      "started_at": "2026-10-29T09:16:22.624293+00:00"
+    }
+  ],
+  "cache_hit": true,
+  "candidate": "2b48aa625dff961ecbde",
+  "retrieval_score": 0.49753119477180335,
+  "retrieval_margin": 0.05781699207705698,
+  "rejection": null,
+  "replans": 0,
+  "error": null,
+  "timings_ms": {
+    "binding": 0.07816695142537355,
+    "retrieval_validation": 0.32529199961572886,
+    "planning": 0,
+    "answer": 1747.8127910289913,
+    "tools": 1.3689169427379966,
+    "runtime": 1757.5265419436619
+  },
+  "cost_usd": 0.001016,
+  "trace_id": null
+}

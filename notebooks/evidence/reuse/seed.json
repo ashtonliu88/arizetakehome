@@ -1,0 +1,23 @@
+{
+  "attempted": 16,
+  "admitted": 14,
+  "history_ids": [
+    "history-issues-00",
+    "history-issues-01",
+    "history-deployments-00",
+    "history-deployments-01",
+    "history-tests-00",
+    "history-tests-01",
+    "history-sources-00",
+    "history-sources-01",
+    "history-calculations-00",
+    "history-calculations-01",
+    "history-comparisons-00",
+    "history-comparisons-01",
+    "history-linked-00",
+    "history-linked-01"
+  ],
+  "construction_cost_usd": 0.07299699999999999,
+  "timestamp": "2026-10-29T08:51:04.716796+00:00",
+  "history_configuration": "276e160360ba16a333aacd62936acc0a3eefaaa1c18e69d36491b13f557cc2ab"
+}

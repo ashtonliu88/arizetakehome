@@ -1,0 +1,90 @@
+{
+  "run_id": "5bf297f7e516f1fc91de0522",
+  "policy": "verified",
+  "bank_state": "warm",
+  "status": "completed",
+  "bindings": {
+    "slots": {
+      "service0": "gateway",
+      "environment0": "staging"
+    },
+    "slot_types": {
+      "service0": "service",
+      "environment0": "environment"
+    },
+    "skeleton": "get deployed version for service <service0> in <environment0>",
+    "namespace": "ea951e30ddc2e3fbc06eb8d343acee8d3e1b560636c67748159d683fa73a5e54",
+    "unresolved": [],
+    "semantics": [
+      "count:environment:1",
+      "count:service:1"
+    ]
+  },
+  "answer": "Service `gateway` in `staging` is deployed at version `v4.2` (status: `healthy`).",
+  "calls": [
+    {
+      "reservation": "54af56ae0462494083e84d61df3310ec",
+      "stage": "core",
+      "run_id": "5bf297f7e516f1fc91de0522",
+      "kind": "answer",
+      "state": "measured",
+      "cost_usd": 0.000754,
+      "timestamp": "2026-10-29T09:18:24.557182+00:00",
+      "cost_estimated": false,
+      "usage": {
+        "input_tokens": 232,
+        "output_tokens": 29,
+        "cache_read_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "error": null,
+      "latency_ms": 1462.948290980421,
+      "response_id": "resp_09bba0f1ef2bb5fb016ae30f60b0dc87d083c59c784ebf74e3",
+      "output": "Service `gateway` in `staging` is deployed at version `v4.2` (status: `healthy`)."
+    }
+  ],
+  "executions": [
+    {
+      "tool": "lookup_deployment",
+      "arguments": {
+        "service": "gateway",
+        "environment": "staging"
+      },
+      "bindings": {
+        "service": "gateway",
+        "environment": "staging"
+      },
+      "tenant": "acme",
+      "state_version": "43bf7c46d8b02342a0b51288a0dac0748c2085fed778c23c3f4c40f70577e712",
+      "result": {
+        "found": true,
+        "record": {
+          "service": "gateway",
+          "environment": "staging",
+          "version": "v4.2",
+          "status": "healthy"
+        },
+        "error": null
+      },
+      "latency_ms": 0.88433304335922,
+      "started_at": "2026-10-29T09:18:24.531697+00:00"
+    }
+  ],
+  "cache_hit": true,
+  "candidate": "7b0c23a31e4c83ea5298",
+  "retrieval_score": 1.0,
+  "retrieval_margin": 0.9358663138074828,
+  "rejection": null,
+  "replans": 0,
+  "error": null,
+  "timings_ms": {
+    "binding": 0.0951660331338644,
+    "retrieval_validation": 1.1127919424325228,
+    "planning": 0,
+    "answer": 1462.948290980421,
+    "tools": 0.88433304335922,
+    "runtime": 1489.9854159448296
+  },
+  "cost_usd": 0.000754,
+  "trace_id": null
+}

@@ -1,0 +1,2 @@
+*.pdf binary
+output/cookbook/analysis/*.svg -whitespace

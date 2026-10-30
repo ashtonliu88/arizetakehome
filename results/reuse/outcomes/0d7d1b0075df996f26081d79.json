@@ -1,0 +1,104 @@
+{
+  "run_id": "0d7d1b0075df996f26081d79",
+  "policy": "fused",
+  "bank_state": "empty",
+  "status": "completed",
+  "bindings": {
+    "slots": {
+      "issue0": "ENG-10015"
+    },
+    "slot_types": {
+      "issue0": "issue"
+    },
+    "skeleton": "fetch issue <issue0>",
+    "namespace": "ea951e30ddc2e3fbc06eb8d343acee8d3e1b560636c67748159d683fa73a5e54",
+    "unresolved": [],
+    "semantics": [
+      "count:issue:1"
+    ]
+  },
+  "answer": "Issue **ENG-10015** — status: **open**; test run: **TR-10015**.",
+  "calls": [
+    {
+      "reservation": "da07f8230b34447ca930252b7a48df9a",
+      "stage": "core",
+      "run_id": "0d7d1b0075df996f26081d79",
+      "kind": "planning",
+      "state": "measured",
+      "cost_usd": 0.0007791,
+      "timestamp": "2026-10-29T09:15:51.609259+00:00",
+      "cost_estimated": false,
+      "usage": {
+        "input_tokens": 1234,
+        "output_tokens": 65,
+        "cache_read_tokens": 1231,
+        "cache_write_tokens": 0
+      },
+      "error": null,
+      "latency_ms": 2055.7257909094915,
+      "response_id": "resp_0c02ca26b13aedd2016ae30ec7c07087d08ec86a9fc2f91486",
+      "output": "{\"kind\":\"tools\",\"steps\":[{\"tool\":\"lookup_issue\",\"arguments\":{\"issue_id\":\"$slot.issue0\",\"test_run_id\":null,\"service\":null,\"environment\":null,\"query\":null,\"operation\":null,\"left\":null,\"right\":null}}],\"response\":\"\"}"
+    },
+    {
+      "reservation": "f31902c34d194561870c1ba0080e6702",
+      "stage": "core",
+      "run_id": "0d7d1b0075df996f26081d79",
+      "kind": "answer",
+      "state": "measured",
+      "cost_usd": 0.000714,
+      "timestamp": "2026-10-29T09:15:53.672452+00:00",
+      "cost_estimated": false,
+      "usage": {
+        "input_tokens": 217,
+        "output_tokens": 28,
+        "cache_read_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "error": null,
+      "latency_ms": 1691.1672920687124,
+      "response_id": "resp_0f44564672a2fd42016ae30ec9cc7487d099f8cbdcdd00927c",
+      "output": "Issue **ENG-10015** — status: **open**; test run: **TR-10015**."
+    }
+  ],
+  "executions": [
+    {
+      "tool": "lookup_issue",
+      "arguments": {
+        "issue_id": "ENG-10015"
+      },
+      "bindings": {
+        "issue_id": "ENG-10015"
+      },
+      "tenant": "acme",
+      "state_version": "6b7995cc1b2228fb136503adf1e3eb32833078969280152cd3330e292aafdcb3",
+      "result": {
+        "found": true,
+        "record": {
+          "issue_id": "ENG-10015",
+          "status": "open",
+          "test_run_id": "TR-10015"
+        },
+        "error": null
+      },
+      "latency_ms": 0.6692919414490461,
+      "started_at": "2026-10-29T09:15:53.665398+00:00"
+    }
+  ],
+  "cache_hit": false,
+  "candidate": null,
+  "retrieval_score": 0,
+  "retrieval_margin": 0,
+  "rejection": null,
+  "replans": 0,
+  "error": null,
+  "timings_ms": {
+    "binding": 0.09758397936820984,
+    "retrieval_validation": 0.00016600824892520905,
+    "planning": 2055.7257909094915,
+    "answer": 1691.1672920687124,
+    "tools": 0.6692919414490461,
+    "runtime": 3763.710125000216
+  },
+  "cost_usd": 0.0014931,
+  "trace_id": null
+}

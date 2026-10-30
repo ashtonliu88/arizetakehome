@@ -1,0 +1,86 @@
+{
+  "run_id": "50a173a38c409d95e84eb6b4",
+  "policy": "ordinary",
+  "bank_state": "warm",
+  "status": "completed",
+  "bindings": {
+    "slots": {
+      "query0": "retry policy"
+    },
+    "slot_types": {
+      "query0": "query"
+    },
+    "skeleton": "search code for <query0>",
+    "namespace": "ea951e30ddc2e3fbc06eb8d343acee8d3e1b560636c67748159d683fa73a5e54",
+    "unresolved": [],
+    "semantics": [
+      "code",
+      "count:query:1"
+    ]
+  },
+  "answer": "Found in `retry.py`:\n\n```python\ndef retry_policy(): return 3\n```",
+  "calls": [
+    {
+      "reservation": "690d0afd5d29469cbd18570a642ea236",
+      "stage": "core",
+      "run_id": "50a173a38c409d95e84eb6b4",
+      "kind": "answer",
+      "state": "measured",
+      "cost_usd": 0.000648,
+      "timestamp": "2026-10-29T09:30:03.577154+00:00",
+      "cost_estimated": false,
+      "usage": {
+        "input_tokens": 209,
+        "output_tokens": 23,
+        "cache_read_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "error": null,
+      "latency_ms": 1678.283583954908,
+      "response_id": "resp_0483d416cfa0a6a2016ae3121bdb6c87d0b50afc86e7977786",
+      "output": "Found in `retry.py`:\n\n```python\ndef retry_policy(): return 3\n```"
+    }
+  ],
+  "executions": [
+    {
+      "tool": "search_code",
+      "arguments": {
+        "query": "retry policy"
+      },
+      "bindings": {
+        "query": "retry policy"
+      },
+      "tenant": "acme",
+      "state_version": "8aee10291096d01247a722fa205492a21a0e41d7a1d042b1ccb13b77f28c7f35",
+      "result": {
+        "found": true,
+        "records": [
+          {
+            "id": "retry.py",
+            "text": "def retry_policy(): return 3"
+          }
+        ],
+        "error": null
+      },
+      "latency_ms": 0.686999992467463,
+      "started_at": "2026-10-29T09:30:03.564294+00:00"
+    }
+  ],
+  "cache_hit": true,
+  "candidate": "970935972911bb8904d4",
+  "retrieval_score": 1.0,
+  "retrieval_margin": 0.5367733262425982,
+  "rejection": null,
+  "replans": 0,
+  "error": null,
+  "timings_ms": {
+    "binding": 0.07474992889910936,
+    "retrieval_validation": 0.2682909835129976,
+    "planning": 0,
+    "answer": 1678.283583954908,
+    "tools": 0.686999992467463,
+    "runtime": 1691.9490409782156
+  },
+  "cost_usd": 0.000648,
+  "trace_id": null
+}

@@ -1,0 +1,245 @@
+{
+  "split": "dev",
+  "judge": "exact",
+  "measurement": "code_baseline",
+  "context_hash": "07a536994731f1efea8bf0aff66f428023b9b0ece182af5d11bd95d2d22dde74",
+  "scheduled_judgments": 192,
+  "current_completed": 192,
+  "human_audited_episodes": 0,
+  "evaluation_cost_usd": 0,
+  "answer_generation_cost_usd": 0.023852,
+  "budget_note": "Global results/budget.jsonl includes retained interrupted-call estimates and other studies; analysis costs cover saved calls only.",
+  "by_representation": {
+    "raw": {
+      "false_approval": {
+        "numerator": 0,
+        "denominator": 24,
+        "rate": 0.0,
+        "zero_event_cluster_upper_95": 0.22092219194555585
+      },
+      "false_rejection": {
+        "numerator": 0,
+        "denominator": 24,
+        "rate": 0.0
+      },
+      "coverage": {
+        "numerator": 48,
+        "denominator": 48,
+        "rate": 1.0
+      },
+      "insufficient_evidence": {
+        "numerator": 0,
+        "denominator": 48,
+        "rate": 0.0
+      },
+      "operational_failure": {
+        "numerator": 0,
+        "denominator": 48,
+        "rate": 0.0
+      },
+      "decided_accuracy": {
+        "numerator": 48,
+        "denominator": 48,
+        "rate": 1.0
+      },
+      "unsupported_approval": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "unnecessary_abstention": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "definitive_on_unanswerable": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      }
+    },
+    "blanket": {
+      "false_approval": {
+        "numerator": 0,
+        "denominator": 24,
+        "rate": 0.0,
+        "zero_event_cluster_upper_95": 0.22092219194555585
+      },
+      "false_rejection": {
+        "numerator": 0,
+        "denominator": 24,
+        "rate": 0.0
+      },
+      "coverage": {
+        "numerator": 0,
+        "denominator": 48,
+        "rate": 0.0
+      },
+      "insufficient_evidence": {
+        "numerator": 48,
+        "denominator": 48,
+        "rate": 1.0
+      },
+      "operational_failure": {
+        "numerator": 0,
+        "denominator": 48,
+        "rate": 0.0
+      },
+      "decided_accuracy": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "unsupported_approval": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "unnecessary_abstention": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "definitive_on_unanswerable": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      }
+    },
+    "pseudonym": {
+      "false_approval": {
+        "numerator": 0,
+        "denominator": 24,
+        "rate": 0.0,
+        "zero_event_cluster_upper_95": 0.22092219194555585
+      },
+      "false_rejection": {
+        "numerator": 0,
+        "denominator": 24,
+        "rate": 0.0
+      },
+      "coverage": {
+        "numerator": 48,
+        "denominator": 48,
+        "rate": 1.0
+      },
+      "insufficient_evidence": {
+        "numerator": 0,
+        "denominator": 48,
+        "rate": 0.0
+      },
+      "operational_failure": {
+        "numerator": 0,
+        "denominator": 48,
+        "rate": 0.0
+      },
+      "decided_accuracy": {
+        "numerator": 48,
+        "denominator": 48,
+        "rate": 1.0
+      },
+      "unsupported_approval": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "unnecessary_abstention": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "definitive_on_unanswerable": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      }
+    },
+    "relation": {
+      "false_approval": {
+        "numerator": 0,
+        "denominator": 24,
+        "rate": 0.0,
+        "zero_event_cluster_upper_95": 0.22092219194555585
+      },
+      "false_rejection": {
+        "numerator": 0,
+        "denominator": 24,
+        "rate": 0.0
+      },
+      "coverage": {
+        "numerator": 48,
+        "denominator": 48,
+        "rate": 1.0
+      },
+      "insufficient_evidence": {
+        "numerator": 0,
+        "denominator": 48,
+        "rate": 0.0
+      },
+      "operational_failure": {
+        "numerator": 0,
+        "denominator": 48,
+        "rate": 0.0
+      },
+      "decided_accuracy": {
+        "numerator": 48,
+        "denominator": 48,
+        "rate": 1.0
+      },
+      "unsupported_approval": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "unnecessary_abstention": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "definitive_on_unanswerable": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      }
+    }
+  },
+  "paired": {
+    "contrasts": {
+      "false_approval": {
+        "blanket_minus_pseudonym": 0.0,
+        "interval_95": [
+          -0.22092219194555585,
+          0.22092219194555585
+        ],
+        "method": "conservative zero-event cluster bounds; bootstrap degenerate",
+        "zero_event_bounds": {
+          "blanket": {
+            "independent_base_clusters": 12,
+            "one_sided_95_upper": 0.22092219194555585
+          },
+          "pseudonym": {
+            "independent_base_clusters": 12,
+            "one_sided_95_upper": 0.22092219194555585
+          }
+        }
+      },
+      "coverage": {
+        "blanket_minus_pseudonym": -1.0,
+        "interval_95": [
+          -1.0,
+          -1.0
+        ],
+        "method": "paired base-request cluster bootstrap",
+        "zero_event_bounds": {
+          "blanket": {
+            "independent_base_clusters": 12,
+            "one_sided_95_upper": 0.22092219194555585
+          }
+        }
+      }
+    },
+    "base_clusters": 12,
+    "draws": 2000,
+    "assumptions": "Base requests treated as independent; repeats, paired episodes and views stay together. Six held-out families limit transfer claims. No production certification."
+  }
+}

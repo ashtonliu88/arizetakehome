@@ -1,0 +1,84 @@
+{
+  "run_id": "aa52399fac7ffedf6783d993",
+  "policy": "verified",
+  "bank_state": "warm",
+  "status": "completed",
+  "bindings": {
+    "slots": {
+      "issue0": "ENG-10021"
+    },
+    "slot_types": {
+      "issue0": "issue"
+    },
+    "skeleton": "inspect issue <issue0>",
+    "namespace": "ea951e30ddc2e3fbc06eb8d343acee8d3e1b560636c67748159d683fa73a5e54",
+    "unresolved": [],
+    "semantics": [
+      "count:issue:1"
+    ]
+  },
+  "answer": "Issue **ENG-10021** is **open**. Associated test run: **TR-10021**.",
+  "calls": [
+    {
+      "reservation": "e2bc8b1e3a194b45b74909680a45135e",
+      "stage": "core",
+      "run_id": "aa52399fac7ffedf6783d993",
+      "kind": "answer",
+      "state": "measured",
+      "cost_usd": 0.000722,
+      "timestamp": "2026-10-29T09:17:29.356745+00:00",
+      "cost_estimated": false,
+      "usage": {
+        "input_tokens": 226,
+        "output_tokens": 27,
+        "cache_read_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "error": null,
+      "latency_ms": 1927.7320830151439,
+      "response_id": "resp_0299bdf594888992016ae30f299f7887d0b7f057a3acf64ee4",
+      "output": "Issue **ENG-10021** is **open**. Associated test run: **TR-10021**."
+    }
+  ],
+  "executions": [
+    {
+      "tool": "lookup_issue",
+      "arguments": {
+        "issue_id": "ENG-10021"
+      },
+      "bindings": {
+        "issue_id": "ENG-10021"
+      },
+      "tenant": "acme",
+      "state_version": "6cb2e2f6817c0dc36d10addda61a5ed0e4a7e4b653fae8b00aa7e585f8882095",
+      "result": {
+        "found": true,
+        "record": {
+          "issue_id": "ENG-10021",
+          "status": "open",
+          "test_run_id": "TR-10021"
+        },
+        "error": null
+      },
+      "latency_ms": 0.8059160318225622,
+      "started_at": "2026-10-29T09:17:29.348849+00:00"
+    }
+  ],
+  "cache_hit": true,
+  "candidate": "f8242edb8a292b282604",
+  "retrieval_score": 0.3598338512899424,
+  "retrieval_margin": 0.07656252281026599,
+  "rejection": null,
+  "replans": 0,
+  "error": null,
+  "timings_ms": {
+    "binding": 0.08483394049108028,
+    "retrieval_validation": 0.9496250422671437,
+    "planning": 0,
+    "answer": 1927.7320830151439,
+    "tools": 0.8059160318225622,
+    "runtime": 1937.0985840214416
+  },
+  "cost_usd": 0.000722,
+  "trace_id": null
+}

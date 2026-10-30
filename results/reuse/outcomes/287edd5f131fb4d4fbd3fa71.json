@@ -1,0 +1,84 @@
+{
+  "run_id": "287edd5f131fb4d4fbd3fa71",
+  "policy": "verified",
+  "bank_state": "warm",
+  "status": "completed",
+  "bindings": {
+    "slots": {
+      "issue0": "ENG-10015"
+    },
+    "slot_types": {
+      "issue0": "issue"
+    },
+    "skeleton": "fetch issue <issue0>",
+    "namespace": "ea951e30ddc2e3fbc06eb8d343acee8d3e1b560636c67748159d683fa73a5e54",
+    "unresolved": [],
+    "semantics": [
+      "count:issue:1"
+    ]
+  },
+  "answer": "Issue **ENG-10015**: status **open**; test run **TR-10015**.",
+  "calls": [
+    {
+      "reservation": "a865ba7f6df34ab6a554394b2decd3c6",
+      "stage": "core",
+      "run_id": "287edd5f131fb4d4fbd3fa71",
+      "kind": "answer",
+      "state": "measured",
+      "cost_usd": 0.000694,
+      "timestamp": "2026-10-29T09:15:42.177160+00:00",
+      "cost_estimated": false,
+      "usage": {
+        "input_tokens": 217,
+        "output_tokens": 26,
+        "cache_read_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "error": null,
+      "latency_ms": 2189.1734580276534,
+      "response_id": "resp_0b451aee7f210164016ae30ebe523487d0a7103672fd40cfcf",
+      "output": "Issue **ENG-10015**: status **open**; test run **TR-10015**."
+    }
+  ],
+  "executions": [
+    {
+      "tool": "lookup_issue",
+      "arguments": {
+        "issue_id": "ENG-10015"
+      },
+      "bindings": {
+        "issue_id": "ENG-10015"
+      },
+      "tenant": "acme",
+      "state_version": "6b7995cc1b2228fb136503adf1e3eb32833078969280152cd3330e292aafdcb3",
+      "result": {
+        "found": true,
+        "record": {
+          "issue_id": "ENG-10015",
+          "status": "open",
+          "test_run_id": "TR-10015"
+        },
+        "error": null
+      },
+      "latency_ms": 0.8989580674096942,
+      "started_at": "2026-10-29T09:15:42.159001+00:00"
+    }
+  ],
+  "cache_hit": true,
+  "candidate": "f8242edb8a292b282604",
+  "retrieval_score": 0.3598338512899424,
+  "retrieval_margin": 0.07656252281026599,
+  "rejection": null,
+  "replans": 0,
+  "error": null,
+  "timings_ms": {
+    "binding": 0.11508306488394737,
+    "retrieval_validation": 1.695791957899928,
+    "planning": 0,
+    "answer": 2189.1734580276534,
+    "tools": 0.8989580674096942,
+    "runtime": 2209.7143749706447
+  },
+  "cost_usd": 0.000694,
+  "trace_id": null
+}

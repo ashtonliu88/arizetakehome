@@ -1,0 +1,478 @@
+{
+  "split": "test",
+  "configuration": "24b5d76b2aaecc355758bd2fb234ba22eb3d3a7f60c461c7aecf21aa60cf279a",
+  "measured_endpoints": 768,
+  "expected_endpoints": 768,
+  "complete": true,
+  "summaries": {
+    "fused:warm": {
+      "n": 128,
+      "successes": 122,
+      "success_rate": 0.953125,
+      "resource_correct": 128,
+      "cost_usd": 0.226047,
+      "cost_per_success_usd": 0.001852844262295082,
+      "latency_ms": {
+        "p50": 3489.925457921345,
+        "p95": 4501.032294309698
+      },
+      "hits": 0,
+      "hit_rate": 0.0,
+      "false_hits": 0,
+      "incorrect_hit_rate": null,
+      "hit_latency_ms": null,
+      "miss_latency_ms": {
+        "p50": 3489.925457921345,
+        "p95": 4501.032294309698
+      },
+      "model_calls": 226,
+      "planning_calls": 128,
+      "answer_calls": 98,
+      "tool_calls": 122,
+      "replans": 0,
+      "tokens": {
+        "input_tokens": 184282,
+        "output_tokens": 11789,
+        "cache_read_tokens": 141685,
+        "cache_write_tokens": 17589
+      },
+      "unknown_usage_calls": 0,
+      "status": {
+        "completed": 100,
+        "clarified": 22,
+        "abstained": 6
+      },
+      "rejections": {},
+      "authorization_violations": 0,
+      "wrong_returned_bindings": 0,
+      "bad_result_reached_answer": 0,
+      "unnecessary_clarifications": 0,
+      "unnecessary_refusals": 0,
+      "appropriate_abstentions": 6,
+      "unresolved": 6,
+      "mean_decomposition_ms": {
+        "binding": 0.10337568983231904,
+        "retrieval_validation": 0.0001474209057050757,
+        "planning": 2083.5779146273126,
+        "answer": 1272.8288336829792,
+        "tools": 1.2289530959606054,
+        "persistence": 2.8184622487970046
+      }
+    },
+    "verified:warm": {
+      "n": 128,
+      "successes": 122,
+      "success_rate": 0.953125,
+      "resource_correct": 128,
+      "cost_usd": 0.139171,
+      "cost_per_success_usd": 0.0011407459016393442,
+      "latency_ms": {
+        "p50": 1922.2335835220292,
+        "p95": 3976.821666379691
+      },
+      "hits": 68,
+      "hit_rate": 0.53125,
+      "false_hits": 0,
+      "incorrect_hit_rate": 0.0,
+      "hit_latency_ms": {
+        "p50": 1690.7967080478556,
+        "p95": 2338.181914715096
+      },
+      "miss_latency_ms": {
+        "p50": 3179.6085415408015,
+        "p95": 4177.367880661038
+      },
+      "model_calls": 158,
+      "planning_calls": 60,
+      "answer_calls": 98,
+      "tool_calls": 122,
+      "replans": 0,
+      "tokens": {
+        "input_tokens": 99118,
+        "output_tokens": 6123,
+        "cache_read_tokens": 65605,
+        "cache_write_tokens": 8709
+      },
+      "unknown_usage_calls": 0,
+      "status": {
+        "completed": 100,
+        "clarified": 22,
+        "abstained": 6
+      },
+      "rejections": {
+        "retrieval_threshold_or_margin": 8,
+        "semantic_signature": 10,
+        "namespace": 8,
+        "roles_or_multiplicity": 2,
+        "unknown_semantics": 6
+      },
+      "authorization_violations": 0,
+      "wrong_returned_bindings": 0,
+      "bad_result_reached_answer": 0,
+      "unnecessary_clarifications": 0,
+      "unnecessary_refusals": 0,
+      "appropriate_abstentions": 6,
+      "unresolved": 6,
+      "mean_decomposition_ms": {
+        "binding": 0.09750939352670684,
+        "retrieval_validation": 0.8283137731268653,
+        "planning": 1000.0337613773809,
+        "answer": 1284.9456018884666,
+        "tools": 0.8144202456605854,
+        "persistence": 5.186184271224192
+      }
+    },
+    "exact:warm": {
+      "n": 128,
+      "successes": 122,
+      "success_rate": 0.953125,
+      "resource_correct": 128,
+      "cost_usd": 0.13630899999999999,
+      "cost_per_success_usd": 0.0011172868852459014,
+      "latency_ms": {
+        "p50": 1895.7904790295288,
+        "p95": 4164.393156272126
+      },
+      "hits": 64,
+      "hit_rate": 0.5,
+      "false_hits": 0,
+      "incorrect_hit_rate": 0.0,
+      "hit_latency_ms": {
+        "p50": 1604.4817704241723,
+        "p95": 1990.9788919845596
+      },
+      "miss_latency_ms": {
+        "p50": 3134.563812520355,
+        "p95": 4735.388383059761
+      },
+      "model_calls": 162,
+      "planning_calls": 64,
+      "answer_calls": 98,
+      "tool_calls": 122,
+      "replans": 0,
+      "tokens": {
+        "input_tokens": 104054,
+        "output_tokens": 6389,
+        "cache_read_tokens": 73045,
+        "cache_write_tokens": 6193
+      },
+      "unknown_usage_calls": 0,
+      "status": {
+        "completed": 100,
+        "clarified": 22,
+        "abstained": 6
+      },
+      "rejections": {
+        "no_candidate": 32,
+        "namespace": 6
+      },
+      "authorization_violations": 0,
+      "wrong_returned_bindings": 0,
+      "bad_result_reached_answer": 0,
+      "unnecessary_clarifications": 0,
+      "unnecessary_refusals": 0,
+      "appropriate_abstentions": 6,
+      "unresolved": 6,
+      "mean_decomposition_ms": {
+        "binding": 0.09782843062566826,
+        "retrieval_validation": 0.6981673213886097,
+        "planning": 1006.8568574133678,
+        "answer": 1262.3992418448324,
+        "tools": 0.8656832769702305,
+        "persistence": 2.7153515266036266
+      }
+    },
+    "verified:empty": {
+      "n": 128,
+      "successes": 122,
+      "success_rate": 0.953125,
+      "resource_correct": 128,
+      "cost_usd": 0.2192198,
+      "cost_per_success_usd": 0.001796883606557377,
+      "latency_ms": {
+        "p50": 3590.7465835334733,
+        "p95": 4802.4011182482345
+      },
+      "hits": 0,
+      "hit_rate": 0.0,
+      "false_hits": 0,
+      "incorrect_hit_rate": null,
+      "hit_latency_ms": null,
+      "miss_latency_ms": {
+        "p50": 3590.7465835334733,
+        "p95": 4802.4011182482345
+      },
+      "model_calls": 226,
+      "planning_calls": 128,
+      "answer_calls": 98,
+      "tool_calls": 122,
+      "replans": 0,
+      "tokens": {
+        "input_tokens": 184282,
+        "output_tokens": 11749,
+        "cache_read_tokens": 144363,
+        "cache_write_tokens": 14911
+      },
+      "unknown_usage_calls": 0,
+      "status": {
+        "completed": 100,
+        "clarified": 22,
+        "abstained": 6
+      },
+      "rejections": {
+        "empty_bank": 102
+      },
+      "authorization_violations": 0,
+      "wrong_returned_bindings": 0,
+      "bad_result_reached_answer": 0,
+      "unnecessary_clarifications": 0,
+      "unnecessary_refusals": 0,
+      "appropriate_abstentions": 4,
+      "unresolved": 6,
+      "mean_decomposition_ms": {
+        "binding": 0.09731124100653687,
+        "retrieval_validation": 0.004372706825961359,
+        "planning": 2218.649783921137,
+        "answer": 1290.118822959812,
+        "tools": 1.1124258198833559,
+        "persistence": 3.2458519026477006
+      }
+    },
+    "fused:empty": {
+      "n": 128,
+      "successes": 122,
+      "success_rate": 0.953125,
+      "resource_correct": 128,
+      "cost_usd": 0.213515,
+      "cost_per_success_usd": 0.0017501229508196721,
+      "latency_ms": {
+        "p50": 3571.719354018569,
+        "p95": 4440.175081801134
+      },
+      "hits": 0,
+      "hit_rate": 0.0,
+      "false_hits": 0,
+      "incorrect_hit_rate": null,
+      "hit_latency_ms": null,
+      "miss_latency_ms": {
+        "p50": 3571.719354018569,
+        "p95": 4440.175081801134
+      },
+      "model_calls": 226,
+      "planning_calls": 128,
+      "answer_calls": 98,
+      "tool_calls": 122,
+      "replans": 0,
+      "tokens": {
+        "input_tokens": 184282,
+        "output_tokens": 11773,
+        "cache_read_tokens": 146840,
+        "cache_write_tokens": 12434
+      },
+      "unknown_usage_calls": 0,
+      "status": {
+        "completed": 100,
+        "clarified": 22,
+        "abstained": 6
+      },
+      "rejections": {},
+      "authorization_violations": 0,
+      "wrong_returned_bindings": 0,
+      "bad_result_reached_answer": 0,
+      "unnecessary_clarifications": 0,
+      "unnecessary_refusals": 0,
+      "appropriate_abstentions": 4,
+      "unresolved": 6,
+      "mean_decomposition_ms": {
+        "binding": 0.0967266505540465,
+        "retrieval_validation": 0.00014059969544177875,
+        "planning": 2064.253158179781,
+        "answer": 1280.68245414579,
+        "tools": 1.1618951602940797,
+        "persistence": 4.017093702714192
+      }
+    },
+    "ordinary:warm": {
+      "n": 128,
+      "successes": 106,
+      "success_rate": 0.828125,
+      "resource_correct": 110,
+      "cost_usd": 0.1089888,
+      "cost_per_success_usd": 0.0010281962264150942,
+      "latency_ms": {
+        "p50": 1776.412416540552,
+        "p95": 3541.054175450699
+      },
+      "hits": 94,
+      "hit_rate": 0.734375,
+      "false_hits": 18,
+      "incorrect_hit_rate": 0.19148936170212766,
+      "hit_latency_ms": {
+        "p50": 1710.0692079402506,
+        "p95": 2628.5382108530025
+      },
+      "miss_latency_ms": {
+        "p50": 2207.716103992425,
+        "p95": 4691.425283491843
+      },
+      "model_calls": 132,
+      "planning_calls": 34,
+      "answer_calls": 98,
+      "tool_calls": 128,
+      "replans": 0,
+      "tokens": {
+        "input_tokens": 66968,
+        "output_tokens": 4837,
+        "cache_read_tokens": 39253,
+        "cache_write_tokens": 2527
+      },
+      "unknown_usage_calls": 0,
+      "status": {
+        "completed": 100,
+        "clarified": 22,
+        "abstained": 2,
+        "safe_failure": 4
+      },
+      "rejections": {
+        "retrieval_threshold_or_margin": 8
+      },
+      "authorization_violations": 0,
+      "wrong_returned_bindings": 0,
+      "bad_result_reached_answer": 16,
+      "unnecessary_clarifications": 0,
+      "unnecessary_refusals": 0,
+      "appropriate_abstentions": 2,
+      "unresolved": 22,
+      "mean_decomposition_ms": {
+        "binding": 0.09839584345172625,
+        "retrieval_validation": 0.2553642198108719,
+        "planning": 573.0291312011104,
+        "answer": 1370.0972916331011,
+        "tools": 0.7484557581847184,
+        "persistence": 2.5583756460036966
+      }
+    }
+  },
+  "paired": {
+    "exact": {
+      "clusters": 64,
+      "point": [
+        0.0,
+        0.3969882369595704,
+        0.45678195655253573
+      ],
+      "metric_order": [
+        "success_rate_difference",
+        "cost_per_success_reduction",
+        "median_latency_reduction"
+      ],
+      "paired_cluster_bootstrap_95pct": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.27798947011819536,
+          0.49578576055182766
+        ],
+        [
+          0.4236699505427611,
+          0.5092532425489454
+        ]
+      ],
+      "harmful_clusters": 0,
+      "conservative_harmful_cluster_rate_upper_95pct": 0.045729702330762456,
+      "method": "resample base-request clusters, retaining all conditions and repetitions; zero-event exact bound or Hoeffding upper bound"
+    },
+    "ordinary": {
+      "clusters": 64,
+      "point": [
+        -0.125,
+        0.44507142486898077,
+        0.4909884357247528
+      ],
+      "metric_order": [
+        "success_rate_difference",
+        "cost_per_success_reduction",
+        "median_latency_reduction"
+      ],
+      "paired_cluster_bootstrap_95pct": [
+        [
+          -0.21875,
+          -0.046875
+        ],
+        [
+          0.3104367214788853,
+          0.5480841602444803
+        ],
+        [
+          0.46026237090332334,
+          0.5241166768563976
+        ]
+      ],
+      "harmful_clusters": 8,
+      "conservative_harmful_cluster_rate_upper_95pct": 0.27798417691755106,
+      "method": "resample base-request clusters, retaining all conditions and repetitions; zero-event exact bound or Hoeffding upper bound"
+    },
+    "verified": {
+      "clusters": 64,
+      "point": [
+        0.0,
+        0.38432715320265254,
+        0.44920497394607906
+      ],
+      "metric_order": [
+        "success_rate_difference",
+        "cost_per_success_reduction",
+        "median_latency_reduction"
+      ],
+      "paired_cluster_bootstrap_95pct": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.24611217902313676,
+          0.49975437320743676
+        ],
+        [
+          0.4112412916826477,
+          0.5048769011704556
+        ]
+      ],
+      "harmful_clusters": 0,
+      "conservative_harmful_cluster_rate_upper_95pct": 0.045729702330762456,
+      "method": "resample base-request clusters, retaining all conditions and repetitions; zero-event exact bound or Hoeffding upper bound"
+    }
+  },
+  "break_even": {
+    "exact": {
+      "construction_cost_usd": 0.07299699999999999,
+      "saving_per_warm_request_usd": 0.0007010781250000001,
+      "requests_to_amortize": 105,
+      "repeat_rate_scenarios_estimates": {
+        "0.25": 417,
+        "0.5": 209,
+        "0.75": 139,
+        "1.0": 105
+      }
+    },
+    "verified": {
+      "construction_cost_usd": 0.07299699999999999,
+      "saving_per_warm_request_usd": 0.0006787187500000001,
+      "requests_to_amortize": 108,
+      "repeat_rate_scenarios_estimates": {
+        "0.25": 431,
+        "0.5": 216,
+        "0.75": 144,
+        "1.0": 108
+      }
+    }
+  },
+  "engineering_targets_observed": true,
+  "limits": [
+    "mechanical path and required-fact checks do not prove semantic task success",
+    "64 held-out clusters cannot establish a 1% production-risk guarantee",
+    "read-only local fixture service with real model calls; no production traffic or concurrency claim"
+  ]
+}

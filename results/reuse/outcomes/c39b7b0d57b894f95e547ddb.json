@@ -1,0 +1,63 @@
+{
+  "run_id": "c39b7b0d57b894f95e547ddb",
+  "policy": "verified",
+  "bank_state": "empty",
+  "status": "clarified",
+  "bindings": {
+    "slots": {
+      "service0": "gateway"
+    },
+    "slot_types": {
+      "service0": "service"
+    },
+    "skeleton": "show deployment for service <service0>",
+    "namespace": "ea951e30ddc2e3fbc06eb8d343acee8d3e1b560636c67748159d683fa73a5e54",
+    "unresolved": [
+      "missing environment"
+    ],
+    "semantics": [
+      "count:service:1"
+    ]
+  },
+  "answer": "Which environment should I check for gateway: production, staging, or development?",
+  "calls": [
+    {
+      "reservation": "f27326120ed540e4a05365e269916c51",
+      "stage": "core",
+      "run_id": "c39b7b0d57b894f95e547ddb",
+      "kind": "planning",
+      "state": "measured",
+      "cost_usd": 0.003426,
+      "timestamp": "2026-10-29T09:19:18.842183+00:00",
+      "cost_estimated": false,
+      "usage": {
+        "input_tokens": 1235,
+        "output_tokens": 34,
+        "cache_read_tokens": 0,
+        "cache_write_tokens": 1232
+      },
+      "error": null,
+      "latency_ms": 2176.3770839897916,
+      "response_id": "resp_033386ac837a4041016ae30f96fd2887d090568ea292217341",
+      "output": "{\"kind\":\"clarify\",\"steps\":[],\"response\":\"Which environment should I check for gateway: production, staging, or development?\"}"
+    }
+  ],
+  "executions": [],
+  "cache_hit": false,
+  "candidate": null,
+  "retrieval_score": 0,
+  "retrieval_margin": 0,
+  "rejection": null,
+  "replans": 0,
+  "error": null,
+  "timings_ms": {
+    "binding": 0.1190409529954195,
+    "retrieval_validation": 0.00037509016692638397,
+    "planning": 2176.3770839897916,
+    "answer": 0,
+    "tools": 0,
+    "runtime": 2189.5030830055475
+  },
+  "cost_usd": 0.003426,
+  "trace_id": null
+}

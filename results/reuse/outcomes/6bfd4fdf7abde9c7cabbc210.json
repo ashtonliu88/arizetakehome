@@ -1,0 +1,107 @@
+{
+  "run_id": "6bfd4fdf7abde9c7cabbc210",
+  "policy": "exact",
+  "bank_state": "warm",
+  "status": "completed",
+  "bindings": {
+    "slots": {
+      "number0": 10414.0,
+      "number1": 6.0
+    },
+    "slot_types": {
+      "number0": "number",
+      "number1": "number"
+    },
+    "skeleton": "calculate <number0> divided by <number1>",
+    "namespace": "ea951e30ddc2e3fbc06eb8d343acee8d3e1b560636c67748159d683fa73a5e54",
+    "unresolved": [],
+    "semantics": [
+      "count:number:2",
+      "divide",
+      "unknown:divided"
+    ]
+  },
+  "answer": "10414 ÷ 6 = 1735.6666666666667",
+  "calls": [
+    {
+      "reservation": "5e9911d087e5498b9e431c5f894d7f7e",
+      "stage": "core",
+      "run_id": "6bfd4fdf7abde9c7cabbc210",
+      "kind": "planning",
+      "state": "measured",
+      "cost_usd": 0.0008022000000000001,
+      "timestamp": "2026-10-29T09:34:19.419572+00:00",
+      "cost_estimated": false,
+      "usage": {
+        "input_tokens": 1265,
+        "output_tokens": 67,
+        "cache_read_tokens": 1262,
+        "cache_write_tokens": 0
+      },
+      "error": null,
+      "latency_ms": 1687.7962909638882,
+      "response_id": "resp_0a289cfe67504dd2016ae3131b8d2487d0a3ab5c90dafd845f",
+      "output": "{\"kind\":\"tools\",\"steps\":[{\"tool\":\"calculate\",\"arguments\":{\"issue_id\":null,\"test_run_id\":null,\"service\":null,\"environment\":null,\"query\":null,\"operation\":\"divide\",\"left\":\"$slot.number0\",\"right\":\"$slot.number1\"}}],\"response\":\"\"}"
+    },
+    {
+      "reservation": "61ea237e17134b258cefea4c3424dbc8",
+      "stage": "core",
+      "run_id": "6bfd4fdf7abde9c7cabbc210",
+      "kind": "answer",
+      "state": "measured",
+      "cost_usd": 0.000658,
+      "timestamp": "2026-10-29T09:34:21.132861+00:00",
+      "cost_estimated": false,
+      "usage": {
+        "input_tokens": 229,
+        "output_tokens": 20,
+        "cache_read_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "error": null,
+      "latency_ms": 1306.6318749915808,
+      "response_id": "resp_01c15ae8f2440be7016ae3131d449087d0af9b80e5e58739dd",
+      "output": "10414 ÷ 6 = 1735.6666666666667"
+    }
+  ],
+  "executions": [
+    {
+      "tool": "calculate",
+      "arguments": {
+        "operation": "divide",
+        "left": 10414.0,
+        "right": 6.0
+      },
+      "bindings": {
+        "operation": "divide",
+        "left": 10414.0,
+        "right": 6.0
+      },
+      "tenant": "acme",
+      "state_version": "b501223d8a80a46cf018204d21c1886d7f37a8e3b565ce8d9c37f3e1259ad547",
+      "result": {
+        "found": true,
+        "value": 1735.6666666666667
+      },
+      "latency_ms": 1.8101659370586276,
+      "started_at": "2026-10-29T09:34:21.108493+00:00"
+    }
+  ],
+  "cache_hit": false,
+  "candidate": null,
+  "retrieval_score": 0.0,
+  "retrieval_margin": 0.0,
+  "rejection": "no_candidate",
+  "replans": 0,
+  "error": null,
+  "timings_ms": {
+    "binding": 0.0980000477284193,
+    "retrieval_validation": 0.30912505462765694,
+    "planning": 1687.7962909638882,
+    "answer": 1306.6318749915808,
+    "tools": 1.8101659370586276,
+    "runtime": 3034.5499580726027
+  },
+  "cost_usd": 0.0014602,
+  "trace_id": null
+}

@@ -1,0 +1,64 @@
+{
+  "run_id": "e78b984922f775c35d01540a",
+  "policy": "verified",
+  "bank_state": "empty",
+  "status": "abstained",
+  "bindings": {
+    "slots": {
+      "test0": "TR-10221"
+    },
+    "slot_types": {
+      "test0": "test"
+    },
+    "skeleton": "run tests for <test0>",
+    "namespace": "ea951e30ddc2e3fbc06eb8d343acee8d3e1b560636c67748159d683fa73a5e54",
+    "unresolved": [
+      "test execution unavailable"
+    ],
+    "semantics": [
+      "count:test:1",
+      "unknown:tests"
+    ]
+  },
+  "answer": "I can’t run tests for TR-10221 because test execution is unavailable. The available test tool only retrieves stored results; it does not execute tests.",
+  "calls": [
+    {
+      "reservation": "b402386127bf43eca9579474bd7b5d2f",
+      "stage": "core",
+      "run_id": "e78b984922f775c35d01540a",
+      "kind": "planning",
+      "state": "measured",
+      "cost_usd": 0.0006401,
+      "timestamp": "2026-10-29T09:26:27.590543+00:00",
+      "cost_estimated": false,
+      "usage": {
+        "input_tokens": 1244,
+        "output_tokens": 51,
+        "cache_read_tokens": 1241,
+        "cache_write_tokens": 0
+      },
+      "error": null,
+      "latency_ms": 2125.623541069217,
+      "response_id": "resp_06ab2c4984e68b12016ae31143bdbc87d0823b4ab4991a714a",
+      "output": "{\"kind\":\"abstain\",\"steps\":[],\"response\":\"I can’t run tests for TR-10221 because test execution is unavailable. The available test tool only retrieves stored results; it does not execute tests.\"}"
+    }
+  ],
+  "executions": [],
+  "cache_hit": false,
+  "candidate": null,
+  "retrieval_score": 0,
+  "retrieval_margin": 0,
+  "rejection": null,
+  "replans": 0,
+  "error": null,
+  "timings_ms": {
+    "binding": 0.10508403647691011,
+    "retrieval_validation": 0.0002909218892455101,
+    "planning": 2125.623541069217,
+    "answer": 0,
+    "tools": 0,
+    "runtime": 2230.9012919431552
+  },
+  "cost_usd": 0.0006401,
+  "trace_id": null
+}

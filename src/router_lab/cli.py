@@ -11,7 +11,7 @@ from .util import append_jsonl, digest, now, read_jsonl, write_json
 
 def parser():
     p = argparse.ArgumentParser(
-        description="Decision Router Lab — paid runs are explicit; analysis works offline"
+        description="Trace Evidence Lab — privacy study and original router benchmark; paid runs are explicit"
     )
     p.add_argument("--config", type=Path, default=Path("config/settings.json"))
     p.add_argument("--results-dir", type=Path, default=Path("results"))
@@ -56,6 +56,12 @@ def parser():
     v.add_argument("--unsupported-claims", choices=["yes", "no"], required=True)
     v.add_argument("--reviewer", required=True)
     v.add_argument("--note", required=True)
+    from .privacy.cli import add_parser
+
+    add_parser(commands)
+    from .reuse.cli import add_parser as add_reuse_parser
+
+    add_reuse_parser(commands)
     return p
 
 
@@ -92,6 +98,16 @@ def run(args):
     from .manifest import load_settings
 
     settings = load_settings(args.config)
+    if args.command == "reuse":
+        from .reuse.cli import run as run_reuse
+
+        return run_reuse(args, settings)
+    if args.command == "privacy":
+        from .budget import run_lock
+        from .privacy.cli import run as run_privacy
+
+        with run_lock():
+            return run_privacy(args, settings)
     if args.command == "validate-data":
         return validate_data(load_data())
     if args.command == "review-label":

@@ -1,0 +1,104 @@
+{
+  "run_id": "7603daab6111b2564895fb64",
+  "policy": "exact",
+  "bank_state": "warm",
+  "status": "completed",
+  "bindings": {
+    "slots": {
+      "issue0": "ENG-10018"
+    },
+    "slot_types": {
+      "issue0": "issue"
+    },
+    "skeleton": "get issue <issue0>",
+    "namespace": "a7fd4bedcb1fbdf3658161b12260f895955fcc3525d591c0e91299da727d0207",
+    "unresolved": [],
+    "semantics": [
+      "count:issue:1"
+    ]
+  },
+  "answer": "Issue **ENG-10018**\n- Status: **triaged**\n- Test run: **TR-10018**",
+  "calls": [
+    {
+      "reservation": "9e19911cda364309bb2e58a044364fc5",
+      "stage": "core",
+      "run_id": "7603daab6111b2564895fb64",
+      "kind": "planning",
+      "state": "measured",
+      "cost_usd": 0.0007785,
+      "timestamp": "2026-10-29T09:16:31.872872+00:00",
+      "cost_estimated": false,
+      "usage": {
+        "input_tokens": 1228,
+        "output_tokens": 65,
+        "cache_read_tokens": 1225,
+        "cache_write_tokens": 0
+      },
+      "error": null,
+      "latency_ms": 1739.1235410468653,
+      "response_id": "resp_0d9adf8cac48bbe6016ae30ef01ea487d09731f49431301b8b",
+      "output": "{\"kind\":\"tools\",\"steps\":[{\"tool\":\"lookup_issue\",\"arguments\":{\"issue_id\":\"$slot.issue0\",\"test_run_id\":null,\"service\":null,\"environment\":null,\"query\":null,\"operation\":null,\"left\":null,\"right\":null}}],\"response\":\"\"}"
+    },
+    {
+      "reservation": "91a31f09e8fb4068971bc88cdd4dfab5",
+      "stage": "core",
+      "run_id": "7603daab6111b2564895fb64",
+      "kind": "answer",
+      "state": "measured",
+      "cost_usd": 0.00072,
+      "timestamp": "2026-10-29T09:16:33.624363+00:00",
+      "cost_estimated": false,
+      "usage": {
+        "input_tokens": 220,
+        "output_tokens": 28,
+        "cache_read_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "error": null,
+      "latency_ms": 1587.5392499146983,
+      "response_id": "resp_0a80e432b4fcb337016ae30ef1c67487d09433e4c6d7a56a3a",
+      "output": "Issue **ENG-10018**\n- Status: **triaged**\n- Test run: **TR-10018**"
+    }
+  ],
+  "executions": [
+    {
+      "tool": "lookup_issue",
+      "arguments": {
+        "issue_id": "ENG-10018"
+      },
+      "bindings": {
+        "issue_id": "ENG-10018"
+      },
+      "tenant": "beta",
+      "state_version": "fd6a6b3ccfc8e1473bd18d398032f17b807ad5c17708cc967db933488a05e3dc",
+      "result": {
+        "found": true,
+        "record": {
+          "issue_id": "ENG-10018",
+          "status": "triaged",
+          "test_run_id": "TR-10018"
+        },
+        "error": null
+      },
+      "latency_ms": 1.4585419557988644,
+      "started_at": "2026-10-29T09:16:33.612559+00:00"
+    }
+  ],
+  "cache_hit": false,
+  "candidate": null,
+  "retrieval_score": 0.0,
+  "retrieval_margin": 0.0,
+  "rejection": "no_candidate",
+  "replans": 0,
+  "error": null,
+  "timings_ms": {
+    "binding": 0.07570802699774504,
+    "retrieval_validation": 0.270458054728806,
+    "planning": 1739.1235410468653,
+    "answer": 1587.5392499146983,
+    "tools": 1.4585419557988644,
+    "runtime": 3349.733458016999
+  },
+  "cost_usd": 0.0014985,
+  "trace_id": null
+}

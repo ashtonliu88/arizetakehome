@@ -1,0 +1,57 @@
+{
+  "run_id": "23161f04a0c7e35ea186da9d",
+  "policy": "verified",
+  "bank_state": "empty",
+  "status": "clarified",
+  "bindings": {
+    "slots": {},
+    "slot_types": {},
+    "skeleton": "get issue status",
+    "namespace": "ea951e30ddc2e3fbc06eb8d343acee8d3e1b560636c67748159d683fa73a5e54",
+    "unresolved": [
+      "missing issue identifier"
+    ],
+    "semantics": []
+  },
+  "answer": "What is the issue ID (for example, ENG-123) whose status you want to check?",
+  "calls": [
+    {
+      "reservation": "747ef9b509c54c7ebda7e89cc4b4526b",
+      "stage": "core",
+      "run_id": "23161f04a0c7e35ea186da9d",
+      "kind": "planning",
+      "state": "measured",
+      "cost_usd": 0.0005168999999999999,
+      "timestamp": "2026-10-29T09:48:45.026625+00:00",
+      "cost_estimated": false,
+      "usage": {
+        "input_tokens": 1212,
+        "output_tokens": 39,
+        "cache_read_tokens": 1209,
+        "cache_write_tokens": 0
+      },
+      "error": null,
+      "latency_ms": 1798.439292004332,
+      "response_id": "resp_095bf02984a580cb016ae3167d2e7887d099f645a0ad597f8e",
+      "output": "{\"kind\":\"clarify\",\"steps\":[],\"response\":\"What is the issue ID (for example, ENG-123) whose status you want to check?\"}"
+    }
+  ],
+  "executions": [],
+  "cache_hit": false,
+  "candidate": null,
+  "retrieval_score": 0,
+  "retrieval_margin": 0,
+  "rejection": null,
+  "replans": 0,
+  "error": null,
+  "timings_ms": {
+    "binding": 0.06970798131078482,
+    "retrieval_validation": 0.0002080341801047325,
+    "planning": 1798.439292004332,
+    "answer": 0,
+    "tools": 0,
+    "runtime": 1850.6621250417084
+  },
+  "cost_usd": 0.0005168999999999999,
+  "trace_id": null
+}

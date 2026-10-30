@@ -1,0 +1,89 @@
+{
+  "run_id": "4f3580a38632288c70e2f21b",
+  "policy": "ordinary",
+  "bank_state": "warm",
+  "status": "completed",
+  "bindings": {
+    "slots": {
+      "query0": "retry policy"
+    },
+    "slot_types": {
+      "query0": "query"
+    },
+    "skeleton": "find code, not documentation, for <query0>",
+    "namespace": "ea951e30ddc2e3fbc06eb8d343acee8d3e1b560636c67748159d683fa73a5e54",
+    "unresolved": [],
+    "semantics": [
+      "code",
+      "constraint",
+      "count:query:1",
+      "docs",
+      "unknown:not"
+    ]
+  },
+  "answer": "No code results are available. The only result is documentation: `retry-guide` — “Retry policy: use exponential backoff.”",
+  "calls": [
+    {
+      "reservation": "8569ba8e3308405da2fb0e3745f0d44f",
+      "stage": "core",
+      "run_id": "4f3580a38632288c70e2f21b",
+      "kind": "answer",
+      "state": "measured",
+      "cost_usd": 0.000722,
+      "timestamp": "2026-10-29T09:28:58.935277+00:00",
+      "cost_estimated": false,
+      "usage": {
+        "input_tokens": 211,
+        "output_tokens": 30,
+        "cache_read_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "error": null,
+      "latency_ms": 1653.5232500173151,
+      "response_id": "resp_06beba601846a92c016ae311db18ac87d09999741d9320ec2a",
+      "output": "No code results are available. The only result is documentation: `retry-guide` — “Retry policy: use exponential backoff.”"
+    }
+  ],
+  "executions": [
+    {
+      "tool": "search_docs",
+      "arguments": {
+        "query": "retry policy"
+      },
+      "bindings": {
+        "query": "retry policy"
+      },
+      "tenant": "acme",
+      "state_version": "dd65b5be8cf25f0de018d6e3abd0df1c27369cc9818482caa992c30aa79140cc",
+      "result": {
+        "found": true,
+        "records": [
+          {
+            "id": "retry-guide",
+            "text": "Retry policy: use exponential backoff."
+          }
+        ],
+        "error": null
+      },
+      "latency_ms": 0.9338749805465341,
+      "started_at": "2026-10-29T09:28:58.923170+00:00"
+    }
+  ],
+  "cache_hit": true,
+  "candidate": "5a6babb91be38b4c6c4f",
+  "retrieval_score": 0.46119121262991686,
+  "retrieval_margin": 0.12010692977547743,
+  "rejection": null,
+  "replans": 0,
+  "error": null,
+  "timings_ms": {
+    "binding": 0.1004580408334732,
+    "retrieval_validation": 0.33908302430063486,
+    "planning": 0,
+    "answer": 1653.5232500173151,
+    "tools": 0.9338749805465341,
+    "runtime": 1666.5361250052229
+  },
+  "cost_usd": 0.000722,
+  "trace_id": null
+}

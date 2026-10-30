@@ -19,12 +19,15 @@ def test_phoenix_persistence_splits_annotations_and_resume(tmp_path, monkeypatch
 
     from router_lab.manifest import current_manifest
     from router_lab.phoenix_io import upload_data
+    from router_lab.privacy import study as privacy_study
+    from router_lab.privacy.phoenix import publish
     from router_lab.smoke import check_persistence, run_smoke
     from router_lab.tracing import Tracing
 
     workspace = Path.cwd()
     settings.repetitions = 1  # Smaller protocol fixture; research configuration remains three.
     fixture_manifest = current_manifest(settings)
+    privacy_context = privacy_study.context(settings)
     shutil.copytree(workspace / "data", tmp_path / "data")
     with socket.socket() as s:
         s.bind(("127.0.0.1", 0))
@@ -145,6 +148,25 @@ def test_phoenix_persistence_splits_annotations_and_resume(tmp_path, monkeypatch
         assert len(provider.requests) == 80
         assert len(read_jsonl(checkpoint_dir / "dev.jsonl")) == 80
         assert len(c.experiments.list(dataset_id=dataset.id)) == 2
+        # Publish saved privacy judgments through the real Phoenix API. Dataset
+        # inputs are the exact blinded views; no model client is initialized.
+        monkeypatch.setattr(privacy_study, "context", lambda config: privacy_context)
+        monkeypatch.setattr("router_lab.privacy.phoenix.context", lambda config: privacy_context)
+        privacy_dir = tmp_path / "privacy-fixture"
+        privacy_study.prepare(privacy_dir, settings.seed)
+        privacy_study.replay(privacy_dir, settings, "dev", "evidence")
+        published = publish(privacy_dir, settings, "dev", "evidence", client=c)
+        assert published["new_model_calls"] == 0
+        assert len(published["published"]) == 4
+        for item in published["published"]:
+            saved_dataset = c.datasets.get_dataset(dataset=item["dataset_id"])
+            assert len(saved_dataset.examples) == 48
+            assert all("oracle" not in row["input"] for row in saved_dataset.examples)
+            saved_experiment = c.experiments.get_experiment(experiment_id=item["experiment_id"])
+            assert len(saved_experiment["task_runs"]) == 48
+            assert len(saved_experiment["evaluation_runs"]) == 96
+        resumed = publish(privacy_dir, settings, "dev", "evidence", client=c)
+        assert resumed == published
         tracing.provider.force_flush()
         assert (storage / "phoenix.db").exists()
         stop(process)

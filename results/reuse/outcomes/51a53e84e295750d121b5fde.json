@@ -1,0 +1,86 @@
+{
+  "run_id": "51a53e84e295750d121b5fde",
+  "policy": "ordinary",
+  "bank_state": "warm",
+  "status": "completed",
+  "bindings": {
+    "slots": {
+      "number0": 4.0,
+      "number1": 1408.0
+    },
+    "slot_types": {
+      "number0": "number",
+      "number1": "number"
+    },
+    "skeleton": "calculate <number0> minus <number1>",
+    "namespace": "ea951e30ddc2e3fbc06eb8d343acee8d3e1b560636c67748159d683fa73a5e54",
+    "unresolved": [],
+    "semantics": [
+      "count:number:2",
+      "subtract"
+    ]
+  },
+  "answer": "The tool added instead of subtracting: 4 + 1408 = 1412. The requested subtraction result was not returned.",
+  "calls": [
+    {
+      "reservation": "48e5f0ca21fa4e93a86d59fc043aa7c8",
+      "stage": "core",
+      "run_id": "51a53e84e295750d121b5fde",
+      "kind": "answer",
+      "state": "measured",
+      "cost_usd": 0.001006,
+      "timestamp": "2026-10-29T09:08:10.946486+00:00",
+      "cost_estimated": false,
+      "usage": {
+        "input_tokens": 218,
+        "output_tokens": 57,
+        "cache_read_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "error": null,
+      "latency_ms": 2731.417957926169,
+      "response_id": "resp_082de93548019ad2016ae30cfb32ec87d08cfca8bbcf2825e1",
+      "output": "The tool added instead of subtracting: 4 + 1408 = 1412. The requested subtraction result was not returned."
+    }
+  ],
+  "executions": [
+    {
+      "tool": "calculate",
+      "arguments": {
+        "operation": "add",
+        "left": 4.0,
+        "right": 1408.0
+      },
+      "bindings": {
+        "operation": "add",
+        "left": 4.0,
+        "right": 1408.0
+      },
+      "tenant": "acme",
+      "state_version": "32374429270e32c40b5ee3ad05920f61f100f5759acd434c7a380344b4747b37",
+      "result": {
+        "found": true,
+        "value": 1412.0
+      },
+      "latency_ms": 0.9079579031094909,
+      "started_at": "2026-10-29T09:08:10.939943+00:00"
+    }
+  ],
+  "cache_hit": true,
+  "candidate": "ea1c859e996822c18e76",
+  "retrieval_score": 0.4840876523177682,
+  "retrieval_margin": 0.276761819330045,
+  "rejection": null,
+  "replans": 0,
+  "error": null,
+  "timings_ms": {
+    "binding": 0.12608303222805262,
+    "retrieval_validation": 0.4016669699922204,
+    "planning": 0,
+    "answer": 2731.417957926169,
+    "tools": 0.9079579031094909,
+    "runtime": 2739.2173330299556
+  },
+  "cost_usd": 0.001006,
+  "trace_id": null
+}

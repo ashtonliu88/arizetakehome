@@ -1,0 +1,175 @@
+{
+  "verified_at": "2026-10-30T04:39:53.677870+00:00",
+  "scope": "Offline submission verification; no provider calls or Phoenix publication",
+  "protected_original_files_unchanged": 1185,
+  "local_only_originals": {
+    "hashes_recorded": 117,
+    "available_and_unchanged": 117,
+    "excluded_from_submission_tree": 0
+  },
+  "recorded_project_checks": {
+    "pytest": {
+      "command": "uv run --no-sync python -m pytest -q",
+      "tests": 135,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "timestamp": "2026-10-29T21:38:20.766702-07:00"
+    },
+    "ruff_project": {
+      "command": "uv run ruff check src scripts tests docs/phoenix-measured/verify.py",
+      "status": "passed"
+    },
+    "whole_tree_ruff": {
+      "command": "uv run ruff check .",
+      "status": "pre-existing frozen notebook findings preserved",
+      "findings": {
+        "I001": 2,
+        "F401": 1,
+        "B007": 2,
+        "E731": 1,
+        "B023": 2
+      },
+      "files": [
+        "trace-evidence-lab.ipynb"
+      ]
+    },
+    "formatting": {
+      "new_and_updated_authoring_files": "passed",
+      "existing_difference": "src/router_lab/experiments.py preserved as frozen runtime source"
+    },
+    "human_audit": "pending at candidate request; 0/24 completed",
+    "new_files_formatting_command": "uv run ruff format --check scripts/build_cookbook.py scripts/build_submission.py scripts/verify_cookbook.py scripts/verify_submission.py scripts/reuse_answer_audit.py tests/test_reuse_answer_audit.py docs/phoenix-measured/verify.py"
+  },
+  "frozen_study": {
+    "frozen_verified": true,
+    "source_fingerprint": "e6534fa67768683e6d92c9ad6044de432ba9c469b9168e1018be943d1e597703",
+    "frozen_inputs": {
+      "inputs.jsonl": "bffa01da911d18d2114add4b16fbfc53ba6000595550ebd6f4779d2a8c275268",
+      "references-history.jsonl": "e572eb568d7804ffb6b62fb8e547d080e71e982c07bd32fdd905f4212bf2cf2f",
+      "references-dev.jsonl": "5d4b9fe7143610cb581b2d63a89bff1aa6f6f5e0e0e79054f9ebf6e2f64b42cf",
+      "references-test.jsonl": "82132b8e5cb8bb925eb905039aecbf6cdf827e8871b8f4c6c423bd688daaab47",
+      "family-contracts.json": "dd9d5bc48d27f5edbe9a88b036b1d3651e9e449a9bd901dadf6d4c1a1f26cadf",
+      "settings.json": "ddad37b7679ecb8265b6eabd13bcc3db02cf07dac1a845f61713d989fdba1cda",
+      "bank.json": "1d41f7aa4ce1bcc40d126dcb44e5db919315f1bbae6e8bbc0a0c43708c8cd5ee",
+      "reviews.jsonl": "c3cf2bf0f9a75b60c82f1b5a1dfd136234440300a34c2419ccf19f761d207784"
+    },
+    "calibration_hash": "57ec2b4ae6244f07d49a651cbb0344802bc4ad7899737998b7e7b4c03c18f97a",
+    "development_hash": "b18ca246e36267e7432d08b0a23c0b0cd8671aa4477beca71260d18b240faf9b",
+    "source_archive_hash": "c8c1208d81d7d86b43fac7e1c5e54f7b4945a99b6e26fe5ff95dbbbc2e45c119",
+    "method": "router_lab.reuse.study.verify_freeze with unchanged config/settings.json; no provider calls"
+  },
+  "notebook_code_cells_unchanged": 15,
+  "cookbook": {
+    "bundle_files_verified": 38,
+    "available_original_sources_unchanged": 38,
+    "protected_original_files_unchanged": 1185,
+    "default_code_cells_passed": 15,
+    "visible_python_examples_preserved": 5,
+    "pdf_pages": 19,
+    "figures_identical_across_exports": 6,
+    "headline_claims_present_in_all_editions": true,
+    "pdf_link_annotations": 20,
+    "edition_sha256": {
+      "notebooks/trace-evidence-lab.ipynb": "336e3f347566c4c587b79101c87410b674d06e1e4b6d5411d3c7e2ce4717780d",
+      "docs/cookbook.md": "29d0424d71366e17166be3130dfb83e83e9f5b1d647469ff848812c6d685907d",
+      "output/cookbook/trace-evidence-lab.typ": "faa2931f973f6afee55e03b107b3a2c28464335d4abd537b78fa0ae04dfdf09b",
+      "output/cookbook/trace-evidence-lab.pdf": "6e6fbd0cedf4c47e58e559c12f547b7ca5fc8abb54bf699a41371801df62590f"
+    },
+    "python_package_versions": {
+      "nbconvert": "7.16.6",
+      "numpy": "2.5.4",
+      "pandas": "3.1.0",
+      "matplotlib": "3.11.2"
+    },
+    "portable_execution": {
+      "passed": true,
+      "application_source_present": false,
+      "credentials_removed": true,
+      "external_socket_connections_blocked": true,
+      "metrics_equal": true
+    },
+    "rendered_pdf_pages": 19
+  },
+  "local_document_links_checked": 144,
+  "human_audit": {
+    "selected_endpoints": 24,
+    "families": 8,
+    "source_hashes_verified": 35,
+    "packet_artifact_hashes_verified": 4,
+    "human_reviews_completed": 0,
+    "human_reviews_pending": 24,
+    "status": "pending at candidate request; diagnostic sample, not a rate estimate"
+  },
+  "phoenix_gallery": {
+    "screenshots": 4,
+    "selected_endpoints": 6,
+    "source_hashes": 12
+  },
+  "overview": {
+    "pages": 3,
+    "images": 3,
+    "sha256": "e16ccb85a71f84a31de7af77b4fb32eb95ad9cc8a334c0998c04bf9d065a67dc",
+    "rendered_pages": 3
+  },
+  "visual_review": {
+    "method": "Rendered every page with Poppler and visually inspected the PNGs",
+    "pdfs": [
+      {
+        "path": "output/pdf/arize-submission-overview.pdf",
+        "sha256": "e16ccb85a71f84a31de7af77b4fb32eb95ad9cc8a334c0998c04bf9d065a67dc",
+        "pages_inspected": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "path": "output/cookbook/trace-evidence-lab.pdf",
+        "sha256": "6e6fbd0cedf4c47e58e559c12f547b7ca5fc8abb54bf699a41371801df62590f",
+        "pages_inspected": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ]
+      }
+    ],
+    "captions_and_pagination": "passed; six cookbook figure captions kept with their images",
+    "screenshots": "four native Phoenix captures inspected; two readable captures included in overview",
+    "clipping_or_overlap": "none observed",
+    "links": "local targets checked by verify_submission.py; links styled and retained in both PDFs"
+  },
+  "clean_checkout": {
+    "source": "Fresh export of the intended Git index into a temporary directory",
+    "checked_index_tree": "5d5bfc1729c1e89ce43c2c065cf49ec242d22081",
+    "offline_locked_dependency_sync": "passed",
+    "frozen_fingerprint": "e6534fa67768683e6d92c9ad6044de432ba9c469b9168e1018be943d1e597703",
+    "credentials_and_phoenix_database_present": false,
+    "portable_notebook_metrics_equal": true,
+    "later_changes": "receipt metadata only; submitted sources, artifacts and evidence match this export",
+    "receipt": "output/submission/clean-checkout-verification.json"
+  },
+  "all_protected_local_files_unchanged": 1302,
+  "local_only_files_excluded_from_commit": 117,
+  "commit_scope": {
+    "selection": "output/submission/git-allowlist.txt",
+    "push_or_publication": false,
+    "human_audit": "pending at candidate request"
+  }
+}

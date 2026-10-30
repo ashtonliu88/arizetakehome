@@ -1,0 +1,110 @@
+{
+  "run_id": "c3a53ccf5ed4fef9f131056c",
+  "policy": "fused",
+  "bank_state": "warm",
+  "status": "completed",
+  "bindings": {
+    "slots": {
+      "service0": "gateway",
+      "environment0": "production"
+    },
+    "slot_types": {
+      "service0": "service",
+      "environment0": "environment"
+    },
+    "skeleton": "show deployment for service <service0> in <environment0>",
+    "namespace": "ea951e30ddc2e3fbc06eb8d343acee8d3e1b560636c67748159d683fa73a5e54",
+    "unresolved": [],
+    "semantics": [
+      "count:environment:1",
+      "count:service:1"
+    ]
+  },
+  "answer": "Service `gateway` in `production`: version `v3.1`, status `healthy`.",
+  "calls": [
+    {
+      "reservation": "06e42fedfa7c4bc394b5a20cac4ff971",
+      "stage": "core",
+      "run_id": "c3a53ccf5ed4fef9f131056c",
+      "kind": "planning",
+      "state": "measured",
+      "cost_usd": 0.0008217000000000001,
+      "timestamp": "2026-10-29T09:17:44.906465+00:00",
+      "cost_estimated": false,
+      "usage": {
+        "input_tokens": 1260,
+        "output_tokens": 69,
+        "cache_read_tokens": 1257,
+        "cache_write_tokens": 0
+      },
+      "error": null,
+      "latency_ms": 1864.7268749773502,
+      "response_id": "resp_052e47245f88ba29016ae30f39111887d08b3c0d3040e4b724",
+      "output": "{\"kind\":\"tools\",\"steps\":[{\"tool\":\"lookup_deployment\",\"arguments\":{\"issue_id\":null,\"test_run_id\":null,\"service\":\"$slot.service0\",\"environment\":\"$slot.environment0\",\"query\":null,\"operation\":null,\"left\":null,\"right\":null}}],\"response\":\"\"}"
+    },
+    {
+      "reservation": "c34e25f4706446cb882e11b8d2c1cc95",
+      "stage": "core",
+      "run_id": "c3a53ccf5ed4fef9f131056c",
+      "kind": "answer",
+      "state": "measured",
+      "cost_usd": 0.000682,
+      "timestamp": "2026-10-29T09:17:46.786798+00:00",
+      "cost_estimated": false,
+      "usage": {
+        "input_tokens": 226,
+        "output_tokens": 23,
+        "cache_read_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "error": null,
+      "latency_ms": 1683.537249919027,
+      "response_id": "resp_0f6da5d17773e094016ae30f3aec9887d092d615dff771d540",
+      "output": "Service `gateway` in `production`: version `v3.1`, status `healthy`."
+    }
+  ],
+  "executions": [
+    {
+      "tool": "lookup_deployment",
+      "arguments": {
+        "service": "gateway",
+        "environment": "production"
+      },
+      "bindings": {
+        "service": "gateway",
+        "environment": "production"
+      },
+      "tenant": "acme",
+      "state_version": "9f73b64ba141d3d4361fd05c337fd7fff9bb8c273027021aee400912f9019a7e",
+      "result": {
+        "found": true,
+        "record": {
+          "service": "gateway",
+          "environment": "production",
+          "version": "v3.1",
+          "status": "healthy"
+        },
+        "error": null
+      },
+      "latency_ms": 1.0155000491067767,
+      "started_at": "2026-10-29T09:17:46.771818+00:00"
+    }
+  ],
+  "cache_hit": false,
+  "candidate": null,
+  "retrieval_score": 0,
+  "retrieval_margin": 0,
+  "rejection": null,
+  "replans": 0,
+  "error": null,
+  "timings_ms": {
+    "binding": 0.09116705041378736,
+    "retrieval_validation": 0.00012491364032030106,
+    "planning": 1864.7268749773502,
+    "answer": 1683.537249919027,
+    "tools": 1.0155000491067767,
+    "runtime": 3574.0732500562444
+  },
+  "cost_usd": 0.0015037000000000002,
+  "trace_id": null
+}

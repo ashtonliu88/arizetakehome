@@ -1,0 +1,106 @@
+{
+  "run_id": "6c93bc6369b7a76b719a9c10",
+  "policy": "fused",
+  "bank_state": "warm",
+  "status": "completed",
+  "bindings": {
+    "slots": {
+      "query0": "retry policy"
+    },
+    "slot_types": {
+      "query0": "query"
+    },
+    "skeleton": "search code for <query0>",
+    "namespace": "ea951e30ddc2e3fbc06eb8d343acee8d3e1b560636c67748159d683fa73a5e54",
+    "unresolved": [],
+    "semantics": [
+      "code",
+      "count:query:1"
+    ]
+  },
+  "answer": "`retry.py`\n```python\ndef retry_policy(): return 3\n```",
+  "calls": [
+    {
+      "reservation": "abf0cd502a704d57b577dc92dd406e69",
+      "stage": "core",
+      "run_id": "6c93bc6369b7a76b719a9c10",
+      "kind": "planning",
+      "state": "measured",
+      "cost_usd": 0.0007792999999999999,
+      "timestamp": "2026-10-29T09:31:14.661039+00:00",
+      "cost_estimated": false,
+      "usage": {
+        "input_tokens": 1236,
+        "output_tokens": 65,
+        "cache_read_tokens": 1233,
+        "cache_write_tokens": 0
+      },
+      "error": null,
+      "latency_ms": 1891.8371250620112,
+      "response_id": "resp_01b3a761c0009d09016ae31262cef087d09321e833f45d1cbb",
+      "output": "{\"kind\":\"tools\",\"steps\":[{\"tool\":\"search_code\",\"arguments\":{\"issue_id\":null,\"test_run_id\":null,\"service\":null,\"environment\":null,\"query\":\"$slot.query0\",\"operation\":null,\"left\":null,\"right\":null}}],\"response\":\"\"}"
+    },
+    {
+      "reservation": "f3474f48da07419daa14869010f9cb4f",
+      "stage": "core",
+      "run_id": "6c93bc6369b7a76b719a9c10",
+      "kind": "answer",
+      "state": "measured",
+      "cost_usd": 0.000608,
+      "timestamp": "2026-10-29T09:31:16.574422+00:00",
+      "cost_estimated": false,
+      "usage": {
+        "input_tokens": 204,
+        "output_tokens": 20,
+        "cache_read_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "error": null,
+      "latency_ms": 1473.1722910655662,
+      "response_id": "resp_08957e7acc62c6ec016ae31264b8e087d0885f7f694865ff91",
+      "output": "`retry.py`\n```python\ndef retry_policy(): return 3\n```"
+    }
+  ],
+  "executions": [
+    {
+      "tool": "search_code",
+      "arguments": {
+        "query": "retry policy"
+      },
+      "bindings": {
+        "query": "retry policy"
+      },
+      "tenant": "acme",
+      "state_version": "afc3cfb77481baeb09fbbe431521c3ca5449821fb4df7f92cc537298705bade1",
+      "result": {
+        "found": true,
+        "records": [
+          {
+            "id": "retry.py",
+            "text": "def retry_policy(): return 3"
+          }
+        ],
+        "error": null
+      },
+      "latency_ms": 1.4227499486878514,
+      "started_at": "2026-10-29T09:31:16.553829+00:00"
+    }
+  ],
+  "cache_hit": false,
+  "candidate": null,
+  "retrieval_score": 0,
+  "retrieval_margin": 0,
+  "rejection": null,
+  "replans": 0,
+  "error": null,
+  "timings_ms": {
+    "binding": 0.08224998600780964,
+    "retrieval_validation": 0.000125030055642128,
+    "planning": 1891.8371250620112,
+    "answer": 1473.1722910655662,
+    "tools": 1.4227499486878514,
+    "runtime": 3400.8339589927346
+  },
+  "cost_usd": 0.0013873,
+  "trace_id": null
+}

@@ -1,0 +1,40 @@
+{
+  "run_id": "2b4c8f9af98ff0911e28a7e2",
+  "policy": "ordinary",
+  "bank_state": "warm",
+  "status": "safe_failure",
+  "bindings": {
+    "slots": {
+      "issue0": "ENG-10712"
+    },
+    "slot_types": {
+      "issue0": "issue"
+    },
+    "skeleton": "show issue <issue0>",
+    "namespace": "55d3d1124553e9e473c1bd8a7b7f53bc6d52c84e575a2d3ce0e5833495781bf8",
+    "unresolved": [],
+    "semantics": [
+      "count:issue:1"
+    ]
+  },
+  "answer": "",
+  "calls": [],
+  "executions": [],
+  "cache_hit": true,
+  "candidate": "f8242edb8a292b282604",
+  "retrieval_score": 1.0,
+  "retrieval_margin": 0.6627882916521095,
+  "rejection": null,
+  "replans": 0,
+  "error": "capability denied",
+  "timings_ms": {
+    "binding": 0.07033301517367363,
+    "retrieval_validation": 0.25183300022035837,
+    "planning": 0,
+    "answer": 0,
+    "tools": 0,
+    "runtime": 0.33912493381649256
+  },
+  "cost_usd": 0,
+  "trace_id": null
+}

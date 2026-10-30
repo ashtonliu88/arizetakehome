@@ -1,0 +1,103 @@
+{
+  "run_id": "0585e7ce0c53b5be5749faf3",
+  "policy": "fused",
+  "bank_state": "empty",
+  "status": "completed",
+  "bindings": {
+    "slots": {
+      "issue0": "ENG-103"
+    },
+    "slot_types": {
+      "issue0": "issue"
+    },
+    "skeleton": "please retrieve current status for ticket <issue0>",
+    "namespace": "ea951e30ddc2e3fbc06eb8d343acee8d3e1b560636c67748159d683fa73a5e54",
+    "unresolved": [],
+    "semantics": [
+      "count:issue:1"
+    ]
+  },
+  "answer": "ENG-103 is currently **open**.",
+  "calls": [
+    {
+      "reservation": "bc246d50fcbd4d7aba50de3a435f4ea2",
+      "stage": "core",
+      "run_id": "0585e7ce0c53b5be5749faf3",
+      "kind": "planning",
+      "state": "measured",
+      "cost_usd": 0.0036835,
+      "timestamp": "2026-10-29T08:50:06.071288+00:00",
+      "cost_estimated": false,
+      "usage": {
+        "input_tokens": 1214,
+        "output_tokens": 65,
+        "cache_read_tokens": 0,
+        "cache_write_tokens": 1211
+      },
+      "error": null,
+      "latency_ms": 1793.2092919945717,
+      "response_id": "resp_00e64ccddd6e55ec016ae308be4eb487d0ab009a8e723637ae",
+      "output": "{\"kind\":\"tools\",\"steps\":[{\"tool\":\"lookup_issue\",\"arguments\":{\"issue_id\":\"$slot.issue0\",\"test_run_id\":null,\"service\":null,\"environment\":null,\"query\":null,\"operation\":null,\"left\":null,\"right\":null}}],\"response\":\"\"}"
+    },
+    {
+      "reservation": "c251ff51920f4756964c3fac8ed5c9b4",
+      "stage": "core",
+      "run_id": "0585e7ce0c53b5be5749faf3",
+      "kind": "answer",
+      "state": "measured",
+      "cost_usd": 0.00056,
+      "timestamp": "2026-10-29T08:50:07.867218+00:00",
+      "cost_estimated": false,
+      "usage": {
+        "input_tokens": 215,
+        "output_tokens": 13,
+        "cache_read_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "error": null,
+      "latency_ms": 2106.875875033438,
+      "response_id": "resp_0df11f94e017d447016ae308c01b5887d09a7095e3e838dec5",
+      "output": "ENG-103 is currently **open**."
+    }
+  ],
+  "executions": [
+    {
+      "tool": "lookup_issue",
+      "arguments": {
+        "issue_id": "ENG-103"
+      },
+      "bindings": {
+        "issue_id": "ENG-103"
+      },
+      "tenant": "acme",
+      "state_version": "028bab3a7e964dc1168511f75b004cbea429772c78777697390a0668c04e3baa",
+      "result": {
+        "found": true,
+        "record": {
+          "issue_id": "ENG-103",
+          "status": "open",
+          "test_run_id": "TR-103"
+        },
+        "error": null
+      },
+      "latency_ms": 0.8822920499369502
+    }
+  ],
+  "cache_hit": false,
+  "candidate": null,
+  "retrieval_score": 0,
+  "retrieval_margin": 0,
+  "rejection": null,
+  "replans": 0,
+  "error": null,
+  "timings_ms": {
+    "binding": 0.10316702537238598,
+    "retrieval_validation": 0.000125030055642128,
+    "planning": 1793.2092919945717,
+    "answer": 2106.875875033438,
+    "tools": 0.8822920499369502,
+    "runtime": 3913.5597080457956
+  },
+  "cost_usd": 0.0042435,
+  "trace_id": null
+}

@@ -1,0 +1,106 @@
+{
+  "run_id": "d72e5915190f221f59b7dac2",
+  "policy": "verified",
+  "bank_state": "warm",
+  "status": "completed",
+  "bindings": {
+    "slots": {
+      "number0": 4.0,
+      "number1": 10408.0
+    },
+    "slot_types": {
+      "number0": "number",
+      "number1": "number"
+    },
+    "skeleton": "calculate <number0> minus <number1>",
+    "namespace": "ea951e30ddc2e3fbc06eb8d343acee8d3e1b560636c67748159d683fa73a5e54",
+    "unresolved": [],
+    "semantics": [
+      "count:number:2",
+      "subtract"
+    ]
+  },
+  "answer": "4 − 10408 = -10404.",
+  "calls": [
+    {
+      "reservation": "1a6f1dac643f4ef58dc44eb0e81f7abf",
+      "stage": "core",
+      "run_id": "d72e5915190f221f59b7dac2",
+      "kind": "planning",
+      "state": "measured",
+      "cost_usd": 0.003811,
+      "timestamp": "2026-10-29T09:32:40.991705+00:00",
+      "cost_estimated": false,
+      "usage": {
+        "input_tokens": 1257,
+        "output_tokens": 67,
+        "cache_read_tokens": 0,
+        "cache_write_tokens": 1254
+      },
+      "error": null,
+      "latency_ms": 2181.6159579902887,
+      "response_id": "resp_0033bc2f37cb3454016ae312b925e887d0bbea0f4b1751b11c",
+      "output": "{\"kind\":\"tools\",\"steps\":[{\"tool\":\"calculate\",\"arguments\":{\"issue_id\":null,\"test_run_id\":null,\"service\":null,\"environment\":null,\"query\":null,\"operation\":\"subtract\",\"left\":\"$slot.number0\",\"right\":\"$slot.number1\"}}],\"response\":\"\"}"
+    },
+    {
+      "reservation": "aa17013109da4f8db0e3f61d0f525a2b",
+      "stage": "core",
+      "run_id": "d72e5915190f221f59b7dac2",
+      "kind": "answer",
+      "state": "measured",
+      "cost_usd": 0.000572,
+      "timestamp": "2026-10-29T09:32:43.203830+00:00",
+      "cost_estimated": false,
+      "usage": {
+        "input_tokens": 216,
+        "output_tokens": 14,
+        "cache_read_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "error": null,
+      "latency_ms": 1548.6360830254853,
+      "response_id": "resp_0450d58d2d78b4ff016ae312bb570887d09deda0a31a68718b",
+      "output": "4 − 10408 = -10404."
+    }
+  ],
+  "executions": [
+    {
+      "tool": "calculate",
+      "arguments": {
+        "operation": "subtract",
+        "left": 4.0,
+        "right": 10408.0
+      },
+      "bindings": {
+        "operation": "subtract",
+        "left": 4.0,
+        "right": 10408.0
+      },
+      "tenant": "acme",
+      "state_version": "d94a545425d395938e62797477cfb975b5ccc9397a716464c577b45cf08ba9bc",
+      "result": {
+        "found": true,
+        "value": -10404.0
+      },
+      "latency_ms": 0.8011250756680965,
+      "started_at": "2026-10-29T09:32:43.173947+00:00"
+    }
+  ],
+  "cache_hit": false,
+  "candidate": "ea1c859e996822c18e76",
+  "retrieval_score": 0.4840876523177682,
+  "retrieval_margin": 0.276761819330045,
+  "rejection": "semantic_signature",
+  "replans": 0,
+  "error": null,
+  "timings_ms": {
+    "binding": 0.09950005915015936,
+    "retrieval_validation": 1.038165995851159,
+    "planning": 2181.6159579902887,
+    "answer": 1548.6360830254853,
+    "tools": 0.8011250756680965,
+    "runtime": 3774.7271249536425
+  },
+  "cost_usd": 0.004383,
+  "trace_id": null
+}

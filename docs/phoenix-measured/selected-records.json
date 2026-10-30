@@ -1,0 +1,3876 @@
+{
+  "schema_version": 1,
+  "captured_at_utc": "2026-10-30T04:31:19.726090+00:00",
+  "statement": "Phoenix traces reconstruct saved measured executions. Publication is outside endpoint latency. Existing grades are mechanical CODE evaluations.",
+  "provenance": {
+    "project": "verified-plan-reuse",
+    "phoenix_version": "20.26.1",
+    "database": ".phoenix/phoenix.db (read-only SELECT; no database bundled)",
+    "capture": "Actual local Phoenix UI, headless Google Chrome via isolated temporary Playwright environment; native screenshot clipping only; no image synthesis, republishing, or instrumentation changes",
+    "publication_receipt_unchanged": true,
+    "record_layers": "measurement.record in runs.jsonl includes persistence/end_to_end timings finalized after outcome-file persistence; saved_outcome retains original null values for those two fields. Both layers are preserved verbatim.",
+    "source_files": [
+      {
+        "path": "results/reuse/runs.jsonl",
+        "sha256": "dc6eb9db36dd805821aadb33feab3d3c70405e6917ded8438894bf68cc877340",
+        "bytes": 3449772
+      },
+      {
+        "path": "results/reuse/inputs.jsonl",
+        "sha256": "bffa01da911d18d2114add4b16fbfc53ba6000595550ebd6f4779d2a8c275268",
+        "bytes": 215585
+      },
+      {
+        "path": "results/reuse/published.json",
+        "sha256": "1818d889d4ef01ffef3214639d95bbe4b89c7afc799eb87685c5b9f0d00d526f",
+        "bytes": 113107
+      },
+      {
+        "path": "results/reuse/settings.json",
+        "sha256": "ddad37b7679ecb8265b6eabd13bcc3db02cf07dac1a845f61713d989fdba1cda",
+        "bytes": 171
+      },
+      {
+        "path": "results/reuse/frozen.json",
+        "sha256": "c6d67eff707435403c40a58967e0348a218d2b2e8ac5ca893fabeabe38c7274c",
+        "bytes": 3271
+      },
+      {
+        "path": "results/reuse/frozen-source.tar.gz",
+        "sha256": "c8c1208d81d7d86b43fac7e1c5e54f7b4945a99b6e26fe5ff95dbbbc2e45c119",
+        "bytes": 334714
+      },
+      {
+        "path": "results/reuse/outcomes/83242cc6e90cc893d8ee33f5.json",
+        "sha256": "aeaca9fcc8e2aa42ca3065d0f331a7845ea74b91499e500cbfc600521f9e5bfa",
+        "bytes": 2365
+      },
+      {
+        "path": "results/reuse/outcomes/6746aed7c4ba5a7f7013cdd1.json",
+        "sha256": "b31c3e743bbdce4e45b3dad1e7b09d38971a5843e007d681bd5b92c12423e140",
+        "bytes": 3156
+      },
+      {
+        "path": "results/reuse/outcomes/5086d1ba278592ebf29faadb.json",
+        "sha256": "903ec2a35fe4118554f8e63be3d6260257f74de05b43149e683ab35fcf5c2abb",
+        "bytes": 3098
+      },
+      {
+        "path": "results/reuse/outcomes/1769fbe65c69d12890199adc.json",
+        "sha256": "78b03a11254127aeddd7f1c37f79712685b9e1610672aff763c7dd56486ed266",
+        "bytes": 3091
+      },
+      {
+        "path": "results/reuse/outcomes/739adfc3b1192b1ced846a2f.json",
+        "sha256": "8f359a44a07d7d9a300dd805e8704f885bd5abf7896ee01f1c593a4427ab8163",
+        "bytes": 2233
+      },
+      {
+        "path": "results/reuse/outcomes/8af6c5419626dfdbcfbf60db.json",
+        "sha256": "4c80ebde85b752dcf3c87ccdcf62624a29be839b37f45cfce10acb510274c5a2",
+        "bytes": 3114
+      }
+    ],
+    "visible_fields": [
+      "request (root input)",
+      "answer (root output)",
+      "policy / bank state",
+      "trace tree and LLM planning/answer spans",
+      "current tool inputs and outputs",
+      "existing mechanical CODE annotation scores",
+      "reconstructed span durations and saved model metadata"
+    ],
+    "saved_record_only_fields": [
+      "retrieval_score",
+      "retrieval_margin",
+      "candidate",
+      "rejection (including semantic_signature)",
+      "original endpoint timings_ms and cost_usd detail"
+    ],
+    "interpretation": "UI green chips and OpenTelemetry status Unset are presentation/status fields, not human approval. Tool UI rounds sub-millisecond durations. Use saved measurements for endpoint timing and cost analysis."
+  },
+  "screenshots": [
+    {
+      "file": "ordinary-failure-root.png",
+      "run_ids": [
+        "83242cc6e90cc893d8ee33f5"
+      ],
+      "selected_span_ids": [
+        "07c81e3022138880"
+      ],
+      "viewport_css": [
+        1100,
+        1000
+      ],
+      "clip_css": [
+        275,
+        46,
+        825,
+        700
+      ],
+      "action": "Expand existing root Annotations card",
+      "sha256": "c035c1e7ee261daef73774f195a87d500e3a5d7213d5da86c2dac57a6e55f97b",
+      "device_scale_factor": 2
+    },
+    {
+      "file": "wrong-tool-operation.png",
+      "run_ids": [
+        "83242cc6e90cc893d8ee33f5"
+      ],
+      "selected_span_ids": [
+        "ff7ff61678ea2af7"
+      ],
+      "viewport_css": [
+        1100,
+        1000
+      ],
+      "clip_css": [
+        275,
+        46,
+        825,
+        760
+      ],
+      "sha256": "c788f49bb014dfbd45042d497dd2e60da52e3ab841d0c985202590f84c87555d",
+      "device_scale_factor": 2
+    },
+    {
+      "file": "verified-comparator.png",
+      "run_ids": [
+        "6746aed7c4ba5a7f7013cdd1"
+      ],
+      "selected_span_ids": [
+        "503b22cec383b3aa"
+      ],
+      "viewport_css": [
+        1100,
+        1000
+      ],
+      "clip_css": [
+        275,
+        46,
+        825,
+        760
+      ],
+      "sha256": "bbd6ee92fe169a367ca6e38e5b847ce7d785b19c9a677ad5b8c846f6b3362a66",
+      "device_scale_factor": 2
+    },
+    {
+      "file": "exact-versus-fresh.png",
+      "run_ids": [
+        "739adfc3b1192b1ced846a2f",
+        "8af6c5419626dfdbcfbf60db"
+      ],
+      "selected_span_ids": [
+        "c78f5dd3d9a2a5b7",
+        "73773c3b7ba7afe5"
+      ],
+      "viewport_css": [
+        1440,
+        1000
+      ],
+      "clip_css": [
+        288,
+        46,
+        1152,
+        810
+      ],
+      "action": "Native Compare Traces view, both lookup_issue spans selected",
+      "sha256": "e59012265aa64e4d14a7bd1e5f527f0fbde3cb8b117df209dd3df996e0fe61e3",
+      "device_scale_factor": 2
+    }
+  ],
+  "selected_records": [
+    {
+      "run_id": "83242cc6e90cc893d8ee33f5",
+      "case_id": "test-calculations-02",
+      "policy": "ordinary",
+      "bank_state": "warm",
+      "repetition": 1,
+      "configuration": "24b5d76b2aaecc355758bd2fb234ba22eb3d3a7f60c461c7aecf21aa60cf279a",
+      "case": {
+        "id": "test-calculations-02",
+        "cluster": "test-calculations-02",
+        "split": "test",
+        "family": "calculations",
+        "input": {
+          "request": "Calculate 4 minus 10408",
+          "context": {
+            "tenant": "acme",
+            "capabilities": [
+              "lookup_issue",
+              "lookup_deployment",
+              "lookup_test_results",
+              "search_docs",
+              "search_code",
+              "calculate"
+            ],
+            "grants": [],
+            "aliases": {},
+            "service": null,
+            "environment": null
+          }
+        },
+        "state": {
+          "acme": {
+            "issues": {
+              "ENG-10406": {
+                "issue_id": "ENG-10406",
+                "status": "open",
+                "test_run_id": "TR-10406"
+              },
+              "ENG-10407": {
+                "issue_id": "ENG-10407",
+                "status": "resolved",
+                "test_run_id": "TR-10407"
+              }
+            },
+            "deployments": {
+              "gateway/production": {
+                "service": "gateway",
+                "environment": "production",
+                "version": "v3.1",
+                "status": "healthy"
+              },
+              "gateway/staging": {
+                "service": "gateway",
+                "environment": "staging",
+                "version": "v4.2",
+                "status": "healthy"
+              },
+              "gateway/development": {
+                "service": "gateway",
+                "environment": "development",
+                "version": "v5.0",
+                "status": "healthy"
+              }
+            },
+            "test_runs": {
+              "TR-10406": {
+                "test_run_id": "TR-10406",
+                "outcome": "passed"
+              },
+              "TR-10407": {
+                "test_run_id": "TR-10407",
+                "outcome": "failed"
+              }
+            },
+            "docs": [
+              {
+                "id": "retry-guide",
+                "text": "Retry policy: use exponential backoff."
+              }
+            ],
+            "code": [
+              {
+                "id": "retry.py",
+                "text": "def retry_policy(): return 3"
+              }
+            ]
+          },
+          "beta": {
+            "issues": {
+              "ENG-10406": {
+                "issue_id": "ENG-10406",
+                "status": "triaged",
+                "test_run_id": "TR-10406"
+              },
+              "ENG-10407": {
+                "issue_id": "ENG-10407",
+                "status": "resolved",
+                "test_run_id": "TR-10407"
+              }
+            },
+            "deployments": {
+              "gateway/production": {
+                "service": "gateway",
+                "environment": "production",
+                "version": "v3.1",
+                "status": "healthy"
+              },
+              "gateway/staging": {
+                "service": "gateway",
+                "environment": "staging",
+                "version": "v4.2",
+                "status": "healthy"
+              },
+              "gateway/development": {
+                "service": "gateway",
+                "environment": "development",
+                "version": "v5.0",
+                "status": "healthy"
+              }
+            },
+            "test_runs": {
+              "TR-10406": {
+                "test_run_id": "TR-10406",
+                "outcome": "passed"
+              },
+              "TR-10407": {
+                "test_run_id": "TR-10407",
+                "outcome": "failed"
+              }
+            },
+            "docs": [
+              {
+                "id": "retry-guide",
+                "text": "Retry policy: use exponential backoff."
+              }
+            ],
+            "code": [
+              {
+                "id": "retry.py",
+                "text": "def retry_policy(): return 3"
+              }
+            ]
+          }
+        }
+      },
+      "measurement": {
+        "run_id": "83242cc6e90cc893d8ee33f5",
+        "identity": "test-calculations-02:ordinary:warm:1:24b5d76b2aaecc35",
+        "case_id": "test-calculations-02",
+        "cluster": "test-calculations-02",
+        "split": "test",
+        "family": "calculations",
+        "policy": "ordinary",
+        "bank_state": "warm",
+        "repetition": 1,
+        "configuration": "24b5d76b2aaecc355758bd2fb234ba22eb3d3a7f60c461c7aecf21aa60cf279a",
+        "record": {
+          "run_id": "83242cc6e90cc893d8ee33f5",
+          "policy": "ordinary",
+          "bank_state": "warm",
+          "status": "completed",
+          "bindings": {
+            "slots": {
+              "number0": 4.0,
+              "number1": 10408.0
+            },
+            "slot_types": {
+              "number0": "number",
+              "number1": "number"
+            },
+            "skeleton": "calculate <number0> minus <number1>",
+            "namespace": "ea951e30ddc2e3fbc06eb8d343acee8d3e1b560636c67748159d683fa73a5e54",
+            "unresolved": [],
+            "semantics": [
+              "count:number:2",
+              "subtract"
+            ]
+          },
+          "answer": "The provided tool result calculated addition, yielding 10412.0, not the requested subtraction.",
+          "calls": [
+            {
+              "reservation": "1d4f52a5670344ea8317f08c0aa8379d",
+              "stage": "core",
+              "run_id": "83242cc6e90cc893d8ee33f5",
+              "kind": "answer",
+              "state": "measured",
+              "cost_usd": 0.000662,
+              "timestamp": "2026-10-29T09:32:55.628420+00:00",
+              "cost_estimated": false,
+              "usage": {
+                "input_tokens": 216,
+                "output_tokens": 23,
+                "cache_read_tokens": 0,
+                "cache_write_tokens": 0
+              },
+              "error": null,
+              "latency_ms": 2012.8151249373332,
+              "response_id": "resp_0e7a48a81efbfccf016ae312c7c5cc87d0b64c2146bbea9f28",
+              "output": "The provided tool result calculated addition, yielding 10412.0, not the requested subtraction."
+            }
+          ],
+          "executions": [
+            {
+              "tool": "calculate",
+              "arguments": {
+                "operation": "add",
+                "left": 4.0,
+                "right": 10408.0
+              },
+              "bindings": {
+                "operation": "add",
+                "left": 4.0,
+                "right": 10408.0
+              },
+              "tenant": "acme",
+              "state_version": "d94a545425d395938e62797477cfb975b5ccc9397a716464c577b45cf08ba9bc",
+              "result": {
+                "found": true,
+                "value": 10412.0
+              },
+              "latency_ms": 0.7751249941065907,
+              "started_at": "2026-10-29T09:32:55.613764+00:00"
+            }
+          ],
+          "cache_hit": true,
+          "candidate": "ea1c859e996822c18e76",
+          "retrieval_score": 0.4840876523177682,
+          "retrieval_margin": 0.276761819330045,
+          "rejection": null,
+          "replans": 0,
+          "error": null,
+          "timings_ms": {
+            "binding": 0.09270908776670694,
+            "retrieval_validation": 0.2960410201922059,
+            "planning": 0,
+            "answer": 2012.8151249373332,
+            "tools": 0.7751249941065907,
+            "runtime": 2028.371167019941,
+            "persistence": 2.5857079308480024,
+            "end_to_end": 2034.5987919718027
+          },
+          "cost_usd": 0.000662,
+          "trace_id": null
+        },
+        "evaluation": {
+          "success": false,
+          "resource_correct": false,
+          "answer_facts_correct": false,
+          "unnecessary_clarification": false,
+          "unnecessary_refusal": false,
+          "appropriate_abstention": false,
+          "unresolved": true,
+          "incorrect_accepted_reuse": true,
+          "bad_result_reached_answer": true,
+          "authorization_violations": 0,
+          "metric_scope": "mechanical execution-path and required-answer-fact checks; no semantic judge",
+          "wrong_returned_bindings": false
+        },
+        "plan": {
+          "kind": "tools",
+          "steps": [
+            {
+              "tool": "calculate",
+              "arguments": {
+                "operation": "add",
+                "left": "$slot.number0",
+                "right": "$slot.number1"
+              }
+            }
+          ],
+          "response": ""
+        }
+      },
+      "saved_outcome": {
+        "run_id": "83242cc6e90cc893d8ee33f5",
+        "policy": "ordinary",
+        "bank_state": "warm",
+        "status": "completed",
+        "bindings": {
+          "slots": {
+            "number0": 4.0,
+            "number1": 10408.0
+          },
+          "slot_types": {
+            "number0": "number",
+            "number1": "number"
+          },
+          "skeleton": "calculate <number0> minus <number1>",
+          "namespace": "ea951e30ddc2e3fbc06eb8d343acee8d3e1b560636c67748159d683fa73a5e54",
+          "unresolved": [],
+          "semantics": [
+            "count:number:2",
+            "subtract"
+          ]
+        },
+        "answer": "The provided tool result calculated addition, yielding 10412.0, not the requested subtraction.",
+        "calls": [
+          {
+            "reservation": "1d4f52a5670344ea8317f08c0aa8379d",
+            "stage": "core",
+            "run_id": "83242cc6e90cc893d8ee33f5",
+            "kind": "answer",
+            "state": "measured",
+            "cost_usd": 0.000662,
+            "timestamp": "2026-10-29T09:32:55.628420+00:00",
+            "cost_estimated": false,
+            "usage": {
+              "input_tokens": 216,
+              "output_tokens": 23,
+              "cache_read_tokens": 0,
+              "cache_write_tokens": 0
+            },
+            "error": null,
+            "latency_ms": 2012.8151249373332,
+            "response_id": "resp_0e7a48a81efbfccf016ae312c7c5cc87d0b64c2146bbea9f28",
+            "output": "The provided tool result calculated addition, yielding 10412.0, not the requested subtraction."
+          }
+        ],
+        "executions": [
+          {
+            "tool": "calculate",
+            "arguments": {
+              "operation": "add",
+              "left": 4.0,
+              "right": 10408.0
+            },
+            "bindings": {
+              "operation": "add",
+              "left": 4.0,
+              "right": 10408.0
+            },
+            "tenant": "acme",
+            "state_version": "d94a545425d395938e62797477cfb975b5ccc9397a716464c577b45cf08ba9bc",
+            "result": {
+              "found": true,
+              "value": 10412.0
+            },
+            "latency_ms": 0.7751249941065907,
+            "started_at": "2026-10-29T09:32:55.613764+00:00"
+          }
+        ],
+        "cache_hit": true,
+        "candidate": "ea1c859e996822c18e76",
+        "retrieval_score": 0.4840876523177682,
+        "retrieval_margin": 0.276761819330045,
+        "rejection": null,
+        "replans": 0,
+        "error": null,
+        "timings_ms": {
+          "binding": 0.09270908776670694,
+          "retrieval_validation": 0.2960410201922059,
+          "planning": 0,
+          "answer": 2012.8151249373332,
+          "tools": 0.7751249941065907,
+          "runtime": 2028.371167019941
+        },
+        "cost_usd": 0.000662,
+        "trace_id": null
+      },
+      "publication": {
+        "run_id": "83242cc6e90cc893d8ee33f5",
+        "trace_id": "7b41ec5869c99d894ac728d28904a985",
+        "span_id": "07c81e3022138880"
+      },
+      "phoenix_root_node_id": "U3BhbjozMTk2",
+      "phoenix_spans": [
+        {
+          "id": 3196,
+          "trace_rowid": 2160,
+          "span_id": "07c81e3022138880",
+          "parent_id": null,
+          "name": "ordinary / warm",
+          "span_kind": "AGENT",
+          "start_time": "2026-10-29 09:32:55.609733",
+          "end_time": "2026-10-29 09:32:57.644332",
+          "attributes": {
+            "reuse": {
+              "cost_usd": 0.000662,
+              "status": "completed",
+              "run_id": "83242cc6e90cc893d8ee33f5",
+              "bank_state": "warm",
+              "case_id": "test-calculations-02",
+              "measurement": "saved real endpoint measurement",
+              "cache_hit": true,
+              "policy": "ordinary"
+            },
+            "output": {
+              "value": "The provided tool result calculated addition, yielding 10412.0, not the requested subtraction."
+            },
+            "input": {
+              "value": "Calculate 4 minus 10408"
+            },
+            "openinference": {
+              "span": {
+                "kind": "AGENT"
+              }
+            }
+          },
+          "events": [],
+          "status_code": "UNSET",
+          "status_message": "",
+          "cumulative_error_count": 0,
+          "cumulative_llm_token_count_prompt": 216,
+          "cumulative_llm_token_count_completion": 23,
+          "llm_token_count_prompt": null,
+          "llm_token_count_completion": null,
+          "node_id": "U3BhbjozMTk2",
+          "annotations": [
+            {
+              "id": 1670,
+              "span_rowid": 3196,
+              "name": "reuse_authorization_violations",
+              "label": null,
+              "score": 0.0,
+              "explanation": null,
+              "metadata": {},
+              "annotator_kind": "CODE",
+              "created_at": "2026-10-29 09:50:25",
+              "updated_at": "2026-10-29 09:50:25",
+              "user_id": null,
+              "identifier": "",
+              "source": "API"
+            },
+            {
+              "id": 1669,
+              "span_rowid": 3196,
+              "name": "reuse_incorrect_accepted_reuse",
+              "label": null,
+              "score": 1.0,
+              "explanation": null,
+              "metadata": {},
+              "annotator_kind": "CODE",
+              "created_at": "2026-10-29 09:50:25",
+              "updated_at": "2026-10-29 09:50:25",
+              "user_id": null,
+              "identifier": "",
+              "source": "API"
+            },
+            {
+              "id": 1668,
+              "span_rowid": 3196,
+              "name": "reuse_resource_correct",
+              "label": null,
+              "score": 0.0,
+              "explanation": null,
+              "metadata": {},
+              "annotator_kind": "CODE",
+              "created_at": "2026-10-29 09:50:25",
+              "updated_at": "2026-10-29 09:50:25",
+              "user_id": null,
+              "identifier": "",
+              "source": "API"
+            },
+            {
+              "id": 1667,
+              "span_rowid": 3196,
+              "name": "reuse_success",
+              "label": null,
+              "score": 0.0,
+              "explanation": null,
+              "metadata": {},
+              "annotator_kind": "CODE",
+              "created_at": "2026-10-29 09:50:25",
+              "updated_at": "2026-10-29 09:50:25",
+              "user_id": null,
+              "identifier": "",
+              "source": "API"
+            }
+          ]
+        },
+        {
+          "id": 3195,
+          "trace_rowid": 2160,
+          "span_id": "ff7ff61678ea2af7",
+          "parent_id": "07c81e3022138880",
+          "name": "calculate",
+          "span_kind": "TOOL",
+          "start_time": "2026-10-29 09:32:55.613764",
+          "end_time": "2026-10-29 09:32:55.614539",
+          "attributes": {
+            "reuse": {
+              "fixture_state_version": "d94a545425d395938e62797477cfb975b5ccc9397a716464c577b45cf08ba9bc",
+              "bindings": "{\"operation\": \"add\", \"left\": 4.0, \"right\": 10408.0}",
+              "tenant": "acme"
+            },
+            "input": {
+              "value": "{\"operation\": \"add\", \"left\": 4.0, \"right\": 10408.0}"
+            },
+            "output": {
+              "value": "{\"found\": true, \"value\": 10412.0}"
+            },
+            "tool": {
+              "name": "calculate"
+            },
+            "openinference": {
+              "span": {
+                "kind": "TOOL"
+              }
+            }
+          },
+          "events": [],
+          "status_code": "UNSET",
+          "status_message": "",
+          "cumulative_error_count": 0,
+          "cumulative_llm_token_count_prompt": 0,
+          "cumulative_llm_token_count_completion": 0,
+          "llm_token_count_prompt": null,
+          "llm_token_count_completion": null,
+          "node_id": "U3BhbjozMTk1",
+          "annotations": []
+        },
+        {
+          "id": 3194,
+          "trace_rowid": 2160,
+          "span_id": "8a16199ec4a6448d",
+          "parent_id": "07c81e3022138880",
+          "name": "answer",
+          "span_kind": "LLM",
+          "start_time": "2026-10-29 09:32:55.628420",
+          "end_time": "2026-10-29 09:32:57.641235",
+          "attributes": {
+            "reuse": {
+              "provider_response_id": "resp_0e7a48a81efbfccf016ae312c7c5cc87d0b64c2146bbea9f28"
+            },
+            "llm": {
+              "token_count": {
+                "prompt": 216,
+                "prompt_details": {
+                  "cache_read": 0
+                },
+                "completion": 23
+              },
+              "model_name": "gpt-6.1-sol",
+              "cost": {
+                "total": 0.000662
+              }
+            },
+            "output": {
+              "value": "The provided tool result calculated addition, yielding 10412.0, not the requested subtraction."
+            },
+            "openinference": {
+              "span": {
+                "kind": "LLM"
+              }
+            }
+          },
+          "events": [],
+          "status_code": "UNSET",
+          "status_message": "",
+          "cumulative_error_count": 0,
+          "cumulative_llm_token_count_prompt": 216,
+          "cumulative_llm_token_count_completion": 23,
+          "llm_token_count_prompt": 216,
+          "llm_token_count_completion": 23,
+          "node_id": "U3BhbjozMTk0",
+          "annotations": []
+        }
+      ],
+      "live_root_url": "http://localhost:6006/projects/UHJvamVjdDoyMQ==/spans/7b41ec5869c99d894ac728d28904a985?selectedSpanNodeId=U3BhbjozMTk2"
+    },
+    {
+      "run_id": "6746aed7c4ba5a7f7013cdd1",
+      "case_id": "test-calculations-02",
+      "policy": "verified",
+      "bank_state": "warm",
+      "repetition": 1,
+      "configuration": "24b5d76b2aaecc355758bd2fb234ba22eb3d3a7f60c461c7aecf21aa60cf279a",
+      "case": {
+        "id": "test-calculations-02",
+        "cluster": "test-calculations-02",
+        "split": "test",
+        "family": "calculations",
+        "input": {
+          "request": "Calculate 4 minus 10408",
+          "context": {
+            "tenant": "acme",
+            "capabilities": [
+              "lookup_issue",
+              "lookup_deployment",
+              "lookup_test_results",
+              "search_docs",
+              "search_code",
+              "calculate"
+            ],
+            "grants": [],
+            "aliases": {},
+            "service": null,
+            "environment": null
+          }
+        },
+        "state": {
+          "acme": {
+            "issues": {
+              "ENG-10406": {
+                "issue_id": "ENG-10406",
+                "status": "open",
+                "test_run_id": "TR-10406"
+              },
+              "ENG-10407": {
+                "issue_id": "ENG-10407",
+                "status": "resolved",
+                "test_run_id": "TR-10407"
+              }
+            },
+            "deployments": {
+              "gateway/production": {
+                "service": "gateway",
+                "environment": "production",
+                "version": "v3.1",
+                "status": "healthy"
+              },
+              "gateway/staging": {
+                "service": "gateway",
+                "environment": "staging",
+                "version": "v4.2",
+                "status": "healthy"
+              },
+              "gateway/development": {
+                "service": "gateway",
+                "environment": "development",
+                "version": "v5.0",
+                "status": "healthy"
+              }
+            },
+            "test_runs": {
+              "TR-10406": {
+                "test_run_id": "TR-10406",
+                "outcome": "passed"
+              },
+              "TR-10407": {
+                "test_run_id": "TR-10407",
+                "outcome": "failed"
+              }
+            },
+            "docs": [
+              {
+                "id": "retry-guide",
+                "text": "Retry policy: use exponential backoff."
+              }
+            ],
+            "code": [
+              {
+                "id": "retry.py",
+                "text": "def retry_policy(): return 3"
+              }
+            ]
+          },
+          "beta": {
+            "issues": {
+              "ENG-10406": {
+                "issue_id": "ENG-10406",
+                "status": "triaged",
+                "test_run_id": "TR-10406"
+              },
+              "ENG-10407": {
+                "issue_id": "ENG-10407",
+                "status": "resolved",
+                "test_run_id": "TR-10407"
+              }
+            },
+            "deployments": {
+              "gateway/production": {
+                "service": "gateway",
+                "environment": "production",
+                "version": "v3.1",
+                "status": "healthy"
+              },
+              "gateway/staging": {
+                "service": "gateway",
+                "environment": "staging",
+                "version": "v4.2",
+                "status": "healthy"
+              },
+              "gateway/development": {
+                "service": "gateway",
+                "environment": "development",
+                "version": "v5.0",
+                "status": "healthy"
+              }
+            },
+            "test_runs": {
+              "TR-10406": {
+                "test_run_id": "TR-10406",
+                "outcome": "passed"
+              },
+              "TR-10407": {
+                "test_run_id": "TR-10407",
+                "outcome": "failed"
+              }
+            },
+            "docs": [
+              {
+                "id": "retry-guide",
+                "text": "Retry policy: use exponential backoff."
+              }
+            ],
+            "code": [
+              {
+                "id": "retry.py",
+                "text": "def retry_policy(): return 3"
+              }
+            ]
+          }
+        }
+      },
+      "measurement": {
+        "run_id": "6746aed7c4ba5a7f7013cdd1",
+        "identity": "test-calculations-02:verified:warm:1:24b5d76b2aaecc35",
+        "case_id": "test-calculations-02",
+        "cluster": "test-calculations-02",
+        "split": "test",
+        "family": "calculations",
+        "policy": "verified",
+        "bank_state": "warm",
+        "repetition": 1,
+        "configuration": "24b5d76b2aaecc355758bd2fb234ba22eb3d3a7f60c461c7aecf21aa60cf279a",
+        "record": {
+          "run_id": "6746aed7c4ba5a7f7013cdd1",
+          "policy": "verified",
+          "bank_state": "warm",
+          "status": "completed",
+          "bindings": {
+            "slots": {
+              "number0": 4.0,
+              "number1": 10408.0
+            },
+            "slot_types": {
+              "number0": "number",
+              "number1": "number"
+            },
+            "skeleton": "calculate <number0> minus <number1>",
+            "namespace": "ea951e30ddc2e3fbc06eb8d343acee8d3e1b560636c67748159d683fa73a5e54",
+            "unresolved": [],
+            "semantics": [
+              "count:number:2",
+              "subtract"
+            ]
+          },
+          "answer": "4 \u2212 10408 = -10404",
+          "calls": [
+            {
+              "reservation": "14575acc7e9044cf8de587c8d1a2a4ea",
+              "stage": "core",
+              "run_id": "6746aed7c4ba5a7f7013cdd1",
+              "kind": "planning",
+              "state": "measured",
+              "cost_usd": 0.0008014,
+              "timestamp": "2026-10-29T09:33:14.802615+00:00",
+              "cost_estimated": false,
+              "usage": {
+                "input_tokens": 1257,
+                "output_tokens": 67,
+                "cache_read_tokens": 1254,
+                "cache_write_tokens": 0
+              },
+              "error": null,
+              "latency_ms": 1911.9959169765934,
+              "response_id": "resp_030a31cf8e0b3a8a016ae312daf8c487d0a3f7816fd4388f1f",
+              "output": "{\"kind\":\"tools\",\"steps\":[{\"tool\":\"calculate\",\"arguments\":{\"issue_id\":null,\"test_run_id\":null,\"service\":null,\"environment\":null,\"query\":null,\"operation\":\"subtract\",\"left\":\"$slot.number0\",\"right\":\"$slot.number1\"}}],\"response\":\"\"}"
+            },
+            {
+              "reservation": "4847ea6915d24fc6bc1a3d80164b2089",
+              "stage": "core",
+              "run_id": "6746aed7c4ba5a7f7013cdd1",
+              "kind": "answer",
+              "state": "measured",
+              "cost_usd": 0.000562,
+              "timestamp": "2026-10-29T09:33:16.733541+00:00",
+              "cost_estimated": false,
+              "usage": {
+                "input_tokens": 216,
+                "output_tokens": 13,
+                "cache_read_tokens": 0,
+                "cache_write_tokens": 0
+              },
+              "error": null,
+              "latency_ms": 1251.616167020984,
+              "response_id": "resp_0530419acde77504016ae312dcdd2087d0b0585d7d4d34d078",
+              "output": "4 \u2212 10408 = -10404"
+            }
+          ],
+          "executions": [
+            {
+              "tool": "calculate",
+              "arguments": {
+                "operation": "subtract",
+                "left": 4.0,
+                "right": 10408.0
+              },
+              "bindings": {
+                "operation": "subtract",
+                "left": 4.0,
+                "right": 10408.0
+              },
+              "tenant": "acme",
+              "state_version": "d94a545425d395938e62797477cfb975b5ccc9397a716464c577b45cf08ba9bc",
+              "result": {
+                "found": true,
+                "value": -10404.0
+              },
+              "latency_ms": 0.8578330744057894,
+              "started_at": "2026-10-29T09:33:16.715307+00:00"
+            }
+          ],
+          "cache_hit": false,
+          "candidate": "ea1c859e996822c18e76",
+          "retrieval_score": 0.4840876523177682,
+          "retrieval_margin": 0.276761819330045,
+          "rejection": "semantic_signature",
+          "replans": 0,
+          "error": null,
+          "timings_ms": {
+            "binding": 0.11399993672966957,
+            "retrieval_validation": 1.1999579146504402,
+            "planning": 1911.9959169765934,
+            "answer": 1251.616167020984,
+            "tools": 0.8578330744057894,
+            "runtime": 3214.7014159709215,
+            "persistence": 1.5172500861808658,
+            "end_to_end": 3222.779417061247
+          },
+          "cost_usd": 0.0013633999999999999,
+          "trace_id": null
+        },
+        "evaluation": {
+          "success": true,
+          "resource_correct": true,
+          "answer_facts_correct": true,
+          "unnecessary_clarification": false,
+          "unnecessary_refusal": false,
+          "appropriate_abstention": false,
+          "unresolved": false,
+          "incorrect_accepted_reuse": false,
+          "bad_result_reached_answer": false,
+          "authorization_violations": 0,
+          "metric_scope": "mechanical execution-path and required-answer-fact checks; no semantic judge",
+          "wrong_returned_bindings": false
+        },
+        "plan": {
+          "kind": "tools",
+          "steps": [
+            {
+              "tool": "calculate",
+              "arguments": {
+                "operation": "subtract",
+                "left": "$slot.number0",
+                "right": "$slot.number1"
+              }
+            }
+          ],
+          "response": ""
+        }
+      },
+      "saved_outcome": {
+        "run_id": "6746aed7c4ba5a7f7013cdd1",
+        "policy": "verified",
+        "bank_state": "warm",
+        "status": "completed",
+        "bindings": {
+          "slots": {
+            "number0": 4.0,
+            "number1": 10408.0
+          },
+          "slot_types": {
+            "number0": "number",
+            "number1": "number"
+          },
+          "skeleton": "calculate <number0> minus <number1>",
+          "namespace": "ea951e30ddc2e3fbc06eb8d343acee8d3e1b560636c67748159d683fa73a5e54",
+          "unresolved": [],
+          "semantics": [
+            "count:number:2",
+            "subtract"
+          ]
+        },
+        "answer": "4 \u2212 10408 = -10404",
+        "calls": [
+          {
+            "reservation": "14575acc7e9044cf8de587c8d1a2a4ea",
+            "stage": "core",
+            "run_id": "6746aed7c4ba5a7f7013cdd1",
+            "kind": "planning",
+            "state": "measured",
+            "cost_usd": 0.0008014,
+            "timestamp": "2026-10-29T09:33:14.802615+00:00",
+            "cost_estimated": false,
+            "usage": {
+              "input_tokens": 1257,
+              "output_tokens": 67,
+              "cache_read_tokens": 1254,
+              "cache_write_tokens": 0
+            },
+            "error": null,
+            "latency_ms": 1911.9959169765934,
+            "response_id": "resp_030a31cf8e0b3a8a016ae312daf8c487d0a3f7816fd4388f1f",
+            "output": "{\"kind\":\"tools\",\"steps\":[{\"tool\":\"calculate\",\"arguments\":{\"issue_id\":null,\"test_run_id\":null,\"service\":null,\"environment\":null,\"query\":null,\"operation\":\"subtract\",\"left\":\"$slot.number0\",\"right\":\"$slot.number1\"}}],\"response\":\"\"}"
+          },
+          {
+            "reservation": "4847ea6915d24fc6bc1a3d80164b2089",
+            "stage": "core",
+            "run_id": "6746aed7c4ba5a7f7013cdd1",
+            "kind": "answer",
+            "state": "measured",
+            "cost_usd": 0.000562,
+            "timestamp": "2026-10-29T09:33:16.733541+00:00",
+            "cost_estimated": false,
+            "usage": {
+              "input_tokens": 216,
+              "output_tokens": 13,
+              "cache_read_tokens": 0,
+              "cache_write_tokens": 0
+            },
+            "error": null,
+            "latency_ms": 1251.616167020984,
+            "response_id": "resp_0530419acde77504016ae312dcdd2087d0b0585d7d4d34d078",
+            "output": "4 \u2212 10408 = -10404"
+          }
+        ],
+        "executions": [
+          {
+            "tool": "calculate",
+            "arguments": {
+              "operation": "subtract",
+              "left": 4.0,
+              "right": 10408.0
+            },
+            "bindings": {
+              "operation": "subtract",
+              "left": 4.0,
+              "right": 10408.0
+            },
+            "tenant": "acme",
+            "state_version": "d94a545425d395938e62797477cfb975b5ccc9397a716464c577b45cf08ba9bc",
+            "result": {
+              "found": true,
+              "value": -10404.0
+            },
+            "latency_ms": 0.8578330744057894,
+            "started_at": "2026-10-29T09:33:16.715307+00:00"
+          }
+        ],
+        "cache_hit": false,
+        "candidate": "ea1c859e996822c18e76",
+        "retrieval_score": 0.4840876523177682,
+        "retrieval_margin": 0.276761819330045,
+        "rejection": "semantic_signature",
+        "replans": 0,
+        "error": null,
+        "timings_ms": {
+          "binding": 0.11399993672966957,
+          "retrieval_validation": 1.1999579146504402,
+          "planning": 1911.9959169765934,
+          "answer": 1251.616167020984,
+          "tools": 0.8578330744057894,
+          "runtime": 3214.7014159709215
+        },
+        "cost_usd": 0.0013633999999999999,
+        "trace_id": null
+      },
+      "publication": {
+        "run_id": "6746aed7c4ba5a7f7013cdd1",
+        "trace_id": "7d2b6e925c3d03952b2d6d7c65765a2f",
+        "span_id": "574bb94b6008c8e9"
+      },
+      "phoenix_root_node_id": "U3BhbjozMjIw",
+      "phoenix_spans": [
+        {
+          "id": 3220,
+          "trace_rowid": 2166,
+          "span_id": "574bb94b6008c8e9",
+          "parent_id": null,
+          "name": "verified / warm",
+          "span_kind": "AGENT",
+          "start_time": "2026-10-29 09:33:14.764461",
+          "end_time": "2026-10-29 09:33:17.987241",
+          "attributes": {
+            "reuse": {
+              "cost_usd": 0.0013633999999999999,
+              "status": "completed",
+              "run_id": "6746aed7c4ba5a7f7013cdd1",
+              "bank_state": "warm",
+              "case_id": "test-calculations-02",
+              "measurement": "saved real endpoint measurement",
+              "cache_hit": false,
+              "policy": "verified"
+            },
+            "output": {
+              "value": "4 \u2212 10408 = -10404"
+            },
+            "input": {
+              "value": "Calculate 4 minus 10408"
+            },
+            "openinference": {
+              "span": {
+                "kind": "AGENT"
+              }
+            }
+          },
+          "events": [],
+          "status_code": "UNSET",
+          "status_message": "",
+          "cumulative_error_count": 0,
+          "cumulative_llm_token_count_prompt": 1473,
+          "cumulative_llm_token_count_completion": 80,
+          "llm_token_count_prompt": null,
+          "llm_token_count_completion": null,
+          "node_id": "U3BhbjozMjIw",
+          "annotations": [
+            {
+              "id": 1694,
+              "span_rowid": 3220,
+              "name": "reuse_authorization_violations",
+              "label": null,
+              "score": 0.0,
+              "explanation": null,
+              "metadata": {},
+              "annotator_kind": "CODE",
+              "created_at": "2026-10-29 09:50:25",
+              "updated_at": "2026-10-29 09:50:25",
+              "user_id": null,
+              "identifier": "",
+              "source": "API"
+            },
+            {
+              "id": 1693,
+              "span_rowid": 3220,
+              "name": "reuse_incorrect_accepted_reuse",
+              "label": null,
+              "score": 0.0,
+              "explanation": null,
+              "metadata": {},
+              "annotator_kind": "CODE",
+              "created_at": "2026-10-29 09:50:25",
+              "updated_at": "2026-10-29 09:50:25",
+              "user_id": null,
+              "identifier": "",
+              "source": "API"
+            },
+            {
+              "id": 1692,
+              "span_rowid": 3220,
+              "name": "reuse_resource_correct",
+              "label": null,
+              "score": 1.0,
+              "explanation": null,
+              "metadata": {},
+              "annotator_kind": "CODE",
+              "created_at": "2026-10-29 09:50:25",
+              "updated_at": "2026-10-29 09:50:25",
+              "user_id": null,
+              "identifier": "",
+              "source": "API"
+            },
+            {
+              "id": 1691,
+              "span_rowid": 3220,
+              "name": "reuse_success",
+              "label": null,
+              "score": 1.0,
+              "explanation": null,
+              "metadata": {},
+              "annotator_kind": "CODE",
+              "created_at": "2026-10-29 09:50:25",
+              "updated_at": "2026-10-29 09:50:25",
+              "user_id": null,
+              "identifier": "",
+              "source": "API"
+            }
+          ]
+        },
+        {
+          "id": 3217,
+          "trace_rowid": 2166,
+          "span_id": "d720a140cca7055e",
+          "parent_id": "574bb94b6008c8e9",
+          "name": "planning",
+          "span_kind": "LLM",
+          "start_time": "2026-10-29 09:33:14.802615",
+          "end_time": "2026-10-29 09:33:16.714611",
+          "attributes": {
+            "reuse": {
+              "provider_response_id": "resp_030a31cf8e0b3a8a016ae312daf8c487d0a3f7816fd4388f1f"
+            },
+            "llm": {
+              "token_count": {
+                "prompt": 1257,
+                "prompt_details": {
+                  "cache_read": 1254
+                },
+                "completion": 67
+              },
+              "model_name": "gpt-6.1-sol",
+              "cost": {
+                "total": 0.0008014
+              }
+            },
+            "output": {
+              "value": "{\"kind\":\"tools\",\"steps\":[{\"tool\":\"calculate\",\"arguments\":{\"issue_id\":null,\"test_run_id\":null,\"service\":null,\"environment\":null,\"query\":null,\"operation\":\"subtract\",\"left\":\"$slot.number0\",\"right\":\"$slot.number1\"}}],\"response\":\"\"}"
+            },
+            "openinference": {
+              "span": {
+                "kind": "LLM"
+              }
+            }
+          },
+          "events": [],
+          "status_code": "UNSET",
+          "status_message": "",
+          "cumulative_error_count": 0,
+          "cumulative_llm_token_count_prompt": 1257,
+          "cumulative_llm_token_count_completion": 67,
+          "llm_token_count_prompt": 1257,
+          "llm_token_count_completion": 67,
+          "node_id": "U3BhbjozMjE3",
+          "annotations": []
+        },
+        {
+          "id": 3219,
+          "trace_rowid": 2166,
+          "span_id": "503b22cec383b3aa",
+          "parent_id": "574bb94b6008c8e9",
+          "name": "calculate",
+          "span_kind": "TOOL",
+          "start_time": "2026-10-29 09:33:16.715307",
+          "end_time": "2026-10-29 09:33:16.716165",
+          "attributes": {
+            "reuse": {
+              "fixture_state_version": "d94a545425d395938e62797477cfb975b5ccc9397a716464c577b45cf08ba9bc",
+              "bindings": "{\"operation\": \"subtract\", \"left\": 4.0, \"right\": 10408.0}",
+              "tenant": "acme"
+            },
+            "input": {
+              "value": "{\"operation\": \"subtract\", \"left\": 4.0, \"right\": 10408.0}"
+            },
+            "output": {
+              "value": "{\"found\": true, \"value\": -10404.0}"
+            },
+            "tool": {
+              "name": "calculate"
+            },
+            "openinference": {
+              "span": {
+                "kind": "TOOL"
+              }
+            }
+          },
+          "events": [],
+          "status_code": "UNSET",
+          "status_message": "",
+          "cumulative_error_count": 0,
+          "cumulative_llm_token_count_prompt": 0,
+          "cumulative_llm_token_count_completion": 0,
+          "llm_token_count_prompt": null,
+          "llm_token_count_completion": null,
+          "node_id": "U3BhbjozMjE5",
+          "annotations": []
+        },
+        {
+          "id": 3218,
+          "trace_rowid": 2166,
+          "span_id": "7f8e3f55938907a2",
+          "parent_id": "574bb94b6008c8e9",
+          "name": "answer",
+          "span_kind": "LLM",
+          "start_time": "2026-10-29 09:33:16.733541",
+          "end_time": "2026-10-29 09:33:17.985157",
+          "attributes": {
+            "reuse": {
+              "provider_response_id": "resp_0530419acde77504016ae312dcdd2087d0b0585d7d4d34d078"
+            },
+            "llm": {
+              "token_count": {
+                "prompt": 216,
+                "prompt_details": {
+                  "cache_read": 0
+                },
+                "completion": 13
+              },
+              "model_name": "gpt-6.1-sol",
+              "cost": {
+                "total": 0.000562
+              }
+            },
+            "output": {
+              "value": "4 \u2212 10408 = -10404"
+            },
+            "openinference": {
+              "span": {
+                "kind": "LLM"
+              }
+            }
+          },
+          "events": [],
+          "status_code": "UNSET",
+          "status_message": "",
+          "cumulative_error_count": 0,
+          "cumulative_llm_token_count_prompt": 216,
+          "cumulative_llm_token_count_completion": 13,
+          "llm_token_count_prompt": 216,
+          "llm_token_count_completion": 13,
+          "node_id": "U3BhbjozMjE4",
+          "annotations": []
+        }
+      ],
+      "live_root_url": "http://localhost:6006/projects/UHJvamVjdDoyMQ==/spans/7d2b6e925c3d03952b2d6d7c65765a2f?selectedSpanNodeId=U3BhbjozMjIw"
+    },
+    {
+      "run_id": "5086d1ba278592ebf29faadb",
+      "case_id": "test-calculations-02",
+      "policy": "exact",
+      "bank_state": "warm",
+      "repetition": 1,
+      "configuration": "24b5d76b2aaecc355758bd2fb234ba22eb3d3a7f60c461c7aecf21aa60cf279a",
+      "case": {
+        "id": "test-calculations-02",
+        "cluster": "test-calculations-02",
+        "split": "test",
+        "family": "calculations",
+        "input": {
+          "request": "Calculate 4 minus 10408",
+          "context": {
+            "tenant": "acme",
+            "capabilities": [
+              "lookup_issue",
+              "lookup_deployment",
+              "lookup_test_results",
+              "search_docs",
+              "search_code",
+              "calculate"
+            ],
+            "grants": [],
+            "aliases": {},
+            "service": null,
+            "environment": null
+          }
+        },
+        "state": {
+          "acme": {
+            "issues": {
+              "ENG-10406": {
+                "issue_id": "ENG-10406",
+                "status": "open",
+                "test_run_id": "TR-10406"
+              },
+              "ENG-10407": {
+                "issue_id": "ENG-10407",
+                "status": "resolved",
+                "test_run_id": "TR-10407"
+              }
+            },
+            "deployments": {
+              "gateway/production": {
+                "service": "gateway",
+                "environment": "production",
+                "version": "v3.1",
+                "status": "healthy"
+              },
+              "gateway/staging": {
+                "service": "gateway",
+                "environment": "staging",
+                "version": "v4.2",
+                "status": "healthy"
+              },
+              "gateway/development": {
+                "service": "gateway",
+                "environment": "development",
+                "version": "v5.0",
+                "status": "healthy"
+              }
+            },
+            "test_runs": {
+              "TR-10406": {
+                "test_run_id": "TR-10406",
+                "outcome": "passed"
+              },
+              "TR-10407": {
+                "test_run_id": "TR-10407",
+                "outcome": "failed"
+              }
+            },
+            "docs": [
+              {
+                "id": "retry-guide",
+                "text": "Retry policy: use exponential backoff."
+              }
+            ],
+            "code": [
+              {
+                "id": "retry.py",
+                "text": "def retry_policy(): return 3"
+              }
+            ]
+          },
+          "beta": {
+            "issues": {
+              "ENG-10406": {
+                "issue_id": "ENG-10406",
+                "status": "triaged",
+                "test_run_id": "TR-10406"
+              },
+              "ENG-10407": {
+                "issue_id": "ENG-10407",
+                "status": "resolved",
+                "test_run_id": "TR-10407"
+              }
+            },
+            "deployments": {
+              "gateway/production": {
+                "service": "gateway",
+                "environment": "production",
+                "version": "v3.1",
+                "status": "healthy"
+              },
+              "gateway/staging": {
+                "service": "gateway",
+                "environment": "staging",
+                "version": "v4.2",
+                "status": "healthy"
+              },
+              "gateway/development": {
+                "service": "gateway",
+                "environment": "development",
+                "version": "v5.0",
+                "status": "healthy"
+              }
+            },
+            "test_runs": {
+              "TR-10406": {
+                "test_run_id": "TR-10406",
+                "outcome": "passed"
+              },
+              "TR-10407": {
+                "test_run_id": "TR-10407",
+                "outcome": "failed"
+              }
+            },
+            "docs": [
+              {
+                "id": "retry-guide",
+                "text": "Retry policy: use exponential backoff."
+              }
+            ],
+            "code": [
+              {
+                "id": "retry.py",
+                "text": "def retry_policy(): return 3"
+              }
+            ]
+          }
+        }
+      },
+      "measurement": {
+        "run_id": "5086d1ba278592ebf29faadb",
+        "identity": "test-calculations-02:exact:warm:1:24b5d76b2aaecc35",
+        "case_id": "test-calculations-02",
+        "cluster": "test-calculations-02",
+        "split": "test",
+        "family": "calculations",
+        "policy": "exact",
+        "bank_state": "warm",
+        "repetition": 1,
+        "configuration": "24b5d76b2aaecc355758bd2fb234ba22eb3d3a7f60c461c7aecf21aa60cf279a",
+        "record": {
+          "run_id": "5086d1ba278592ebf29faadb",
+          "policy": "exact",
+          "bank_state": "warm",
+          "status": "completed",
+          "bindings": {
+            "slots": {
+              "number0": 4.0,
+              "number1": 10408.0
+            },
+            "slot_types": {
+              "number0": "number",
+              "number1": "number"
+            },
+            "skeleton": "calculate <number0> minus <number1>",
+            "namespace": "ea951e30ddc2e3fbc06eb8d343acee8d3e1b560636c67748159d683fa73a5e54",
+            "unresolved": [],
+            "semantics": [
+              "count:number:2",
+              "subtract"
+            ]
+          },
+          "answer": "4 \u2212 10408 = -10404",
+          "calls": [
+            {
+              "reservation": "727580cae20b43e8b1b050dd0655b6dd",
+              "stage": "core",
+              "run_id": "5086d1ba278592ebf29faadb",
+              "kind": "planning",
+              "state": "measured",
+              "cost_usd": 0.0008014,
+              "timestamp": "2026-10-29T09:32:52.273362+00:00",
+              "cost_estimated": false,
+              "usage": {
+                "input_tokens": 1257,
+                "output_tokens": 67,
+                "cache_read_tokens": 1254,
+                "cache_write_tokens": 0
+              },
+              "error": null,
+              "latency_ms": 1903.048082953319,
+              "response_id": "resp_0b3d247299b71556016ae312c475fc87d085c4c458b6f7e997",
+              "output": "{\"kind\":\"tools\",\"steps\":[{\"tool\":\"calculate\",\"arguments\":{\"issue_id\":null,\"test_run_id\":null,\"service\":null,\"environment\":null,\"query\":null,\"operation\":\"subtract\",\"left\":\"$slot.number0\",\"right\":\"$slot.number1\"}}],\"response\":\"\"}"
+            },
+            {
+              "reservation": "b2f4b7cbc92f44daafbc2b523a2a983c",
+              "stage": "core",
+              "run_id": "5086d1ba278592ebf29faadb",
+              "kind": "answer",
+              "state": "measured",
+              "cost_usd": 0.000562,
+              "timestamp": "2026-10-29T09:32:54.188519+00:00",
+              "cost_estimated": false,
+              "usage": {
+                "input_tokens": 216,
+                "output_tokens": 13,
+                "cache_read_tokens": 0,
+                "cache_write_tokens": 0
+              },
+              "error": null,
+              "latency_ms": 1357.208083034493,
+              "response_id": "resp_0214a10c425814d0016ae312c652cc87d0aa92502f43fadf76",
+              "output": "4 \u2212 10408 = -10404"
+            }
+          ],
+          "executions": [
+            {
+              "tool": "calculate",
+              "arguments": {
+                "operation": "subtract",
+                "left": 4.0,
+                "right": 10408.0
+              },
+              "bindings": {
+                "operation": "subtract",
+                "left": 4.0,
+                "right": 10408.0
+              },
+              "tenant": "acme",
+              "state_version": "d94a545425d395938e62797477cfb975b5ccc9397a716464c577b45cf08ba9bc",
+              "result": {
+                "found": true,
+                "value": -10404.0
+              },
+              "latency_ms": 0.8164170430973172,
+              "started_at": "2026-10-29T09:32:54.176847+00:00"
+            }
+          ],
+          "cache_hit": false,
+          "candidate": null,
+          "retrieval_score": 0.0,
+          "retrieval_margin": 0.0,
+          "rejection": "no_candidate",
+          "replans": 0,
+          "error": null,
+          "timings_ms": {
+            "binding": 0.10708405170589685,
+            "retrieval_validation": 0.36520801950246096,
+            "planning": 1903.048082953319,
+            "answer": 1357.208083034493,
+            "tools": 0.8164170430973172,
+            "runtime": 3287.711541983299,
+            "persistence": 0.8515419904142618,
+            "end_to_end": 3291.7819160502404
+          },
+          "cost_usd": 0.0013633999999999999,
+          "trace_id": null
+        },
+        "evaluation": {
+          "success": true,
+          "resource_correct": true,
+          "answer_facts_correct": true,
+          "unnecessary_clarification": false,
+          "unnecessary_refusal": false,
+          "appropriate_abstention": false,
+          "unresolved": false,
+          "incorrect_accepted_reuse": false,
+          "bad_result_reached_answer": false,
+          "authorization_violations": 0,
+          "metric_scope": "mechanical execution-path and required-answer-fact checks; no semantic judge",
+          "wrong_returned_bindings": false
+        },
+        "plan": {
+          "kind": "tools",
+          "steps": [
+            {
+              "tool": "calculate",
+              "arguments": {
+                "operation": "subtract",
+                "left": "$slot.number0",
+                "right": "$slot.number1"
+              }
+            }
+          ],
+          "response": ""
+        }
+      },
+      "saved_outcome": {
+        "run_id": "5086d1ba278592ebf29faadb",
+        "policy": "exact",
+        "bank_state": "warm",
+        "status": "completed",
+        "bindings": {
+          "slots": {
+            "number0": 4.0,
+            "number1": 10408.0
+          },
+          "slot_types": {
+            "number0": "number",
+            "number1": "number"
+          },
+          "skeleton": "calculate <number0> minus <number1>",
+          "namespace": "ea951e30ddc2e3fbc06eb8d343acee8d3e1b560636c67748159d683fa73a5e54",
+          "unresolved": [],
+          "semantics": [
+            "count:number:2",
+            "subtract"
+          ]
+        },
+        "answer": "4 \u2212 10408 = -10404",
+        "calls": [
+          {
+            "reservation": "727580cae20b43e8b1b050dd0655b6dd",
+            "stage": "core",
+            "run_id": "5086d1ba278592ebf29faadb",
+            "kind": "planning",
+            "state": "measured",
+            "cost_usd": 0.0008014,
+            "timestamp": "2026-10-29T09:32:52.273362+00:00",
+            "cost_estimated": false,
+            "usage": {
+              "input_tokens": 1257,
+              "output_tokens": 67,
+              "cache_read_tokens": 1254,
+              "cache_write_tokens": 0
+            },
+            "error": null,
+            "latency_ms": 1903.048082953319,
+            "response_id": "resp_0b3d247299b71556016ae312c475fc87d085c4c458b6f7e997",
+            "output": "{\"kind\":\"tools\",\"steps\":[{\"tool\":\"calculate\",\"arguments\":{\"issue_id\":null,\"test_run_id\":null,\"service\":null,\"environment\":null,\"query\":null,\"operation\":\"subtract\",\"left\":\"$slot.number0\",\"right\":\"$slot.number1\"}}],\"response\":\"\"}"
+          },
+          {
+            "reservation": "b2f4b7cbc92f44daafbc2b523a2a983c",
+            "stage": "core",
+            "run_id": "5086d1ba278592ebf29faadb",
+            "kind": "answer",
+            "state": "measured",
+            "cost_usd": 0.000562,
+            "timestamp": "2026-10-29T09:32:54.188519+00:00",
+            "cost_estimated": false,
+            "usage": {
+              "input_tokens": 216,
+              "output_tokens": 13,
+              "cache_read_tokens": 0,
+              "cache_write_tokens": 0
+            },
+            "error": null,
+            "latency_ms": 1357.208083034493,
+            "response_id": "resp_0214a10c425814d0016ae312c652cc87d0aa92502f43fadf76",
+            "output": "4 \u2212 10408 = -10404"
+          }
+        ],
+        "executions": [
+          {
+            "tool": "calculate",
+            "arguments": {
+              "operation": "subtract",
+              "left": 4.0,
+              "right": 10408.0
+            },
+            "bindings": {
+              "operation": "subtract",
+              "left": 4.0,
+              "right": 10408.0
+            },
+            "tenant": "acme",
+            "state_version": "d94a545425d395938e62797477cfb975b5ccc9397a716464c577b45cf08ba9bc",
+            "result": {
+              "found": true,
+              "value": -10404.0
+            },
+            "latency_ms": 0.8164170430973172,
+            "started_at": "2026-10-29T09:32:54.176847+00:00"
+          }
+        ],
+        "cache_hit": false,
+        "candidate": null,
+        "retrieval_score": 0.0,
+        "retrieval_margin": 0.0,
+        "rejection": "no_candidate",
+        "replans": 0,
+        "error": null,
+        "timings_ms": {
+          "binding": 0.10708405170589685,
+          "retrieval_validation": 0.36520801950246096,
+          "planning": 1903.048082953319,
+          "answer": 1357.208083034493,
+          "tools": 0.8164170430973172,
+          "runtime": 3287.711541983299
+        },
+        "cost_usd": 0.0013633999999999999,
+        "trace_id": null
+      },
+      "publication": {
+        "run_id": "5086d1ba278592ebf29faadb",
+        "trace_id": "11a4037b76464868f7132292de473a98",
+        "span_id": "5ec2123bffa9bdd5"
+      },
+      "phoenix_root_node_id": "U3BhbjozMTkz",
+      "phoenix_spans": [
+        {
+          "id": 3193,
+          "trace_rowid": 2159,
+          "span_id": "5ec2123bffa9bdd5",
+          "parent_id": null,
+          "name": "exact / warm",
+          "span_kind": "AGENT",
+          "start_time": "2026-10-29 09:32:52.255236",
+          "end_time": "2026-10-29 09:32:55.547018",
+          "attributes": {
+            "reuse": {
+              "cost_usd": 0.0013633999999999999,
+              "status": "completed",
+              "run_id": "5086d1ba278592ebf29faadb",
+              "bank_state": "warm",
+              "case_id": "test-calculations-02",
+              "measurement": "saved real endpoint measurement",
+              "cache_hit": false,
+              "policy": "exact"
+            },
+            "output": {
+              "value": "4 \u2212 10408 = -10404"
+            },
+            "input": {
+              "value": "Calculate 4 minus 10408"
+            },
+            "openinference": {
+              "span": {
+                "kind": "AGENT"
+              }
+            }
+          },
+          "events": [],
+          "status_code": "UNSET",
+          "status_message": "",
+          "cumulative_error_count": 0,
+          "cumulative_llm_token_count_prompt": 1473,
+          "cumulative_llm_token_count_completion": 80,
+          "llm_token_count_prompt": null,
+          "llm_token_count_completion": null,
+          "node_id": "U3BhbjozMTkz",
+          "annotations": [
+            {
+              "id": 1666,
+              "span_rowid": 3193,
+              "name": "reuse_authorization_violations",
+              "label": null,
+              "score": 0.0,
+              "explanation": null,
+              "metadata": {},
+              "annotator_kind": "CODE",
+              "created_at": "2026-10-29 09:50:25",
+              "updated_at": "2026-10-29 09:50:25",
+              "user_id": null,
+              "identifier": "",
+              "source": "API"
+            },
+            {
+              "id": 1665,
+              "span_rowid": 3193,
+              "name": "reuse_incorrect_accepted_reuse",
+              "label": null,
+              "score": 0.0,
+              "explanation": null,
+              "metadata": {},
+              "annotator_kind": "CODE",
+              "created_at": "2026-10-29 09:50:25",
+              "updated_at": "2026-10-29 09:50:25",
+              "user_id": null,
+              "identifier": "",
+              "source": "API"
+            },
+            {
+              "id": 1664,
+              "span_rowid": 3193,
+              "name": "reuse_resource_correct",
+              "label": null,
+              "score": 1.0,
+              "explanation": null,
+              "metadata": {},
+              "annotator_kind": "CODE",
+              "created_at": "2026-10-29 09:50:25",
+              "updated_at": "2026-10-29 09:50:25",
+              "user_id": null,
+              "identifier": "",
+              "source": "API"
+            },
+            {
+              "id": 1663,
+              "span_rowid": 3193,
+              "name": "reuse_success",
+              "label": null,
+              "score": 1.0,
+              "explanation": null,
+              "metadata": {},
+              "annotator_kind": "CODE",
+              "created_at": "2026-10-29 09:50:25",
+              "updated_at": "2026-10-29 09:50:25",
+              "user_id": null,
+              "identifier": "",
+              "source": "API"
+            }
+          ]
+        },
+        {
+          "id": 3190,
+          "trace_rowid": 2159,
+          "span_id": "3410506d38d60783",
+          "parent_id": "5ec2123bffa9bdd5",
+          "name": "planning",
+          "span_kind": "LLM",
+          "start_time": "2026-10-29 09:32:52.273362",
+          "end_time": "2026-10-29 09:32:54.176410",
+          "attributes": {
+            "reuse": {
+              "provider_response_id": "resp_0b3d247299b71556016ae312c475fc87d085c4c458b6f7e997"
+            },
+            "llm": {
+              "token_count": {
+                "prompt": 1257,
+                "prompt_details": {
+                  "cache_read": 1254
+                },
+                "completion": 67
+              },
+              "model_name": "gpt-6.1-sol",
+              "cost": {
+                "total": 0.0008014
+              }
+            },
+            "output": {
+              "value": "{\"kind\":\"tools\",\"steps\":[{\"tool\":\"calculate\",\"arguments\":{\"issue_id\":null,\"test_run_id\":null,\"service\":null,\"environment\":null,\"query\":null,\"operation\":\"subtract\",\"left\":\"$slot.number0\",\"right\":\"$slot.number1\"}}],\"response\":\"\"}"
+            },
+            "openinference": {
+              "span": {
+                "kind": "LLM"
+              }
+            }
+          },
+          "events": [],
+          "status_code": "UNSET",
+          "status_message": "",
+          "cumulative_error_count": 0,
+          "cumulative_llm_token_count_prompt": 1257,
+          "cumulative_llm_token_count_completion": 67,
+          "llm_token_count_prompt": 1257,
+          "llm_token_count_completion": 67,
+          "node_id": "U3BhbjozMTkw",
+          "annotations": []
+        },
+        {
+          "id": 3192,
+          "trace_rowid": 2159,
+          "span_id": "b0de816c6fac9793",
+          "parent_id": "5ec2123bffa9bdd5",
+          "name": "calculate",
+          "span_kind": "TOOL",
+          "start_time": "2026-10-29 09:32:54.176847",
+          "end_time": "2026-10-29 09:32:54.177664",
+          "attributes": {
+            "reuse": {
+              "fixture_state_version": "d94a545425d395938e62797477cfb975b5ccc9397a716464c577b45cf08ba9bc",
+              "bindings": "{\"operation\": \"subtract\", \"left\": 4.0, \"right\": 10408.0}",
+              "tenant": "acme"
+            },
+            "input": {
+              "value": "{\"operation\": \"subtract\", \"left\": 4.0, \"right\": 10408.0}"
+            },
+            "output": {
+              "value": "{\"found\": true, \"value\": -10404.0}"
+            },
+            "tool": {
+              "name": "calculate"
+            },
+            "openinference": {
+              "span": {
+                "kind": "TOOL"
+              }
+            }
+          },
+          "events": [],
+          "status_code": "UNSET",
+          "status_message": "",
+          "cumulative_error_count": 0,
+          "cumulative_llm_token_count_prompt": 0,
+          "cumulative_llm_token_count_completion": 0,
+          "llm_token_count_prompt": null,
+          "llm_token_count_completion": null,
+          "node_id": "U3BhbjozMTky",
+          "annotations": []
+        },
+        {
+          "id": 3191,
+          "trace_rowid": 2159,
+          "span_id": "139a188dabaad969",
+          "parent_id": "5ec2123bffa9bdd5",
+          "name": "answer",
+          "span_kind": "LLM",
+          "start_time": "2026-10-29 09:32:54.188519",
+          "end_time": "2026-10-29 09:32:55.545727",
+          "attributes": {
+            "reuse": {
+              "provider_response_id": "resp_0214a10c425814d0016ae312c652cc87d0aa92502f43fadf76"
+            },
+            "llm": {
+              "token_count": {
+                "prompt": 216,
+                "prompt_details": {
+                  "cache_read": 0
+                },
+                "completion": 13
+              },
+              "model_name": "gpt-6.1-sol",
+              "cost": {
+                "total": 0.000562
+              }
+            },
+            "output": {
+              "value": "4 \u2212 10408 = -10404"
+            },
+            "openinference": {
+              "span": {
+                "kind": "LLM"
+              }
+            }
+          },
+          "events": [],
+          "status_code": "UNSET",
+          "status_message": "",
+          "cumulative_error_count": 0,
+          "cumulative_llm_token_count_prompt": 216,
+          "cumulative_llm_token_count_completion": 13,
+          "llm_token_count_prompt": 216,
+          "llm_token_count_completion": 13,
+          "node_id": "U3BhbjozMTkx",
+          "annotations": []
+        }
+      ],
+      "live_root_url": "http://localhost:6006/projects/UHJvamVjdDoyMQ==/spans/11a4037b76464868f7132292de473a98?selectedSpanNodeId=U3BhbjozMTkz"
+    },
+    {
+      "run_id": "1769fbe65c69d12890199adc",
+      "case_id": "test-calculations-02",
+      "policy": "fused",
+      "bank_state": "warm",
+      "repetition": 1,
+      "configuration": "24b5d76b2aaecc355758bd2fb234ba22eb3d3a7f60c461c7aecf21aa60cf279a",
+      "case": {
+        "id": "test-calculations-02",
+        "cluster": "test-calculations-02",
+        "split": "test",
+        "family": "calculations",
+        "input": {
+          "request": "Calculate 4 minus 10408",
+          "context": {
+            "tenant": "acme",
+            "capabilities": [
+              "lookup_issue",
+              "lookup_deployment",
+              "lookup_test_results",
+              "search_docs",
+              "search_code",
+              "calculate"
+            ],
+            "grants": [],
+            "aliases": {},
+            "service": null,
+            "environment": null
+          }
+        },
+        "state": {
+          "acme": {
+            "issues": {
+              "ENG-10406": {
+                "issue_id": "ENG-10406",
+                "status": "open",
+                "test_run_id": "TR-10406"
+              },
+              "ENG-10407": {
+                "issue_id": "ENG-10407",
+                "status": "resolved",
+                "test_run_id": "TR-10407"
+              }
+            },
+            "deployments": {
+              "gateway/production": {
+                "service": "gateway",
+                "environment": "production",
+                "version": "v3.1",
+                "status": "healthy"
+              },
+              "gateway/staging": {
+                "service": "gateway",
+                "environment": "staging",
+                "version": "v4.2",
+                "status": "healthy"
+              },
+              "gateway/development": {
+                "service": "gateway",
+                "environment": "development",
+                "version": "v5.0",
+                "status": "healthy"
+              }
+            },
+            "test_runs": {
+              "TR-10406": {
+                "test_run_id": "TR-10406",
+                "outcome": "passed"
+              },
+              "TR-10407": {
+                "test_run_id": "TR-10407",
+                "outcome": "failed"
+              }
+            },
+            "docs": [
+              {
+                "id": "retry-guide",
+                "text": "Retry policy: use exponential backoff."
+              }
+            ],
+            "code": [
+              {
+                "id": "retry.py",
+                "text": "def retry_policy(): return 3"
+              }
+            ]
+          },
+          "beta": {
+            "issues": {
+              "ENG-10406": {
+                "issue_id": "ENG-10406",
+                "status": "triaged",
+                "test_run_id": "TR-10406"
+              },
+              "ENG-10407": {
+                "issue_id": "ENG-10407",
+                "status": "resolved",
+                "test_run_id": "TR-10407"
+              }
+            },
+            "deployments": {
+              "gateway/production": {
+                "service": "gateway",
+                "environment": "production",
+                "version": "v3.1",
+                "status": "healthy"
+              },
+              "gateway/staging": {
+                "service": "gateway",
+                "environment": "staging",
+                "version": "v4.2",
+                "status": "healthy"
+              },
+              "gateway/development": {
+                "service": "gateway",
+                "environment": "development",
+                "version": "v5.0",
+                "status": "healthy"
+              }
+            },
+            "test_runs": {
+              "TR-10406": {
+                "test_run_id": "TR-10406",
+                "outcome": "passed"
+              },
+              "TR-10407": {
+                "test_run_id": "TR-10407",
+                "outcome": "failed"
+              }
+            },
+            "docs": [
+              {
+                "id": "retry-guide",
+                "text": "Retry policy: use exponential backoff."
+              }
+            ],
+            "code": [
+              {
+                "id": "retry.py",
+                "text": "def retry_policy(): return 3"
+              }
+            ]
+          }
+        }
+      },
+      "measurement": {
+        "run_id": "1769fbe65c69d12890199adc",
+        "identity": "test-calculations-02:fused:warm:1:24b5d76b2aaecc35",
+        "case_id": "test-calculations-02",
+        "cluster": "test-calculations-02",
+        "split": "test",
+        "family": "calculations",
+        "policy": "fused",
+        "bank_state": "warm",
+        "repetition": 1,
+        "configuration": "24b5d76b2aaecc355758bd2fb234ba22eb3d3a7f60c461c7aecf21aa60cf279a",
+        "record": {
+          "run_id": "1769fbe65c69d12890199adc",
+          "policy": "fused",
+          "bank_state": "warm",
+          "status": "completed",
+          "bindings": {
+            "slots": {
+              "number0": 4.0,
+              "number1": 10408.0
+            },
+            "slot_types": {
+              "number0": "number",
+              "number1": "number"
+            },
+            "skeleton": "calculate <number0> minus <number1>",
+            "namespace": "ea951e30ddc2e3fbc06eb8d343acee8d3e1b560636c67748159d683fa73a5e54",
+            "unresolved": [],
+            "semantics": [
+              "count:number:2",
+              "subtract"
+            ]
+          },
+          "answer": "4 \u2212 10408 = -10404.",
+          "calls": [
+            {
+              "reservation": "d1a5e8dc60d2466b875b6c590be79406",
+              "stage": "core",
+              "run_id": "1769fbe65c69d12890199adc",
+              "kind": "planning",
+              "state": "measured",
+              "cost_usd": 0.0008014,
+              "timestamp": "2026-10-29T09:33:11.297852+00:00",
+              "cost_estimated": false,
+              "usage": {
+                "input_tokens": 1257,
+                "output_tokens": 67,
+                "cache_read_tokens": 1254,
+                "cache_write_tokens": 0
+              },
+              "error": null,
+              "latency_ms": 1971.2262919638306,
+              "response_id": "resp_0b90ac2db173ebe0016ae312d77a6887d087c275b0843709bf",
+              "output": "{\"kind\":\"tools\",\"steps\":[{\"tool\":\"calculate\",\"arguments\":{\"issue_id\":null,\"test_run_id\":null,\"service\":null,\"environment\":null,\"query\":null,\"operation\":\"subtract\",\"left\":\"$slot.number0\",\"right\":\"$slot.number1\"}}],\"response\":\"\"}"
+            },
+            {
+              "reservation": "84720c04ca41422dad70435f271862cc",
+              "stage": "core",
+              "run_id": "1769fbe65c69d12890199adc",
+              "kind": "answer",
+              "state": "measured",
+              "cost_usd": 0.000572,
+              "timestamp": "2026-10-29T09:33:13.291721+00:00",
+              "cost_estimated": false,
+              "usage": {
+                "input_tokens": 216,
+                "output_tokens": 14,
+                "cache_read_tokens": 0,
+                "cache_write_tokens": 0
+              },
+              "error": null,
+              "latency_ms": 1419.4922080496326,
+              "response_id": "resp_0205519f06ff1992016ae312d977c887d0a30bed74849a71aa",
+              "output": "4 \u2212 10408 = -10404."
+            }
+          ],
+          "executions": [
+            {
+              "tool": "calculate",
+              "arguments": {
+                "operation": "subtract",
+                "left": 4.0,
+                "right": 10408.0
+              },
+              "bindings": {
+                "operation": "subtract",
+                "left": 4.0,
+                "right": 10408.0
+              },
+              "tenant": "acme",
+              "state_version": "d94a545425d395938e62797477cfb975b5ccc9397a716464c577b45cf08ba9bc",
+              "result": {
+                "found": true,
+                "value": -10404.0
+              },
+              "latency_ms": 1.3274579541757703,
+              "started_at": "2026-10-29T09:33:13.270772+00:00"
+            }
+          ],
+          "cache_hit": false,
+          "candidate": null,
+          "retrieval_score": 0,
+          "retrieval_margin": 0,
+          "rejection": null,
+          "replans": 0,
+          "error": null,
+          "timings_ms": {
+            "binding": 0.11204206384718418,
+            "retrieval_validation": 0.000125030055642128,
+            "planning": 1971.2262919638306,
+            "answer": 1419.4922080496326,
+            "tools": 1.3274579541757703,
+            "runtime": 3428.842750028707,
+            "persistence": 5.136125022545457,
+            "end_to_end": 3437.112999963574
+          },
+          "cost_usd": 0.0013733999999999999,
+          "trace_id": null
+        },
+        "evaluation": {
+          "success": true,
+          "resource_correct": true,
+          "answer_facts_correct": true,
+          "unnecessary_clarification": false,
+          "unnecessary_refusal": false,
+          "appropriate_abstention": false,
+          "unresolved": false,
+          "incorrect_accepted_reuse": false,
+          "bad_result_reached_answer": false,
+          "authorization_violations": 0,
+          "metric_scope": "mechanical execution-path and required-answer-fact checks; no semantic judge",
+          "wrong_returned_bindings": false
+        },
+        "plan": {
+          "kind": "tools",
+          "steps": [
+            {
+              "tool": "calculate",
+              "arguments": {
+                "operation": "subtract",
+                "left": "$slot.number0",
+                "right": "$slot.number1"
+              }
+            }
+          ],
+          "response": ""
+        }
+      },
+      "saved_outcome": {
+        "run_id": "1769fbe65c69d12890199adc",
+        "policy": "fused",
+        "bank_state": "warm",
+        "status": "completed",
+        "bindings": {
+          "slots": {
+            "number0": 4.0,
+            "number1": 10408.0
+          },
+          "slot_types": {
+            "number0": "number",
+            "number1": "number"
+          },
+          "skeleton": "calculate <number0> minus <number1>",
+          "namespace": "ea951e30ddc2e3fbc06eb8d343acee8d3e1b560636c67748159d683fa73a5e54",
+          "unresolved": [],
+          "semantics": [
+            "count:number:2",
+            "subtract"
+          ]
+        },
+        "answer": "4 \u2212 10408 = -10404.",
+        "calls": [
+          {
+            "reservation": "d1a5e8dc60d2466b875b6c590be79406",
+            "stage": "core",
+            "run_id": "1769fbe65c69d12890199adc",
+            "kind": "planning",
+            "state": "measured",
+            "cost_usd": 0.0008014,
+            "timestamp": "2026-10-29T09:33:11.297852+00:00",
+            "cost_estimated": false,
+            "usage": {
+              "input_tokens": 1257,
+              "output_tokens": 67,
+              "cache_read_tokens": 1254,
+              "cache_write_tokens": 0
+            },
+            "error": null,
+            "latency_ms": 1971.2262919638306,
+            "response_id": "resp_0b90ac2db173ebe0016ae312d77a6887d087c275b0843709bf",
+            "output": "{\"kind\":\"tools\",\"steps\":[{\"tool\":\"calculate\",\"arguments\":{\"issue_id\":null,\"test_run_id\":null,\"service\":null,\"environment\":null,\"query\":null,\"operation\":\"subtract\",\"left\":\"$slot.number0\",\"right\":\"$slot.number1\"}}],\"response\":\"\"}"
+          },
+          {
+            "reservation": "84720c04ca41422dad70435f271862cc",
+            "stage": "core",
+            "run_id": "1769fbe65c69d12890199adc",
+            "kind": "answer",
+            "state": "measured",
+            "cost_usd": 0.000572,
+            "timestamp": "2026-10-29T09:33:13.291721+00:00",
+            "cost_estimated": false,
+            "usage": {
+              "input_tokens": 216,
+              "output_tokens": 14,
+              "cache_read_tokens": 0,
+              "cache_write_tokens": 0
+            },
+            "error": null,
+            "latency_ms": 1419.4922080496326,
+            "response_id": "resp_0205519f06ff1992016ae312d977c887d0a30bed74849a71aa",
+            "output": "4 \u2212 10408 = -10404."
+          }
+        ],
+        "executions": [
+          {
+            "tool": "calculate",
+            "arguments": {
+              "operation": "subtract",
+              "left": 4.0,
+              "right": 10408.0
+            },
+            "bindings": {
+              "operation": "subtract",
+              "left": 4.0,
+              "right": 10408.0
+            },
+            "tenant": "acme",
+            "state_version": "d94a545425d395938e62797477cfb975b5ccc9397a716464c577b45cf08ba9bc",
+            "result": {
+              "found": true,
+              "value": -10404.0
+            },
+            "latency_ms": 1.3274579541757703,
+            "started_at": "2026-10-29T09:33:13.270772+00:00"
+          }
+        ],
+        "cache_hit": false,
+        "candidate": null,
+        "retrieval_score": 0,
+        "retrieval_margin": 0,
+        "rejection": null,
+        "replans": 0,
+        "error": null,
+        "timings_ms": {
+          "binding": 0.11204206384718418,
+          "retrieval_validation": 0.000125030055642128,
+          "planning": 1971.2262919638306,
+          "answer": 1419.4922080496326,
+          "tools": 1.3274579541757703,
+          "runtime": 3428.842750028707
+        },
+        "cost_usd": 0.0013733999999999999,
+        "trace_id": null
+      },
+      "publication": {
+        "run_id": "1769fbe65c69d12890199adc",
+        "trace_id": "f3996c5633d602e9d026bf18a7f73399",
+        "span_id": "305884c7ceea6f9a"
+      },
+      "phoenix_root_node_id": "U3BhbjozMjE2",
+      "phoenix_spans": [
+        {
+          "id": 3216,
+          "trace_rowid": 2165,
+          "span_id": "305884c7ceea6f9a",
+          "parent_id": null,
+          "name": "fused / warm",
+          "span_kind": "AGENT",
+          "start_time": "2026-10-29 09:33:11.282326",
+          "end_time": "2026-10-29 09:33:14.719439",
+          "attributes": {
+            "reuse": {
+              "cost_usd": 0.0013733999999999999,
+              "status": "completed",
+              "run_id": "1769fbe65c69d12890199adc",
+              "bank_state": "warm",
+              "case_id": "test-calculations-02",
+              "measurement": "saved real endpoint measurement",
+              "cache_hit": false,
+              "policy": "fused"
+            },
+            "output": {
+              "value": "4 \u2212 10408 = -10404."
+            },
+            "input": {
+              "value": "Calculate 4 minus 10408"
+            },
+            "openinference": {
+              "span": {
+                "kind": "AGENT"
+              }
+            }
+          },
+          "events": [],
+          "status_code": "UNSET",
+          "status_message": "",
+          "cumulative_error_count": 0,
+          "cumulative_llm_token_count_prompt": 1473,
+          "cumulative_llm_token_count_completion": 81,
+          "llm_token_count_prompt": null,
+          "llm_token_count_completion": null,
+          "node_id": "U3BhbjozMjE2",
+          "annotations": [
+            {
+              "id": 1690,
+              "span_rowid": 3216,
+              "name": "reuse_authorization_violations",
+              "label": null,
+              "score": 0.0,
+              "explanation": null,
+              "metadata": {},
+              "annotator_kind": "CODE",
+              "created_at": "2026-10-29 09:50:25",
+              "updated_at": "2026-10-29 09:50:25",
+              "user_id": null,
+              "identifier": "",
+              "source": "API"
+            },
+            {
+              "id": 1689,
+              "span_rowid": 3216,
+              "name": "reuse_incorrect_accepted_reuse",
+              "label": null,
+              "score": 0.0,
+              "explanation": null,
+              "metadata": {},
+              "annotator_kind": "CODE",
+              "created_at": "2026-10-29 09:50:25",
+              "updated_at": "2026-10-29 09:50:25",
+              "user_id": null,
+              "identifier": "",
+              "source": "API"
+            },
+            {
+              "id": 1688,
+              "span_rowid": 3216,
+              "name": "reuse_resource_correct",
+              "label": null,
+              "score": 1.0,
+              "explanation": null,
+              "metadata": {},
+              "annotator_kind": "CODE",
+              "created_at": "2026-10-29 09:50:25",
+              "updated_at": "2026-10-29 09:50:25",
+              "user_id": null,
+              "identifier": "",
+              "source": "API"
+            },
+            {
+              "id": 1687,
+              "span_rowid": 3216,
+              "name": "reuse_success",
+              "label": null,
+              "score": 1.0,
+              "explanation": null,
+              "metadata": {},
+              "annotator_kind": "CODE",
+              "created_at": "2026-10-29 09:50:25",
+              "updated_at": "2026-10-29 09:50:25",
+              "user_id": null,
+              "identifier": "",
+              "source": "API"
+            }
+          ]
+        },
+        {
+          "id": 3213,
+          "trace_rowid": 2165,
+          "span_id": "b66a6d05c9512900",
+          "parent_id": "305884c7ceea6f9a",
+          "name": "planning",
+          "span_kind": "LLM",
+          "start_time": "2026-10-29 09:33:11.297852",
+          "end_time": "2026-10-29 09:33:13.269078",
+          "attributes": {
+            "reuse": {
+              "provider_response_id": "resp_0b90ac2db173ebe0016ae312d77a6887d087c275b0843709bf"
+            },
+            "llm": {
+              "token_count": {
+                "prompt": 1257,
+                "prompt_details": {
+                  "cache_read": 1254
+                },
+                "completion": 67
+              },
+              "model_name": "gpt-6.1-sol",
+              "cost": {
+                "total": 0.0008014
+              }
+            },
+            "output": {
+              "value": "{\"kind\":\"tools\",\"steps\":[{\"tool\":\"calculate\",\"arguments\":{\"issue_id\":null,\"test_run_id\":null,\"service\":null,\"environment\":null,\"query\":null,\"operation\":\"subtract\",\"left\":\"$slot.number0\",\"right\":\"$slot.number1\"}}],\"response\":\"\"}"
+            },
+            "openinference": {
+              "span": {
+                "kind": "LLM"
+              }
+            }
+          },
+          "events": [],
+          "status_code": "UNSET",
+          "status_message": "",
+          "cumulative_error_count": 0,
+          "cumulative_llm_token_count_prompt": 1257,
+          "cumulative_llm_token_count_completion": 67,
+          "llm_token_count_prompt": 1257,
+          "llm_token_count_completion": 67,
+          "node_id": "U3BhbjozMjEz",
+          "annotations": []
+        },
+        {
+          "id": 3215,
+          "trace_rowid": 2165,
+          "span_id": "2e427e7d5302d81a",
+          "parent_id": "305884c7ceea6f9a",
+          "name": "calculate",
+          "span_kind": "TOOL",
+          "start_time": "2026-10-29 09:33:13.270772",
+          "end_time": "2026-10-29 09:33:13.272099",
+          "attributes": {
+            "reuse": {
+              "fixture_state_version": "d94a545425d395938e62797477cfb975b5ccc9397a716464c577b45cf08ba9bc",
+              "bindings": "{\"operation\": \"subtract\", \"left\": 4.0, \"right\": 10408.0}",
+              "tenant": "acme"
+            },
+            "input": {
+              "value": "{\"operation\": \"subtract\", \"left\": 4.0, \"right\": 10408.0}"
+            },
+            "output": {
+              "value": "{\"found\": true, \"value\": -10404.0}"
+            },
+            "tool": {
+              "name": "calculate"
+            },
+            "openinference": {
+              "span": {
+                "kind": "TOOL"
+              }
+            }
+          },
+          "events": [],
+          "status_code": "UNSET",
+          "status_message": "",
+          "cumulative_error_count": 0,
+          "cumulative_llm_token_count_prompt": 0,
+          "cumulative_llm_token_count_completion": 0,
+          "llm_token_count_prompt": null,
+          "llm_token_count_completion": null,
+          "node_id": "U3BhbjozMjE1",
+          "annotations": []
+        },
+        {
+          "id": 3214,
+          "trace_rowid": 2165,
+          "span_id": "8c765f8baa20234b",
+          "parent_id": "305884c7ceea6f9a",
+          "name": "answer",
+          "span_kind": "LLM",
+          "start_time": "2026-10-29 09:33:13.291721",
+          "end_time": "2026-10-29 09:33:14.711213",
+          "attributes": {
+            "reuse": {
+              "provider_response_id": "resp_0205519f06ff1992016ae312d977c887d0a30bed74849a71aa"
+            },
+            "llm": {
+              "token_count": {
+                "prompt": 216,
+                "prompt_details": {
+                  "cache_read": 0
+                },
+                "completion": 14
+              },
+              "model_name": "gpt-6.1-sol",
+              "cost": {
+                "total": 0.000572
+              }
+            },
+            "output": {
+              "value": "4 \u2212 10408 = -10404."
+            },
+            "openinference": {
+              "span": {
+                "kind": "LLM"
+              }
+            }
+          },
+          "events": [],
+          "status_code": "UNSET",
+          "status_message": "",
+          "cumulative_error_count": 0,
+          "cumulative_llm_token_count_prompt": 216,
+          "cumulative_llm_token_count_completion": 14,
+          "llm_token_count_prompt": 216,
+          "llm_token_count_completion": 14,
+          "node_id": "U3BhbjozMjE0",
+          "annotations": []
+        }
+      ],
+      "live_root_url": "http://localhost:6006/projects/UHJvamVjdDoyMQ==/spans/f3996c5633d602e9d026bf18a7f73399?selectedSpanNodeId=U3BhbjozMjE2"
+    },
+    {
+      "run_id": "739adfc3b1192b1ced846a2f",
+      "case_id": "test-issues-00",
+      "policy": "exact",
+      "bank_state": "warm",
+      "repetition": 1,
+      "configuration": "24b5d76b2aaecc355758bd2fb234ba22eb3d3a7f60c461c7aecf21aa60cf279a",
+      "case": {
+        "id": "test-issues-00",
+        "cluster": "test-issues-00",
+        "split": "test",
+        "family": "issues",
+        "input": {
+          "request": "Show issue ENG-10000",
+          "context": {
+            "tenant": "acme",
+            "capabilities": [
+              "lookup_issue",
+              "lookup_deployment",
+              "lookup_test_results",
+              "search_docs",
+              "search_code",
+              "calculate"
+            ],
+            "grants": [],
+            "aliases": {},
+            "service": null,
+            "environment": null
+          }
+        },
+        "state": {
+          "acme": {
+            "issues": {
+              "ENG-10000": {
+                "issue_id": "ENG-10000",
+                "status": "open",
+                "test_run_id": "TR-10000"
+              },
+              "ENG-10001": {
+                "issue_id": "ENG-10001",
+                "status": "resolved",
+                "test_run_id": "TR-10001"
+              }
+            },
+            "deployments": {
+              "gateway/production": {
+                "service": "gateway",
+                "environment": "production",
+                "version": "v3.1",
+                "status": "healthy"
+              },
+              "gateway/staging": {
+                "service": "gateway",
+                "environment": "staging",
+                "version": "v4.2",
+                "status": "healthy"
+              },
+              "gateway/development": {
+                "service": "gateway",
+                "environment": "development",
+                "version": "v5.0",
+                "status": "healthy"
+              }
+            },
+            "test_runs": {
+              "TR-10000": {
+                "test_run_id": "TR-10000",
+                "outcome": "passed"
+              },
+              "TR-10001": {
+                "test_run_id": "TR-10001",
+                "outcome": "failed"
+              }
+            },
+            "docs": [
+              {
+                "id": "retry-guide",
+                "text": "Retry policy: use exponential backoff."
+              }
+            ],
+            "code": [
+              {
+                "id": "retry.py",
+                "text": "def retry_policy(): return 3"
+              }
+            ]
+          },
+          "beta": {
+            "issues": {
+              "ENG-10000": {
+                "issue_id": "ENG-10000",
+                "status": "triaged",
+                "test_run_id": "TR-10000"
+              },
+              "ENG-10001": {
+                "issue_id": "ENG-10001",
+                "status": "resolved",
+                "test_run_id": "TR-10001"
+              }
+            },
+            "deployments": {
+              "gateway/production": {
+                "service": "gateway",
+                "environment": "production",
+                "version": "v3.1",
+                "status": "healthy"
+              },
+              "gateway/staging": {
+                "service": "gateway",
+                "environment": "staging",
+                "version": "v4.2",
+                "status": "healthy"
+              },
+              "gateway/development": {
+                "service": "gateway",
+                "environment": "development",
+                "version": "v5.0",
+                "status": "healthy"
+              }
+            },
+            "test_runs": {
+              "TR-10000": {
+                "test_run_id": "TR-10000",
+                "outcome": "passed"
+              },
+              "TR-10001": {
+                "test_run_id": "TR-10001",
+                "outcome": "failed"
+              }
+            },
+            "docs": [
+              {
+                "id": "retry-guide",
+                "text": "Retry policy: use exponential backoff."
+              }
+            ],
+            "code": [
+              {
+                "id": "retry.py",
+                "text": "def retry_policy(): return 3"
+              }
+            ]
+          }
+        }
+      },
+      "measurement": {
+        "run_id": "739adfc3b1192b1ced846a2f",
+        "identity": "test-issues-00:exact:warm:1:24b5d76b2aaecc35",
+        "case_id": "test-issues-00",
+        "cluster": "test-issues-00",
+        "split": "test",
+        "family": "issues",
+        "policy": "exact",
+        "bank_state": "warm",
+        "repetition": 1,
+        "configuration": "24b5d76b2aaecc355758bd2fb234ba22eb3d3a7f60c461c7aecf21aa60cf279a",
+        "record": {
+          "run_id": "739adfc3b1192b1ced846a2f",
+          "policy": "exact",
+          "bank_state": "warm",
+          "status": "completed",
+          "bindings": {
+            "slots": {
+              "issue0": "ENG-10000"
+            },
+            "slot_types": {
+              "issue0": "issue"
+            },
+            "skeleton": "show issue <issue0>",
+            "namespace": "ea951e30ddc2e3fbc06eb8d343acee8d3e1b560636c67748159d683fa73a5e54",
+            "unresolved": [],
+            "semantics": [
+              "count:issue:1"
+            ]
+          },
+          "answer": "Issue **ENG-10000**\n- Status: **open**\n- Test run: **TR-10000**",
+          "calls": [
+            {
+              "reservation": "e6732d91d22547b2b5da806eb188ce9f",
+              "stage": "core",
+              "run_id": "739adfc3b1192b1ced846a2f",
+              "kind": "answer",
+              "state": "measured",
+              "cost_usd": 0.00071,
+              "timestamp": "2026-10-29T09:13:08.451729+00:00",
+              "cost_estimated": false,
+              "usage": {
+                "input_tokens": 220,
+                "output_tokens": 27,
+                "cache_read_tokens": 0,
+                "cache_write_tokens": 0
+              },
+              "error": null,
+              "latency_ms": 1705.47704200726,
+              "response_id": "resp_0e8e2182545fc59c016ae30e249ad887d08a40a8ca56151d46",
+              "output": "Issue **ENG-10000**\n- Status: **open**\n- Test run: **TR-10000**"
+            }
+          ],
+          "executions": [
+            {
+              "tool": "lookup_issue",
+              "arguments": {
+                "issue_id": "ENG-10000"
+              },
+              "bindings": {
+                "issue_id": "ENG-10000"
+              },
+              "tenant": "acme",
+              "state_version": "66a5a81a2745d45b27d1e071819e0dc81584ded17fff9fcd69f650222aa19d05",
+              "result": {
+                "found": true,
+                "record": {
+                  "issue_id": "ENG-10000",
+                  "status": "open",
+                  "test_run_id": "TR-10000"
+                },
+                "error": null
+              },
+              "latency_ms": 1.0487920371815562,
+              "started_at": "2026-10-29T09:13:08.441945+00:00"
+            }
+          ],
+          "cache_hit": true,
+          "candidate": "f8242edb8a292b282604",
+          "retrieval_score": 1.0,
+          "retrieval_margin": 1.0,
+          "rejection": null,
+          "replans": 0,
+          "error": null,
+          "timings_ms": {
+            "binding": 0.11991697829216719,
+            "retrieval_validation": 1.6104159876704216,
+            "planning": 0,
+            "answer": 1705.47704200726,
+            "tools": 1.0487920371815562,
+            "runtime": 1717.9082919610664,
+            "persistence": 3.7609999999403954,
+            "end_to_end": 1725.2892920514569
+          },
+          "cost_usd": 0.00071,
+          "trace_id": null
+        },
+        "evaluation": {
+          "success": true,
+          "resource_correct": true,
+          "answer_facts_correct": true,
+          "unnecessary_clarification": false,
+          "unnecessary_refusal": false,
+          "appropriate_abstention": false,
+          "unresolved": false,
+          "incorrect_accepted_reuse": false,
+          "bad_result_reached_answer": false,
+          "authorization_violations": 0,
+          "metric_scope": "mechanical execution-path and required-answer-fact checks; no semantic judge",
+          "wrong_returned_bindings": false
+        },
+        "plan": {
+          "kind": "tools",
+          "steps": [
+            {
+              "tool": "lookup_issue",
+              "arguments": {
+                "issue_id": "$slot.issue0"
+              }
+            }
+          ],
+          "response": ""
+        }
+      },
+      "saved_outcome": {
+        "run_id": "739adfc3b1192b1ced846a2f",
+        "policy": "exact",
+        "bank_state": "warm",
+        "status": "completed",
+        "bindings": {
+          "slots": {
+            "issue0": "ENG-10000"
+          },
+          "slot_types": {
+            "issue0": "issue"
+          },
+          "skeleton": "show issue <issue0>",
+          "namespace": "ea951e30ddc2e3fbc06eb8d343acee8d3e1b560636c67748159d683fa73a5e54",
+          "unresolved": [],
+          "semantics": [
+            "count:issue:1"
+          ]
+        },
+        "answer": "Issue **ENG-10000**\n- Status: **open**\n- Test run: **TR-10000**",
+        "calls": [
+          {
+            "reservation": "e6732d91d22547b2b5da806eb188ce9f",
+            "stage": "core",
+            "run_id": "739adfc3b1192b1ced846a2f",
+            "kind": "answer",
+            "state": "measured",
+            "cost_usd": 0.00071,
+            "timestamp": "2026-10-29T09:13:08.451729+00:00",
+            "cost_estimated": false,
+            "usage": {
+              "input_tokens": 220,
+              "output_tokens": 27,
+              "cache_read_tokens": 0,
+              "cache_write_tokens": 0
+            },
+            "error": null,
+            "latency_ms": 1705.47704200726,
+            "response_id": "resp_0e8e2182545fc59c016ae30e249ad887d08a40a8ca56151d46",
+            "output": "Issue **ENG-10000**\n- Status: **open**\n- Test run: **TR-10000**"
+          }
+        ],
+        "executions": [
+          {
+            "tool": "lookup_issue",
+            "arguments": {
+              "issue_id": "ENG-10000"
+            },
+            "bindings": {
+              "issue_id": "ENG-10000"
+            },
+            "tenant": "acme",
+            "state_version": "66a5a81a2745d45b27d1e071819e0dc81584ded17fff9fcd69f650222aa19d05",
+            "result": {
+              "found": true,
+              "record": {
+                "issue_id": "ENG-10000",
+                "status": "open",
+                "test_run_id": "TR-10000"
+              },
+              "error": null
+            },
+            "latency_ms": 1.0487920371815562,
+            "started_at": "2026-10-29T09:13:08.441945+00:00"
+          }
+        ],
+        "cache_hit": true,
+        "candidate": "f8242edb8a292b282604",
+        "retrieval_score": 1.0,
+        "retrieval_margin": 1.0,
+        "rejection": null,
+        "replans": 0,
+        "error": null,
+        "timings_ms": {
+          "binding": 0.11991697829216719,
+          "retrieval_validation": 1.6104159876704216,
+          "planning": 0,
+          "answer": 1705.47704200726,
+          "tools": 1.0487920371815562,
+          "runtime": 1717.9082919610664
+        },
+        "cost_usd": 0.00071,
+        "trace_id": null
+      },
+      "publication": {
+        "run_id": "739adfc3b1192b1ced846a2f",
+        "trace_id": "884b62871869777a45389e01777e1dac",
+        "span_id": "e03d3fc803fd5741"
+      },
+      "phoenix_root_node_id": "U3BhbjoxODAx",
+      "phoenix_spans": [
+        {
+          "id": 1801,
+          "trace_rowid": 1755,
+          "span_id": "e03d3fc803fd5741",
+          "parent_id": null,
+          "name": "exact / warm",
+          "span_kind": "AGENT",
+          "start_time": "2026-10-29 09:13:08.436621",
+          "end_time": "2026-10-29 09:13:10.161910",
+          "attributes": {
+            "reuse": {
+              "cost_usd": 0.00071,
+              "status": "completed",
+              "run_id": "739adfc3b1192b1ced846a2f",
+              "bank_state": "warm",
+              "case_id": "test-issues-00",
+              "measurement": "saved real endpoint measurement",
+              "cache_hit": true,
+              "policy": "exact"
+            },
+            "output": {
+              "value": "Issue **ENG-10000**\n- Status: **open**\n- Test run: **TR-10000**"
+            },
+            "input": {
+              "value": "Show issue ENG-10000"
+            },
+            "openinference": {
+              "span": {
+                "kind": "AGENT"
+              }
+            }
+          },
+          "events": [],
+          "status_code": "UNSET",
+          "status_message": "",
+          "cumulative_error_count": 0,
+          "cumulative_llm_token_count_prompt": 220,
+          "cumulative_llm_token_count_completion": 27,
+          "llm_token_count_prompt": null,
+          "llm_token_count_completion": null,
+          "node_id": "U3BhbjoxODAx",
+          "annotations": [
+            {
+              "id": 50,
+              "span_rowid": 1801,
+              "name": "reuse_authorization_violations",
+              "label": null,
+              "score": 0.0,
+              "explanation": null,
+              "metadata": {},
+              "annotator_kind": "CODE",
+              "created_at": "2026-10-29 09:50:21",
+              "updated_at": "2026-10-29 09:50:21",
+              "user_id": null,
+              "identifier": "",
+              "source": "API"
+            },
+            {
+              "id": 49,
+              "span_rowid": 1801,
+              "name": "reuse_incorrect_accepted_reuse",
+              "label": null,
+              "score": 0.0,
+              "explanation": null,
+              "metadata": {},
+              "annotator_kind": "CODE",
+              "created_at": "2026-10-29 09:50:21",
+              "updated_at": "2026-10-29 09:50:21",
+              "user_id": null,
+              "identifier": "",
+              "source": "API"
+            },
+            {
+              "id": 48,
+              "span_rowid": 1801,
+              "name": "reuse_resource_correct",
+              "label": null,
+              "score": 1.0,
+              "explanation": null,
+              "metadata": {},
+              "annotator_kind": "CODE",
+              "created_at": "2026-10-29 09:50:21",
+              "updated_at": "2026-10-29 09:50:21",
+              "user_id": null,
+              "identifier": "",
+              "source": "API"
+            },
+            {
+              "id": 47,
+              "span_rowid": 1801,
+              "name": "reuse_success",
+              "label": null,
+              "score": 1.0,
+              "explanation": null,
+              "metadata": {},
+              "annotator_kind": "CODE",
+              "created_at": "2026-10-29 09:50:21",
+              "updated_at": "2026-10-29 09:50:21",
+              "user_id": null,
+              "identifier": "",
+              "source": "API"
+            }
+          ]
+        },
+        {
+          "id": 1800,
+          "trace_rowid": 1755,
+          "span_id": "c78f5dd3d9a2a5b7",
+          "parent_id": "e03d3fc803fd5741",
+          "name": "lookup_issue",
+          "span_kind": "TOOL",
+          "start_time": "2026-10-29 09:13:08.441945",
+          "end_time": "2026-10-29 09:13:08.442994",
+          "attributes": {
+            "reuse": {
+              "fixture_state_version": "66a5a81a2745d45b27d1e071819e0dc81584ded17fff9fcd69f650222aa19d05",
+              "bindings": "{\"issue_id\": \"ENG-10000\"}",
+              "tenant": "acme"
+            },
+            "input": {
+              "value": "{\"issue_id\": \"ENG-10000\"}"
+            },
+            "output": {
+              "value": "{\"found\": true, \"record\": {\"issue_id\": \"ENG-10000\", \"status\": \"open\", \"test_run_id\": \"TR-10000\"}, \"error\": null}"
+            },
+            "tool": {
+              "name": "lookup_issue"
+            },
+            "openinference": {
+              "span": {
+                "kind": "TOOL"
+              }
+            }
+          },
+          "events": [],
+          "status_code": "UNSET",
+          "status_message": "",
+          "cumulative_error_count": 0,
+          "cumulative_llm_token_count_prompt": 0,
+          "cumulative_llm_token_count_completion": 0,
+          "llm_token_count_prompt": null,
+          "llm_token_count_completion": null,
+          "node_id": "U3BhbjoxODAw",
+          "annotations": []
+        },
+        {
+          "id": 1799,
+          "trace_rowid": 1755,
+          "span_id": "bc2dfb54f1734728",
+          "parent_id": "e03d3fc803fd5741",
+          "name": "answer",
+          "span_kind": "LLM",
+          "start_time": "2026-10-29 09:13:08.451729",
+          "end_time": "2026-10-29 09:13:10.157206",
+          "attributes": {
+            "reuse": {
+              "provider_response_id": "resp_0e8e2182545fc59c016ae30e249ad887d08a40a8ca56151d46"
+            },
+            "llm": {
+              "token_count": {
+                "prompt": 220,
+                "prompt_details": {
+                  "cache_read": 0
+                },
+                "completion": 27
+              },
+              "model_name": "gpt-6.1-sol",
+              "cost": {
+                "total": 0.00071
+              }
+            },
+            "output": {
+              "value": "Issue **ENG-10000**\n- Status: **open**\n- Test run: **TR-10000**"
+            },
+            "openinference": {
+              "span": {
+                "kind": "LLM"
+              }
+            }
+          },
+          "events": [],
+          "status_code": "UNSET",
+          "status_message": "",
+          "cumulative_error_count": 0,
+          "cumulative_llm_token_count_prompt": 220,
+          "cumulative_llm_token_count_completion": 27,
+          "llm_token_count_prompt": 220,
+          "llm_token_count_completion": 27,
+          "node_id": "U3BhbjoxNzk5",
+          "annotations": []
+        }
+      ],
+      "live_root_url": "http://localhost:6006/projects/UHJvamVjdDoyMQ==/spans/884b62871869777a45389e01777e1dac?selectedSpanNodeId=U3BhbjoxODAx"
+    },
+    {
+      "run_id": "8af6c5419626dfdbcfbf60db",
+      "case_id": "test-issues-00",
+      "policy": "fused",
+      "bank_state": "warm",
+      "repetition": 1,
+      "configuration": "24b5d76b2aaecc355758bd2fb234ba22eb3d3a7f60c461c7aecf21aa60cf279a",
+      "case": {
+        "id": "test-issues-00",
+        "cluster": "test-issues-00",
+        "split": "test",
+        "family": "issues",
+        "input": {
+          "request": "Show issue ENG-10000",
+          "context": {
+            "tenant": "acme",
+            "capabilities": [
+              "lookup_issue",
+              "lookup_deployment",
+              "lookup_test_results",
+              "search_docs",
+              "search_code",
+              "calculate"
+            ],
+            "grants": [],
+            "aliases": {},
+            "service": null,
+            "environment": null
+          }
+        },
+        "state": {
+          "acme": {
+            "issues": {
+              "ENG-10000": {
+                "issue_id": "ENG-10000",
+                "status": "open",
+                "test_run_id": "TR-10000"
+              },
+              "ENG-10001": {
+                "issue_id": "ENG-10001",
+                "status": "resolved",
+                "test_run_id": "TR-10001"
+              }
+            },
+            "deployments": {
+              "gateway/production": {
+                "service": "gateway",
+                "environment": "production",
+                "version": "v3.1",
+                "status": "healthy"
+              },
+              "gateway/staging": {
+                "service": "gateway",
+                "environment": "staging",
+                "version": "v4.2",
+                "status": "healthy"
+              },
+              "gateway/development": {
+                "service": "gateway",
+                "environment": "development",
+                "version": "v5.0",
+                "status": "healthy"
+              }
+            },
+            "test_runs": {
+              "TR-10000": {
+                "test_run_id": "TR-10000",
+                "outcome": "passed"
+              },
+              "TR-10001": {
+                "test_run_id": "TR-10001",
+                "outcome": "failed"
+              }
+            },
+            "docs": [
+              {
+                "id": "retry-guide",
+                "text": "Retry policy: use exponential backoff."
+              }
+            ],
+            "code": [
+              {
+                "id": "retry.py",
+                "text": "def retry_policy(): return 3"
+              }
+            ]
+          },
+          "beta": {
+            "issues": {
+              "ENG-10000": {
+                "issue_id": "ENG-10000",
+                "status": "triaged",
+                "test_run_id": "TR-10000"
+              },
+              "ENG-10001": {
+                "issue_id": "ENG-10001",
+                "status": "resolved",
+                "test_run_id": "TR-10001"
+              }
+            },
+            "deployments": {
+              "gateway/production": {
+                "service": "gateway",
+                "environment": "production",
+                "version": "v3.1",
+                "status": "healthy"
+              },
+              "gateway/staging": {
+                "service": "gateway",
+                "environment": "staging",
+                "version": "v4.2",
+                "status": "healthy"
+              },
+              "gateway/development": {
+                "service": "gateway",
+                "environment": "development",
+                "version": "v5.0",
+                "status": "healthy"
+              }
+            },
+            "test_runs": {
+              "TR-10000": {
+                "test_run_id": "TR-10000",
+                "outcome": "passed"
+              },
+              "TR-10001": {
+                "test_run_id": "TR-10001",
+                "outcome": "failed"
+              }
+            },
+            "docs": [
+              {
+                "id": "retry-guide",
+                "text": "Retry policy: use exponential backoff."
+              }
+            ],
+            "code": [
+              {
+                "id": "retry.py",
+                "text": "def retry_policy(): return 3"
+              }
+            ]
+          }
+        }
+      },
+      "measurement": {
+        "run_id": "8af6c5419626dfdbcfbf60db",
+        "identity": "test-issues-00:fused:warm:1:24b5d76b2aaecc35",
+        "case_id": "test-issues-00",
+        "cluster": "test-issues-00",
+        "split": "test",
+        "family": "issues",
+        "policy": "fused",
+        "bank_state": "warm",
+        "repetition": 1,
+        "configuration": "24b5d76b2aaecc355758bd2fb234ba22eb3d3a7f60c461c7aecf21aa60cf279a",
+        "record": {
+          "run_id": "8af6c5419626dfdbcfbf60db",
+          "policy": "fused",
+          "bank_state": "warm",
+          "status": "completed",
+          "bindings": {
+            "slots": {
+              "issue0": "ENG-10000"
+            },
+            "slot_types": {
+              "issue0": "issue"
+            },
+            "skeleton": "show issue <issue0>",
+            "namespace": "ea951e30ddc2e3fbc06eb8d343acee8d3e1b560636c67748159d683fa73a5e54",
+            "unresolved": [],
+            "semantics": [
+              "count:issue:1"
+            ]
+          },
+          "answer": "Issue **ENG-10000**\n- Status: **open**\n- Test run: **TR-10000**",
+          "calls": [
+            {
+              "reservation": "b31fb48db94f4fec91d0ffee711de7a8",
+              "stage": "core",
+              "run_id": "8af6c5419626dfdbcfbf60db",
+              "kind": "planning",
+              "state": "measured",
+              "cost_usd": 0.0007791,
+              "timestamp": "2026-10-29T09:13:11.636505+00:00",
+              "cost_estimated": false,
+              "usage": {
+                "input_tokens": 1234,
+                "output_tokens": 65,
+                "cache_read_tokens": 1231,
+                "cache_write_tokens": 0
+              },
+              "error": null,
+              "latency_ms": 1706.0559169622138,
+              "response_id": "resp_03fd3af5a360885d016ae30e27cbdc87d08a4d711d76629394",
+              "output": "{\"kind\":\"tools\",\"steps\":[{\"tool\":\"lookup_issue\",\"arguments\":{\"issue_id\":\"$slot.issue0\",\"test_run_id\":null,\"service\":null,\"environment\":null,\"query\":null,\"operation\":null,\"left\":null,\"right\":null}}],\"response\":\"\"}"
+            },
+            {
+              "reservation": "9ce3810f0693425c825ec845427db461",
+              "stage": "core",
+              "run_id": "8af6c5419626dfdbcfbf60db",
+              "kind": "answer",
+              "state": "measured",
+              "cost_usd": 0.00071,
+              "timestamp": "2026-10-29T09:13:13.357930+00:00",
+              "cost_estimated": false,
+              "usage": {
+                "input_tokens": 220,
+                "output_tokens": 27,
+                "cache_read_tokens": 0,
+                "cache_write_tokens": 0
+              },
+              "error": null,
+              "latency_ms": 1322.2114170202985,
+              "response_id": "resp_03a708dc4f11daca016ae30e29817487d08647bd202d456808",
+              "output": "Issue **ENG-10000**\n- Status: **open**\n- Test run: **TR-10000**"
+            }
+          ],
+          "executions": [
+            {
+              "tool": "lookup_issue",
+              "arguments": {
+                "issue_id": "ENG-10000"
+              },
+              "bindings": {
+                "issue_id": "ENG-10000"
+              },
+              "tenant": "acme",
+              "state_version": "66a5a81a2745d45b27d1e071819e0dc81584ded17fff9fcd69f650222aa19d05",
+              "result": {
+                "found": true,
+                "record": {
+                  "issue_id": "ENG-10000",
+                  "status": "open",
+                  "test_run_id": "TR-10000"
+                },
+                "error": null
+              },
+              "latency_ms": 2.0814170129597187,
+              "started_at": "2026-10-29T09:13:13.343761+00:00"
+            }
+          ],
+          "cache_hit": false,
+          "candidate": null,
+          "retrieval_score": 0,
+          "retrieval_margin": 0,
+          "rejection": null,
+          "replans": 0,
+          "error": null,
+          "timings_ms": {
+            "binding": 0.14962488785386086,
+            "retrieval_validation": 0.00016693957149982452,
+            "planning": 1706.0559169622138,
+            "answer": 1322.2114170202985,
+            "tools": 2.0814170129597187,
+            "runtime": 3054.4781669741496,
+            "persistence": 1.3525830581784248,
+            "end_to_end": 3065.6911249971017
+          },
+          "cost_usd": 0.0014891000000000001,
+          "trace_id": null
+        },
+        "evaluation": {
+          "success": true,
+          "resource_correct": true,
+          "answer_facts_correct": true,
+          "unnecessary_clarification": false,
+          "unnecessary_refusal": false,
+          "appropriate_abstention": false,
+          "unresolved": false,
+          "incorrect_accepted_reuse": false,
+          "bad_result_reached_answer": false,
+          "authorization_violations": 0,
+          "metric_scope": "mechanical execution-path and required-answer-fact checks; no semantic judge",
+          "wrong_returned_bindings": false
+        },
+        "plan": {
+          "kind": "tools",
+          "steps": [
+            {
+              "tool": "lookup_issue",
+              "arguments": {
+                "issue_id": "$slot.issue0"
+              }
+            }
+          ],
+          "response": ""
+        }
+      },
+      "saved_outcome": {
+        "run_id": "8af6c5419626dfdbcfbf60db",
+        "policy": "fused",
+        "bank_state": "warm",
+        "status": "completed",
+        "bindings": {
+          "slots": {
+            "issue0": "ENG-10000"
+          },
+          "slot_types": {
+            "issue0": "issue"
+          },
+          "skeleton": "show issue <issue0>",
+          "namespace": "ea951e30ddc2e3fbc06eb8d343acee8d3e1b560636c67748159d683fa73a5e54",
+          "unresolved": [],
+          "semantics": [
+            "count:issue:1"
+          ]
+        },
+        "answer": "Issue **ENG-10000**\n- Status: **open**\n- Test run: **TR-10000**",
+        "calls": [
+          {
+            "reservation": "b31fb48db94f4fec91d0ffee711de7a8",
+            "stage": "core",
+            "run_id": "8af6c5419626dfdbcfbf60db",
+            "kind": "planning",
+            "state": "measured",
+            "cost_usd": 0.0007791,
+            "timestamp": "2026-10-29T09:13:11.636505+00:00",
+            "cost_estimated": false,
+            "usage": {
+              "input_tokens": 1234,
+              "output_tokens": 65,
+              "cache_read_tokens": 1231,
+              "cache_write_tokens": 0
+            },
+            "error": null,
+            "latency_ms": 1706.0559169622138,
+            "response_id": "resp_03fd3af5a360885d016ae30e27cbdc87d08a4d711d76629394",
+            "output": "{\"kind\":\"tools\",\"steps\":[{\"tool\":\"lookup_issue\",\"arguments\":{\"issue_id\":\"$slot.issue0\",\"test_run_id\":null,\"service\":null,\"environment\":null,\"query\":null,\"operation\":null,\"left\":null,\"right\":null}}],\"response\":\"\"}"
+          },
+          {
+            "reservation": "9ce3810f0693425c825ec845427db461",
+            "stage": "core",
+            "run_id": "8af6c5419626dfdbcfbf60db",
+            "kind": "answer",
+            "state": "measured",
+            "cost_usd": 0.00071,
+            "timestamp": "2026-10-29T09:13:13.357930+00:00",
+            "cost_estimated": false,
+            "usage": {
+              "input_tokens": 220,
+              "output_tokens": 27,
+              "cache_read_tokens": 0,
+              "cache_write_tokens": 0
+            },
+            "error": null,
+            "latency_ms": 1322.2114170202985,
+            "response_id": "resp_03a708dc4f11daca016ae30e29817487d08647bd202d456808",
+            "output": "Issue **ENG-10000**\n- Status: **open**\n- Test run: **TR-10000**"
+          }
+        ],
+        "executions": [
+          {
+            "tool": "lookup_issue",
+            "arguments": {
+              "issue_id": "ENG-10000"
+            },
+            "bindings": {
+              "issue_id": "ENG-10000"
+            },
+            "tenant": "acme",
+            "state_version": "66a5a81a2745d45b27d1e071819e0dc81584ded17fff9fcd69f650222aa19d05",
+            "result": {
+              "found": true,
+              "record": {
+                "issue_id": "ENG-10000",
+                "status": "open",
+                "test_run_id": "TR-10000"
+              },
+              "error": null
+            },
+            "latency_ms": 2.0814170129597187,
+            "started_at": "2026-10-29T09:13:13.343761+00:00"
+          }
+        ],
+        "cache_hit": false,
+        "candidate": null,
+        "retrieval_score": 0,
+        "retrieval_margin": 0,
+        "rejection": null,
+        "replans": 0,
+        "error": null,
+        "timings_ms": {
+          "binding": 0.14962488785386086,
+          "retrieval_validation": 0.00016693957149982452,
+          "planning": 1706.0559169622138,
+          "answer": 1322.2114170202985,
+          "tools": 2.0814170129597187,
+          "runtime": 3054.4781669741496
+        },
+        "cost_usd": 0.0014891000000000001,
+        "trace_id": null
+      },
+      "publication": {
+        "run_id": "8af6c5419626dfdbcfbf60db",
+        "trace_id": "c205131c82cddcbd60f4c88438b80f67",
+        "span_id": "dbba38531abed6a4"
+      },
+      "phoenix_root_node_id": "U3BhbjoxODA4",
+      "phoenix_spans": [
+        {
+          "id": 1808,
+          "trace_rowid": 1757,
+          "span_id": "dbba38531abed6a4",
+          "parent_id": null,
+          "name": "fused / warm",
+          "span_kind": "AGENT",
+          "start_time": "2026-10-29 09:13:11.616557",
+          "end_time": "2026-10-29 09:13:14.682248",
+          "attributes": {
+            "reuse": {
+              "cost_usd": 0.0014891000000000001,
+              "status": "completed",
+              "run_id": "8af6c5419626dfdbcfbf60db",
+              "bank_state": "warm",
+              "case_id": "test-issues-00",
+              "measurement": "saved real endpoint measurement",
+              "cache_hit": false,
+              "policy": "fused"
+            },
+            "output": {
+              "value": "Issue **ENG-10000**\n- Status: **open**\n- Test run: **TR-10000**"
+            },
+            "input": {
+              "value": "Show issue ENG-10000"
+            },
+            "openinference": {
+              "span": {
+                "kind": "AGENT"
+              }
+            }
+          },
+          "events": [],
+          "status_code": "UNSET",
+          "status_message": "",
+          "cumulative_error_count": 0,
+          "cumulative_llm_token_count_prompt": 1454,
+          "cumulative_llm_token_count_completion": 92,
+          "llm_token_count_prompt": null,
+          "llm_token_count_completion": null,
+          "node_id": "U3BhbjoxODA4",
+          "annotations": [
+            {
+              "id": 58,
+              "span_rowid": 1808,
+              "name": "reuse_authorization_violations",
+              "label": null,
+              "score": 0.0,
+              "explanation": null,
+              "metadata": {},
+              "annotator_kind": "CODE",
+              "created_at": "2026-10-29 09:50:21",
+              "updated_at": "2026-10-29 09:50:21",
+              "user_id": null,
+              "identifier": "",
+              "source": "API"
+            },
+            {
+              "id": 57,
+              "span_rowid": 1808,
+              "name": "reuse_incorrect_accepted_reuse",
+              "label": null,
+              "score": 0.0,
+              "explanation": null,
+              "metadata": {},
+              "annotator_kind": "CODE",
+              "created_at": "2026-10-29 09:50:21",
+              "updated_at": "2026-10-29 09:50:21",
+              "user_id": null,
+              "identifier": "",
+              "source": "API"
+            },
+            {
+              "id": 56,
+              "span_rowid": 1808,
+              "name": "reuse_resource_correct",
+              "label": null,
+              "score": 1.0,
+              "explanation": null,
+              "metadata": {},
+              "annotator_kind": "CODE",
+              "created_at": "2026-10-29 09:50:21",
+              "updated_at": "2026-10-29 09:50:21",
+              "user_id": null,
+              "identifier": "",
+              "source": "API"
+            },
+            {
+              "id": 55,
+              "span_rowid": 1808,
+              "name": "reuse_success",
+              "label": null,
+              "score": 1.0,
+              "explanation": null,
+              "metadata": {},
+              "annotator_kind": "CODE",
+              "created_at": "2026-10-29 09:50:21",
+              "updated_at": "2026-10-29 09:50:21",
+              "user_id": null,
+              "identifier": "",
+              "source": "API"
+            }
+          ]
+        },
+        {
+          "id": 1805,
+          "trace_rowid": 1757,
+          "span_id": "9ddff6ac6b8b54f6",
+          "parent_id": "dbba38531abed6a4",
+          "name": "planning",
+          "span_kind": "LLM",
+          "start_time": "2026-10-29 09:13:11.636505",
+          "end_time": "2026-10-29 09:13:13.342561",
+          "attributes": {
+            "reuse": {
+              "provider_response_id": "resp_03fd3af5a360885d016ae30e27cbdc87d08a4d711d76629394"
+            },
+            "llm": {
+              "token_count": {
+                "prompt": 1234,
+                "prompt_details": {
+                  "cache_read": 1231
+                },
+                "completion": 65
+              },
+              "model_name": "gpt-6.1-sol",
+              "cost": {
+                "total": 0.0007791
+              }
+            },
+            "output": {
+              "value": "{\"kind\":\"tools\",\"steps\":[{\"tool\":\"lookup_issue\",\"arguments\":{\"issue_id\":\"$slot.issue0\",\"test_run_id\":null,\"service\":null,\"environment\":null,\"query\":null,\"operation\":null,\"left\":null,\"right\":null}}],\"response\":\"\"}"
+            },
+            "openinference": {
+              "span": {
+                "kind": "LLM"
+              }
+            }
+          },
+          "events": [],
+          "status_code": "UNSET",
+          "status_message": "",
+          "cumulative_error_count": 0,
+          "cumulative_llm_token_count_prompt": 1234,
+          "cumulative_llm_token_count_completion": 65,
+          "llm_token_count_prompt": 1234,
+          "llm_token_count_completion": 65,
+          "node_id": "U3BhbjoxODA1",
+          "annotations": []
+        },
+        {
+          "id": 1807,
+          "trace_rowid": 1757,
+          "span_id": "73773c3b7ba7afe5",
+          "parent_id": "dbba38531abed6a4",
+          "name": "lookup_issue",
+          "span_kind": "TOOL",
+          "start_time": "2026-10-29 09:13:13.343761",
+          "end_time": "2026-10-29 09:13:13.345842",
+          "attributes": {
+            "reuse": {
+              "fixture_state_version": "66a5a81a2745d45b27d1e071819e0dc81584ded17fff9fcd69f650222aa19d05",
+              "bindings": "{\"issue_id\": \"ENG-10000\"}",
+              "tenant": "acme"
+            },
+            "input": {
+              "value": "{\"issue_id\": \"ENG-10000\"}"
+            },
+            "output": {
+              "value": "{\"found\": true, \"record\": {\"issue_id\": \"ENG-10000\", \"status\": \"open\", \"test_run_id\": \"TR-10000\"}, \"error\": null}"
+            },
+            "tool": {
+              "name": "lookup_issue"
+            },
+            "openinference": {
+              "span": {
+                "kind": "TOOL"
+              }
+            }
+          },
+          "events": [],
+          "status_code": "UNSET",
+          "status_message": "",
+          "cumulative_error_count": 0,
+          "cumulative_llm_token_count_prompt": 0,
+          "cumulative_llm_token_count_completion": 0,
+          "llm_token_count_prompt": null,
+          "llm_token_count_completion": null,
+          "node_id": "U3BhbjoxODA3",
+          "annotations": []
+        },
+        {
+          "id": 1806,
+          "trace_rowid": 1757,
+          "span_id": "5b3bc7c85aea737a",
+          "parent_id": "dbba38531abed6a4",
+          "name": "answer",
+          "span_kind": "LLM",
+          "start_time": "2026-10-29 09:13:13.357930",
+          "end_time": "2026-10-29 09:13:14.680141",
+          "attributes": {
+            "reuse": {
+              "provider_response_id": "resp_03a708dc4f11daca016ae30e29817487d08647bd202d456808"
+            },
+            "llm": {
+              "token_count": {
+                "prompt": 220,
+                "prompt_details": {
+                  "cache_read": 0
+                },
+                "completion": 27
+              },
+              "model_name": "gpt-6.1-sol",
+              "cost": {
+                "total": 0.00071
+              }
+            },
+            "output": {
+              "value": "Issue **ENG-10000**\n- Status: **open**\n- Test run: **TR-10000**"
+            },
+            "openinference": {
+              "span": {
+                "kind": "LLM"
+              }
+            }
+          },
+          "events": [],
+          "status_code": "UNSET",
+          "status_message": "",
+          "cumulative_error_count": 0,
+          "cumulative_llm_token_count_prompt": 220,
+          "cumulative_llm_token_count_completion": 27,
+          "llm_token_count_prompt": 220,
+          "llm_token_count_completion": 27,
+          "node_id": "U3BhbjoxODA2",
+          "annotations": []
+        }
+      ],
+      "live_root_url": "http://localhost:6006/projects/UHJvamVjdDoyMQ==/spans/c205131c82cddcbd60f4c88438b80f67?selectedSpanNodeId=U3BhbjoxODA4"
+    }
+  ]
+}

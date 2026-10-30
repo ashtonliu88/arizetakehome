@@ -1,0 +1,86 @@
+{
+  "run_id": "a8cb50528f8c19a579c33a35",
+  "policy": "verified",
+  "bank_state": "warm",
+  "status": "completed",
+  "bindings": {
+    "slots": {
+      "number0": 1402.0,
+      "number1": 2.0
+    },
+    "slot_types": {
+      "number0": "number",
+      "number1": "number"
+    },
+    "skeleton": "calculate <number0> plus <number1>",
+    "namespace": "ea951e30ddc2e3fbc06eb8d343acee8d3e1b560636c67748159d683fa73a5e54",
+    "unresolved": [],
+    "semantics": [
+      "add",
+      "count:number:2"
+    ]
+  },
+  "answer": "1404",
+  "calls": [
+    {
+      "reservation": "29237028ebbc46349e89eb1108348752",
+      "stage": "core",
+      "run_id": "a8cb50528f8c19a579c33a35",
+      "kind": "answer",
+      "state": "measured",
+      "cost_usd": 0.000502,
+      "timestamp": "2026-10-29T09:07:35.462307+00:00",
+      "cost_estimated": false,
+      "usage": {
+        "input_tokens": 221,
+        "output_tokens": 6,
+        "cache_read_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "error": null,
+      "latency_ms": 2024.2455420084298,
+      "response_id": "resp_0842ad0a8b085035016ae30cd7ac8887d0a6e3845b5c5dbef7",
+      "output": "1404"
+    }
+  ],
+  "executions": [
+    {
+      "tool": "calculate",
+      "arguments": {
+        "operation": "add",
+        "left": 1402.0,
+        "right": 2.0
+      },
+      "bindings": {
+        "operation": "add",
+        "left": 1402.0,
+        "right": 2.0
+      },
+      "tenant": "acme",
+      "state_version": "8870644f8bfbb6b8eb8b2399c38ccaf309651a78315f69986788aa9e4d4c608f",
+      "result": {
+        "found": true,
+        "value": 1404.0
+      },
+      "latency_ms": 0.7667500758543611,
+      "started_at": "2026-10-29T09:07:35.456296+00:00"
+    }
+  ],
+  "cache_hit": true,
+  "candidate": "ea1c859e996822c18e76",
+  "retrieval_score": 1.0,
+  "retrieval_margin": 0.7694408048301962,
+  "rejection": null,
+  "replans": 0,
+  "error": null,
+  "timings_ms": {
+    "binding": 0.10412500705569983,
+    "retrieval_validation": 1.1478329543024302,
+    "planning": 0,
+    "answer": 2024.2455420084298,
+    "tools": 0.7667500758543611,
+    "runtime": 2032.1071250364184
+  },
+  "cost_usd": 0.000502,
+  "trace_id": null
+}

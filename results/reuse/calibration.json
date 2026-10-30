@@ -1,0 +1,103 @@
+{
+  "grid": [
+    {
+      "threshold": 0.35,
+      "margin": 0.0,
+      "accepted": 10,
+      "incorrect": 0
+    },
+    {
+      "threshold": 0.35,
+      "margin": 0.05,
+      "accepted": 9,
+      "incorrect": 0
+    },
+    {
+      "threshold": 0.35,
+      "margin": 0.15,
+      "accepted": 9,
+      "incorrect": 0
+    },
+    {
+      "threshold": 0.55,
+      "margin": 0.0,
+      "accepted": 9,
+      "incorrect": 0
+    },
+    {
+      "threshold": 0.55,
+      "margin": 0.05,
+      "accepted": 9,
+      "incorrect": 0
+    },
+    {
+      "threshold": 0.55,
+      "margin": 0.15,
+      "accepted": 9,
+      "incorrect": 0
+    },
+    {
+      "threshold": 0.75,
+      "margin": 0.0,
+      "accepted": 8,
+      "incorrect": 0
+    },
+    {
+      "threshold": 0.75,
+      "margin": 0.05,
+      "accepted": 8,
+      "incorrect": 0
+    },
+    {
+      "threshold": 0.75,
+      "margin": 0.15,
+      "accepted": 8,
+      "incorrect": 0
+    },
+    {
+      "threshold": 0.9,
+      "margin": 0.0,
+      "accepted": 8,
+      "incorrect": 0
+    },
+    {
+      "threshold": 0.9,
+      "margin": 0.05,
+      "accepted": 8,
+      "incorrect": 0
+    },
+    {
+      "threshold": 0.9,
+      "margin": 0.15,
+      "accepted": 8,
+      "incorrect": 0
+    },
+    {
+      "threshold": 1.0,
+      "margin": 0.0,
+      "accepted": 8,
+      "incorrect": 0
+    },
+    {
+      "threshold": 1.0,
+      "margin": 0.05,
+      "accepted": 8,
+      "incorrect": 0
+    },
+    {
+      "threshold": 1.0,
+      "margin": 0.15,
+      "accepted": 8,
+      "incorrect": 0
+    }
+  ],
+  "selected": {
+    "threshold": 0.35,
+    "margin": 0.0
+  },
+  "accepted_development_clusters": 10,
+  "selection_basis": "offline development plan/resource validity; maximize eliminated planning calls with zero incorrect hits, strict tie break",
+  "bank_hash": "1d41f7aa4ce1bcc40d126dcb44e5db919315f1bbae6e8bbc0a0c43708c8cd5ee",
+  "inputs_hash": "bffa01da911d18d2114add4b16fbfc53ba6000595550ebd6f4779d2a8c275268",
+  "references_hash": "5d4b9fe7143610cb581b2d63a89bff1aa6f6f5e0e0e79054f9ebf6e2f64b42cf"
+}

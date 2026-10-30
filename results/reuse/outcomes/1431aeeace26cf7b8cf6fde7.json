@@ -1,0 +1,110 @@
+{
+  "run_id": "1431aeeace26cf7b8cf6fde7",
+  "policy": "fused",
+  "bank_state": "empty",
+  "status": "completed",
+  "bindings": {
+    "slots": {
+      "service0": "gateway",
+      "environment0": "staging"
+    },
+    "slot_types": {
+      "service0": "service",
+      "environment0": "environment"
+    },
+    "skeleton": "show deployment for service <service0> in <environment0>",
+    "namespace": "ea951e30ddc2e3fbc06eb8d343acee8d3e1b560636c67748159d683fa73a5e54",
+    "unresolved": [],
+    "semantics": [
+      "count:environment:1",
+      "count:service:1"
+    ]
+  },
+  "answer": "Service `gateway` in `staging` is deployed at version `v4.2` with status `healthy`.",
+  "calls": [
+    {
+      "reservation": "d9dec358b8d74ab99700bffe041cb7b1",
+      "stage": "core",
+      "run_id": "1431aeeace26cf7b8cf6fde7",
+      "kind": "planning",
+      "state": "measured",
+      "cost_usd": 0.0008217999999999999,
+      "timestamp": "2026-10-29T09:22:03.921835+00:00",
+      "cost_estimated": false,
+      "usage": {
+        "input_tokens": 1261,
+        "output_tokens": 69,
+        "cache_read_tokens": 1258,
+        "cache_write_tokens": 0
+      },
+      "error": null,
+      "latency_ms": 2171.0748330224305,
+      "response_id": "resp_09f15b696bc296b0016ae3103c14a487d098135a757f758a4e",
+      "output": "{\"kind\":\"tools\",\"steps\":[{\"tool\":\"lookup_deployment\",\"arguments\":{\"issue_id\":null,\"test_run_id\":null,\"service\":\"$slot.service0\",\"environment\":\"$slot.environment0\",\"query\":null,\"operation\":null,\"left\":null,\"right\":null}}],\"response\":\"\"}"
+    },
+    {
+      "reservation": "74154eadea6040fe964c2e616e82d297",
+      "stage": "core",
+      "run_id": "1431aeeace26cf7b8cf6fde7",
+      "kind": "answer",
+      "state": "measured",
+      "cost_usd": 0.000748,
+      "timestamp": "2026-10-29T09:22:06.109697+00:00",
+      "cost_estimated": false,
+      "usage": {
+        "input_tokens": 234,
+        "output_tokens": 28,
+        "cache_read_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "error": null,
+      "latency_ms": 1268.7586669344455,
+      "response_id": "resp_0233b1cfe3a3852c016ae3103e3e3487d08be02982605e64fa",
+      "output": "Service `gateway` in `staging` is deployed at version `v4.2` with status `healthy`."
+    }
+  ],
+  "executions": [
+    {
+      "tool": "lookup_deployment",
+      "arguments": {
+        "service": "gateway",
+        "environment": "staging"
+      },
+      "bindings": {
+        "service": "gateway",
+        "environment": "staging"
+      },
+      "tenant": "acme",
+      "state_version": "cdb23f5ac30aed4ce788db681d1c8d6dbbf7363f1c1a31b63f598fe75e5e83d5",
+      "result": {
+        "found": true,
+        "record": {
+          "service": "gateway",
+          "environment": "staging",
+          "version": "v4.2",
+          "status": "healthy"
+        },
+        "error": null
+      },
+      "latency_ms": 2.289665979333222,
+      "started_at": "2026-10-29T09:22:06.094891+00:00"
+    }
+  ],
+  "cache_hit": false,
+  "candidate": null,
+  "retrieval_score": 0,
+  "retrieval_margin": 0,
+  "rejection": null,
+  "replans": 0,
+  "error": null,
+  "timings_ms": {
+    "binding": 0.13279193080961704,
+    "retrieval_validation": 0.000125030055642128,
+    "planning": 2171.0748330224305,
+    "answer": 1268.7586669344455,
+    "tools": 2.289665979333222,
+    "runtime": 3465.921541908756
+  },
+  "cost_usd": 0.0015697999999999999,
+  "trace_id": null
+}

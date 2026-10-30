@@ -1,0 +1,67 @@
+{
+  "run_id": "e044bdfc095fb4923cf50aaa",
+  "policy": "exact",
+  "bank_state": "warm",
+  "status": "abstained",
+  "bindings": {
+    "slots": {
+      "issue0": "ENG-10515",
+      "issue1": "ENG-10516"
+    },
+    "slot_types": {
+      "issue0": "issue",
+      "issue1": "issue"
+    },
+    "skeleton": "compare source <issue0> with target <issue1>",
+    "namespace": "ea3b7f78b95d3b260b590ca2c3c9f9a150005718c966aa304aa26d77566106d3",
+    "unresolved": [],
+    "semantics": [
+      "code",
+      "compare",
+      "count:issue:2",
+      "role:source:issue0",
+      "role:target:issue1"
+    ]
+  },
+  "answer": "I can’t compare source ENG-10515 with target ENG-10516 because access is granted only to ENG-10515, not ENG-10516.",
+  "calls": [
+    {
+      "reservation": "71ded92207f4458382ff2fae0d807f55",
+      "stage": "core",
+      "run_id": "e044bdfc095fb4923cf50aaa",
+      "kind": "planning",
+      "state": "measured",
+      "cost_usd": 0.0037435,
+      "timestamp": "2026-10-29T09:39:12.701155+00:00",
+      "cost_estimated": false,
+      "usage": {
+        "input_tokens": 1290,
+        "output_tokens": 52,
+        "cache_read_tokens": 0,
+        "cache_write_tokens": 1287
+      },
+      "error": null,
+      "latency_ms": 1917.0821250882,
+      "response_id": "resp_095e4898aa7b9378016ae31440d43c87d09d249d77bc47a224",
+      "output": "{\"kind\":\"abstain\",\"steps\":[],\"response\":\"I can’t compare source ENG-10515 with target ENG-10516 because access is granted only to ENG-10515, not ENG-10516.\"}"
+    }
+  ],
+  "executions": [],
+  "cache_hit": false,
+  "candidate": "6470de3612218f6307d0",
+  "retrieval_score": 1.0,
+  "retrieval_margin": 1.0,
+  "rejection": "namespace",
+  "replans": 0,
+  "error": null,
+  "timings_ms": {
+    "binding": 0.0950830290094018,
+    "retrieval_validation": 0.2616660203784704,
+    "planning": 1917.0821250882,
+    "answer": 0,
+    "tools": 0,
+    "runtime": 1932.4364579515532
+  },
+  "cost_usd": 0.0037435,
+  "trace_id": null
+}

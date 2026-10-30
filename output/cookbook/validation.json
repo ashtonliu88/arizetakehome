@@ -1,0 +1,43 @@
+{
+  "bundle_files_verified": 38,
+  "available_original_sources_unchanged": 38,
+  "protected_original_files_unchanged": 1293,
+  "default_code_cells_passed": 15,
+  "visible_python_examples_preserved": 5,
+  "pdf_pages": 20,
+  "figures_identical_across_exports": 6,
+  "headline_claims_present_in_all_editions": true,
+  "pdf_link_annotations": 9,
+  "edition_sha256": {
+    "notebooks/trace-evidence-lab.ipynb": "fedc087fd90ac3cf217de8f755b556075eee814166eb46bc3f8658bc1c67b8d4",
+    "docs/cookbook.md": "bf44334575630a385615eaaa55b057589387bb46ce52e573b1e9d505b2888242",
+    "output/cookbook/trace-evidence-lab.typ": "d1b3e77630d9ea634f8ba18a347b948b34b1f44a0f7d1bf7836e9e48e881c703",
+    "output/cookbook/trace-evidence-lab.pdf": "aad5b89d87d999f792b55cd5e07b462270870f774563e8b24d06325cf8ad62fd"
+  },
+  "python_package_versions": {
+    "nbconvert": "7.16.6",
+    "numpy": "2.5.4",
+    "pandas": "3.1.0",
+    "matplotlib": "3.11.2"
+  },
+  "portable_execution": {
+    "passed": true,
+    "application_source_present": false,
+    "credentials_removed": true,
+    "external_socket_connections_blocked": true,
+    "metrics_equal": true
+  },
+  "rendered_pdf_pages": 20,
+  "pdf_visual_review": {
+    "pages_inspected": 20,
+    "figure_label_collisions": 0,
+    "clipped_text_words": 0,
+    "caption_and_link_review": "passed"
+  },
+  "project_checks": {
+    "pytest_passed": 113,
+    "ruff_check": "passed",
+    "new_scripts_ruff_format": "passed",
+    "full_format_check": "pre-existing formatting difference in src/router_lab/experiments.py; frozen source preserved"
+  }
+}

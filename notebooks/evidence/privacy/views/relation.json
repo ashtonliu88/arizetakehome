@@ -1,0 +1,3849 @@
+[
+  {
+    "episode_id": "7430ee228ef6d4828de68166",
+    "base_id": "issue.direct.1",
+    "split": "dev",
+    "input": {
+      "identity_semantics": "distinct",
+      "requested": [
+        {
+          "kind": "issue",
+          "key": "REF_70f0a6f8b45ca11915424e21"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_issue",
+          "target": {
+            "kind": "issue",
+            "key": "REF_70f0a6f8b45ca11915424e21"
+          },
+          "arguments": {
+            "resource": "REF_70f0a6f8b45ca11915424e21"
+          },
+          "binding": {
+            "kind": "issue",
+            "key": "REF_70f0a6f8b45ca11915424e21"
+          },
+          "result": {
+            "found": true,
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_references": [
+        {
+          "kind": "issue",
+          "key": "REF_70f0a6f8b45ca11915424e21"
+        }
+      ]
+    }
+  },
+  {
+    "episode_id": "4d978fac577771d2e68218fa",
+    "base_id": "issue.direct.1",
+    "split": "dev",
+    "input": {
+      "identity_semantics": "distinct",
+      "requested": [
+        {
+          "kind": "issue",
+          "key": "REF_abb4b9519973c3dc15cf7400"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_issue",
+          "target": {
+            "kind": "issue",
+            "key": "REF_d3a6725f20947cac20a7c0fb"
+          },
+          "arguments": {
+            "resource": "REF_d3a6725f20947cac20a7c0fb"
+          },
+          "binding": {
+            "kind": "issue",
+            "key": "REF_d3a6725f20947cac20a7c0fb"
+          },
+          "result": {
+            "found": true,
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_references": [
+        {
+          "kind": "issue",
+          "key": "REF_abb4b9519973c3dc15cf7400"
+        },
+        {
+          "kind": "issue",
+          "key": "REF_d3a6725f20947cac20a7c0fb"
+        }
+      ]
+    }
+  },
+  {
+    "episode_id": "f8d359ec41a43ff9524aec9a",
+    "base_id": "issue.direct.2",
+    "split": "dev",
+    "input": {
+      "identity_semantics": "distinct",
+      "requested": [
+        {
+          "kind": "issue",
+          "key": "REF_10c410a2f97bafb86de8d666"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_issue",
+          "target": {
+            "kind": "issue",
+            "key": "REF_10c410a2f97bafb86de8d666"
+          },
+          "arguments": {
+            "resource": "REF_10c410a2f97bafb86de8d666"
+          },
+          "binding": {
+            "kind": "issue",
+            "key": "REF_10c410a2f97bafb86de8d666"
+          },
+          "result": {
+            "found": true,
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_references": [
+        {
+          "kind": "issue",
+          "key": "REF_10c410a2f97bafb86de8d666"
+        }
+      ]
+    }
+  },
+  {
+    "episode_id": "304c36eba4d5a6d3422e57d2",
+    "base_id": "issue.direct.2",
+    "split": "dev",
+    "input": {
+      "identity_semantics": "distinct",
+      "requested": [
+        {
+          "kind": "issue",
+          "key": "REF_eb6ffb22a0042c55e78fb047"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_issue",
+          "target": {
+            "kind": "issue",
+            "key": "REF_58b89ca04d2c0edbaa73c283"
+          },
+          "arguments": {
+            "resource": "REF_58b89ca04d2c0edbaa73c283"
+          },
+          "binding": {
+            "kind": "issue",
+            "key": "REF_58b89ca04d2c0edbaa73c283"
+          },
+          "result": {
+            "found": true,
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_references": [
+        {
+          "kind": "issue",
+          "key": "REF_eb6ffb22a0042c55e78fb047"
+        },
+        {
+          "kind": "issue",
+          "key": "REF_58b89ca04d2c0edbaa73c283"
+        }
+      ]
+    }
+  },
+  {
+    "episode_id": "bb43ed141774c847238ba368",
+    "base_id": "issue.direct.3",
+    "split": "dev",
+    "input": {
+      "identity_semantics": "distinct",
+      "requested": [
+        {
+          "kind": "issue",
+          "key": "REF_47631e12a6702d179a815521"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_issue",
+          "target": {
+            "kind": "issue",
+            "key": "REF_47631e12a6702d179a815521"
+          },
+          "arguments": {
+            "resource": "REF_47631e12a6702d179a815521"
+          },
+          "binding": {
+            "kind": "issue",
+            "key": "REF_47631e12a6702d179a815521"
+          },
+          "result": {
+            "found": true,
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_references": [
+        {
+          "kind": "issue",
+          "key": "REF_47631e12a6702d179a815521"
+        }
+      ]
+    }
+  },
+  {
+    "episode_id": "3b0da731179f365a248478e7",
+    "base_id": "issue.direct.3",
+    "split": "dev",
+    "input": {
+      "identity_semantics": "distinct",
+      "requested": [
+        {
+          "kind": "issue",
+          "key": "REF_a96be706363921f4e831b0ea"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_issue",
+          "target": {
+            "kind": "issue",
+            "key": "REF_7c837f68be2c838c7f06ddb3"
+          },
+          "arguments": {
+            "resource": "REF_7c837f68be2c838c7f06ddb3"
+          },
+          "binding": {
+            "kind": "issue",
+            "key": "REF_7c837f68be2c838c7f06ddb3"
+          },
+          "result": {
+            "found": true,
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_references": [
+        {
+          "kind": "issue",
+          "key": "REF_a96be706363921f4e831b0ea"
+        },
+        {
+          "kind": "issue",
+          "key": "REF_7c837f68be2c838c7f06ddb3"
+        }
+      ]
+    }
+  },
+  {
+    "episode_id": "2d3c352bc0837719aa083058",
+    "base_id": "issue.direct.4",
+    "split": "dev",
+    "input": {
+      "identity_semantics": "distinct",
+      "requested": [
+        {
+          "kind": "issue",
+          "key": "REF_4c1c16ed0dbdaf4cc246fe34"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_issue",
+          "target": {
+            "kind": "issue",
+            "key": "REF_4c1c16ed0dbdaf4cc246fe34"
+          },
+          "arguments": {
+            "resource": "REF_4c1c16ed0dbdaf4cc246fe34"
+          },
+          "binding": null,
+          "result": {
+            "found": false,
+            "error": "not found"
+          },
+          "links": []
+        }
+      ],
+      "final_references": [
+        {
+          "kind": "issue",
+          "key": "REF_4c1c16ed0dbdaf4cc246fe34"
+        }
+      ]
+    }
+  },
+  {
+    "episode_id": "534a4280ac592aa99f8d919e",
+    "base_id": "issue.direct.4",
+    "split": "dev",
+    "input": {
+      "identity_semantics": "distinct",
+      "requested": [
+        {
+          "kind": "issue",
+          "key": "REF_b1ff6fc1166f527f9a3d62cc"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_issue",
+          "target": {
+            "kind": "issue",
+            "key": "REF_e1a83b818d6b813a6514e0d1"
+          },
+          "arguments": {
+            "resource": "REF_e1a83b818d6b813a6514e0d1"
+          },
+          "binding": {
+            "kind": "issue",
+            "key": "REF_e1a83b818d6b813a6514e0d1"
+          },
+          "result": {
+            "found": true,
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_references": [
+        {
+          "kind": "issue",
+          "key": "REF_b1ff6fc1166f527f9a3d62cc"
+        },
+        {
+          "kind": "issue",
+          "key": "REF_e1a83b818d6b813a6514e0d1"
+        }
+      ]
+    }
+  },
+  {
+    "episode_id": "9e80ca55df26f760f29dc47e",
+    "base_id": "deployment.direct.1",
+    "split": "dev",
+    "input": {
+      "identity_semantics": "distinct",
+      "requested": [
+        {
+          "kind": "deployment",
+          "key": "REF_ac44bc7c2c8f956d42ea6bb5"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_deployment",
+          "target": {
+            "kind": "deployment",
+            "key": "REF_ac44bc7c2c8f956d42ea6bb5"
+          },
+          "arguments": {
+            "resource": "REF_ac44bc7c2c8f956d42ea6bb5"
+          },
+          "binding": {
+            "kind": "deployment",
+            "key": "REF_ac44bc7c2c8f956d42ea6bb5"
+          },
+          "result": {
+            "found": true,
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_references": [
+        {
+          "kind": "deployment",
+          "key": "REF_ac44bc7c2c8f956d42ea6bb5"
+        }
+      ]
+    }
+  },
+  {
+    "episode_id": "70b9515cad4f785805e5a34f",
+    "base_id": "deployment.direct.1",
+    "split": "dev",
+    "input": {
+      "identity_semantics": "distinct",
+      "requested": [
+        {
+          "kind": "deployment",
+          "key": "REF_d17a6675ed0fc4e8a3ded62b"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_deployment",
+          "target": {
+            "kind": "deployment",
+            "key": "REF_570f5abfd947e7f2da5869fa"
+          },
+          "arguments": {
+            "resource": "REF_570f5abfd947e7f2da5869fa"
+          },
+          "binding": {
+            "kind": "deployment",
+            "key": "REF_570f5abfd947e7f2da5869fa"
+          },
+          "result": {
+            "found": true,
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_references": [
+        {
+          "kind": "deployment",
+          "key": "REF_d17a6675ed0fc4e8a3ded62b"
+        },
+        {
+          "kind": "deployment",
+          "key": "REF_570f5abfd947e7f2da5869fa"
+        }
+      ]
+    }
+  },
+  {
+    "episode_id": "0abcec582e41b8a9e61f49bf",
+    "base_id": "deployment.direct.2",
+    "split": "dev",
+    "input": {
+      "identity_semantics": "distinct",
+      "requested": [
+        {
+          "kind": "deployment",
+          "key": "REF_38f7fb03aed2871ff2d9b3b3"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_deployment",
+          "target": {
+            "kind": "deployment",
+            "key": "REF_38f7fb03aed2871ff2d9b3b3"
+          },
+          "arguments": {
+            "resource": "REF_38f7fb03aed2871ff2d9b3b3"
+          },
+          "binding": {
+            "kind": "deployment",
+            "key": "REF_38f7fb03aed2871ff2d9b3b3"
+          },
+          "result": {
+            "found": true,
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_references": [
+        {
+          "kind": "deployment",
+          "key": "REF_38f7fb03aed2871ff2d9b3b3"
+        }
+      ]
+    }
+  },
+  {
+    "episode_id": "e4d2a122500b840fd19c6c63",
+    "base_id": "deployment.direct.2",
+    "split": "dev",
+    "input": {
+      "identity_semantics": "distinct",
+      "requested": [
+        {
+          "kind": "deployment",
+          "key": "REF_f9df5faf115ec4f815890fd0"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_deployment",
+          "target": {
+            "kind": "deployment",
+            "key": "REF_06f43ee0f8245538ee140cc4"
+          },
+          "arguments": {
+            "resource": "REF_06f43ee0f8245538ee140cc4"
+          },
+          "binding": {
+            "kind": "deployment",
+            "key": "REF_06f43ee0f8245538ee140cc4"
+          },
+          "result": {
+            "found": true,
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_references": [
+        {
+          "kind": "deployment",
+          "key": "REF_f9df5faf115ec4f815890fd0"
+        },
+        {
+          "kind": "deployment",
+          "key": "REF_06f43ee0f8245538ee140cc4"
+        }
+      ]
+    }
+  },
+  {
+    "episode_id": "dc9719513264fb02332bceec",
+    "base_id": "deployment.direct.3",
+    "split": "dev",
+    "input": {
+      "identity_semantics": "distinct",
+      "requested": [
+        {
+          "kind": "deployment",
+          "key": "REF_c1eb788f6336976560dc6dac"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_deployment",
+          "target": {
+            "kind": "deployment",
+            "key": "REF_c1eb788f6336976560dc6dac"
+          },
+          "arguments": {
+            "resource": "REF_c1eb788f6336976560dc6dac"
+          },
+          "binding": {
+            "kind": "deployment",
+            "key": "REF_c1eb788f6336976560dc6dac"
+          },
+          "result": {
+            "found": true,
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_references": [
+        {
+          "kind": "deployment",
+          "key": "REF_c1eb788f6336976560dc6dac"
+        }
+      ]
+    }
+  },
+  {
+    "episode_id": "ee1008eb09009ddb74297536",
+    "base_id": "deployment.direct.3",
+    "split": "dev",
+    "input": {
+      "identity_semantics": "distinct",
+      "requested": [
+        {
+          "kind": "deployment",
+          "key": "REF_2e1c33ca842495f42c46f16c"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_deployment",
+          "target": {
+            "kind": "deployment",
+            "key": "REF_d8deccfe8b98f3234c01cc35"
+          },
+          "arguments": {
+            "resource": "REF_d8deccfe8b98f3234c01cc35"
+          },
+          "binding": {
+            "kind": "deployment",
+            "key": "REF_d8deccfe8b98f3234c01cc35"
+          },
+          "result": {
+            "found": true,
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_references": [
+        {
+          "kind": "deployment",
+          "key": "REF_2e1c33ca842495f42c46f16c"
+        },
+        {
+          "kind": "deployment",
+          "key": "REF_d8deccfe8b98f3234c01cc35"
+        }
+      ]
+    }
+  },
+  {
+    "episode_id": "504e8530d8d186fc87abeda6",
+    "base_id": "deployment.direct.4",
+    "split": "dev",
+    "input": {
+      "identity_semantics": "distinct",
+      "requested": [
+        {
+          "kind": "deployment",
+          "key": "REF_587efaa52b140205a3cdead4"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_deployment",
+          "target": {
+            "kind": "deployment",
+            "key": "REF_587efaa52b140205a3cdead4"
+          },
+          "arguments": {
+            "resource": "REF_587efaa52b140205a3cdead4"
+          },
+          "binding": null,
+          "result": {
+            "found": false,
+            "error": "not found"
+          },
+          "links": []
+        }
+      ],
+      "final_references": [
+        {
+          "kind": "deployment",
+          "key": "REF_587efaa52b140205a3cdead4"
+        }
+      ]
+    }
+  },
+  {
+    "episode_id": "b4ec28cbb30445e05b71f48b",
+    "base_id": "deployment.direct.4",
+    "split": "dev",
+    "input": {
+      "identity_semantics": "distinct",
+      "requested": [
+        {
+          "kind": "deployment",
+          "key": "REF_12eadc89d742c2813e7f5a08"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_deployment",
+          "target": {
+            "kind": "deployment",
+            "key": "REF_1376c56482cb3e05eb4a07e5"
+          },
+          "arguments": {
+            "resource": "REF_1376c56482cb3e05eb4a07e5"
+          },
+          "binding": {
+            "kind": "deployment",
+            "key": "REF_1376c56482cb3e05eb4a07e5"
+          },
+          "result": {
+            "found": true,
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_references": [
+        {
+          "kind": "deployment",
+          "key": "REF_12eadc89d742c2813e7f5a08"
+        },
+        {
+          "kind": "deployment",
+          "key": "REF_1376c56482cb3e05eb4a07e5"
+        }
+      ]
+    }
+  },
+  {
+    "episode_id": "1526141f991e308b17d5630c",
+    "base_id": "test_run.direct.1",
+    "split": "dev",
+    "input": {
+      "identity_semantics": "distinct",
+      "requested": [
+        {
+          "kind": "test_run",
+          "key": "REF_db7a4e06b7421f352c6d9d27"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_test_results",
+          "target": {
+            "kind": "test_run",
+            "key": "REF_db7a4e06b7421f352c6d9d27"
+          },
+          "arguments": {
+            "resource": "REF_db7a4e06b7421f352c6d9d27"
+          },
+          "binding": {
+            "kind": "test_run",
+            "key": "REF_db7a4e06b7421f352c6d9d27"
+          },
+          "result": {
+            "found": true,
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_references": [
+        {
+          "kind": "test_run",
+          "key": "REF_db7a4e06b7421f352c6d9d27"
+        }
+      ]
+    }
+  },
+  {
+    "episode_id": "6359bc0dc479fe92b5b56bc5",
+    "base_id": "test_run.direct.1",
+    "split": "dev",
+    "input": {
+      "identity_semantics": "distinct",
+      "requested": [
+        {
+          "kind": "test_run",
+          "key": "REF_3606d037b72c289ab743537a"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_test_results",
+          "target": {
+            "kind": "test_run",
+            "key": "REF_cdd074bdb377a7b30344b81c"
+          },
+          "arguments": {
+            "resource": "REF_cdd074bdb377a7b30344b81c"
+          },
+          "binding": {
+            "kind": "test_run",
+            "key": "REF_cdd074bdb377a7b30344b81c"
+          },
+          "result": {
+            "found": true,
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_references": [
+        {
+          "kind": "test_run",
+          "key": "REF_3606d037b72c289ab743537a"
+        },
+        {
+          "kind": "test_run",
+          "key": "REF_cdd074bdb377a7b30344b81c"
+        }
+      ]
+    }
+  },
+  {
+    "episode_id": "f51a8f6078c225574a2ba91f",
+    "base_id": "test_run.direct.2",
+    "split": "dev",
+    "input": {
+      "identity_semantics": "distinct",
+      "requested": [
+        {
+          "kind": "test_run",
+          "key": "REF_0331fea8742d05f32d95d4b7"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_test_results",
+          "target": {
+            "kind": "test_run",
+            "key": "REF_0331fea8742d05f32d95d4b7"
+          },
+          "arguments": {
+            "resource": "REF_0331fea8742d05f32d95d4b7"
+          },
+          "binding": {
+            "kind": "test_run",
+            "key": "REF_0331fea8742d05f32d95d4b7"
+          },
+          "result": {
+            "found": true,
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_references": [
+        {
+          "kind": "test_run",
+          "key": "REF_0331fea8742d05f32d95d4b7"
+        }
+      ]
+    }
+  },
+  {
+    "episode_id": "7ea6732c4ecd3b095500d011",
+    "base_id": "test_run.direct.2",
+    "split": "dev",
+    "input": {
+      "identity_semantics": "distinct",
+      "requested": [
+        {
+          "kind": "test_run",
+          "key": "REF_46fd7cf01d325ccfbc4464cd"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_test_results",
+          "target": {
+            "kind": "test_run",
+            "key": "REF_5c01522289a93ae0eb612403"
+          },
+          "arguments": {
+            "resource": "REF_5c01522289a93ae0eb612403"
+          },
+          "binding": {
+            "kind": "test_run",
+            "key": "REF_5c01522289a93ae0eb612403"
+          },
+          "result": {
+            "found": true,
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_references": [
+        {
+          "kind": "test_run",
+          "key": "REF_46fd7cf01d325ccfbc4464cd"
+        },
+        {
+          "kind": "test_run",
+          "key": "REF_5c01522289a93ae0eb612403"
+        }
+      ]
+    }
+  },
+  {
+    "episode_id": "b344e34176a490ac01482c80",
+    "base_id": "test_run.direct.3",
+    "split": "dev",
+    "input": {
+      "identity_semantics": "distinct",
+      "requested": [
+        {
+          "kind": "test_run",
+          "key": "REF_dbb5614b0a78ad5cbe9fe549"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_test_results",
+          "target": {
+            "kind": "test_run",
+            "key": "REF_dbb5614b0a78ad5cbe9fe549"
+          },
+          "arguments": {
+            "resource": "REF_dbb5614b0a78ad5cbe9fe549"
+          },
+          "binding": {
+            "kind": "test_run",
+            "key": "REF_dbb5614b0a78ad5cbe9fe549"
+          },
+          "result": {
+            "found": true,
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_references": [
+        {
+          "kind": "test_run",
+          "key": "REF_dbb5614b0a78ad5cbe9fe549"
+        }
+      ]
+    }
+  },
+  {
+    "episode_id": "d8965c9f99397182245ac9fd",
+    "base_id": "test_run.direct.3",
+    "split": "dev",
+    "input": {
+      "identity_semantics": "distinct",
+      "requested": [
+        {
+          "kind": "test_run",
+          "key": "REF_b75b73aafd4388c150751349"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_test_results",
+          "target": {
+            "kind": "test_run",
+            "key": "REF_0fc19182f9f6a7b668bccdc3"
+          },
+          "arguments": {
+            "resource": "REF_0fc19182f9f6a7b668bccdc3"
+          },
+          "binding": {
+            "kind": "test_run",
+            "key": "REF_0fc19182f9f6a7b668bccdc3"
+          },
+          "result": {
+            "found": true,
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_references": [
+        {
+          "kind": "test_run",
+          "key": "REF_b75b73aafd4388c150751349"
+        },
+        {
+          "kind": "test_run",
+          "key": "REF_0fc19182f9f6a7b668bccdc3"
+        }
+      ]
+    }
+  },
+  {
+    "episode_id": "6acd6c0d0f12da60d72d4e51",
+    "base_id": "test_run.direct.4",
+    "split": "dev",
+    "input": {
+      "identity_semantics": "distinct",
+      "requested": [
+        {
+          "kind": "test_run",
+          "key": "REF_121f273b14cbd46511a77238"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_test_results",
+          "target": {
+            "kind": "test_run",
+            "key": "REF_121f273b14cbd46511a77238"
+          },
+          "arguments": {
+            "resource": "REF_121f273b14cbd46511a77238"
+          },
+          "binding": null,
+          "result": {
+            "found": false,
+            "error": "not found"
+          },
+          "links": []
+        }
+      ],
+      "final_references": [
+        {
+          "kind": "test_run",
+          "key": "REF_121f273b14cbd46511a77238"
+        }
+      ]
+    }
+  },
+  {
+    "episode_id": "a2ae50bdcc756abe5c8fdf8c",
+    "base_id": "test_run.direct.4",
+    "split": "dev",
+    "input": {
+      "identity_semantics": "distinct",
+      "requested": [
+        {
+          "kind": "test_run",
+          "key": "REF_201658810f547f42e531854f"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_test_results",
+          "target": {
+            "kind": "test_run",
+            "key": "REF_07e2b877567fa1026b541ce2"
+          },
+          "arguments": {
+            "resource": "REF_07e2b877567fa1026b541ce2"
+          },
+          "binding": {
+            "kind": "test_run",
+            "key": "REF_07e2b877567fa1026b541ce2"
+          },
+          "result": {
+            "found": true,
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_references": [
+        {
+          "kind": "test_run",
+          "key": "REF_201658810f547f42e531854f"
+        },
+        {
+          "kind": "test_run",
+          "key": "REF_07e2b877567fa1026b541ce2"
+        }
+      ]
+    }
+  },
+  {
+    "episode_id": "9724a5a714b66f774bdd4f0b",
+    "base_id": "issue.declared_scope.1",
+    "split": "test",
+    "input": {
+      "identity_semantics": "distinct",
+      "requested": [
+        {
+          "kind": "issue",
+          "key": "REF_6ef70637b76834bdaade3fab"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [
+        {
+          "name": {
+            "kind": "issue",
+            "key": "REF_6ef70637b76834bdaade3fab"
+          },
+          "target": {
+            "kind": "issue",
+            "key": "REF_6ef70637b76834bdaade3fab"
+          }
+        }
+      ],
+      "events": [
+        {
+          "tool": "lookup_issue",
+          "target": {
+            "kind": "issue",
+            "key": "REF_6ef70637b76834bdaade3fab"
+          },
+          "arguments": {
+            "resource": "REF_6ef70637b76834bdaade3fab"
+          },
+          "binding": {
+            "kind": "issue",
+            "key": "REF_6ef70637b76834bdaade3fab"
+          },
+          "result": {
+            "found": true,
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_references": [
+        {
+          "kind": "issue",
+          "key": "REF_6ef70637b76834bdaade3fab"
+        },
+        {
+          "kind": "issue",
+          "key": "REF_6ef70637b76834bdaade3fab"
+        }
+      ]
+    }
+  },
+  {
+    "episode_id": "cff9fdab8b4463e1d1ccd035",
+    "base_id": "issue.declared_scope.1",
+    "split": "test",
+    "input": {
+      "identity_semantics": "distinct",
+      "requested": [
+        {
+          "kind": "issue",
+          "key": "REF_035bb5064261820d850b015e"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [
+        {
+          "name": {
+            "kind": "issue",
+            "key": "REF_035bb5064261820d850b015e"
+          },
+          "target": {
+            "kind": "issue",
+            "key": "REF_035bb5064261820d850b015e"
+          }
+        }
+      ],
+      "events": [
+        {
+          "tool": "lookup_issue",
+          "target": {
+            "kind": "issue",
+            "key": "REF_6e2dd6b4987df00e37300ac2"
+          },
+          "arguments": {
+            "resource": "REF_6e2dd6b4987df00e37300ac2"
+          },
+          "binding": {
+            "kind": "issue",
+            "key": "REF_6e2dd6b4987df00e37300ac2"
+          },
+          "result": {
+            "found": true,
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_references": [
+        {
+          "kind": "issue",
+          "key": "REF_035bb5064261820d850b015e"
+        },
+        {
+          "kind": "issue",
+          "key": "REF_6e2dd6b4987df00e37300ac2"
+        },
+        {
+          "kind": "issue",
+          "key": "REF_035bb5064261820d850b015e"
+        }
+      ]
+    }
+  },
+  {
+    "episode_id": "26bd09d013a4f6568d09bd88",
+    "base_id": "issue.declared_scope.2",
+    "split": "test",
+    "input": {
+      "identity_semantics": "distinct",
+      "requested": [
+        {
+          "kind": "issue",
+          "key": "REF_a9e489ed0b607d17f660819d"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [
+        {
+          "name": {
+            "kind": "issue",
+            "key": "REF_a9e489ed0b607d17f660819d"
+          },
+          "target": {
+            "kind": "issue",
+            "key": "REF_a9e489ed0b607d17f660819d"
+          }
+        }
+      ],
+      "events": [
+        {
+          "tool": "lookup_issue",
+          "target": {
+            "kind": "issue",
+            "key": "REF_a9e489ed0b607d17f660819d"
+          },
+          "arguments": {
+            "resource": "REF_a9e489ed0b607d17f660819d"
+          },
+          "binding": {
+            "kind": "issue",
+            "key": "REF_a9e489ed0b607d17f660819d"
+          },
+          "result": {
+            "found": true,
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_references": [
+        {
+          "kind": "issue",
+          "key": "REF_a9e489ed0b607d17f660819d"
+        },
+        {
+          "kind": "issue",
+          "key": "REF_a9e489ed0b607d17f660819d"
+        }
+      ]
+    }
+  },
+  {
+    "episode_id": "3d9c0b88f5811bd386b5b915",
+    "base_id": "issue.declared_scope.2",
+    "split": "test",
+    "input": {
+      "identity_semantics": "distinct",
+      "requested": [
+        {
+          "kind": "issue",
+          "key": "REF_04d96b99a6c76dfb5e718d65"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [
+        {
+          "name": {
+            "kind": "issue",
+            "key": "REF_04d96b99a6c76dfb5e718d65"
+          },
+          "target": {
+            "kind": "issue",
+            "key": "REF_04d96b99a6c76dfb5e718d65"
+          }
+        }
+      ],
+      "events": [
+        {
+          "tool": "lookup_issue",
+          "target": {
+            "kind": "issue",
+            "key": "REF_d16900dcc63bf663ee93c999"
+          },
+          "arguments": {
+            "resource": "REF_d16900dcc63bf663ee93c999"
+          },
+          "binding": {
+            "kind": "issue",
+            "key": "REF_d16900dcc63bf663ee93c999"
+          },
+          "result": {
+            "found": true,
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_references": [
+        {
+          "kind": "issue",
+          "key": "REF_04d96b99a6c76dfb5e718d65"
+        },
+        {
+          "kind": "issue",
+          "key": "REF_d16900dcc63bf663ee93c999"
+        },
+        {
+          "kind": "issue",
+          "key": "REF_04d96b99a6c76dfb5e718d65"
+        }
+      ]
+    }
+  },
+  {
+    "episode_id": "23a749369f5b8a5cf9824478",
+    "base_id": "issue.declared_scope.3",
+    "split": "test",
+    "input": {
+      "identity_semantics": "distinct",
+      "requested": [
+        {
+          "kind": "issue",
+          "key": "REF_52770755580296b5a9bdc4f9"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [
+        {
+          "name": {
+            "kind": "issue",
+            "key": "REF_52770755580296b5a9bdc4f9"
+          },
+          "target": {
+            "kind": "issue",
+            "key": "REF_52770755580296b5a9bdc4f9"
+          }
+        }
+      ],
+      "events": [
+        {
+          "tool": "lookup_issue",
+          "target": {
+            "kind": "issue",
+            "key": "REF_52770755580296b5a9bdc4f9"
+          },
+          "arguments": {
+            "resource": "REF_52770755580296b5a9bdc4f9"
+          },
+          "binding": {
+            "kind": "issue",
+            "key": "REF_52770755580296b5a9bdc4f9"
+          },
+          "result": {
+            "found": true,
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_references": [
+        {
+          "kind": "issue",
+          "key": "REF_52770755580296b5a9bdc4f9"
+        },
+        {
+          "kind": "issue",
+          "key": "REF_52770755580296b5a9bdc4f9"
+        }
+      ]
+    }
+  },
+  {
+    "episode_id": "b57ea111dbedcaa4a9cfaac0",
+    "base_id": "issue.declared_scope.3",
+    "split": "test",
+    "input": {
+      "identity_semantics": "distinct",
+      "requested": [
+        {
+          "kind": "issue",
+          "key": "REF_ba04202afa94ef81f3947c46"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [
+        {
+          "name": {
+            "kind": "issue",
+            "key": "REF_ba04202afa94ef81f3947c46"
+          },
+          "target": {
+            "kind": "issue",
+            "key": "REF_ba04202afa94ef81f3947c46"
+          }
+        }
+      ],
+      "events": [
+        {
+          "tool": "lookup_issue",
+          "target": {
+            "kind": "issue",
+            "key": "REF_65a043b613321ac8da6768f7"
+          },
+          "arguments": {
+            "resource": "REF_65a043b613321ac8da6768f7"
+          },
+          "binding": {
+            "kind": "issue",
+            "key": "REF_65a043b613321ac8da6768f7"
+          },
+          "result": {
+            "found": true,
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_references": [
+        {
+          "kind": "issue",
+          "key": "REF_ba04202afa94ef81f3947c46"
+        },
+        {
+          "kind": "issue",
+          "key": "REF_65a043b613321ac8da6768f7"
+        },
+        {
+          "kind": "issue",
+          "key": "REF_ba04202afa94ef81f3947c46"
+        }
+      ]
+    }
+  },
+  {
+    "episode_id": "f28754ea888cbcb0e95805f4",
+    "base_id": "issue.declared_scope.4",
+    "split": "test",
+    "input": {
+      "identity_semantics": "distinct",
+      "requested": [
+        {
+          "kind": "issue",
+          "key": "REF_ce5b76a07dc9de92b267929e"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [
+        {
+          "name": {
+            "kind": "issue",
+            "key": "REF_ce5b76a07dc9de92b267929e"
+          },
+          "target": {
+            "kind": "issue",
+            "key": "REF_ce5b76a07dc9de92b267929e"
+          }
+        }
+      ],
+      "events": [
+        {
+          "tool": "lookup_issue",
+          "target": {
+            "kind": "issue",
+            "key": "REF_ce5b76a07dc9de92b267929e"
+          },
+          "arguments": {
+            "resource": "REF_ce5b76a07dc9de92b267929e"
+          },
+          "binding": {
+            "kind": "issue",
+            "key": "REF_ce5b76a07dc9de92b267929e"
+          },
+          "result": {
+            "found": true,
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_references": [
+        {
+          "kind": "issue",
+          "key": "REF_ce5b76a07dc9de92b267929e"
+        },
+        {
+          "kind": "issue",
+          "key": "REF_ce5b76a07dc9de92b267929e"
+        }
+      ]
+    }
+  },
+  {
+    "episode_id": "f32b21b57db547a7210abc13",
+    "base_id": "issue.declared_scope.4",
+    "split": "test",
+    "input": {
+      "identity_semantics": "distinct",
+      "requested": [
+        {
+          "kind": "issue",
+          "key": "REF_9a7b90ff89961af8032c88d1"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [
+        {
+          "name": {
+            "kind": "issue",
+            "key": "REF_9a7b90ff89961af8032c88d1"
+          },
+          "target": {
+            "kind": "issue",
+            "key": "REF_9a7b90ff89961af8032c88d1"
+          }
+        }
+      ],
+      "events": [
+        {
+          "tool": "lookup_issue",
+          "target": {
+            "kind": "issue",
+            "key": "REF_a1b08b151c5800cdc90a8ee7"
+          },
+          "arguments": {
+            "resource": "REF_a1b08b151c5800cdc90a8ee7"
+          },
+          "binding": {
+            "kind": "issue",
+            "key": "REF_a1b08b151c5800cdc90a8ee7"
+          },
+          "result": {
+            "found": true,
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_references": [
+        {
+          "kind": "issue",
+          "key": "REF_9a7b90ff89961af8032c88d1"
+        },
+        {
+          "kind": "issue",
+          "key": "REF_a1b08b151c5800cdc90a8ee7"
+        },
+        {
+          "kind": "issue",
+          "key": "REF_9a7b90ff89961af8032c88d1"
+        }
+      ]
+    }
+  },
+  {
+    "episode_id": "c0e0dee0bc51590da0fde6c5",
+    "base_id": "deployment.declared_scope.1",
+    "split": "test",
+    "input": {
+      "identity_semantics": "distinct",
+      "requested": [
+        {
+          "kind": "deployment",
+          "key": "REF_518a3a465df9dcd6f0fdea31"
+        },
+        {
+          "kind": "deployment",
+          "key": "REF_d75f159d4284815711789e95"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_deployment",
+          "target": {
+            "kind": "deployment",
+            "key": "REF_d75f159d4284815711789e95"
+          },
+          "arguments": {
+            "resource": "REF_d75f159d4284815711789e95"
+          },
+          "binding": {
+            "kind": "deployment",
+            "key": "REF_d75f159d4284815711789e95"
+          },
+          "result": {
+            "found": true,
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_references": [
+        {
+          "kind": "deployment",
+          "key": "REF_518a3a465df9dcd6f0fdea31"
+        },
+        {
+          "kind": "deployment",
+          "key": "REF_d75f159d4284815711789e95"
+        }
+      ]
+    }
+  },
+  {
+    "episode_id": "ffd0bb48dbdd42210a8f09be",
+    "base_id": "deployment.declared_scope.1",
+    "split": "test",
+    "input": {
+      "identity_semantics": "distinct",
+      "requested": [
+        {
+          "kind": "deployment",
+          "key": "REF_97e44e9b928c1957c7f7ad42"
+        },
+        {
+          "kind": "deployment",
+          "key": "REF_a1e25d97c6f61fb888e1d92b"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_deployment",
+          "target": {
+            "kind": "deployment",
+            "key": "REF_3aedb5f59bd38e27d757f483"
+          },
+          "arguments": {
+            "resource": "REF_3aedb5f59bd38e27d757f483"
+          },
+          "binding": {
+            "kind": "deployment",
+            "key": "REF_3aedb5f59bd38e27d757f483"
+          },
+          "result": {
+            "found": true,
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_references": [
+        {
+          "kind": "deployment",
+          "key": "REF_97e44e9b928c1957c7f7ad42"
+        },
+        {
+          "kind": "deployment",
+          "key": "REF_a1e25d97c6f61fb888e1d92b"
+        },
+        {
+          "kind": "deployment",
+          "key": "REF_3aedb5f59bd38e27d757f483"
+        }
+      ]
+    }
+  },
+  {
+    "episode_id": "2c33d6f816bfd7e79f2a9ef6",
+    "base_id": "deployment.declared_scope.2",
+    "split": "test",
+    "input": {
+      "identity_semantics": "distinct",
+      "requested": [
+        {
+          "kind": "deployment",
+          "key": "REF_36d069b192efee38a7b6737f"
+        },
+        {
+          "kind": "deployment",
+          "key": "REF_ef41285263e47ceca76aa0c4"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_deployment",
+          "target": {
+            "kind": "deployment",
+            "key": "REF_ef41285263e47ceca76aa0c4"
+          },
+          "arguments": {
+            "resource": "REF_ef41285263e47ceca76aa0c4"
+          },
+          "binding": {
+            "kind": "deployment",
+            "key": "REF_ef41285263e47ceca76aa0c4"
+          },
+          "result": {
+            "found": true,
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_references": [
+        {
+          "kind": "deployment",
+          "key": "REF_36d069b192efee38a7b6737f"
+        },
+        {
+          "kind": "deployment",
+          "key": "REF_ef41285263e47ceca76aa0c4"
+        }
+      ]
+    }
+  },
+  {
+    "episode_id": "688d5c5153fd0469e039a654",
+    "base_id": "deployment.declared_scope.2",
+    "split": "test",
+    "input": {
+      "identity_semantics": "distinct",
+      "requested": [
+        {
+          "kind": "deployment",
+          "key": "REF_1b4386fdf909c13aa8d1a0b0"
+        },
+        {
+          "kind": "deployment",
+          "key": "REF_d6f8576d66246fcce89c2017"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_deployment",
+          "target": {
+            "kind": "deployment",
+            "key": "REF_2f066f1ef59295046f442f04"
+          },
+          "arguments": {
+            "resource": "REF_2f066f1ef59295046f442f04"
+          },
+          "binding": {
+            "kind": "deployment",
+            "key": "REF_2f066f1ef59295046f442f04"
+          },
+          "result": {
+            "found": true,
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_references": [
+        {
+          "kind": "deployment",
+          "key": "REF_1b4386fdf909c13aa8d1a0b0"
+        },
+        {
+          "kind": "deployment",
+          "key": "REF_d6f8576d66246fcce89c2017"
+        },
+        {
+          "kind": "deployment",
+          "key": "REF_2f066f1ef59295046f442f04"
+        }
+      ]
+    }
+  },
+  {
+    "episode_id": "51e11b255acd9e262722f9ba",
+    "base_id": "deployment.declared_scope.3",
+    "split": "test",
+    "input": {
+      "identity_semantics": "distinct",
+      "requested": [
+        {
+          "kind": "deployment",
+          "key": "REF_8b3cc87442153799425a7c38"
+        },
+        {
+          "kind": "deployment",
+          "key": "REF_f3a5bdd0f71bf642ad9c084f"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_deployment",
+          "target": {
+            "kind": "deployment",
+            "key": "REF_f3a5bdd0f71bf642ad9c084f"
+          },
+          "arguments": {
+            "resource": "REF_f3a5bdd0f71bf642ad9c084f"
+          },
+          "binding": {
+            "kind": "deployment",
+            "key": "REF_f3a5bdd0f71bf642ad9c084f"
+          },
+          "result": {
+            "found": true,
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_references": [
+        {
+          "kind": "deployment",
+          "key": "REF_8b3cc87442153799425a7c38"
+        },
+        {
+          "kind": "deployment",
+          "key": "REF_f3a5bdd0f71bf642ad9c084f"
+        }
+      ]
+    }
+  },
+  {
+    "episode_id": "c9e1737aa173c0e1d02c67e1",
+    "base_id": "deployment.declared_scope.3",
+    "split": "test",
+    "input": {
+      "identity_semantics": "distinct",
+      "requested": [
+        {
+          "kind": "deployment",
+          "key": "REF_c161daf15fb47bb41389d211"
+        },
+        {
+          "kind": "deployment",
+          "key": "REF_dfb97ca6ad349fcc6f375df0"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_deployment",
+          "target": {
+            "kind": "deployment",
+            "key": "REF_127e0bbf498aec3282860a91"
+          },
+          "arguments": {
+            "resource": "REF_127e0bbf498aec3282860a91"
+          },
+          "binding": {
+            "kind": "deployment",
+            "key": "REF_127e0bbf498aec3282860a91"
+          },
+          "result": {
+            "found": true,
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_references": [
+        {
+          "kind": "deployment",
+          "key": "REF_c161daf15fb47bb41389d211"
+        },
+        {
+          "kind": "deployment",
+          "key": "REF_dfb97ca6ad349fcc6f375df0"
+        },
+        {
+          "kind": "deployment",
+          "key": "REF_127e0bbf498aec3282860a91"
+        }
+      ]
+    }
+  },
+  {
+    "episode_id": "d2bf72adeb2e070e09462eee",
+    "base_id": "deployment.declared_scope.4",
+    "split": "test",
+    "input": {
+      "identity_semantics": "distinct",
+      "requested": [
+        {
+          "kind": "deployment",
+          "key": "REF_d39e78fd9660619229e25e00"
+        },
+        {
+          "kind": "deployment",
+          "key": "REF_a8ee59bc52ca9c2982b628bc"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_deployment",
+          "target": {
+            "kind": "deployment",
+            "key": "REF_a8ee59bc52ca9c2982b628bc"
+          },
+          "arguments": {
+            "resource": "REF_a8ee59bc52ca9c2982b628bc"
+          },
+          "binding": {
+            "kind": "deployment",
+            "key": "REF_a8ee59bc52ca9c2982b628bc"
+          },
+          "result": {
+            "found": true,
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_references": [
+        {
+          "kind": "deployment",
+          "key": "REF_d39e78fd9660619229e25e00"
+        },
+        {
+          "kind": "deployment",
+          "key": "REF_a8ee59bc52ca9c2982b628bc"
+        }
+      ]
+    }
+  },
+  {
+    "episode_id": "0052517c3c68e47fc42aa85b",
+    "base_id": "deployment.declared_scope.4",
+    "split": "test",
+    "input": {
+      "identity_semantics": "distinct",
+      "requested": [
+        {
+          "kind": "deployment",
+          "key": "REF_5323021d7ca5d0cd16a448c5"
+        },
+        {
+          "kind": "deployment",
+          "key": "REF_6aa2deefbca318363aa3de00"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_deployment",
+          "target": {
+            "kind": "deployment",
+            "key": "REF_1806dd15fed9f42a26ab9247"
+          },
+          "arguments": {
+            "resource": "REF_1806dd15fed9f42a26ab9247"
+          },
+          "binding": {
+            "kind": "deployment",
+            "key": "REF_1806dd15fed9f42a26ab9247"
+          },
+          "result": {
+            "found": true,
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_references": [
+        {
+          "kind": "deployment",
+          "key": "REF_5323021d7ca5d0cd16a448c5"
+        },
+        {
+          "kind": "deployment",
+          "key": "REF_6aa2deefbca318363aa3de00"
+        },
+        {
+          "kind": "deployment",
+          "key": "REF_1806dd15fed9f42a26ab9247"
+        }
+      ]
+    }
+  },
+  {
+    "episode_id": "866fc470cf9d79a040fa8b55",
+    "base_id": "test_run.declared_scope.1",
+    "split": "test",
+    "input": {
+      "identity_semantics": "distinct",
+      "requested": [
+        {
+          "kind": "test_run",
+          "key": "REF_f6bf24bbcd73f016dd298487"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [
+        {
+          "name": {
+            "kind": "test_run",
+            "key": "REF_f6bf24bbcd73f016dd298487"
+          },
+          "target": {
+            "kind": "test_run",
+            "key": "REF_f6bf24bbcd73f016dd298487"
+          }
+        }
+      ],
+      "events": [
+        {
+          "tool": "lookup_test_results",
+          "target": {
+            "kind": "test_run",
+            "key": "REF_f6bf24bbcd73f016dd298487"
+          },
+          "arguments": {
+            "resource": "REF_f6bf24bbcd73f016dd298487"
+          },
+          "binding": {
+            "kind": "test_run",
+            "key": "REF_f6bf24bbcd73f016dd298487"
+          },
+          "result": {
+            "found": true,
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_references": [
+        {
+          "kind": "test_run",
+          "key": "REF_f6bf24bbcd73f016dd298487"
+        },
+        {
+          "kind": "test_run",
+          "key": "REF_f6bf24bbcd73f016dd298487"
+        }
+      ]
+    }
+  },
+  {
+    "episode_id": "6e08ba296bc861f9daf6f6c2",
+    "base_id": "test_run.declared_scope.1",
+    "split": "test",
+    "input": {
+      "identity_semantics": "distinct",
+      "requested": [
+        {
+          "kind": "test_run",
+          "key": "REF_93e2fd53a717ca684eab098d"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [
+        {
+          "name": {
+            "kind": "test_run",
+            "key": "REF_93e2fd53a717ca684eab098d"
+          },
+          "target": {
+            "kind": "test_run",
+            "key": "REF_93e2fd53a717ca684eab098d"
+          }
+        }
+      ],
+      "events": [
+        {
+          "tool": "lookup_test_results",
+          "target": {
+            "kind": "test_run",
+            "key": "REF_b3545ecc6717196c626f647a"
+          },
+          "arguments": {
+            "resource": "REF_b3545ecc6717196c626f647a"
+          },
+          "binding": {
+            "kind": "test_run",
+            "key": "REF_b3545ecc6717196c626f647a"
+          },
+          "result": {
+            "found": true,
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_references": [
+        {
+          "kind": "test_run",
+          "key": "REF_93e2fd53a717ca684eab098d"
+        },
+        {
+          "kind": "test_run",
+          "key": "REF_b3545ecc6717196c626f647a"
+        },
+        {
+          "kind": "test_run",
+          "key": "REF_93e2fd53a717ca684eab098d"
+        }
+      ]
+    }
+  },
+  {
+    "episode_id": "2d7bf696883b3b712ea27016",
+    "base_id": "test_run.declared_scope.2",
+    "split": "test",
+    "input": {
+      "identity_semantics": "distinct",
+      "requested": [
+        {
+          "kind": "test_run",
+          "key": "REF_7f99ef64fee79905162e6171"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [
+        {
+          "name": {
+            "kind": "test_run",
+            "key": "REF_7f99ef64fee79905162e6171"
+          },
+          "target": {
+            "kind": "test_run",
+            "key": "REF_7f99ef64fee79905162e6171"
+          }
+        }
+      ],
+      "events": [
+        {
+          "tool": "lookup_test_results",
+          "target": {
+            "kind": "test_run",
+            "key": "REF_7f99ef64fee79905162e6171"
+          },
+          "arguments": {
+            "resource": "REF_7f99ef64fee79905162e6171"
+          },
+          "binding": {
+            "kind": "test_run",
+            "key": "REF_7f99ef64fee79905162e6171"
+          },
+          "result": {
+            "found": true,
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_references": [
+        {
+          "kind": "test_run",
+          "key": "REF_7f99ef64fee79905162e6171"
+        },
+        {
+          "kind": "test_run",
+          "key": "REF_7f99ef64fee79905162e6171"
+        }
+      ]
+    }
+  },
+  {
+    "episode_id": "4df6975fef17d8db1e60081c",
+    "base_id": "test_run.declared_scope.2",
+    "split": "test",
+    "input": {
+      "identity_semantics": "distinct",
+      "requested": [
+        {
+          "kind": "test_run",
+          "key": "REF_e9f42669a14c1ba6061ae826"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [
+        {
+          "name": {
+            "kind": "test_run",
+            "key": "REF_e9f42669a14c1ba6061ae826"
+          },
+          "target": {
+            "kind": "test_run",
+            "key": "REF_e9f42669a14c1ba6061ae826"
+          }
+        }
+      ],
+      "events": [
+        {
+          "tool": "lookup_test_results",
+          "target": {
+            "kind": "test_run",
+            "key": "REF_b12aa95bed202a9311fec0b4"
+          },
+          "arguments": {
+            "resource": "REF_b12aa95bed202a9311fec0b4"
+          },
+          "binding": {
+            "kind": "test_run",
+            "key": "REF_b12aa95bed202a9311fec0b4"
+          },
+          "result": {
+            "found": true,
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_references": [
+        {
+          "kind": "test_run",
+          "key": "REF_e9f42669a14c1ba6061ae826"
+        },
+        {
+          "kind": "test_run",
+          "key": "REF_b12aa95bed202a9311fec0b4"
+        },
+        {
+          "kind": "test_run",
+          "key": "REF_e9f42669a14c1ba6061ae826"
+        }
+      ]
+    }
+  },
+  {
+    "episode_id": "b9c93956d9dae60b67ae4255",
+    "base_id": "test_run.declared_scope.3",
+    "split": "test",
+    "input": {
+      "identity_semantics": "distinct",
+      "requested": [
+        {
+          "kind": "test_run",
+          "key": "REF_4e1bb0c869d9ad617cf2c093"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [
+        {
+          "name": {
+            "kind": "test_run",
+            "key": "REF_4e1bb0c869d9ad617cf2c093"
+          },
+          "target": {
+            "kind": "test_run",
+            "key": "REF_4e1bb0c869d9ad617cf2c093"
+          }
+        }
+      ],
+      "events": [
+        {
+          "tool": "lookup_test_results",
+          "target": {
+            "kind": "test_run",
+            "key": "REF_4e1bb0c869d9ad617cf2c093"
+          },
+          "arguments": {
+            "resource": "REF_4e1bb0c869d9ad617cf2c093"
+          },
+          "binding": {
+            "kind": "test_run",
+            "key": "REF_4e1bb0c869d9ad617cf2c093"
+          },
+          "result": {
+            "found": true,
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_references": [
+        {
+          "kind": "test_run",
+          "key": "REF_4e1bb0c869d9ad617cf2c093"
+        },
+        {
+          "kind": "test_run",
+          "key": "REF_4e1bb0c869d9ad617cf2c093"
+        }
+      ]
+    }
+  },
+  {
+    "episode_id": "241c481d7a44e63281b48191",
+    "base_id": "test_run.declared_scope.3",
+    "split": "test",
+    "input": {
+      "identity_semantics": "distinct",
+      "requested": [
+        {
+          "kind": "test_run",
+          "key": "REF_0221631742900dc0ce0afc42"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [
+        {
+          "name": {
+            "kind": "test_run",
+            "key": "REF_0221631742900dc0ce0afc42"
+          },
+          "target": {
+            "kind": "test_run",
+            "key": "REF_0221631742900dc0ce0afc42"
+          }
+        }
+      ],
+      "events": [
+        {
+          "tool": "lookup_test_results",
+          "target": {
+            "kind": "test_run",
+            "key": "REF_5f2f48c3d8c85e256c27224b"
+          },
+          "arguments": {
+            "resource": "REF_5f2f48c3d8c85e256c27224b"
+          },
+          "binding": {
+            "kind": "test_run",
+            "key": "REF_5f2f48c3d8c85e256c27224b"
+          },
+          "result": {
+            "found": true,
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_references": [
+        {
+          "kind": "test_run",
+          "key": "REF_0221631742900dc0ce0afc42"
+        },
+        {
+          "kind": "test_run",
+          "key": "REF_5f2f48c3d8c85e256c27224b"
+        },
+        {
+          "kind": "test_run",
+          "key": "REF_0221631742900dc0ce0afc42"
+        }
+      ]
+    }
+  },
+  {
+    "episode_id": "f536a9db95fa1d2bc722566f",
+    "base_id": "test_run.declared_scope.4",
+    "split": "test",
+    "input": {
+      "identity_semantics": "distinct",
+      "requested": [
+        {
+          "kind": "test_run",
+          "key": "REF_5d1c5871fc31e47833cd0451"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [
+        {
+          "name": {
+            "kind": "test_run",
+            "key": "REF_5d1c5871fc31e47833cd0451"
+          },
+          "target": {
+            "kind": "test_run",
+            "key": "REF_5d1c5871fc31e47833cd0451"
+          }
+        }
+      ],
+      "events": [
+        {
+          "tool": "lookup_test_results",
+          "target": {
+            "kind": "test_run",
+            "key": "REF_5d1c5871fc31e47833cd0451"
+          },
+          "arguments": {
+            "resource": "REF_5d1c5871fc31e47833cd0451"
+          },
+          "binding": {
+            "kind": "test_run",
+            "key": "REF_5d1c5871fc31e47833cd0451"
+          },
+          "result": {
+            "found": true,
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_references": [
+        {
+          "kind": "test_run",
+          "key": "REF_5d1c5871fc31e47833cd0451"
+        },
+        {
+          "kind": "test_run",
+          "key": "REF_5d1c5871fc31e47833cd0451"
+        }
+      ]
+    }
+  },
+  {
+    "episode_id": "f884285e636135cbbe446868",
+    "base_id": "test_run.declared_scope.4",
+    "split": "test",
+    "input": {
+      "identity_semantics": "distinct",
+      "requested": [
+        {
+          "kind": "test_run",
+          "key": "REF_4c469350e55828ef01a2f8b0"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [
+        {
+          "name": {
+            "kind": "test_run",
+            "key": "REF_4c469350e55828ef01a2f8b0"
+          },
+          "target": {
+            "kind": "test_run",
+            "key": "REF_4c469350e55828ef01a2f8b0"
+          }
+        }
+      ],
+      "events": [
+        {
+          "tool": "lookup_test_results",
+          "target": {
+            "kind": "test_run",
+            "key": "REF_5ed43478ef78977de628b034"
+          },
+          "arguments": {
+            "resource": "REF_5ed43478ef78977de628b034"
+          },
+          "binding": {
+            "kind": "test_run",
+            "key": "REF_5ed43478ef78977de628b034"
+          },
+          "result": {
+            "found": true,
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_references": [
+        {
+          "kind": "test_run",
+          "key": "REF_4c469350e55828ef01a2f8b0"
+        },
+        {
+          "kind": "test_run",
+          "key": "REF_5ed43478ef78977de628b034"
+        },
+        {
+          "kind": "test_run",
+          "key": "REF_4c469350e55828ef01a2f8b0"
+        }
+      ]
+    }
+  },
+  {
+    "episode_id": "8dfd13fcca2cccaf64debf80",
+    "base_id": "issue.relationship.1",
+    "split": "test",
+    "input": {
+      "identity_semantics": "distinct",
+      "requested": [
+        {
+          "kind": "issue",
+          "key": "REF_53d1e77d19b9893fd53b1955"
+        }
+      ],
+      "linked_scope": [
+        {
+          "source": {
+            "kind": "issue",
+            "key": "REF_53d1e77d19b9893fd53b1955"
+          },
+          "relation": "associated_test_run"
+        }
+      ],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_issue",
+          "target": {
+            "kind": "issue",
+            "key": "REF_53d1e77d19b9893fd53b1955"
+          },
+          "arguments": {
+            "resource": "REF_53d1e77d19b9893fd53b1955"
+          },
+          "binding": {
+            "kind": "issue",
+            "key": "REF_53d1e77d19b9893fd53b1955"
+          },
+          "result": {
+            "found": true,
+            "error": null
+          },
+          "links": [
+            {
+              "relation": "associated_test_run",
+              "target": {
+                "kind": "test_run",
+                "key": "REF_fc184bcfbd6475a924a474e2"
+              }
+            }
+          ]
+        },
+        {
+          "tool": "lookup_test_results",
+          "target": {
+            "kind": "test_run",
+            "key": "REF_fc184bcfbd6475a924a474e2"
+          },
+          "arguments": {
+            "resource": "REF_fc184bcfbd6475a924a474e2"
+          },
+          "binding": {
+            "kind": "test_run",
+            "key": "REF_fc184bcfbd6475a924a474e2"
+          },
+          "result": {
+            "found": true,
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_references": [
+        {
+          "kind": "issue",
+          "key": "REF_53d1e77d19b9893fd53b1955"
+        },
+        {
+          "kind": "test_run",
+          "key": "REF_fc184bcfbd6475a924a474e2"
+        }
+      ]
+    }
+  },
+  {
+    "episode_id": "0b4d3e72a2015979337e2d5b",
+    "base_id": "issue.relationship.1",
+    "split": "test",
+    "input": {
+      "identity_semantics": "distinct",
+      "requested": [
+        {
+          "kind": "issue",
+          "key": "REF_55e37d9bdb1c968138b92e6c"
+        }
+      ],
+      "linked_scope": [
+        {
+          "source": {
+            "kind": "issue",
+            "key": "REF_55e37d9bdb1c968138b92e6c"
+          },
+          "relation": "associated_test_run"
+        }
+      ],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_issue",
+          "target": {
+            "kind": "issue",
+            "key": "REF_55e37d9bdb1c968138b92e6c"
+          },
+          "arguments": {
+            "resource": "REF_55e37d9bdb1c968138b92e6c"
+          },
+          "binding": {
+            "kind": "issue",
+            "key": "REF_55e37d9bdb1c968138b92e6c"
+          },
+          "result": {
+            "found": true,
+            "error": null
+          },
+          "links": [
+            {
+              "relation": "associated_test_run",
+              "target": {
+                "kind": "test_run",
+                "key": "REF_c09851dc23c604bf285384de"
+              }
+            }
+          ]
+        },
+        {
+          "tool": "lookup_test_results",
+          "target": {
+            "kind": "test_run",
+            "key": "REF_df017324589892008771815e"
+          },
+          "arguments": {
+            "resource": "REF_df017324589892008771815e"
+          },
+          "binding": {
+            "kind": "test_run",
+            "key": "REF_df017324589892008771815e"
+          },
+          "result": {
+            "found": true,
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_references": [
+        {
+          "kind": "issue",
+          "key": "REF_55e37d9bdb1c968138b92e6c"
+        },
+        {
+          "kind": "test_run",
+          "key": "REF_c09851dc23c604bf285384de"
+        },
+        {
+          "kind": "test_run",
+          "key": "REF_df017324589892008771815e"
+        }
+      ]
+    }
+  },
+  {
+    "episode_id": "966107f125c95473e8e391d9",
+    "base_id": "issue.relationship.2",
+    "split": "test",
+    "input": {
+      "identity_semantics": "distinct",
+      "requested": [
+        {
+          "kind": "issue",
+          "key": "REF_928600d97174fa628c6d4add"
+        }
+      ],
+      "linked_scope": [
+        {
+          "source": {
+            "kind": "issue",
+            "key": "REF_928600d97174fa628c6d4add"
+          },
+          "relation": "associated_test_run"
+        }
+      ],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_issue",
+          "target": {
+            "kind": "issue",
+            "key": "REF_928600d97174fa628c6d4add"
+          },
+          "arguments": {
+            "resource": "REF_928600d97174fa628c6d4add"
+          },
+          "binding": {
+            "kind": "issue",
+            "key": "REF_928600d97174fa628c6d4add"
+          },
+          "result": {
+            "found": true,
+            "error": null
+          },
+          "links": [
+            {
+              "relation": "associated_test_run",
+              "target": {
+                "kind": "test_run",
+                "key": "REF_a9676521e86cee6fe0ca7f85"
+              }
+            }
+          ]
+        },
+        {
+          "tool": "lookup_test_results",
+          "target": {
+            "kind": "test_run",
+            "key": "REF_a9676521e86cee6fe0ca7f85"
+          },
+          "arguments": {
+            "resource": "REF_a9676521e86cee6fe0ca7f85"
+          },
+          "binding": {
+            "kind": "test_run",
+            "key": "REF_a9676521e86cee6fe0ca7f85"
+          },
+          "result": {
+            "found": true,
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_references": [
+        {
+          "kind": "issue",
+          "key": "REF_928600d97174fa628c6d4add"
+        },
+        {
+          "kind": "test_run",
+          "key": "REF_a9676521e86cee6fe0ca7f85"
+        }
+      ]
+    }
+  },
+  {
+    "episode_id": "9b18bb84ced568bf03e24686",
+    "base_id": "issue.relationship.2",
+    "split": "test",
+    "input": {
+      "identity_semantics": "distinct",
+      "requested": [
+        {
+          "kind": "issue",
+          "key": "REF_2164988f16fdc7401056ef08"
+        }
+      ],
+      "linked_scope": [
+        {
+          "source": {
+            "kind": "issue",
+            "key": "REF_2164988f16fdc7401056ef08"
+          },
+          "relation": "associated_test_run"
+        }
+      ],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_issue",
+          "target": {
+            "kind": "issue",
+            "key": "REF_2164988f16fdc7401056ef08"
+          },
+          "arguments": {
+            "resource": "REF_2164988f16fdc7401056ef08"
+          },
+          "binding": {
+            "kind": "issue",
+            "key": "REF_2164988f16fdc7401056ef08"
+          },
+          "result": {
+            "found": true,
+            "error": null
+          },
+          "links": [
+            {
+              "relation": "associated_test_run",
+              "target": {
+                "kind": "test_run",
+                "key": "REF_2f8c6593b6207eeb484c4283"
+              }
+            }
+          ]
+        },
+        {
+          "tool": "lookup_test_results",
+          "target": {
+            "kind": "test_run",
+            "key": "REF_842d589a5b5432894b49b237"
+          },
+          "arguments": {
+            "resource": "REF_842d589a5b5432894b49b237"
+          },
+          "binding": {
+            "kind": "test_run",
+            "key": "REF_842d589a5b5432894b49b237"
+          },
+          "result": {
+            "found": true,
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_references": [
+        {
+          "kind": "issue",
+          "key": "REF_2164988f16fdc7401056ef08"
+        },
+        {
+          "kind": "test_run",
+          "key": "REF_2f8c6593b6207eeb484c4283"
+        },
+        {
+          "kind": "test_run",
+          "key": "REF_842d589a5b5432894b49b237"
+        }
+      ]
+    }
+  },
+  {
+    "episode_id": "4ddb32be1ceb8ddb4ef8fbdd",
+    "base_id": "issue.relationship.3",
+    "split": "test",
+    "input": {
+      "identity_semantics": "distinct",
+      "requested": [
+        {
+          "kind": "issue",
+          "key": "REF_099ca3c3c4e72b52994b0dea"
+        }
+      ],
+      "linked_scope": [
+        {
+          "source": {
+            "kind": "issue",
+            "key": "REF_099ca3c3c4e72b52994b0dea"
+          },
+          "relation": "associated_test_run"
+        }
+      ],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_issue",
+          "target": {
+            "kind": "issue",
+            "key": "REF_099ca3c3c4e72b52994b0dea"
+          },
+          "arguments": {
+            "resource": "REF_099ca3c3c4e72b52994b0dea"
+          },
+          "binding": {
+            "kind": "issue",
+            "key": "REF_099ca3c3c4e72b52994b0dea"
+          },
+          "result": {
+            "found": true,
+            "error": null
+          },
+          "links": [
+            {
+              "relation": "associated_test_run",
+              "target": {
+                "kind": "test_run",
+                "key": "REF_e5a415ace0a53e489cfdfce3"
+              }
+            }
+          ]
+        },
+        {
+          "tool": "lookup_test_results",
+          "target": {
+            "kind": "test_run",
+            "key": "REF_e5a415ace0a53e489cfdfce3"
+          },
+          "arguments": {
+            "resource": "REF_e5a415ace0a53e489cfdfce3"
+          },
+          "binding": {
+            "kind": "test_run",
+            "key": "REF_e5a415ace0a53e489cfdfce3"
+          },
+          "result": {
+            "found": true,
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_references": [
+        {
+          "kind": "issue",
+          "key": "REF_099ca3c3c4e72b52994b0dea"
+        },
+        {
+          "kind": "test_run",
+          "key": "REF_e5a415ace0a53e489cfdfce3"
+        }
+      ]
+    }
+  },
+  {
+    "episode_id": "b195f841992581559b1e1e60",
+    "base_id": "issue.relationship.3",
+    "split": "test",
+    "input": {
+      "identity_semantics": "distinct",
+      "requested": [
+        {
+          "kind": "issue",
+          "key": "REF_2c7da1a97bbc026ffd2e1529"
+        }
+      ],
+      "linked_scope": [
+        {
+          "source": {
+            "kind": "issue",
+            "key": "REF_2c7da1a97bbc026ffd2e1529"
+          },
+          "relation": "associated_test_run"
+        }
+      ],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_issue",
+          "target": {
+            "kind": "issue",
+            "key": "REF_2c7da1a97bbc026ffd2e1529"
+          },
+          "arguments": {
+            "resource": "REF_2c7da1a97bbc026ffd2e1529"
+          },
+          "binding": {
+            "kind": "issue",
+            "key": "REF_2c7da1a97bbc026ffd2e1529"
+          },
+          "result": {
+            "found": true,
+            "error": null
+          },
+          "links": [
+            {
+              "relation": "associated_test_run",
+              "target": {
+                "kind": "test_run",
+                "key": "REF_388b2b72ea57311bd7618ffd"
+              }
+            }
+          ]
+        },
+        {
+          "tool": "lookup_test_results",
+          "target": {
+            "kind": "test_run",
+            "key": "REF_68853f1a4990e7a1af664b19"
+          },
+          "arguments": {
+            "resource": "REF_68853f1a4990e7a1af664b19"
+          },
+          "binding": {
+            "kind": "test_run",
+            "key": "REF_68853f1a4990e7a1af664b19"
+          },
+          "result": {
+            "found": true,
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_references": [
+        {
+          "kind": "issue",
+          "key": "REF_2c7da1a97bbc026ffd2e1529"
+        },
+        {
+          "kind": "test_run",
+          "key": "REF_388b2b72ea57311bd7618ffd"
+        },
+        {
+          "kind": "test_run",
+          "key": "REF_68853f1a4990e7a1af664b19"
+        }
+      ]
+    }
+  },
+  {
+    "episode_id": "3c78ee42341cf8705bcdba64",
+    "base_id": "issue.relationship.4",
+    "split": "test",
+    "input": {
+      "identity_semantics": "distinct",
+      "requested": [
+        {
+          "kind": "issue",
+          "key": "REF_66649c415b598a427fe2288a"
+        }
+      ],
+      "linked_scope": [
+        {
+          "source": {
+            "kind": "issue",
+            "key": "REF_66649c415b598a427fe2288a"
+          },
+          "relation": "associated_test_run"
+        }
+      ],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_issue",
+          "target": {
+            "kind": "issue",
+            "key": "REF_66649c415b598a427fe2288a"
+          },
+          "arguments": {
+            "resource": "REF_66649c415b598a427fe2288a"
+          },
+          "binding": {
+            "kind": "issue",
+            "key": "REF_66649c415b598a427fe2288a"
+          },
+          "result": {
+            "found": true,
+            "error": null
+          },
+          "links": [
+            {
+              "relation": "associated_test_run",
+              "target": {
+                "kind": "test_run",
+                "key": "REF_99a40fc98b83d3fc83e76eb5"
+              }
+            }
+          ]
+        },
+        {
+          "tool": "lookup_test_results",
+          "target": {
+            "kind": "test_run",
+            "key": "REF_99a40fc98b83d3fc83e76eb5"
+          },
+          "arguments": {
+            "resource": "REF_99a40fc98b83d3fc83e76eb5"
+          },
+          "binding": {
+            "kind": "test_run",
+            "key": "REF_99a40fc98b83d3fc83e76eb5"
+          },
+          "result": {
+            "found": true,
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_references": [
+        {
+          "kind": "issue",
+          "key": "REF_66649c415b598a427fe2288a"
+        },
+        {
+          "kind": "test_run",
+          "key": "REF_99a40fc98b83d3fc83e76eb5"
+        }
+      ]
+    }
+  },
+  {
+    "episode_id": "9d252f8792271866b7381415",
+    "base_id": "issue.relationship.4",
+    "split": "test",
+    "input": {
+      "identity_semantics": "distinct",
+      "requested": [
+        {
+          "kind": "issue",
+          "key": "REF_237f131a6090f17cc10c8731"
+        }
+      ],
+      "linked_scope": [
+        {
+          "source": {
+            "kind": "issue",
+            "key": "REF_237f131a6090f17cc10c8731"
+          },
+          "relation": "associated_test_run"
+        }
+      ],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_issue",
+          "target": {
+            "kind": "issue",
+            "key": "REF_237f131a6090f17cc10c8731"
+          },
+          "arguments": {
+            "resource": "REF_237f131a6090f17cc10c8731"
+          },
+          "binding": {
+            "kind": "issue",
+            "key": "REF_237f131a6090f17cc10c8731"
+          },
+          "result": {
+            "found": true,
+            "error": null
+          },
+          "links": [
+            {
+              "relation": "associated_test_run",
+              "target": {
+                "kind": "test_run",
+                "key": "REF_c1e0ac2c7c8229c775fcd3c0"
+              }
+            }
+          ]
+        },
+        {
+          "tool": "lookup_test_results",
+          "target": {
+            "kind": "test_run",
+            "key": "REF_a0f78a178b0ec4b429b4ff36"
+          },
+          "arguments": {
+            "resource": "REF_a0f78a178b0ec4b429b4ff36"
+          },
+          "binding": {
+            "kind": "test_run",
+            "key": "REF_a0f78a178b0ec4b429b4ff36"
+          },
+          "result": {
+            "found": true,
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_references": [
+        {
+          "kind": "issue",
+          "key": "REF_237f131a6090f17cc10c8731"
+        },
+        {
+          "kind": "test_run",
+          "key": "REF_c1e0ac2c7c8229c775fcd3c0"
+        },
+        {
+          "kind": "test_run",
+          "key": "REF_a0f78a178b0ec4b429b4ff36"
+        }
+      ]
+    }
+  },
+  {
+    "episode_id": "85cc7b7a4f68142733c29a10",
+    "base_id": "deployment.relationship.1",
+    "split": "test",
+    "input": {
+      "identity_semantics": "distinct",
+      "requested": [
+        {
+          "kind": "deployment",
+          "key": "REF_87c0082dfe64adbb4b3e30b0"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_deployment",
+          "target": {
+            "kind": "deployment",
+            "key": "REF_87c0082dfe64adbb4b3e30b0"
+          },
+          "arguments": {
+            "resource": "REF_87c0082dfe64adbb4b3e30b0"
+          },
+          "binding": {
+            "kind": "deployment",
+            "key": "REF_87c0082dfe64adbb4b3e30b0"
+          },
+          "result": {
+            "found": true,
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_references": [
+        {
+          "kind": "deployment",
+          "key": "REF_87c0082dfe64adbb4b3e30b0"
+        }
+      ]
+    }
+  },
+  {
+    "episode_id": "a1cce2149d35c3934cac10ff",
+    "base_id": "deployment.relationship.1",
+    "split": "test",
+    "input": {
+      "identity_semantics": "distinct",
+      "requested": [
+        {
+          "kind": "deployment",
+          "key": "REF_0c437310af11da22d22879b3"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_deployment",
+          "target": {
+            "kind": "deployment",
+            "key": "REF_0c437310af11da22d22879b3"
+          },
+          "arguments": {
+            "resource": "REF_0c437310af11da22d22879b3"
+          },
+          "binding": {
+            "kind": "deployment",
+            "key": "REF_144d5dc1aa9bc2ba914abbe4"
+          },
+          "result": {
+            "found": true,
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_references": [
+        {
+          "kind": "deployment",
+          "key": "REF_0c437310af11da22d22879b3"
+        },
+        {
+          "kind": "deployment",
+          "key": "REF_144d5dc1aa9bc2ba914abbe4"
+        }
+      ]
+    }
+  },
+  {
+    "episode_id": "175f015ac861648c30f3a561",
+    "base_id": "deployment.relationship.2",
+    "split": "test",
+    "input": {
+      "identity_semantics": "distinct",
+      "requested": [
+        {
+          "kind": "deployment",
+          "key": "REF_c33852e6ba7a1c0f2e478b94"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_deployment",
+          "target": {
+            "kind": "deployment",
+            "key": "REF_c33852e6ba7a1c0f2e478b94"
+          },
+          "arguments": {
+            "resource": "REF_c33852e6ba7a1c0f2e478b94"
+          },
+          "binding": {
+            "kind": "deployment",
+            "key": "REF_c33852e6ba7a1c0f2e478b94"
+          },
+          "result": {
+            "found": true,
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_references": [
+        {
+          "kind": "deployment",
+          "key": "REF_c33852e6ba7a1c0f2e478b94"
+        }
+      ]
+    }
+  },
+  {
+    "episode_id": "c39ee9562ec1dcbdd8509bf7",
+    "base_id": "deployment.relationship.2",
+    "split": "test",
+    "input": {
+      "identity_semantics": "distinct",
+      "requested": [
+        {
+          "kind": "deployment",
+          "key": "REF_0312db6e4e521b435314fe3d"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_deployment",
+          "target": {
+            "kind": "deployment",
+            "key": "REF_0312db6e4e521b435314fe3d"
+          },
+          "arguments": {
+            "resource": "REF_0312db6e4e521b435314fe3d"
+          },
+          "binding": {
+            "kind": "deployment",
+            "key": "REF_16ecca5f41ad42ee4ddee02e"
+          },
+          "result": {
+            "found": true,
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_references": [
+        {
+          "kind": "deployment",
+          "key": "REF_0312db6e4e521b435314fe3d"
+        },
+        {
+          "kind": "deployment",
+          "key": "REF_16ecca5f41ad42ee4ddee02e"
+        }
+      ]
+    }
+  },
+  {
+    "episode_id": "15d75f3a124714bf91ce4ac0",
+    "base_id": "deployment.relationship.3",
+    "split": "test",
+    "input": {
+      "identity_semantics": "distinct",
+      "requested": [
+        {
+          "kind": "deployment",
+          "key": "REF_b805c1eb9ffdc29eb898edf5"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_deployment",
+          "target": {
+            "kind": "deployment",
+            "key": "REF_b805c1eb9ffdc29eb898edf5"
+          },
+          "arguments": {
+            "resource": "REF_b805c1eb9ffdc29eb898edf5"
+          },
+          "binding": {
+            "kind": "deployment",
+            "key": "REF_b805c1eb9ffdc29eb898edf5"
+          },
+          "result": {
+            "found": true,
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_references": [
+        {
+          "kind": "deployment",
+          "key": "REF_b805c1eb9ffdc29eb898edf5"
+        }
+      ]
+    }
+  },
+  {
+    "episode_id": "424c511b3b042cf7ecd8ed45",
+    "base_id": "deployment.relationship.3",
+    "split": "test",
+    "input": {
+      "identity_semantics": "distinct",
+      "requested": [
+        {
+          "kind": "deployment",
+          "key": "REF_c6a1e8c7a91b6c97a6e270bb"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_deployment",
+          "target": {
+            "kind": "deployment",
+            "key": "REF_c6a1e8c7a91b6c97a6e270bb"
+          },
+          "arguments": {
+            "resource": "REF_c6a1e8c7a91b6c97a6e270bb"
+          },
+          "binding": {
+            "kind": "deployment",
+            "key": "REF_2485959d8e858f607446e4b1"
+          },
+          "result": {
+            "found": true,
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_references": [
+        {
+          "kind": "deployment",
+          "key": "REF_c6a1e8c7a91b6c97a6e270bb"
+        },
+        {
+          "kind": "deployment",
+          "key": "REF_2485959d8e858f607446e4b1"
+        }
+      ]
+    }
+  },
+  {
+    "episode_id": "e123b2ffe3215a201e4ff1a4",
+    "base_id": "deployment.relationship.4",
+    "split": "test",
+    "input": {
+      "identity_semantics": "distinct",
+      "requested": [
+        {
+          "kind": "deployment",
+          "key": "REF_66acba622432d13d4bb76360"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_deployment",
+          "target": {
+            "kind": "deployment",
+            "key": "REF_66acba622432d13d4bb76360"
+          },
+          "arguments": {
+            "resource": "REF_66acba622432d13d4bb76360"
+          },
+          "binding": {
+            "kind": "deployment",
+            "key": "REF_66acba622432d13d4bb76360"
+          },
+          "result": {
+            "found": true,
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_references": [
+        {
+          "kind": "deployment",
+          "key": "REF_66acba622432d13d4bb76360"
+        }
+      ]
+    }
+  },
+  {
+    "episode_id": "09d248b9cf9202b277b5c9f0",
+    "base_id": "deployment.relationship.4",
+    "split": "test",
+    "input": {
+      "identity_semantics": "distinct",
+      "requested": [
+        {
+          "kind": "deployment",
+          "key": "REF_106887fa091e0adad54bec55"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_deployment",
+          "target": {
+            "kind": "deployment",
+            "key": "REF_106887fa091e0adad54bec55"
+          },
+          "arguments": {
+            "resource": "REF_106887fa091e0adad54bec55"
+          },
+          "binding": {
+            "kind": "deployment",
+            "key": "REF_213e060d6cfd96758fa21496"
+          },
+          "result": {
+            "found": true,
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_references": [
+        {
+          "kind": "deployment",
+          "key": "REF_106887fa091e0adad54bec55"
+        },
+        {
+          "kind": "deployment",
+          "key": "REF_213e060d6cfd96758fa21496"
+        }
+      ]
+    }
+  },
+  {
+    "episode_id": "a9885839873593c5cfbb8d27",
+    "base_id": "test_run.relationship.1",
+    "split": "test",
+    "input": {
+      "identity_semantics": "distinct",
+      "requested": [
+        {
+          "kind": "test_run",
+          "key": "REF_ec46779e47e7c879b0eaffce"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_test_results",
+          "target": {
+            "kind": "test_run",
+            "key": "REF_ec46779e47e7c879b0eaffce"
+          },
+          "arguments": {
+            "resource": "REF_ec46779e47e7c879b0eaffce"
+          },
+          "binding": {
+            "kind": "test_run",
+            "key": "REF_ec46779e47e7c879b0eaffce"
+          },
+          "result": {
+            "found": true,
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_references": [
+        {
+          "kind": "test_run",
+          "key": "REF_ec46779e47e7c879b0eaffce"
+        }
+      ]
+    }
+  },
+  {
+    "episode_id": "a3f41e56c18800f364f9c4be",
+    "base_id": "test_run.relationship.1",
+    "split": "test",
+    "input": {
+      "identity_semantics": "distinct",
+      "requested": [
+        {
+          "kind": "test_run",
+          "key": "REF_c15d8212a341df66c0fadf6f"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_test_results",
+          "target": {
+            "kind": "test_run",
+            "key": "REF_c15d8212a341df66c0fadf6f"
+          },
+          "arguments": {
+            "resource": "REF_c15d8212a341df66c0fadf6f"
+          },
+          "binding": {
+            "kind": "test_run",
+            "key": "REF_582b2013d1a94e63e1da97d1"
+          },
+          "result": {
+            "found": true,
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_references": [
+        {
+          "kind": "test_run",
+          "key": "REF_c15d8212a341df66c0fadf6f"
+        },
+        {
+          "kind": "test_run",
+          "key": "REF_582b2013d1a94e63e1da97d1"
+        }
+      ]
+    }
+  },
+  {
+    "episode_id": "b52c68243788973e89dba861",
+    "base_id": "test_run.relationship.2",
+    "split": "test",
+    "input": {
+      "identity_semantics": "distinct",
+      "requested": [
+        {
+          "kind": "test_run",
+          "key": "REF_9285815e1a1c51d54ba6aea7"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_test_results",
+          "target": {
+            "kind": "test_run",
+            "key": "REF_9285815e1a1c51d54ba6aea7"
+          },
+          "arguments": {
+            "resource": "REF_9285815e1a1c51d54ba6aea7"
+          },
+          "binding": {
+            "kind": "test_run",
+            "key": "REF_9285815e1a1c51d54ba6aea7"
+          },
+          "result": {
+            "found": true,
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_references": [
+        {
+          "kind": "test_run",
+          "key": "REF_9285815e1a1c51d54ba6aea7"
+        }
+      ]
+    }
+  },
+  {
+    "episode_id": "174ebf705706d213302c1ffe",
+    "base_id": "test_run.relationship.2",
+    "split": "test",
+    "input": {
+      "identity_semantics": "distinct",
+      "requested": [
+        {
+          "kind": "test_run",
+          "key": "REF_782538a0805c987a96874498"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_test_results",
+          "target": {
+            "kind": "test_run",
+            "key": "REF_782538a0805c987a96874498"
+          },
+          "arguments": {
+            "resource": "REF_782538a0805c987a96874498"
+          },
+          "binding": {
+            "kind": "test_run",
+            "key": "REF_f772674b7ab35c4346b053d2"
+          },
+          "result": {
+            "found": true,
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_references": [
+        {
+          "kind": "test_run",
+          "key": "REF_782538a0805c987a96874498"
+        },
+        {
+          "kind": "test_run",
+          "key": "REF_f772674b7ab35c4346b053d2"
+        }
+      ]
+    }
+  },
+  {
+    "episode_id": "0a65aa57dba8ded956af7dc0",
+    "base_id": "test_run.relationship.3",
+    "split": "test",
+    "input": {
+      "identity_semantics": "distinct",
+      "requested": [
+        {
+          "kind": "test_run",
+          "key": "REF_e3dc32cac02dfb4e5134a8aa"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_test_results",
+          "target": {
+            "kind": "test_run",
+            "key": "REF_e3dc32cac02dfb4e5134a8aa"
+          },
+          "arguments": {
+            "resource": "REF_e3dc32cac02dfb4e5134a8aa"
+          },
+          "binding": {
+            "kind": "test_run",
+            "key": "REF_e3dc32cac02dfb4e5134a8aa"
+          },
+          "result": {
+            "found": true,
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_references": [
+        {
+          "kind": "test_run",
+          "key": "REF_e3dc32cac02dfb4e5134a8aa"
+        }
+      ]
+    }
+  },
+  {
+    "episode_id": "f2aab2d5ab7011169332424f",
+    "base_id": "test_run.relationship.3",
+    "split": "test",
+    "input": {
+      "identity_semantics": "distinct",
+      "requested": [
+        {
+          "kind": "test_run",
+          "key": "REF_dff9cf9ca37efceb810cf740"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_test_results",
+          "target": {
+            "kind": "test_run",
+            "key": "REF_dff9cf9ca37efceb810cf740"
+          },
+          "arguments": {
+            "resource": "REF_dff9cf9ca37efceb810cf740"
+          },
+          "binding": {
+            "kind": "test_run",
+            "key": "REF_1758ca940477f1fa18e5b1c1"
+          },
+          "result": {
+            "found": true,
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_references": [
+        {
+          "kind": "test_run",
+          "key": "REF_dff9cf9ca37efceb810cf740"
+        },
+        {
+          "kind": "test_run",
+          "key": "REF_1758ca940477f1fa18e5b1c1"
+        }
+      ]
+    }
+  },
+  {
+    "episode_id": "63b1cfa1c6c358d5df94b43b",
+    "base_id": "test_run.relationship.4",
+    "split": "test",
+    "input": {
+      "identity_semantics": "distinct",
+      "requested": [
+        {
+          "kind": "test_run",
+          "key": "REF_d94130b15e7f44352c1a577c"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_test_results",
+          "target": {
+            "kind": "test_run",
+            "key": "REF_d94130b15e7f44352c1a577c"
+          },
+          "arguments": {
+            "resource": "REF_d94130b15e7f44352c1a577c"
+          },
+          "binding": {
+            "kind": "test_run",
+            "key": "REF_d94130b15e7f44352c1a577c"
+          },
+          "result": {
+            "found": true,
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_references": [
+        {
+          "kind": "test_run",
+          "key": "REF_d94130b15e7f44352c1a577c"
+        }
+      ]
+    }
+  },
+  {
+    "episode_id": "badaaf0e51de26f46e788ef3",
+    "base_id": "test_run.relationship.4",
+    "split": "test",
+    "input": {
+      "identity_semantics": "distinct",
+      "requested": [
+        {
+          "kind": "test_run",
+          "key": "REF_4c05677a4e2da601383b48d6"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_test_results",
+          "target": {
+            "kind": "test_run",
+            "key": "REF_4c05677a4e2da601383b48d6"
+          },
+          "arguments": {
+            "resource": "REF_4c05677a4e2da601383b48d6"
+          },
+          "binding": {
+            "kind": "test_run",
+            "key": "REF_9c16b2860935926cea4bcc2c"
+          },
+          "result": {
+            "found": true,
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_references": [
+        {
+          "kind": "test_run",
+          "key": "REF_4c05677a4e2da601383b48d6"
+        },
+        {
+          "kind": "test_run",
+          "key": "REF_9c16b2860935926cea4bcc2c"
+        }
+      ]
+    }
+  }
+]

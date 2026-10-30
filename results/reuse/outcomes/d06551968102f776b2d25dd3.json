@@ -1,0 +1,61 @@
+{
+  "run_id": "d06551968102f776b2d25dd3",
+  "policy": "exact",
+  "bank_state": "warm",
+  "status": "abstained",
+  "bindings": {
+    "slots": {
+      "issue0": "ENG-10712"
+    },
+    "slot_types": {
+      "issue0": "issue"
+    },
+    "skeleton": "show issue <issue0>",
+    "namespace": "55d3d1124553e9e473c1bd8a7b7f53bc6d52c84e575a2d3ce0e5833495781bf8",
+    "unresolved": [],
+    "semantics": [
+      "count:issue:1"
+    ]
+  },
+  "answer": "I can’t retrieve ENG-10712 because issue lookup is not available with your current permissions; only documentation search is enabled.",
+  "calls": [
+    {
+      "reservation": "491f2b13be894714a26e9ff9e18c26dd",
+      "stage": "core",
+      "run_id": "d06551968102f776b2d25dd3",
+      "kind": "planning",
+      "state": "measured",
+      "cost_usd": 0.0005773999999999999,
+      "timestamp": "2026-10-29T09:48:06.516519+00:00",
+      "cost_estimated": false,
+      "usage": {
+        "input_tokens": 1217,
+        "output_tokens": 45,
+        "cache_read_tokens": 1214,
+        "cache_write_tokens": 0
+      },
+      "error": null,
+      "latency_ms": 1803.9567089872435,
+      "response_id": "resp_0090616804e2bf66016ae316569d6887d0af270008bdad3e2b",
+      "output": "{\"kind\":\"abstain\",\"steps\":[],\"response\":\"I can’t retrieve ENG-10712 because issue lookup is not available with your current permissions; only documentation search is enabled.\"}"
+    }
+  ],
+  "executions": [],
+  "cache_hit": false,
+  "candidate": "f8242edb8a292b282604",
+  "retrieval_score": 1.0,
+  "retrieval_margin": 1.0,
+  "rejection": "namespace",
+  "replans": 0,
+  "error": null,
+  "timings_ms": {
+    "binding": 0.07758405990898609,
+    "retrieval_validation": 0.25158305652439594,
+    "planning": 1803.9567089872435,
+    "answer": 0,
+    "tools": 0,
+    "runtime": 1820.753834093921
+  },
+  "cost_usd": 0.0005773999999999999,
+  "trace_id": null
+}

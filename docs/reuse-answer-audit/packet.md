@@ -1,0 +1,2894 @@
+# Diagnostic human answer audit
+
+Status: **pending actual human judgments**. This sample is deliberately selected and diagnostic. Do not estimate general success rates from it. Policy names and mechanical grades are withheld from this packet. The separate reference key is for comparison after initial review.
+
+Read each request, permission context, fixture facts, captured tool evidence, status, and answer. In a copy of `review-template.jsonl`, supply your name, an ISO 8601 timestamp with timezone, an evidence-specific note (at least 20 characters), and all four judgments. Do not change IDs.
+
+- Outcome: completed; appropriate clarification; appropriate abstention; incorrect; incomplete; uncertain.
+- Resource scope: appropriate; excessive/wrong; uncertain.
+- Unsupported claims: yes; no; uncertain.
+- Contradictions: yes; no; uncertain.
+
+Completion means the request is resolved with support from the evidence. Appropriate clarification is a useful request for necessary missing context; appropriate abstention is a justified refusal or inability to answer and remains separate from successful resolution. Judge the response, including any unresolved operation, even if it notices a tool mistake.
+
+All facts below are synthetic current fixtures from saved measured endpoints. Tool evidence is captured execution evidence, not a new run. Empty tool evidence can be appropriate for direct answers or clarification. Initial review must be your own judgment; no agent has supplied a reviewer identity, note, or approval. Preserve initial judgments; record any later adjudication in a separate file.
+
+## A01
+
+**Request:** Compare source ENG-10507 with target ENG-10506
+
+**Permissions and context**
+
+```json
+{
+  "tenant": "acme",
+  "capabilities": [
+    "lookup_issue",
+    "lookup_deployment",
+    "lookup_test_results",
+    "search_docs",
+    "search_code",
+    "calculate"
+  ],
+  "grants": [],
+  "aliases": {},
+  "service": null,
+  "environment": null
+}
+```
+
+**Current fixture facts for the active tenant**
+
+```json
+{
+  "issues": {
+    "ENG-10506": {
+      "issue_id": "ENG-10506",
+      "status": "open",
+      "test_run_id": "TR-10506"
+    },
+    "ENG-10507": {
+      "issue_id": "ENG-10507",
+      "status": "resolved",
+      "test_run_id": "TR-10507"
+    }
+  },
+  "deployments": {
+    "gateway/production": {
+      "service": "gateway",
+      "environment": "production",
+      "version": "v3.1",
+      "status": "healthy"
+    },
+    "gateway/staging": {
+      "service": "gateway",
+      "environment": "staging",
+      "version": "v4.2",
+      "status": "healthy"
+    },
+    "gateway/development": {
+      "service": "gateway",
+      "environment": "development",
+      "version": "v5.0",
+      "status": "healthy"
+    }
+  },
+  "test_runs": {
+    "TR-10506": {
+      "test_run_id": "TR-10506",
+      "outcome": "passed"
+    },
+    "TR-10507": {
+      "test_run_id": "TR-10507",
+      "outcome": "failed"
+    }
+  },
+  "docs": [
+    {
+      "id": "retry-guide",
+      "text": "Retry policy: use exponential backoff."
+    }
+  ],
+  "code": [
+    {
+      "id": "retry.py",
+      "text": "def retry_policy(): return 3"
+    }
+  ]
+}
+```
+
+**Captured tool evidence**
+
+```json
+[
+  {
+    "tool": "lookup_issue",
+    "arguments": {
+      "issue_id": "ENG-10507"
+    },
+    "bindings": {
+      "issue_id": "ENG-10507"
+    },
+    "tenant": "acme",
+    "state_version": "86a1970b0993235468b806a33058a3b3c3b6e3ece5d3d74576fbe5ae31213236",
+    "result": {
+      "found": true,
+      "record": {
+        "issue_id": "ENG-10507",
+        "status": "resolved",
+        "test_run_id": "TR-10507"
+      },
+      "error": null
+    },
+    "latency_ms": 2.176209003664553,
+    "started_at": "2026-10-29T09:37:46.651915+00:00"
+  },
+  {
+    "tool": "lookup_issue",
+    "arguments": {
+      "issue_id": "ENG-10506"
+    },
+    "bindings": {
+      "issue_id": "ENG-10506"
+    },
+    "tenant": "acme",
+    "state_version": "86a1970b0993235468b806a33058a3b3c3b6e3ece5d3d74576fbe5ae31213236",
+    "result": {
+      "found": true,
+      "record": {
+        "issue_id": "ENG-10506",
+        "status": "open",
+        "test_run_id": "TR-10506"
+      },
+      "error": null
+    },
+    "latency_ms": 1.408791053108871,
+    "started_at": "2026-10-29T09:37:46.654112+00:00"
+  }
+]
+```
+
+**Response status:** completed
+
+**Answer:**
+
+> | Role | Issue | Stored status | Test run |
+> |---|---|---|---|
+> | Source | ENG-10507 | resolved | TR-10507 |
+> | Target | ENG-10506 | open | TR-10506 |
+
+## A02
+
+**Request:** Compare source ENG-10515 with target ENG-10516
+
+**Permissions and context**
+
+```json
+{
+  "tenant": "acme",
+  "capabilities": [
+    "lookup_issue",
+    "lookup_deployment",
+    "lookup_test_results",
+    "search_docs",
+    "search_code",
+    "calculate"
+  ],
+  "grants": [
+    "ENG-10515"
+  ],
+  "aliases": {},
+  "service": null,
+  "environment": null
+}
+```
+
+**Current fixture facts for the active tenant**
+
+```json
+{
+  "issues": {
+    "ENG-10515": {
+      "issue_id": "ENG-10515",
+      "status": "open",
+      "test_run_id": "TR-10515"
+    },
+    "ENG-10516": {
+      "issue_id": "ENG-10516",
+      "status": "resolved",
+      "test_run_id": "TR-10516"
+    }
+  },
+  "deployments": {
+    "gateway/production": {
+      "service": "gateway",
+      "environment": "production",
+      "version": "v3.1",
+      "status": "healthy"
+    },
+    "gateway/staging": {
+      "service": "gateway",
+      "environment": "staging",
+      "version": "v4.2",
+      "status": "healthy"
+    },
+    "gateway/development": {
+      "service": "gateway",
+      "environment": "development",
+      "version": "v5.0",
+      "status": "healthy"
+    }
+  },
+  "test_runs": {
+    "TR-10515": {
+      "test_run_id": "TR-10515",
+      "outcome": "passed"
+    },
+    "TR-10516": {
+      "test_run_id": "TR-10516",
+      "outcome": "failed"
+    }
+  },
+  "docs": [
+    {
+      "id": "retry-guide",
+      "text": "Retry policy: use exponential backoff."
+    }
+  ],
+  "code": [
+    {
+      "id": "retry.py",
+      "text": "def retry_policy(): return 3"
+    }
+  ]
+}
+```
+
+**Captured tool evidence**
+
+```json
+[
+  {
+    "tool": "lookup_issue",
+    "arguments": {
+      "issue_id": "ENG-10515"
+    },
+    "bindings": {
+      "issue_id": "ENG-10515"
+    },
+    "tenant": "acme",
+    "state_version": "4511f4fcc6df2b8d008856234b36e60606bcdd33704319bda254e7fa1742c038",
+    "result": {
+      "found": true,
+      "record": {
+        "issue_id": "ENG-10515",
+        "status": "open",
+        "test_run_id": "TR-10515"
+      },
+      "error": null
+    },
+    "latency_ms": 0.6557080196216702,
+    "started_at": "2026-10-29T09:39:29.729290+00:00"
+  }
+]
+```
+
+**Response status:** safe_failure
+
+**Answer:**
+
+
+
+## A03
+
+**Request:** Fetch issue ENG-10015
+
+**Permissions and context**
+
+```json
+{
+  "tenant": "acme",
+  "capabilities": [
+    "lookup_issue",
+    "lookup_deployment",
+    "lookup_test_results",
+    "search_docs",
+    "search_code",
+    "calculate"
+  ],
+  "grants": [],
+  "aliases": {},
+  "service": null,
+  "environment": null
+}
+```
+
+**Current fixture facts for the active tenant**
+
+```json
+{
+  "issues": {
+    "ENG-10015": {
+      "issue_id": "ENG-10015",
+      "status": "open",
+      "test_run_id": "TR-10015"
+    },
+    "ENG-10016": {
+      "issue_id": "ENG-10016",
+      "status": "resolved",
+      "test_run_id": "TR-10016"
+    }
+  },
+  "deployments": {
+    "gateway/production": {
+      "service": "gateway",
+      "environment": "production",
+      "version": "v3.1",
+      "status": "healthy"
+    },
+    "gateway/staging": {
+      "service": "gateway",
+      "environment": "staging",
+      "version": "v4.2",
+      "status": "healthy"
+    },
+    "gateway/development": {
+      "service": "gateway",
+      "environment": "development",
+      "version": "v5.0",
+      "status": "healthy"
+    }
+  },
+  "test_runs": {
+    "TR-10015": {
+      "test_run_id": "TR-10015",
+      "outcome": "passed"
+    },
+    "TR-10016": {
+      "test_run_id": "TR-10016",
+      "outcome": "failed"
+    }
+  },
+  "docs": [
+    {
+      "id": "retry-guide",
+      "text": "Retry policy: use exponential backoff."
+    }
+  ],
+  "code": [
+    {
+      "id": "retry.py",
+      "text": "def retry_policy(): return 3"
+    }
+  ]
+}
+```
+
+**Captured tool evidence**
+
+```json
+[
+  {
+    "tool": "lookup_issue",
+    "arguments": {
+      "issue_id": "ENG-10015"
+    },
+    "bindings": {
+      "issue_id": "ENG-10015"
+    },
+    "tenant": "acme",
+    "state_version": "6b7995cc1b2228fb136503adf1e3eb32833078969280152cd3330e292aafdcb3",
+    "result": {
+      "found": true,
+      "record": {
+        "issue_id": "ENG-10015",
+        "status": "open",
+        "test_run_id": "TR-10015"
+      },
+      "error": null
+    },
+    "latency_ms": 1.7731250263750553,
+    "started_at": "2026-10-29T09:16:15.622637+00:00"
+  }
+]
+```
+
+**Response status:** completed
+
+**Answer:**
+
+> Issue **ENG-10015** — status: **open**; test run: **TR-10015**.
+
+## A04
+
+**Request:** Show deployment for service gateway
+
+**Permissions and context**
+
+```json
+{
+  "tenant": "acme",
+  "capabilities": [
+    "lookup_issue",
+    "lookup_deployment",
+    "lookup_test_results",
+    "search_docs",
+    "search_code",
+    "calculate"
+  ],
+  "grants": [],
+  "aliases": {},
+  "service": null,
+  "environment": null
+}
+```
+
+**Current fixture facts for the active tenant**
+
+```json
+{
+  "issues": {
+    "ENG-10109": {
+      "issue_id": "ENG-10109",
+      "status": "open",
+      "test_run_id": "TR-10109"
+    },
+    "ENG-10110": {
+      "issue_id": "ENG-10110",
+      "status": "resolved",
+      "test_run_id": "TR-10110"
+    }
+  },
+  "deployments": {
+    "gateway/production": {
+      "service": "gateway",
+      "environment": "production",
+      "version": "v3.1",
+      "status": "healthy"
+    },
+    "gateway/staging": {
+      "service": "gateway",
+      "environment": "staging",
+      "version": "v4.2",
+      "status": "healthy"
+    },
+    "gateway/development": {
+      "service": "gateway",
+      "environment": "development",
+      "version": "v5.0",
+      "status": "healthy"
+    }
+  },
+  "test_runs": {
+    "TR-10109": {
+      "test_run_id": "TR-10109",
+      "outcome": "passed"
+    },
+    "TR-10110": {
+      "test_run_id": "TR-10110",
+      "outcome": "failed"
+    }
+  },
+  "docs": [
+    {
+      "id": "retry-guide",
+      "text": "Retry policy: use exponential backoff."
+    }
+  ],
+  "code": [
+    {
+      "id": "retry.py",
+      "text": "def retry_policy(): return 3"
+    }
+  ]
+}
+```
+
+**Captured tool evidence**
+
+```json
+[]
+```
+
+**Response status:** clarified
+
+**Answer:**
+
+> Which environment should I check for gateway: production, staging, or development?
+
+## A05
+
+**Request:** Get stored test results TR-10212
+
+**Permissions and context**
+
+```json
+{
+  "tenant": "acme",
+  "capabilities": [
+    "lookup_issue",
+    "lookup_deployment",
+    "lookup_test_results",
+    "search_docs",
+    "search_code",
+    "calculate"
+  ],
+  "grants": [],
+  "aliases": {},
+  "service": null,
+  "environment": null
+}
+```
+
+**Current fixture facts for the active tenant**
+
+```json
+{
+  "issues": {
+    "ENG-10212": {
+      "issue_id": "ENG-10212",
+      "status": "open",
+      "test_run_id": "TR-10212"
+    },
+    "ENG-10213": {
+      "issue_id": "ENG-10213",
+      "status": "resolved",
+      "test_run_id": "TR-10213"
+    }
+  },
+  "deployments": {
+    "gateway/production": {
+      "service": "gateway",
+      "environment": "production",
+      "version": "v3.1",
+      "status": "healthy"
+    },
+    "gateway/staging": {
+      "service": "gateway",
+      "environment": "staging",
+      "version": "v4.2",
+      "status": "healthy"
+    },
+    "gateway/development": {
+      "service": "gateway",
+      "environment": "development",
+      "version": "v5.0",
+      "status": "healthy"
+    }
+  },
+  "test_runs": {
+    "TR-10212": {
+      "test_run_id": "TR-10212",
+      "outcome": "failed"
+    },
+    "TR-10213": {
+      "test_run_id": "TR-10213",
+      "outcome": "failed"
+    }
+  },
+  "docs": [
+    {
+      "id": "retry-guide",
+      "text": "Retry policy: use exponential backoff."
+    }
+  ],
+  "code": [
+    {
+      "id": "retry.py",
+      "text": "def retry_policy(): return 3"
+    }
+  ]
+}
+```
+
+**Captured tool evidence**
+
+```json
+[
+  {
+    "tool": "lookup_test_results",
+    "arguments": {
+      "test_run_id": "TR-10212"
+    },
+    "bindings": {
+      "test_run_id": "TR-10212"
+    },
+    "tenant": "acme",
+    "state_version": "a2d8fedcc510d826fcff45a8ae5a0131c07c47ef35168d5cbc5cf0a8932e138f",
+    "result": {
+      "found": true,
+      "record": {
+        "test_run_id": "TR-10212",
+        "outcome": "failed"
+      },
+      "error": null
+    },
+    "latency_ms": 0.8404579712077975,
+    "started_at": "2026-10-29T09:24:49.978020+00:00"
+  }
+]
+```
+
+**Response status:** completed
+
+**Answer:**
+
+> Stored test results for **TR-10212**: outcome **failed**.
+
+## A06
+
+**Request:** Get stored test results TR-10212
+
+**Permissions and context**
+
+```json
+{
+  "tenant": "acme",
+  "capabilities": [
+    "lookup_issue",
+    "lookup_deployment",
+    "lookup_test_results",
+    "search_docs",
+    "search_code",
+    "calculate"
+  ],
+  "grants": [],
+  "aliases": {},
+  "service": null,
+  "environment": null
+}
+```
+
+**Current fixture facts for the active tenant**
+
+```json
+{
+  "issues": {
+    "ENG-10212": {
+      "issue_id": "ENG-10212",
+      "status": "open",
+      "test_run_id": "TR-10212"
+    },
+    "ENG-10213": {
+      "issue_id": "ENG-10213",
+      "status": "resolved",
+      "test_run_id": "TR-10213"
+    }
+  },
+  "deployments": {
+    "gateway/production": {
+      "service": "gateway",
+      "environment": "production",
+      "version": "v3.1",
+      "status": "healthy"
+    },
+    "gateway/staging": {
+      "service": "gateway",
+      "environment": "staging",
+      "version": "v4.2",
+      "status": "healthy"
+    },
+    "gateway/development": {
+      "service": "gateway",
+      "environment": "development",
+      "version": "v5.0",
+      "status": "healthy"
+    }
+  },
+  "test_runs": {
+    "TR-10212": {
+      "test_run_id": "TR-10212",
+      "outcome": "failed"
+    },
+    "TR-10213": {
+      "test_run_id": "TR-10213",
+      "outcome": "failed"
+    }
+  },
+  "docs": [
+    {
+      "id": "retry-guide",
+      "text": "Retry policy: use exponential backoff."
+    }
+  ],
+  "code": [
+    {
+      "id": "retry.py",
+      "text": "def retry_policy(): return 3"
+    }
+  ]
+}
+```
+
+**Captured tool evidence**
+
+```json
+[
+  {
+    "tool": "lookup_test_results",
+    "arguments": {
+      "test_run_id": "TR-10212"
+    },
+    "bindings": {
+      "test_run_id": "TR-10212"
+    },
+    "tenant": "acme",
+    "state_version": "a2d8fedcc510d826fcff45a8ae5a0131c07c47ef35168d5cbc5cf0a8932e138f",
+    "result": {
+      "found": true,
+      "record": {
+        "test_run_id": "TR-10212",
+        "outcome": "failed"
+      },
+      "error": null
+    },
+    "latency_ms": 1.873166998848319,
+    "started_at": "2026-10-29T09:25:00.495998+00:00"
+  }
+]
+```
+
+**Response status:** completed
+
+**Answer:**
+
+> Stored test results for **TR-10212**: **failed**.
+
+## A07
+
+**Request:** Get issue ENG-10612 and its associated test results
+
+**Permissions and context**
+
+```json
+{
+  "tenant": "acme",
+  "capabilities": [
+    "lookup_issue",
+    "lookup_deployment",
+    "lookup_test_results",
+    "search_docs",
+    "search_code",
+    "calculate"
+  ],
+  "grants": [],
+  "aliases": {},
+  "service": null,
+  "environment": null
+}
+```
+
+**Current fixture facts for the active tenant**
+
+```json
+{
+  "issues": {
+    "ENG-10612": {
+      "issue_id": "ENG-10612",
+      "status": "open",
+      "test_run_id": "TR-10613"
+    },
+    "ENG-10613": {
+      "issue_id": "ENG-10613",
+      "status": "resolved",
+      "test_run_id": "TR-10613"
+    }
+  },
+  "deployments": {
+    "gateway/production": {
+      "service": "gateway",
+      "environment": "production",
+      "version": "v3.1",
+      "status": "healthy"
+    },
+    "gateway/staging": {
+      "service": "gateway",
+      "environment": "staging",
+      "version": "v4.2",
+      "status": "healthy"
+    },
+    "gateway/development": {
+      "service": "gateway",
+      "environment": "development",
+      "version": "v5.0",
+      "status": "healthy"
+    }
+  },
+  "test_runs": {
+    "TR-10612": {
+      "test_run_id": "TR-10612",
+      "outcome": "passed"
+    },
+    "TR-10613": {
+      "test_run_id": "TR-10613",
+      "outcome": "failed"
+    }
+  },
+  "docs": [
+    {
+      "id": "retry-guide",
+      "text": "Retry policy: use exponential backoff."
+    }
+  ],
+  "code": [
+    {
+      "id": "retry.py",
+      "text": "def retry_policy(): return 3"
+    }
+  ]
+}
+```
+
+**Captured tool evidence**
+
+```json
+[
+  {
+    "tool": "lookup_issue",
+    "arguments": {
+      "issue_id": "ENG-10612"
+    },
+    "bindings": {
+      "issue_id": "ENG-10612"
+    },
+    "tenant": "acme",
+    "state_version": "50a084210ff250d7518455e03a229f157f9e21ab2d1c604eb5606dd1c3cf74db",
+    "result": {
+      "found": true,
+      "record": {
+        "issue_id": "ENG-10612",
+        "status": "open",
+        "test_run_id": "TR-10613"
+      },
+      "error": null
+    },
+    "latency_ms": 0.7020001066848636,
+    "started_at": "2026-10-29T09:43:37.186290+00:00"
+  },
+  {
+    "tool": "lookup_test_results",
+    "arguments": {
+      "test_run_id": "TR-10613"
+    },
+    "bindings": {
+      "test_run_id": "TR-10613"
+    },
+    "tenant": "acme",
+    "state_version": "50a084210ff250d7518455e03a229f157f9e21ab2d1c604eb5606dd1c3cf74db",
+    "result": {
+      "found": true,
+      "record": {
+        "test_run_id": "TR-10613",
+        "outcome": "failed"
+      },
+      "error": null
+    },
+    "latency_ms": 0.40033296681940556,
+    "started_at": "2026-10-29T09:43:37.186999+00:00"
+  }
+]
+```
+
+**Response status:** completed
+
+**Answer:**
+
+> - Issue **ENG-10612**: **open**
+> - Associated test run **TR-10613**: **failed**
+
+## A08
+
+**Request:** Get issue ENG-10012
+
+**Permissions and context**
+
+```json
+{
+  "tenant": "acme",
+  "capabilities": [
+    "lookup_issue",
+    "lookup_deployment",
+    "lookup_test_results",
+    "search_docs",
+    "search_code",
+    "calculate"
+  ],
+  "grants": [],
+  "aliases": {},
+  "service": null,
+  "environment": null
+}
+```
+
+**Current fixture facts for the active tenant**
+
+```json
+{
+  "issues": {
+    "ENG-10012": {
+      "issue_id": "ENG-10012",
+      "status": "in_progress",
+      "test_run_id": "TR-10012"
+    },
+    "ENG-10013": {
+      "issue_id": "ENG-10013",
+      "status": "resolved",
+      "test_run_id": "TR-10013"
+    }
+  },
+  "deployments": {
+    "gateway/production": {
+      "service": "gateway",
+      "environment": "production",
+      "version": "v3.1",
+      "status": "healthy"
+    },
+    "gateway/staging": {
+      "service": "gateway",
+      "environment": "staging",
+      "version": "v4.2",
+      "status": "healthy"
+    },
+    "gateway/development": {
+      "service": "gateway",
+      "environment": "development",
+      "version": "v5.0",
+      "status": "healthy"
+    }
+  },
+  "test_runs": {
+    "TR-10012": {
+      "test_run_id": "TR-10012",
+      "outcome": "passed"
+    },
+    "TR-10013": {
+      "test_run_id": "TR-10013",
+      "outcome": "failed"
+    }
+  },
+  "docs": [
+    {
+      "id": "retry-guide",
+      "text": "Retry policy: use exponential backoff."
+    }
+  ],
+  "code": [
+    {
+      "id": "retry.py",
+      "text": "def retry_policy(): return 3"
+    }
+  ]
+}
+```
+
+**Captured tool evidence**
+
+```json
+[
+  {
+    "tool": "lookup_issue",
+    "arguments": {
+      "issue_id": "ENG-10012"
+    },
+    "bindings": {
+      "issue_id": "ENG-10012"
+    },
+    "tenant": "acme",
+    "state_version": "0961b4c94eb91f368014b012156149b540f4dded08f67ee791861b8bad1a7753",
+    "result": {
+      "found": true,
+      "record": {
+        "issue_id": "ENG-10012",
+        "status": "in_progress",
+        "test_run_id": "TR-10012"
+      },
+      "error": null
+    },
+    "latency_ms": 1.1014589108526707,
+    "started_at": "2026-10-29T09:15:14.303764+00:00"
+  },
+  {
+    "tool": "lookup_test_results",
+    "arguments": {
+      "test_run_id": "TR-10012"
+    },
+    "bindings": {
+      "test_run_id": "TR-10012"
+    },
+    "tenant": "acme",
+    "state_version": "0961b4c94eb91f368014b012156149b540f4dded08f67ee791861b8bad1a7753",
+    "result": {
+      "found": true,
+      "record": {
+        "test_run_id": "TR-10012",
+        "outcome": "passed"
+      },
+      "error": null
+    },
+    "latency_ms": 0.5724580259993672,
+    "started_at": "2026-10-29T09:15:14.304879+00:00"
+  }
+]
+```
+
+**Response status:** completed
+
+**Answer:**
+
+> Issue **ENG-10012** has status **in_progress**. Its test run **TR-10012** has outcome **passed**.
+
+## A09
+
+**Request:** Compare source ENG-10515 with target ENG-10516
+
+**Permissions and context**
+
+```json
+{
+  "tenant": "acme",
+  "capabilities": [
+    "lookup_issue",
+    "lookup_deployment",
+    "lookup_test_results",
+    "search_docs",
+    "search_code",
+    "calculate"
+  ],
+  "grants": [
+    "ENG-10515"
+  ],
+  "aliases": {},
+  "service": null,
+  "environment": null
+}
+```
+
+**Current fixture facts for the active tenant**
+
+```json
+{
+  "issues": {
+    "ENG-10515": {
+      "issue_id": "ENG-10515",
+      "status": "open",
+      "test_run_id": "TR-10515"
+    },
+    "ENG-10516": {
+      "issue_id": "ENG-10516",
+      "status": "resolved",
+      "test_run_id": "TR-10516"
+    }
+  },
+  "deployments": {
+    "gateway/production": {
+      "service": "gateway",
+      "environment": "production",
+      "version": "v3.1",
+      "status": "healthy"
+    },
+    "gateway/staging": {
+      "service": "gateway",
+      "environment": "staging",
+      "version": "v4.2",
+      "status": "healthy"
+    },
+    "gateway/development": {
+      "service": "gateway",
+      "environment": "development",
+      "version": "v5.0",
+      "status": "healthy"
+    }
+  },
+  "test_runs": {
+    "TR-10515": {
+      "test_run_id": "TR-10515",
+      "outcome": "passed"
+    },
+    "TR-10516": {
+      "test_run_id": "TR-10516",
+      "outcome": "failed"
+    }
+  },
+  "docs": [
+    {
+      "id": "retry-guide",
+      "text": "Retry policy: use exponential backoff."
+    }
+  ],
+  "code": [
+    {
+      "id": "retry.py",
+      "text": "def retry_policy(): return 3"
+    }
+  ]
+}
+```
+
+**Captured tool evidence**
+
+```json
+[]
+```
+
+**Response status:** abstained
+
+**Answer:**
+
+> I can’t compare source ENG-10515 with target ENG-10516 because access is granted only to ENG-10515, not ENG-10516.
+
+## A10
+
+**Request:** Explain recursion
+
+**Permissions and context**
+
+```json
+{
+  "tenant": "acme",
+  "capabilities": [
+    "lookup_issue",
+    "lookup_deployment",
+    "lookup_test_results",
+    "search_docs",
+    "search_code",
+    "calculate"
+  ],
+  "grants": [],
+  "aliases": {},
+  "service": null,
+  "environment": null
+}
+```
+
+**Current fixture facts for the active tenant**
+
+```json
+{
+  "issues": {
+    "ENG-10700": {
+      "issue_id": "ENG-10700",
+      "status": "open",
+      "test_run_id": "TR-10700"
+    },
+    "ENG-10701": {
+      "issue_id": "ENG-10701",
+      "status": "resolved",
+      "test_run_id": "TR-10701"
+    }
+  },
+  "deployments": {
+    "gateway/production": {
+      "service": "gateway",
+      "environment": "production",
+      "version": "v3.1",
+      "status": "healthy"
+    },
+    "gateway/staging": {
+      "service": "gateway",
+      "environment": "staging",
+      "version": "v4.2",
+      "status": "healthy"
+    },
+    "gateway/development": {
+      "service": "gateway",
+      "environment": "development",
+      "version": "v5.0",
+      "status": "healthy"
+    }
+  },
+  "test_runs": {
+    "TR-10700": {
+      "test_run_id": "TR-10700",
+      "outcome": "passed"
+    },
+    "TR-10701": {
+      "test_run_id": "TR-10701",
+      "outcome": "failed"
+    }
+  },
+  "docs": [
+    {
+      "id": "retry-guide",
+      "text": "Retry policy: use exponential backoff."
+    }
+  ],
+  "code": [
+    {
+      "id": "retry.py",
+      "text": "def retry_policy(): return 3"
+    }
+  ]
+}
+```
+
+**Captured tool evidence**
+
+```json
+[]
+```
+
+**Response status:** completed
+
+**Answer:**
+
+> Recursion is a technique where a function solves a problem by calling itself on a smaller version of that problem.
+>
+> It needs two parts:
+> - A base case that stops the recursion.
+> - A recursive case that moves closer to the base case.
+>
+> For example, factorial multiplies a positive integer by every positive integer below it:
+>
+> ```python
+> def factorial(n):
+>     # Assumes n is a nonnegative integer.
+>     if n == 0:             # Base case
+>         return 1
+>     return n * factorial(n - 1)  # Recursive case
+> ```
+>
+> `factorial(3)` evaluates as `3 × factorial(2)`, then `3 × 2 × factorial(1)`, and finally `3 × 2 × 1 × 1 = 6`.
+>
+> Each call waits for the next call to return. Without a reachable base case, recursion keeps going until it hits a runtime limit. Recursion is especially useful for nested structures such as trees and folders.
+
+## A11
+
+**Request:** Find documentation, not code, for "retry policy"
+
+**Permissions and context**
+
+```json
+{
+  "tenant": "acme",
+  "capabilities": [
+    "lookup_issue",
+    "lookup_deployment",
+    "lookup_test_results",
+    "search_docs",
+    "search_code",
+    "calculate"
+  ],
+  "grants": [],
+  "aliases": {},
+  "service": null,
+  "environment": null
+}
+```
+
+**Current fixture facts for the active tenant**
+
+```json
+{
+  "issues": {
+    "ENG-10306": {
+      "issue_id": "ENG-10306",
+      "status": "open",
+      "test_run_id": "TR-10306"
+    },
+    "ENG-10307": {
+      "issue_id": "ENG-10307",
+      "status": "resolved",
+      "test_run_id": "TR-10307"
+    }
+  },
+  "deployments": {
+    "gateway/production": {
+      "service": "gateway",
+      "environment": "production",
+      "version": "v3.1",
+      "status": "healthy"
+    },
+    "gateway/staging": {
+      "service": "gateway",
+      "environment": "staging",
+      "version": "v4.2",
+      "status": "healthy"
+    },
+    "gateway/development": {
+      "service": "gateway",
+      "environment": "development",
+      "version": "v5.0",
+      "status": "healthy"
+    }
+  },
+  "test_runs": {
+    "TR-10306": {
+      "test_run_id": "TR-10306",
+      "outcome": "passed"
+    },
+    "TR-10307": {
+      "test_run_id": "TR-10307",
+      "outcome": "failed"
+    }
+  },
+  "docs": [
+    {
+      "id": "retry-guide",
+      "text": "Retry policy: use exponential backoff."
+    }
+  ],
+  "code": [
+    {
+      "id": "retry.py",
+      "text": "def retry_policy(): return 3"
+    }
+  ]
+}
+```
+
+**Captured tool evidence**
+
+```json
+[
+  {
+    "tool": "search_code",
+    "arguments": {
+      "query": "retry policy"
+    },
+    "bindings": {
+      "query": "retry policy"
+    },
+    "tenant": "acme",
+    "state_version": "80c2e4bb1ed1be5d4fdf457b40385f2b49d206214218ddd2adae376e48e2d6a7",
+    "result": {
+      "found": true,
+      "records": [
+        {
+          "id": "retry.py",
+          "text": "def retry_policy(): return 3"
+        }
+      ],
+      "error": null
+    },
+    "latency_ms": 0.6760000251233578,
+    "started_at": "2026-10-29T09:28:41.016394+00:00"
+  }
+]
+```
+
+**Response status:** completed
+
+**Answer:**
+
+> No documentation results are available. The supplied result is code: `retry.py` — `def retry_policy(): return 3`.
+
+## A12
+
+**Request:** Find documentation, not code, for "retry policy"
+
+**Permissions and context**
+
+```json
+{
+  "tenant": "acme",
+  "capabilities": [
+    "lookup_issue",
+    "lookup_deployment",
+    "lookup_test_results",
+    "search_docs",
+    "search_code",
+    "calculate"
+  ],
+  "grants": [],
+  "aliases": {},
+  "service": null,
+  "environment": null
+}
+```
+
+**Current fixture facts for the active tenant**
+
+```json
+{
+  "issues": {
+    "ENG-10306": {
+      "issue_id": "ENG-10306",
+      "status": "open",
+      "test_run_id": "TR-10306"
+    },
+    "ENG-10307": {
+      "issue_id": "ENG-10307",
+      "status": "resolved",
+      "test_run_id": "TR-10307"
+    }
+  },
+  "deployments": {
+    "gateway/production": {
+      "service": "gateway",
+      "environment": "production",
+      "version": "v3.1",
+      "status": "healthy"
+    },
+    "gateway/staging": {
+      "service": "gateway",
+      "environment": "staging",
+      "version": "v4.2",
+      "status": "healthy"
+    },
+    "gateway/development": {
+      "service": "gateway",
+      "environment": "development",
+      "version": "v5.0",
+      "status": "healthy"
+    }
+  },
+  "test_runs": {
+    "TR-10306": {
+      "test_run_id": "TR-10306",
+      "outcome": "passed"
+    },
+    "TR-10307": {
+      "test_run_id": "TR-10307",
+      "outcome": "failed"
+    }
+  },
+  "docs": [
+    {
+      "id": "retry-guide",
+      "text": "Retry policy: use exponential backoff."
+    }
+  ],
+  "code": [
+    {
+      "id": "retry.py",
+      "text": "def retry_policy(): return 3"
+    }
+  ]
+}
+```
+
+**Captured tool evidence**
+
+```json
+[
+  {
+    "tool": "search_docs",
+    "arguments": {
+      "query": "retry policy"
+    },
+    "bindings": {
+      "query": "retry policy"
+    },
+    "tenant": "acme",
+    "state_version": "80c2e4bb1ed1be5d4fdf457b40385f2b49d206214218ddd2adae376e48e2d6a7",
+    "result": {
+      "found": true,
+      "records": [
+        {
+          "id": "retry-guide",
+          "text": "Retry policy: use exponential backoff."
+        }
+      ],
+      "error": null
+    },
+    "latency_ms": 0.8141660364344716,
+    "started_at": "2026-10-29T09:28:30.293792+00:00"
+  }
+]
+```
+
+**Response status:** completed
+
+**Answer:**
+
+> Documentation `retry-guide`: “Retry policy: use exponential backoff.”
+
+## A13
+
+**Request:** Calculate 4 minus 10408
+
+**Permissions and context**
+
+```json
+{
+  "tenant": "acme",
+  "capabilities": [
+    "lookup_issue",
+    "lookup_deployment",
+    "lookup_test_results",
+    "search_docs",
+    "search_code",
+    "calculate"
+  ],
+  "grants": [],
+  "aliases": {},
+  "service": null,
+  "environment": null
+}
+```
+
+**Current fixture facts for the active tenant**
+
+```json
+{
+  "issues": {
+    "ENG-10406": {
+      "issue_id": "ENG-10406",
+      "status": "open",
+      "test_run_id": "TR-10406"
+    },
+    "ENG-10407": {
+      "issue_id": "ENG-10407",
+      "status": "resolved",
+      "test_run_id": "TR-10407"
+    }
+  },
+  "deployments": {
+    "gateway/production": {
+      "service": "gateway",
+      "environment": "production",
+      "version": "v3.1",
+      "status": "healthy"
+    },
+    "gateway/staging": {
+      "service": "gateway",
+      "environment": "staging",
+      "version": "v4.2",
+      "status": "healthy"
+    },
+    "gateway/development": {
+      "service": "gateway",
+      "environment": "development",
+      "version": "v5.0",
+      "status": "healthy"
+    }
+  },
+  "test_runs": {
+    "TR-10406": {
+      "test_run_id": "TR-10406",
+      "outcome": "passed"
+    },
+    "TR-10407": {
+      "test_run_id": "TR-10407",
+      "outcome": "failed"
+    }
+  },
+  "docs": [
+    {
+      "id": "retry-guide",
+      "text": "Retry policy: use exponential backoff."
+    }
+  ],
+  "code": [
+    {
+      "id": "retry.py",
+      "text": "def retry_policy(): return 3"
+    }
+  ]
+}
+```
+
+**Captured tool evidence**
+
+```json
+[
+  {
+    "tool": "calculate",
+    "arguments": {
+      "operation": "add",
+      "left": 4.0,
+      "right": 10408.0
+    },
+    "bindings": {
+      "operation": "add",
+      "left": 4.0,
+      "right": 10408.0
+    },
+    "tenant": "acme",
+    "state_version": "d94a545425d395938e62797477cfb975b5ccc9397a716464c577b45cf08ba9bc",
+    "result": {
+      "found": true,
+      "value": 10412.0
+    },
+    "latency_ms": 0.6275000050663948,
+    "started_at": "2026-10-29T09:33:18.040705+00:00"
+  }
+]
+```
+
+**Response status:** completed
+
+**Answer:**
+
+> The provided tool result performed addition (4 + 10408 = 10412), not the requested subtraction. No subtraction result was provided.
+
+## A14
+
+**Request:** Run tests for TR-10221
+
+**Permissions and context**
+
+```json
+{
+  "tenant": "acme",
+  "capabilities": [
+    "lookup_issue",
+    "lookup_deployment",
+    "lookup_test_results",
+    "search_docs",
+    "search_code",
+    "calculate"
+  ],
+  "grants": [],
+  "aliases": {},
+  "service": null,
+  "environment": null
+}
+```
+
+**Current fixture facts for the active tenant**
+
+```json
+{
+  "issues": {
+    "ENG-10221": {
+      "issue_id": "ENG-10221",
+      "status": "open",
+      "test_run_id": "TR-10221"
+    },
+    "ENG-10222": {
+      "issue_id": "ENG-10222",
+      "status": "resolved",
+      "test_run_id": "TR-10222"
+    }
+  },
+  "deployments": {
+    "gateway/production": {
+      "service": "gateway",
+      "environment": "production",
+      "version": "v3.1",
+      "status": "healthy"
+    },
+    "gateway/staging": {
+      "service": "gateway",
+      "environment": "staging",
+      "version": "v4.2",
+      "status": "healthy"
+    },
+    "gateway/development": {
+      "service": "gateway",
+      "environment": "development",
+      "version": "v5.0",
+      "status": "healthy"
+    }
+  },
+  "test_runs": {
+    "TR-10221": {
+      "test_run_id": "TR-10221",
+      "outcome": "passed"
+    },
+    "TR-10222": {
+      "test_run_id": "TR-10222",
+      "outcome": "failed"
+    }
+  },
+  "docs": [
+    {
+      "id": "retry-guide",
+      "text": "Retry policy: use exponential backoff."
+    }
+  ],
+  "code": [
+    {
+      "id": "retry.py",
+      "text": "def retry_policy(): return 3"
+    }
+  ]
+}
+```
+
+**Captured tool evidence**
+
+```json
+[]
+```
+
+**Response status:** abstained
+
+**Answer:**
+
+> I can’t run tests: the available tools are read-only. The test-results tool can only retrieve stored outcomes for TR-10221, not execute tests.
+
+## A15
+
+**Request:** Show deployment for service gateway in production
+
+**Permissions and context**
+
+```json
+{
+  "tenant": "acme",
+  "capabilities": [
+    "lookup_issue",
+    "lookup_deployment",
+    "lookup_test_results",
+    "search_docs",
+    "search_code",
+    "calculate"
+  ],
+  "grants": [],
+  "aliases": {},
+  "service": null,
+  "environment": null
+}
+```
+
+**Current fixture facts for the active tenant**
+
+```json
+{
+  "issues": {
+    "ENG-10112": {
+      "issue_id": "ENG-10112",
+      "status": "open",
+      "test_run_id": "TR-10112"
+    },
+    "ENG-10113": {
+      "issue_id": "ENG-10113",
+      "status": "resolved",
+      "test_run_id": "TR-10113"
+    }
+  },
+  "deployments": {
+    "gateway/production": {
+      "service": "gateway",
+      "environment": "production",
+      "version": "v9.8",
+      "status": "healthy"
+    },
+    "gateway/staging": {
+      "service": "gateway",
+      "environment": "staging",
+      "version": "v4.2",
+      "status": "healthy"
+    },
+    "gateway/development": {
+      "service": "gateway",
+      "environment": "development",
+      "version": "v5.0",
+      "status": "healthy"
+    }
+  },
+  "test_runs": {
+    "TR-10112": {
+      "test_run_id": "TR-10112",
+      "outcome": "passed"
+    },
+    "TR-10113": {
+      "test_run_id": "TR-10113",
+      "outcome": "failed"
+    }
+  },
+  "docs": [
+    {
+      "id": "retry-guide",
+      "text": "Retry policy: use exponential backoff."
+    }
+  ],
+  "code": [
+    {
+      "id": "retry.py",
+      "text": "def retry_policy(): return 3"
+    }
+  ]
+}
+```
+
+**Captured tool evidence**
+
+```json
+[
+  {
+    "tool": "lookup_deployment",
+    "arguments": {
+      "service": "gateway",
+      "environment": "production"
+    },
+    "bindings": {
+      "service": "gateway",
+      "environment": "production"
+    },
+    "tenant": "acme",
+    "state_version": "716070e9383cc26d0c25d00ac2d610cc206e3a92718643c8a8741ead2d866cd9",
+    "result": {
+      "found": true,
+      "record": {
+        "service": "gateway",
+        "environment": "production",
+        "version": "v9.8",
+        "status": "healthy"
+      },
+      "error": null
+    },
+    "latency_ms": 1.0363329201936722,
+    "started_at": "2026-10-29T09:19:58.941499+00:00"
+  }
+]
+```
+
+**Response status:** completed
+
+**Answer:**
+
+> Service `gateway` in `production`: version `v9.8`, status `healthy`.
+
+## A16
+
+**Request:** Show deployment for service gateway in production
+
+**Permissions and context**
+
+```json
+{
+  "tenant": "acme",
+  "capabilities": [
+    "lookup_issue",
+    "lookup_deployment",
+    "lookup_test_results",
+    "search_docs",
+    "search_code",
+    "calculate"
+  ],
+  "grants": [],
+  "aliases": {},
+  "service": null,
+  "environment": null
+}
+```
+
+**Current fixture facts for the active tenant**
+
+```json
+{
+  "issues": {
+    "ENG-10112": {
+      "issue_id": "ENG-10112",
+      "status": "open",
+      "test_run_id": "TR-10112"
+    },
+    "ENG-10113": {
+      "issue_id": "ENG-10113",
+      "status": "resolved",
+      "test_run_id": "TR-10113"
+    }
+  },
+  "deployments": {
+    "gateway/production": {
+      "service": "gateway",
+      "environment": "production",
+      "version": "v9.8",
+      "status": "healthy"
+    },
+    "gateway/staging": {
+      "service": "gateway",
+      "environment": "staging",
+      "version": "v4.2",
+      "status": "healthy"
+    },
+    "gateway/development": {
+      "service": "gateway",
+      "environment": "development",
+      "version": "v5.0",
+      "status": "healthy"
+    }
+  },
+  "test_runs": {
+    "TR-10112": {
+      "test_run_id": "TR-10112",
+      "outcome": "passed"
+    },
+    "TR-10113": {
+      "test_run_id": "TR-10113",
+      "outcome": "failed"
+    }
+  },
+  "docs": [
+    {
+      "id": "retry-guide",
+      "text": "Retry policy: use exponential backoff."
+    }
+  ],
+  "code": [
+    {
+      "id": "retry.py",
+      "text": "def retry_policy(): return 3"
+    }
+  ]
+}
+```
+
+**Captured tool evidence**
+
+```json
+[
+  {
+    "tool": "lookup_deployment",
+    "arguments": {
+      "service": "gateway",
+      "environment": "production"
+    },
+    "bindings": {
+      "service": "gateway",
+      "environment": "production"
+    },
+    "tenant": "acme",
+    "state_version": "716070e9383cc26d0c25d00ac2d610cc206e3a92718643c8a8741ead2d866cd9",
+    "result": {
+      "found": true,
+      "record": {
+        "service": "gateway",
+        "environment": "production",
+        "version": "v9.8",
+        "status": "healthy"
+      },
+      "error": null
+    },
+    "latency_ms": 0.782917020842433,
+    "started_at": "2026-10-29T09:20:15.123670+00:00"
+  }
+]
+```
+
+**Response status:** completed
+
+**Answer:**
+
+> Service `gateway` in `production` is deployed at version `v9.8` with status `healthy`.
+
+## A17
+
+**Request:** Explain recursion
+
+**Permissions and context**
+
+```json
+{
+  "tenant": "acme",
+  "capabilities": [
+    "lookup_issue",
+    "lookup_deployment",
+    "lookup_test_results",
+    "search_docs",
+    "search_code",
+    "calculate"
+  ],
+  "grants": [],
+  "aliases": {},
+  "service": null,
+  "environment": null
+}
+```
+
+**Current fixture facts for the active tenant**
+
+```json
+{
+  "issues": {
+    "ENG-10700": {
+      "issue_id": "ENG-10700",
+      "status": "open",
+      "test_run_id": "TR-10700"
+    },
+    "ENG-10701": {
+      "issue_id": "ENG-10701",
+      "status": "resolved",
+      "test_run_id": "TR-10701"
+    }
+  },
+  "deployments": {
+    "gateway/production": {
+      "service": "gateway",
+      "environment": "production",
+      "version": "v3.1",
+      "status": "healthy"
+    },
+    "gateway/staging": {
+      "service": "gateway",
+      "environment": "staging",
+      "version": "v4.2",
+      "status": "healthy"
+    },
+    "gateway/development": {
+      "service": "gateway",
+      "environment": "development",
+      "version": "v5.0",
+      "status": "healthy"
+    }
+  },
+  "test_runs": {
+    "TR-10700": {
+      "test_run_id": "TR-10700",
+      "outcome": "passed"
+    },
+    "TR-10701": {
+      "test_run_id": "TR-10701",
+      "outcome": "failed"
+    }
+  },
+  "docs": [
+    {
+      "id": "retry-guide",
+      "text": "Retry policy: use exponential backoff."
+    }
+  ],
+  "code": [
+    {
+      "id": "retry.py",
+      "text": "def retry_policy(): return 3"
+    }
+  ]
+}
+```
+
+**Captured tool evidence**
+
+```json
+[]
+```
+
+**Response status:** completed
+
+**Answer:**
+
+> Recursion is a technique where a function solves a problem by calling itself on a smaller version of that problem.
+>
+> It needs two parts:
+> - **Base case:** stops the recursion.
+> - **Recursive case:** reduces the problem and calls the function again.
+>
+> For example, factorial computes n! = n × (n−1) × … × 1:
+>
+> ```python
+> def factorial(n):
+>     # Assumes n is a nonnegative integer
+>     if n == 0:
+>         return 1  # Base case
+>     return n * factorial(n - 1)  # Recursive case
+> ```
+>
+> `factorial(3)` becomes `3 * factorial(2)`, then `3 * 2 * factorial(1)`, then `3 * 2 * 1 * factorial(0)`, producing `6`.
+>
+> Each call waits for the smaller call to return. Without a reachable base case, recursion continues until the program hits a resource limit. Recursion is especially useful for nested structures such as trees and directories.
+
+## A18
+
+**Request:** Run tests for TR-10221
+
+**Permissions and context**
+
+```json
+{
+  "tenant": "acme",
+  "capabilities": [
+    "lookup_issue",
+    "lookup_deployment",
+    "lookup_test_results",
+    "search_docs",
+    "search_code",
+    "calculate"
+  ],
+  "grants": [],
+  "aliases": {},
+  "service": null,
+  "environment": null
+}
+```
+
+**Current fixture facts for the active tenant**
+
+```json
+{
+  "issues": {
+    "ENG-10221": {
+      "issue_id": "ENG-10221",
+      "status": "open",
+      "test_run_id": "TR-10221"
+    },
+    "ENG-10222": {
+      "issue_id": "ENG-10222",
+      "status": "resolved",
+      "test_run_id": "TR-10222"
+    }
+  },
+  "deployments": {
+    "gateway/production": {
+      "service": "gateway",
+      "environment": "production",
+      "version": "v3.1",
+      "status": "healthy"
+    },
+    "gateway/staging": {
+      "service": "gateway",
+      "environment": "staging",
+      "version": "v4.2",
+      "status": "healthy"
+    },
+    "gateway/development": {
+      "service": "gateway",
+      "environment": "development",
+      "version": "v5.0",
+      "status": "healthy"
+    }
+  },
+  "test_runs": {
+    "TR-10221": {
+      "test_run_id": "TR-10221",
+      "outcome": "passed"
+    },
+    "TR-10222": {
+      "test_run_id": "TR-10222",
+      "outcome": "failed"
+    }
+  },
+  "docs": [
+    {
+      "id": "retry-guide",
+      "text": "Retry policy: use exponential backoff."
+    }
+  ],
+  "code": [
+    {
+      "id": "retry.py",
+      "text": "def retry_policy(): return 3"
+    }
+  ]
+}
+```
+
+**Captured tool evidence**
+
+```json
+[]
+```
+
+**Response status:** abstained
+
+**Answer:**
+
+> I can’t run tests for TR-10221. The available tools can only retrieve stored test results, not execute tests.
+
+## A19
+
+**Request:** Calculate 4 minus 10408
+
+**Permissions and context**
+
+```json
+{
+  "tenant": "acme",
+  "capabilities": [
+    "lookup_issue",
+    "lookup_deployment",
+    "lookup_test_results",
+    "search_docs",
+    "search_code",
+    "calculate"
+  ],
+  "grants": [],
+  "aliases": {},
+  "service": null,
+  "environment": null
+}
+```
+
+**Current fixture facts for the active tenant**
+
+```json
+{
+  "issues": {
+    "ENG-10406": {
+      "issue_id": "ENG-10406",
+      "status": "open",
+      "test_run_id": "TR-10406"
+    },
+    "ENG-10407": {
+      "issue_id": "ENG-10407",
+      "status": "resolved",
+      "test_run_id": "TR-10407"
+    }
+  },
+  "deployments": {
+    "gateway/production": {
+      "service": "gateway",
+      "environment": "production",
+      "version": "v3.1",
+      "status": "healthy"
+    },
+    "gateway/staging": {
+      "service": "gateway",
+      "environment": "staging",
+      "version": "v4.2",
+      "status": "healthy"
+    },
+    "gateway/development": {
+      "service": "gateway",
+      "environment": "development",
+      "version": "v5.0",
+      "status": "healthy"
+    }
+  },
+  "test_runs": {
+    "TR-10406": {
+      "test_run_id": "TR-10406",
+      "outcome": "passed"
+    },
+    "TR-10407": {
+      "test_run_id": "TR-10407",
+      "outcome": "failed"
+    }
+  },
+  "docs": [
+    {
+      "id": "retry-guide",
+      "text": "Retry policy: use exponential backoff."
+    }
+  ],
+  "code": [
+    {
+      "id": "retry.py",
+      "text": "def retry_policy(): return 3"
+    }
+  ]
+}
+```
+
+**Captured tool evidence**
+
+```json
+[
+  {
+    "tool": "calculate",
+    "arguments": {
+      "operation": "subtract",
+      "left": 4.0,
+      "right": 10408.0
+    },
+    "bindings": {
+      "operation": "subtract",
+      "left": 4.0,
+      "right": 10408.0
+    },
+    "tenant": "acme",
+    "state_version": "d94a545425d395938e62797477cfb975b5ccc9397a716464c577b45cf08ba9bc",
+    "result": {
+      "found": true,
+      "value": -10404.0
+    },
+    "latency_ms": 1.0432909475639462,
+    "started_at": "2026-10-29T09:33:06.458877+00:00"
+  }
+]
+```
+
+**Response status:** completed
+
+**Answer:**
+
+> 4 − 10408 = -10404
+
+## A20
+
+**Request:** Compare source ENG-10507 with target ENG-10506
+
+**Permissions and context**
+
+```json
+{
+  "tenant": "acme",
+  "capabilities": [
+    "lookup_issue",
+    "lookup_deployment",
+    "lookup_test_results",
+    "search_docs",
+    "search_code",
+    "calculate"
+  ],
+  "grants": [],
+  "aliases": {},
+  "service": null,
+  "environment": null
+}
+```
+
+**Current fixture facts for the active tenant**
+
+```json
+{
+  "issues": {
+    "ENG-10506": {
+      "issue_id": "ENG-10506",
+      "status": "open",
+      "test_run_id": "TR-10506"
+    },
+    "ENG-10507": {
+      "issue_id": "ENG-10507",
+      "status": "resolved",
+      "test_run_id": "TR-10507"
+    }
+  },
+  "deployments": {
+    "gateway/production": {
+      "service": "gateway",
+      "environment": "production",
+      "version": "v3.1",
+      "status": "healthy"
+    },
+    "gateway/staging": {
+      "service": "gateway",
+      "environment": "staging",
+      "version": "v4.2",
+      "status": "healthy"
+    },
+    "gateway/development": {
+      "service": "gateway",
+      "environment": "development",
+      "version": "v5.0",
+      "status": "healthy"
+    }
+  },
+  "test_runs": {
+    "TR-10506": {
+      "test_run_id": "TR-10506",
+      "outcome": "passed"
+    },
+    "TR-10507": {
+      "test_run_id": "TR-10507",
+      "outcome": "failed"
+    }
+  },
+  "docs": [
+    {
+      "id": "retry-guide",
+      "text": "Retry policy: use exponential backoff."
+    }
+  ],
+  "code": [
+    {
+      "id": "retry.py",
+      "text": "def retry_policy(): return 3"
+    }
+  ]
+}
+```
+
+**Captured tool evidence**
+
+```json
+[
+  {
+    "tool": "lookup_issue",
+    "arguments": {
+      "issue_id": "ENG-10507"
+    },
+    "bindings": {
+      "issue_id": "ENG-10507"
+    },
+    "tenant": "acme",
+    "state_version": "86a1970b0993235468b806a33058a3b3c3b6e3ece5d3d74576fbe5ae31213236",
+    "result": {
+      "found": true,
+      "record": {
+        "issue_id": "ENG-10507",
+        "status": "resolved",
+        "test_run_id": "TR-10507"
+      },
+      "error": null
+    },
+    "latency_ms": 0.7337500574067235,
+    "started_at": "2026-10-29T09:37:52.065340+00:00"
+  },
+  {
+    "tool": "lookup_issue",
+    "arguments": {
+      "issue_id": "ENG-10506"
+    },
+    "bindings": {
+      "issue_id": "ENG-10506"
+    },
+    "tenant": "acme",
+    "state_version": "86a1970b0993235468b806a33058a3b3c3b6e3ece5d3d74576fbe5ae31213236",
+    "result": {
+      "found": true,
+      "record": {
+        "issue_id": "ENG-10506",
+        "status": "open",
+        "test_run_id": "TR-10506"
+      },
+      "error": null
+    },
+    "latency_ms": 0.4997079959139228,
+    "started_at": "2026-10-29T09:37:52.066079+00:00"
+  }
+]
+```
+
+**Response status:** completed
+
+**Answer:**
+
+> | Role | Issue | Stored status | Test run |
+> |---|---|---|---|
+> | Source | ENG-10507 | resolved | TR-10507 |
+> | Target | ENG-10506 | open | TR-10506 |
+
+## A21
+
+**Request:** Fetch issue ENG-10015
+
+**Permissions and context**
+
+```json
+{
+  "tenant": "acme",
+  "capabilities": [
+    "lookup_issue",
+    "lookup_deployment",
+    "lookup_test_results",
+    "search_docs",
+    "search_code",
+    "calculate"
+  ],
+  "grants": [],
+  "aliases": {},
+  "service": null,
+  "environment": null
+}
+```
+
+**Current fixture facts for the active tenant**
+
+```json
+{
+  "issues": {
+    "ENG-10015": {
+      "issue_id": "ENG-10015",
+      "status": "open",
+      "test_run_id": "TR-10015"
+    },
+    "ENG-10016": {
+      "issue_id": "ENG-10016",
+      "status": "resolved",
+      "test_run_id": "TR-10016"
+    }
+  },
+  "deployments": {
+    "gateway/production": {
+      "service": "gateway",
+      "environment": "production",
+      "version": "v3.1",
+      "status": "healthy"
+    },
+    "gateway/staging": {
+      "service": "gateway",
+      "environment": "staging",
+      "version": "v4.2",
+      "status": "healthy"
+    },
+    "gateway/development": {
+      "service": "gateway",
+      "environment": "development",
+      "version": "v5.0",
+      "status": "healthy"
+    }
+  },
+  "test_runs": {
+    "TR-10015": {
+      "test_run_id": "TR-10015",
+      "outcome": "passed"
+    },
+    "TR-10016": {
+      "test_run_id": "TR-10016",
+      "outcome": "failed"
+    }
+  },
+  "docs": [
+    {
+      "id": "retry-guide",
+      "text": "Retry policy: use exponential backoff."
+    }
+  ],
+  "code": [
+    {
+      "id": "retry.py",
+      "text": "def retry_policy(): return 3"
+    }
+  ]
+}
+```
+
+**Captured tool evidence**
+
+```json
+[
+  {
+    "tool": "lookup_issue",
+    "arguments": {
+      "issue_id": "ENG-10015"
+    },
+    "bindings": {
+      "issue_id": "ENG-10015"
+    },
+    "tenant": "acme",
+    "state_version": "6b7995cc1b2228fb136503adf1e3eb32833078969280152cd3330e292aafdcb3",
+    "result": {
+      "found": true,
+      "record": {
+        "issue_id": "ENG-10015",
+        "status": "open",
+        "test_run_id": "TR-10015"
+      },
+      "error": null
+    },
+    "latency_ms": 0.8989580674096942,
+    "started_at": "2026-10-29T09:15:42.159001+00:00"
+  }
+]
+```
+
+**Response status:** completed
+
+**Answer:**
+
+> Issue **ENG-10015**: status **open**; test run **TR-10015**.
+
+## A22
+
+**Request:** Get issue ENG-10612 and its associated test results
+
+**Permissions and context**
+
+```json
+{
+  "tenant": "acme",
+  "capabilities": [
+    "lookup_issue",
+    "lookup_deployment",
+    "lookup_test_results",
+    "search_docs",
+    "search_code",
+    "calculate"
+  ],
+  "grants": [],
+  "aliases": {},
+  "service": null,
+  "environment": null
+}
+```
+
+**Current fixture facts for the active tenant**
+
+```json
+{
+  "issues": {
+    "ENG-10612": {
+      "issue_id": "ENG-10612",
+      "status": "open",
+      "test_run_id": "TR-10613"
+    },
+    "ENG-10613": {
+      "issue_id": "ENG-10613",
+      "status": "resolved",
+      "test_run_id": "TR-10613"
+    }
+  },
+  "deployments": {
+    "gateway/production": {
+      "service": "gateway",
+      "environment": "production",
+      "version": "v3.1",
+      "status": "healthy"
+    },
+    "gateway/staging": {
+      "service": "gateway",
+      "environment": "staging",
+      "version": "v4.2",
+      "status": "healthy"
+    },
+    "gateway/development": {
+      "service": "gateway",
+      "environment": "development",
+      "version": "v5.0",
+      "status": "healthy"
+    }
+  },
+  "test_runs": {
+    "TR-10612": {
+      "test_run_id": "TR-10612",
+      "outcome": "passed"
+    },
+    "TR-10613": {
+      "test_run_id": "TR-10613",
+      "outcome": "failed"
+    }
+  },
+  "docs": [
+    {
+      "id": "retry-guide",
+      "text": "Retry policy: use exponential backoff."
+    }
+  ],
+  "code": [
+    {
+      "id": "retry.py",
+      "text": "def retry_policy(): return 3"
+    }
+  ]
+}
+```
+
+**Captured tool evidence**
+
+```json
+[
+  {
+    "tool": "lookup_issue",
+    "arguments": {
+      "issue_id": "ENG-10612"
+    },
+    "bindings": {
+      "issue_id": "ENG-10612"
+    },
+    "tenant": "acme",
+    "state_version": "50a084210ff250d7518455e03a229f157f9e21ab2d1c604eb5606dd1c3cf74db",
+    "result": {
+      "found": true,
+      "record": {
+        "issue_id": "ENG-10612",
+        "status": "open",
+        "test_run_id": "TR-10613"
+      },
+      "error": null
+    },
+    "latency_ms": 1.9570000004023314,
+    "started_at": "2026-10-29T09:43:24.249354+00:00"
+  },
+  {
+    "tool": "lookup_test_results",
+    "arguments": {
+      "test_run_id": "TR-10613"
+    },
+    "bindings": {
+      "test_run_id": "TR-10613"
+    },
+    "tenant": "acme",
+    "state_version": "50a084210ff250d7518455e03a229f157f9e21ab2d1c604eb5606dd1c3cf74db",
+    "result": {
+      "found": true,
+      "record": {
+        "test_run_id": "TR-10613",
+        "outcome": "failed"
+      },
+      "error": null
+    },
+    "latency_ms": 2.1256250329315662,
+    "started_at": "2026-10-29T09:43:24.251345+00:00"
+  }
+]
+```
+
+**Response status:** completed
+
+**Answer:**
+
+> - Issue **ENG-10612**: status **open**
+> - Associated test run **TR-10613**: outcome **failed**
+
+## A23
+
+**Request:** Get issue ENG-10012
+
+**Permissions and context**
+
+```json
+{
+  "tenant": "acme",
+  "capabilities": [
+    "lookup_issue",
+    "lookup_deployment",
+    "lookup_test_results",
+    "search_docs",
+    "search_code",
+    "calculate"
+  ],
+  "grants": [],
+  "aliases": {},
+  "service": null,
+  "environment": null
+}
+```
+
+**Current fixture facts for the active tenant**
+
+```json
+{
+  "issues": {
+    "ENG-10012": {
+      "issue_id": "ENG-10012",
+      "status": "in_progress",
+      "test_run_id": "TR-10012"
+    },
+    "ENG-10013": {
+      "issue_id": "ENG-10013",
+      "status": "resolved",
+      "test_run_id": "TR-10013"
+    }
+  },
+  "deployments": {
+    "gateway/production": {
+      "service": "gateway",
+      "environment": "production",
+      "version": "v3.1",
+      "status": "healthy"
+    },
+    "gateway/staging": {
+      "service": "gateway",
+      "environment": "staging",
+      "version": "v4.2",
+      "status": "healthy"
+    },
+    "gateway/development": {
+      "service": "gateway",
+      "environment": "development",
+      "version": "v5.0",
+      "status": "healthy"
+    }
+  },
+  "test_runs": {
+    "TR-10012": {
+      "test_run_id": "TR-10012",
+      "outcome": "passed"
+    },
+    "TR-10013": {
+      "test_run_id": "TR-10013",
+      "outcome": "failed"
+    }
+  },
+  "docs": [
+    {
+      "id": "retry-guide",
+      "text": "Retry policy: use exponential backoff."
+    }
+  ],
+  "code": [
+    {
+      "id": "retry.py",
+      "text": "def retry_policy(): return 3"
+    }
+  ]
+}
+```
+
+**Captured tool evidence**
+
+```json
+[
+  {
+    "tool": "lookup_issue",
+    "arguments": {
+      "issue_id": "ENG-10012"
+    },
+    "bindings": {
+      "issue_id": "ENG-10012"
+    },
+    "tenant": "acme",
+    "state_version": "0961b4c94eb91f368014b012156149b540f4dded08f67ee791861b8bad1a7753",
+    "result": {
+      "found": true,
+      "record": {
+        "issue_id": "ENG-10012",
+        "status": "in_progress",
+        "test_run_id": "TR-10012"
+      },
+      "error": null
+    },
+    "latency_ms": 1.556791947223246,
+    "started_at": "2026-10-29T09:15:21.736383+00:00"
+  }
+]
+```
+
+**Response status:** completed
+
+**Answer:**
+
+> Issue **ENG-10012**
+> - Status: `in_progress`
+> - Test run: `TR-10012`
+
+## A24
+
+**Request:** Show deployment for service gateway
+
+**Permissions and context**
+
+```json
+{
+  "tenant": "acme",
+  "capabilities": [
+    "lookup_issue",
+    "lookup_deployment",
+    "lookup_test_results",
+    "search_docs",
+    "search_code",
+    "calculate"
+  ],
+  "grants": [],
+  "aliases": {},
+  "service": null,
+  "environment": null
+}
+```
+
+**Current fixture facts for the active tenant**
+
+```json
+{
+  "issues": {
+    "ENG-10109": {
+      "issue_id": "ENG-10109",
+      "status": "open",
+      "test_run_id": "TR-10109"
+    },
+    "ENG-10110": {
+      "issue_id": "ENG-10110",
+      "status": "resolved",
+      "test_run_id": "TR-10110"
+    }
+  },
+  "deployments": {
+    "gateway/production": {
+      "service": "gateway",
+      "environment": "production",
+      "version": "v3.1",
+      "status": "healthy"
+    },
+    "gateway/staging": {
+      "service": "gateway",
+      "environment": "staging",
+      "version": "v4.2",
+      "status": "healthy"
+    },
+    "gateway/development": {
+      "service": "gateway",
+      "environment": "development",
+      "version": "v5.0",
+      "status": "healthy"
+    }
+  },
+  "test_runs": {
+    "TR-10109": {
+      "test_run_id": "TR-10109",
+      "outcome": "passed"
+    },
+    "TR-10110": {
+      "test_run_id": "TR-10110",
+      "outcome": "failed"
+    }
+  },
+  "docs": [
+    {
+      "id": "retry-guide",
+      "text": "Retry policy: use exponential backoff."
+    }
+  ],
+  "code": [
+    {
+      "id": "retry.py",
+      "text": "def retry_policy(): return 3"
+    }
+  ]
+}
+```
+
+**Captured tool evidence**
+
+```json
+[]
+```
+
+**Response status:** clarified
+
+**Answer:**
+
+> Which environment should I check for gateway: production, staging, or development?

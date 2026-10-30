@@ -1,0 +1,105 @@
+{
+  "run_id": "e8681d78e9d4f815ae2cd8d6",
+  "policy": "fused",
+  "bank_state": "empty",
+  "status": "completed",
+  "bindings": {
+    "slots": {
+      "query0": "retry policy"
+    },
+    "slot_types": {
+      "query0": "query"
+    },
+    "skeleton": "search code for <query0>",
+    "namespace": "ea951e30ddc2e3fbc06eb8d343acee8d3e1b560636c67748159d683fa73a5e54",
+    "unresolved": [],
+    "semantics": [
+      "code",
+      "count:query:1"
+    ]
+  },
+  "answer": "Found in `retry.py`:\n```python\ndef retry_policy(): return 3\n```",
+  "calls": [
+    {
+      "reservation": "737baf0bfd994ba787d383c44a6a18db",
+      "stage": "core",
+      "run_id": "e8681d78e9d4f815ae2cd8d6",
+      "kind": "planning",
+      "state": "measured",
+      "cost_usd": 0.0036735,
+      "timestamp": "2026-10-29T08:50:30.539669+00:00",
+      "cost_estimated": false,
+      "usage": {
+        "input_tokens": 1210,
+        "output_tokens": 65,
+        "cache_read_tokens": 0,
+        "cache_write_tokens": 1207
+      },
+      "error": null,
+      "latency_ms": 1958.854667027481,
+      "response_id": "resp_0c11a978ef5e965c016ae308d6d4d887d0beb7ca2db20e9eb7",
+      "output": "{\"kind\":\"tools\",\"steps\":[{\"tool\":\"search_code\",\"arguments\":{\"issue_id\":null,\"test_run_id\":null,\"service\":null,\"environment\":null,\"query\":\"$slot.query0\",\"operation\":null,\"left\":null,\"right\":null}}],\"response\":\"\"}"
+    },
+    {
+      "reservation": "18ca97789c504e75be750db4a7c4f53b",
+      "stage": "core",
+      "run_id": "e8681d78e9d4f815ae2cd8d6",
+      "kind": "answer",
+      "state": "measured",
+      "cost_usd": 0.000642,
+      "timestamp": "2026-10-29T08:50:32.504322+00:00",
+      "cost_estimated": false,
+      "usage": {
+        "input_tokens": 206,
+        "output_tokens": 23,
+        "cache_read_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "error": null,
+      "latency_ms": 1794.1355420043692,
+      "response_id": "resp_00c4ed894258ad04016ae308d8b8c887d09dbdbd649efdb481",
+      "output": "Found in `retry.py`:\n```python\ndef retry_policy(): return 3\n```"
+    }
+  ],
+  "executions": [
+    {
+      "tool": "search_code",
+      "arguments": {
+        "query": "retry policy"
+      },
+      "bindings": {
+        "query": "retry policy"
+      },
+      "tenant": "acme",
+      "state_version": "b84f4a9d660603f505a3f4405fb8366d2544175086812712ed25dedd28a5346b",
+      "result": {
+        "found": true,
+        "records": [
+          {
+            "id": "retry.py",
+            "text": "def retry_policy(): return 3"
+          }
+        ],
+        "error": null
+      },
+      "latency_ms": 0.6477079587057233
+    }
+  ],
+  "cache_hit": false,
+  "candidate": null,
+  "retrieval_score": 0,
+  "retrieval_margin": 0,
+  "rejection": null,
+  "replans": 0,
+  "error": null,
+  "timings_ms": {
+    "binding": 0.1753329997882247,
+    "retrieval_validation": 0.00020908191800117493,
+    "planning": 1958.854667027481,
+    "answer": 1794.1355420043692,
+    "tools": 0.6477079587057233,
+    "runtime": 3800.790166016668
+  },
+  "cost_usd": 0.0043155,
+  "trace_id": null
+}

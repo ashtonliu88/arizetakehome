@@ -1,0 +1,34 @@
+{
+  "pytest": {
+    "command": "uv run --no-sync python -m pytest -q",
+    "tests": 135,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "timestamp": "2026-10-29T21:38:20.766702-07:00"
+  },
+  "ruff_project": {
+    "command": "uv run ruff check src scripts tests docs/phoenix-measured/verify.py",
+    "status": "passed"
+  },
+  "whole_tree_ruff": {
+    "command": "uv run ruff check .",
+    "status": "pre-existing frozen notebook findings preserved",
+    "findings": {
+      "I001": 2,
+      "F401": 1,
+      "B007": 2,
+      "E731": 1,
+      "B023": 2
+    },
+    "files": [
+      "trace-evidence-lab.ipynb"
+    ]
+  },
+  "formatting": {
+    "new_and_updated_authoring_files": "passed",
+    "existing_difference": "src/router_lab/experiments.py preserved as frozen runtime source"
+  },
+  "human_audit": "pending at candidate request; 0/24 completed",
+  "new_files_formatting_command": "uv run ruff format --check scripts/build_cookbook.py scripts/build_submission.py scripts/verify_cookbook.py scripts/verify_submission.py scripts/reuse_answer_audit.py tests/test_reuse_answer_audit.py docs/phoenix-measured/verify.py"
+}

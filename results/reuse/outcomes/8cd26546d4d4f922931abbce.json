@@ -1,0 +1,83 @@
+{
+  "run_id": "8cd26546d4d4f922931abbce",
+  "policy": "exact",
+  "bank_state": "warm",
+  "status": "completed",
+  "bindings": {
+    "slots": {
+      "test0": "TR-10203"
+    },
+    "slot_types": {
+      "test0": "test"
+    },
+    "skeleton": "retrieve outcome for test run <test0>",
+    "namespace": "ea951e30ddc2e3fbc06eb8d343acee8d3e1b560636c67748159d683fa73a5e54",
+    "unresolved": [],
+    "semantics": [
+      "count:test:1"
+    ]
+  },
+  "answer": "Test run TR-10203 outcome: passed.",
+  "calls": [
+    {
+      "reservation": "02cf011db2364825a50397e9226ee971",
+      "stage": "core",
+      "run_id": "8cd26546d4d4f922931abbce",
+      "kind": "answer",
+      "state": "measured",
+      "cost_usd": 0.000578,
+      "timestamp": "2026-10-29T09:23:22.252330+00:00",
+      "cost_estimated": false,
+      "usage": {
+        "input_tokens": 219,
+        "output_tokens": 14,
+        "cache_read_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "error": null,
+      "latency_ms": 1346.041375072673,
+      "response_id": "resp_09c6d273c8256198016ae3108a642887d094283acf11d937ee",
+      "output": "Test run TR-10203 outcome: passed."
+    }
+  ],
+  "executions": [
+    {
+      "tool": "lookup_test_results",
+      "arguments": {
+        "test_run_id": "TR-10203"
+      },
+      "bindings": {
+        "test_run_id": "TR-10203"
+      },
+      "tenant": "acme",
+      "state_version": "fc7c932767fad68fc59500adcb1b4fb8bd0c2af5e1a0e1463cf1777f0a111250",
+      "result": {
+        "found": true,
+        "record": {
+          "test_run_id": "TR-10203",
+          "outcome": "passed"
+        },
+        "error": null
+      },
+      "latency_ms": 0.8105419110506773,
+      "started_at": "2026-10-29T09:23:22.235840+00:00"
+    }
+  ],
+  "cache_hit": true,
+  "candidate": "2755124c52efe82e5842",
+  "retrieval_score": 1.0,
+  "retrieval_margin": 1.0,
+  "rejection": null,
+  "replans": 0,
+  "error": null,
+  "timings_ms": {
+    "binding": 0.09379198309034109,
+    "retrieval_validation": 1.0656249942258,
+    "planning": 0,
+    "answer": 1346.041375072673,
+    "tools": 0.8105419110506773,
+    "runtime": 1364.5727080293
+  },
+  "cost_usd": 0.000578,
+  "trace_id": null
+}

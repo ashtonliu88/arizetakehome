@@ -1,0 +1,126 @@
+{
+  "run_id": "ea71cb578c9da63d36beab60",
+  "policy": "fused",
+  "bank_state": "warm",
+  "status": "completed",
+  "bindings": {
+    "slots": {
+      "issue0": "ENG-10609"
+    },
+    "slot_types": {
+      "issue0": "issue"
+    },
+    "skeleton": "get issue <issue0> and its associated test results",
+    "namespace": "ea951e30ddc2e3fbc06eb8d343acee8d3e1b560636c67748159d683fa73a5e54",
+    "unresolved": [],
+    "semantics": [
+      "count:issue:1",
+      "linked"
+    ]
+  },
+  "answer": "- Issue **ENG-10609**: status **open**\n- Associated test run **TR-10609**: outcome **passed**",
+  "calls": [
+    {
+      "reservation": "1ea70fe46c404adb80695bd8e47fccf4",
+      "stage": "core",
+      "run_id": "ea71cb578c9da63d36beab60",
+      "kind": "planning",
+      "state": "measured",
+      "cost_usd": 0.0012905,
+      "timestamp": "2026-10-29T09:43:00.705133+00:00",
+      "cost_estimated": false,
+      "usage": {
+        "input_tokens": 1248,
+        "output_tokens": 116,
+        "cache_read_tokens": 1245,
+        "cache_write_tokens": 0
+      },
+      "error": null,
+      "latency_ms": 2186.2920420244336,
+      "response_id": "resp_0f726514f97f72ad016ae31524d28487d0849a445863bd7e1d",
+      "output": "{\"kind\":\"tools\",\"steps\":[{\"tool\":\"lookup_issue\",\"arguments\":{\"issue_id\":\"$slot.issue0\",\"test_run_id\":null,\"service\":null,\"environment\":null,\"query\":null,\"operation\":null,\"left\":null,\"right\":null}},{\"tool\":\"lookup_test_results\",\"arguments\":{\"issue_id\":null,\"test_run_id\":\"$step.0.record.test_run_id\",\"service\":null,\"environment\":null,\"query\":null,\"operation\":null,\"left\":null,\"right\":null}}],\"response\":\"\"}"
+    },
+    {
+      "reservation": "3c987b7ed0a9488f8e9cea17ee25ebeb",
+      "stage": "core",
+      "run_id": "ea71cb578c9da63d36beab60",
+      "kind": "answer",
+      "state": "measured",
+      "cost_usd": 0.000992,
+      "timestamp": "2026-10-29T09:43:02.912910+00:00",
+      "cost_estimated": false,
+      "usage": {
+        "input_tokens": 336,
+        "output_tokens": 32,
+        "cache_read_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "error": null,
+      "latency_ms": 1537.1058750897646,
+      "response_id": "resp_0ee33cdf30b39b44016ae315270a2c87d0a5c17c73b1765bce",
+      "output": "- Issue **ENG-10609**: status **open**\n- Associated test run **TR-10609**: outcome **passed**"
+    }
+  ],
+  "executions": [
+    {
+      "tool": "lookup_issue",
+      "arguments": {
+        "issue_id": "ENG-10609"
+      },
+      "bindings": {
+        "issue_id": "ENG-10609"
+      },
+      "tenant": "acme",
+      "state_version": "ffbef176622eaa2d65671809363573a791344085ff246a5a99ce0108b7f24fdb",
+      "result": {
+        "found": true,
+        "record": {
+          "issue_id": "ENG-10609",
+          "status": "open",
+          "test_run_id": "TR-10609"
+        },
+        "error": null
+      },
+      "latency_ms": 1.339457929134369,
+      "started_at": "2026-10-29T09:43:02.891959+00:00"
+    },
+    {
+      "tool": "lookup_test_results",
+      "arguments": {
+        "test_run_id": "TR-10609"
+      },
+      "bindings": {
+        "test_run_id": "TR-10609"
+      },
+      "tenant": "acme",
+      "state_version": "ffbef176622eaa2d65671809363573a791344085ff246a5a99ce0108b7f24fdb",
+      "result": {
+        "found": true,
+        "record": {
+          "test_run_id": "TR-10609",
+          "outcome": "passed"
+        },
+        "error": null
+      },
+      "latency_ms": 0.6356249796226621,
+      "started_at": "2026-10-29T09:43:02.893311+00:00"
+    }
+  ],
+  "cache_hit": false,
+  "candidate": null,
+  "retrieval_score": 0,
+  "retrieval_margin": 0,
+  "rejection": null,
+  "replans": 0,
+  "error": null,
+  "timings_ms": {
+    "binding": 0.10025000665336847,
+    "retrieval_validation": 0.00016600824892520905,
+    "planning": 2186.2920420244336,
+    "answer": 1537.1058750897646,
+    "tools": 1.975082908757031,
+    "runtime": 3760.1758749224246
+  },
+  "cost_usd": 0.0022825,
+  "trace_id": null
+}

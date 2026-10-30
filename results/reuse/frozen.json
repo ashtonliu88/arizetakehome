@@ -1,0 +1,60 @@
+{
+  "timestamp": "2026-10-29T09:12:26.883763+00:00",
+  "fingerprint": {
+    "files": {
+      "inputs.jsonl": "bffa01da911d18d2114add4b16fbfc53ba6000595550ebd6f4779d2a8c275268",
+      "references-history.jsonl": "e572eb568d7804ffb6b62fb8e547d080e71e982c07bd32fdd905f4212bf2cf2f",
+      "references-dev.jsonl": "5d4b9fe7143610cb581b2d63a89bff1aa6f6f5e0e0e79054f9ebf6e2f64b42cf",
+      "references-test.jsonl": "82132b8e5cb8bb925eb905039aecbf6cdf827e8871b8f4c6c423bd688daaab47",
+      "family-contracts.json": "dd9d5bc48d27f5edbe9a88b036b1d3651e9e449a9bd901dadf6d4c1a1f26cadf",
+      "settings.json": "ddad37b7679ecb8265b6eabd13bcc3db02cf07dac1a845f61713d989fdba1cda",
+      "bank.json": "1d41f7aa4ce1bcc40d126dcb44e5db919315f1bbae6e8bbc0a0c43708c8cd5ee",
+      "reviews.jsonl": "c3cf2bf0f9a75b60c82f1b5a1dfd136234440300a34c2419ccf19f761d207784"
+    },
+    "source": "e6534fa67768683e6d92c9ad6044de432ba9c469b9168e1018be943d1e597703",
+    "model_settings": {
+      "decision_model": "gpt-6-luna",
+      "llm_model": "gpt-6.1-sol",
+      "reasoning_effort": "low",
+      "max_output_tokens": 512,
+      "answer_max_output_tokens": 2048,
+      "timeout_seconds": 30.0,
+      "max_retries": 2,
+      "repetitions": 3,
+      "budget_usd": 50.0,
+      "reserve_usd": 5.0,
+      "seed": 1729,
+      "pricing": {
+        "decisions": {
+          "input": 0.1,
+          "cache_read": 0.01,
+          "cache_write": 0.125,
+          "output": 0.0
+        },
+        "llm": {
+          "input": 2.0,
+          "cache_read": 0.1,
+          "cache_write": 2.5,
+          "output": 10.0
+        }
+      },
+      "pricing_note": "USD per million tokens, standard processing, short context, no regional premium. Verify before paid runs. Decisions output is free; cache tokens are subsets of input. Sources accessed 2026-10-28: https://developers.openai.com/api/docs/guides/decisions and model pages."
+    },
+    "tool_contracts": {
+      "search_docs": "48b4bc6344a1c4b47c8b93e3e50c50a5b07dbece9c691d5cd9437d153e98acb0",
+      "search_code": "bac2bbbb80763812fffe798964861c38c9a45ccbb0e26238dac90c192255c461",
+      "lookup_issue": "b3237f078f6bd5e7a836784b9b6ab7c161b91742603ae8b4a67d4048206b71ed",
+      "lookup_deployment": "5c15c04b50830017104f714326aa35d80ff47507d866b5809089929cd4a4c03c",
+      "lookup_test_results": "2c8da19dc098e31ae6622b795eae677a9bc1f512fa65951da995f437b9e1de3e",
+      "calculate": "7d9857a6d1d5e9594bac5fa77bc206c66a275360d3f3b48d6a32331fa372ceff"
+    },
+    "provider_endpoint": "http://127.0.0.1:8787/p/arizetakehom/v1",
+    "pricing_assumptions": "USD per million tokens, standard processing, short context, no regional premium. Verify before paid runs. Decisions output is free; cache tokens are subsets of input. Sources accessed 2026-10-28: https://developers.openai.com/api/docs/guides/decisions and model pages."
+  },
+  "development_hash": "b18ca246e36267e7432d08b0a23c0b0cd8671aa4477beca71260d18b240faf9b",
+  "calibration_hash": "57ec2b4ae6244f07d49a651cbb0344802bc4ad7899737998b7e7b4c03c18f97a",
+  "remaining_projection_usd": 2.1855088,
+  "held_out_endpoints": 768,
+  "label_review_scope": "eight family contracts; substitutions are derived references",
+  "source_archive_hash": "c8c1208d81d7d86b43fac7e1c5e54f7b4945a99b6e26fe5ff95dbbbc2e45c119"
+}

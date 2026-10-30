@@ -1,0 +1,67 @@
+{
+  "run_id": "5cd82f6b5a6afe7304f3d4f2",
+  "policy": "fused",
+  "bank_state": "empty",
+  "status": "abstained",
+  "bindings": {
+    "slots": {
+      "issue0": "ENG-10515",
+      "issue1": "ENG-10516"
+    },
+    "slot_types": {
+      "issue0": "issue",
+      "issue1": "issue"
+    },
+    "skeleton": "compare source <issue0> with target <issue1>",
+    "namespace": "ea3b7f78b95d3b260b590ca2c3c9f9a150005718c966aa304aa26d77566106d3",
+    "unresolved": [],
+    "semantics": [
+      "code",
+      "compare",
+      "count:issue:2",
+      "role:source:issue0",
+      "role:target:issue1"
+    ]
+  },
+  "answer": "I can’t compare source ENG-10515 with target ENG-10516 because access is granted only to ENG-10515, not ENG-10516.",
+  "calls": [
+    {
+      "reservation": "66d18dfab0f5440db84028b0dd70ee90",
+      "stage": "core",
+      "run_id": "5cd82f6b5a6afe7304f3d4f2",
+      "kind": "planning",
+      "state": "measured",
+      "cost_usd": 0.0006547,
+      "timestamp": "2026-10-29T09:39:20.662431+00:00",
+      "cost_estimated": false,
+      "usage": {
+        "input_tokens": 1290,
+        "output_tokens": 52,
+        "cache_read_tokens": 1287,
+        "cache_write_tokens": 0
+      },
+      "error": null,
+      "latency_ms": 2465.4527080710977,
+      "response_id": "resp_0c7ee85483a06892016ae31448c99087d0a956502b1c9b669e",
+      "output": "{\"kind\":\"abstain\",\"steps\":[],\"response\":\"I can’t compare source ENG-10515 with target ENG-10516 because access is granted only to ENG-10515, not ENG-10516.\"}"
+    }
+  ],
+  "executions": [],
+  "cache_hit": false,
+  "candidate": null,
+  "retrieval_score": 0,
+  "retrieval_margin": 0,
+  "rejection": null,
+  "replans": 0,
+  "error": null,
+  "timings_ms": {
+    "binding": 0.09979202877730131,
+    "retrieval_validation": 0.00016600824892520905,
+    "planning": 2465.4527080710977,
+    "answer": 0,
+    "tools": 0,
+    "runtime": 2480.4322089767084
+  },
+  "cost_usd": 0.0006547,
+  "trace_id": null
+}

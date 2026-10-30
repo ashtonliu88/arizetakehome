@@ -1,0 +1,103 @@
+{
+  "run_id": "0768f8b28faca86e4e2e515b",
+  "policy": "verified",
+  "bank_state": "empty",
+  "status": "completed",
+  "bindings": {
+    "slots": {
+      "test0": "TR-10215"
+    },
+    "slot_types": {
+      "test0": "test"
+    },
+    "skeleton": "get stored test results <test0>",
+    "namespace": "ea951e30ddc2e3fbc06eb8d343acee8d3e1b560636c67748159d683fa73a5e54",
+    "unresolved": [],
+    "semantics": [
+      "count:test:1"
+    ]
+  },
+  "answer": "Stored test results for **TR-10215**: **passed**.",
+  "calls": [
+    {
+      "reservation": "a665ff2d15064ef597b900fad6597e69",
+      "stage": "core",
+      "run_id": "0768f8b28faca86e4e2e515b",
+      "kind": "planning",
+      "state": "measured",
+      "cost_usd": 0.0007894,
+      "timestamp": "2026-10-29T09:25:26.024968+00:00",
+      "cost_estimated": false,
+      "usage": {
+        "input_tokens": 1237,
+        "output_tokens": 66,
+        "cache_read_tokens": 1234,
+        "cache_write_tokens": 0
+      },
+      "error": null,
+      "latency_ms": 1544.0039170207456,
+      "response_id": "resp_00fd3aaf6801465b016ae311062a4c87d092b59d88d184a589",
+      "output": "{\"kind\":\"tools\",\"steps\":[{\"tool\":\"lookup_test_results\",\"arguments\":{\"issue_id\":null,\"test_run_id\":\"$slot.test0\",\"service\":null,\"environment\":null,\"query\":null,\"operation\":null,\"left\":null,\"right\":null}}],\"response\":\"\"}"
+    },
+    {
+      "reservation": "89cb6323b99c4af3a3691f49ca407305",
+      "stage": "core",
+      "run_id": "0768f8b28faca86e4e2e515b",
+      "kind": "answer",
+      "state": "measured",
+      "cost_usd": 0.000616,
+      "timestamp": "2026-10-29T09:25:27.601233+00:00",
+      "cost_estimated": false,
+      "usage": {
+        "input_tokens": 213,
+        "output_tokens": 19,
+        "cache_read_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "error": null,
+      "latency_ms": 1798.316792002879,
+      "response_id": "resp_063956d89ddf167a016ae31107d64487d0a1685f83fd28137f",
+      "output": "Stored test results for **TR-10215**: **passed**."
+    }
+  ],
+  "executions": [
+    {
+      "tool": "lookup_test_results",
+      "arguments": {
+        "test_run_id": "TR-10215"
+      },
+      "bindings": {
+        "test_run_id": "TR-10215"
+      },
+      "tenant": "acme",
+      "state_version": "935470bdfec440c6c7c66ff68f5210a14066aae452886cf8dcca3109a15de509",
+      "result": {
+        "found": true,
+        "record": {
+          "test_run_id": "TR-10215",
+          "outcome": "passed"
+        },
+        "error": null
+      },
+      "latency_ms": 0.7688329787924886,
+      "started_at": "2026-10-29T09:25:27.569382+00:00"
+    }
+  ],
+  "cache_hit": false,
+  "candidate": null,
+  "retrieval_score": 0.0,
+  "retrieval_margin": 0.0,
+  "rejection": "empty_bank",
+  "replans": 0,
+  "error": null,
+  "timings_ms": {
+    "binding": 0.08595804683864117,
+    "retrieval_validation": 0.004708068445324898,
+    "planning": 1544.0039170207456,
+    "answer": 1798.316792002879,
+    "tools": 0.7688329787924886,
+    "runtime": 3385.0959159899503
+  },
+  "cost_usd": 0.0014054,
+  "trace_id": null
+}

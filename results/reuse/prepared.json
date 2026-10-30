@@ -1,0 +1,10 @@
+{
+  "timestamp": "2026-10-29T08:35:27.572133+00:00",
+  "source_hash": "3928b4e075774b5cd4111a99186ec53f1ff1a6b78c6acd50d79ed03a164ce58d",
+  "counts": {
+    "history": 16,
+    "dev": 24,
+    "test": 64
+  },
+  "archive": "results/reuse/archive/2026-10-29T083527.235637_0000"
+}

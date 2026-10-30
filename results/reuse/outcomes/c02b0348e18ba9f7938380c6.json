@@ -1,0 +1,104 @@
+{
+  "run_id": "c02b0348e18ba9f7938380c6",
+  "policy": "fused",
+  "bank_state": "warm",
+  "status": "completed",
+  "bindings": {
+    "slots": {
+      "issue0": "ENG-10003"
+    },
+    "slot_types": {
+      "issue0": "issue"
+    },
+    "skeleton": "please retrieve current status for ticket <issue0>",
+    "namespace": "ea951e30ddc2e3fbc06eb8d343acee8d3e1b560636c67748159d683fa73a5e54",
+    "unresolved": [],
+    "semantics": [
+      "count:issue:1"
+    ]
+  },
+  "answer": "Ticket ENG-10003 is currently **open**.",
+  "calls": [
+    {
+      "reservation": "b6774ea1b83d4869973f12f65cc9e378",
+      "stage": "core",
+      "run_id": "c02b0348e18ba9f7938380c6",
+      "kind": "planning",
+      "state": "measured",
+      "cost_usd": 0.0007798999999999999,
+      "timestamp": "2026-10-29T09:13:26.801710+00:00",
+      "cost_estimated": false,
+      "usage": {
+        "input_tokens": 1242,
+        "output_tokens": 65,
+        "cache_read_tokens": 1239,
+        "cache_write_tokens": 0
+      },
+      "error": null,
+      "latency_ms": 2146.538333967328,
+      "response_id": "resp_0021be71e72a398f016ae30e36fd6487d085b885fa6670e5e3",
+      "output": "{\"kind\":\"tools\",\"steps\":[{\"tool\":\"lookup_issue\",\"arguments\":{\"issue_id\":\"$slot.issue0\",\"test_run_id\":null,\"service\":null,\"environment\":null,\"query\":null,\"operation\":null,\"left\":null,\"right\":null}}],\"response\":\"\"}"
+    },
+    {
+      "reservation": "5dc174766a6549a4a7c2c5f671c1f34a",
+      "stage": "core",
+      "run_id": "c02b0348e18ba9f7938380c6",
+      "kind": "answer",
+      "state": "measured",
+      "cost_usd": 0.000604,
+      "timestamp": "2026-10-29T09:13:28.957829+00:00",
+      "cost_estimated": false,
+      "usage": {
+        "input_tokens": 227,
+        "output_tokens": 15,
+        "cache_read_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "error": null,
+      "latency_ms": 1295.6666249083355,
+      "response_id": "resp_0074e17e6a8a2422016ae30e39195087d0b5350df81f17596e",
+      "output": "Ticket ENG-10003 is currently **open**."
+    }
+  ],
+  "executions": [
+    {
+      "tool": "lookup_issue",
+      "arguments": {
+        "issue_id": "ENG-10003"
+      },
+      "bindings": {
+        "issue_id": "ENG-10003"
+      },
+      "tenant": "acme",
+      "state_version": "30f27d88ffab4d54b8fec8f0b386013cc7a9a19527100a40b5c7114f9db86904",
+      "result": {
+        "found": true,
+        "record": {
+          "issue_id": "ENG-10003",
+          "status": "open",
+          "test_run_id": "TR-10003"
+        },
+        "error": null
+      },
+      "latency_ms": 1.4740839833393693,
+      "started_at": "2026-10-29T09:13:28.949099+00:00"
+    }
+  ],
+  "cache_hit": false,
+  "candidate": null,
+  "retrieval_score": 0,
+  "retrieval_margin": 0,
+  "rejection": null,
+  "replans": 0,
+  "error": null,
+  "timings_ms": {
+    "binding": 0.08045905269682407,
+    "retrieval_validation": 0.000250060111284256,
+    "planning": 2146.538333967328,
+    "answer": 1295.6666249083355,
+    "tools": 1.4740839833393693,
+    "runtime": 3477.263916982338
+  },
+  "cost_usd": 0.0013839,
+  "trace_id": null
+}

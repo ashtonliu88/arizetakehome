@@ -1,7 +1,7 @@
 [project]
 name = "router-lab"
 version = "0.1.0"
-description = "Confidence-gated decision routing: recoverable errors, cost, latency, and Phoenix evidence"
+description = "Privacy-preserving trace evaluation with controlled resource-scope episodes and Phoenix evidence"
 readme = "README.md"
 authors = [
     { name = "Ashton Liu", email = "130876023+ashtonliu88@users.noreply.github.com" }

@@ -1,0 +1,103 @@
+{
+  "run_id": "40b2c9f997d257e8e004df57",
+  "policy": "fused",
+  "bank_state": "empty",
+  "status": "completed",
+  "bindings": {
+    "slots": {
+      "test0": "TR-10212"
+    },
+    "slot_types": {
+      "test0": "test"
+    },
+    "skeleton": "get stored test results <test0>",
+    "namespace": "ea951e30ddc2e3fbc06eb8d343acee8d3e1b560636c67748159d683fa73a5e54",
+    "unresolved": [],
+    "semantics": [
+      "count:test:1"
+    ]
+  },
+  "answer": "Stored test results for **TR-10212**: **failed**.",
+  "calls": [
+    {
+      "reservation": "f13a8712ea854dea83ef77ce0cf6e19b",
+      "stage": "core",
+      "run_id": "40b2c9f997d257e8e004df57",
+      "kind": "planning",
+      "state": "measured",
+      "cost_usd": 0.0007894,
+      "timestamp": "2026-10-29T09:25:15.483815+00:00",
+      "cost_estimated": false,
+      "usage": {
+        "input_tokens": 1237,
+        "output_tokens": 66,
+        "cache_read_tokens": 1234,
+        "cache_write_tokens": 0
+      },
+      "error": null,
+      "latency_ms": 2044.1490829689428,
+      "response_id": "resp_0d465c70a3b24bb8016ae310fba31887d0b7af22558371834c",
+      "output": "{\"kind\":\"tools\",\"steps\":[{\"tool\":\"lookup_test_results\",\"arguments\":{\"issue_id\":null,\"test_run_id\":\"$slot.test0\",\"service\":null,\"environment\":null,\"query\":null,\"operation\":null,\"left\":null,\"right\":null}}],\"response\":\"\"}"
+    },
+    {
+      "reservation": "7db1a44dabb64e3baefa5010da42f974",
+      "stage": "core",
+      "run_id": "40b2c9f997d257e8e004df57",
+      "kind": "answer",
+      "state": "measured",
+      "cost_usd": 0.000626,
+      "timestamp": "2026-10-29T09:25:17.539735+00:00",
+      "cost_estimated": false,
+      "usage": {
+        "input_tokens": 218,
+        "output_tokens": 19,
+        "cache_read_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "error": null,
+      "latency_ms": 1630.509875016287,
+      "response_id": "resp_0458de98f1924a47016ae310fdb72087d081a634e80ec98998",
+      "output": "Stored test results for **TR-10212**: **failed**."
+    }
+  ],
+  "executions": [
+    {
+      "tool": "lookup_test_results",
+      "arguments": {
+        "test_run_id": "TR-10212"
+      },
+      "bindings": {
+        "test_run_id": "TR-10212"
+      },
+      "tenant": "acme",
+      "state_version": "a2d8fedcc510d826fcff45a8ae5a0131c07c47ef35168d5cbc5cf0a8932e138f",
+      "result": {
+        "found": true,
+        "record": {
+          "test_run_id": "TR-10212",
+          "outcome": "failed"
+        },
+        "error": null
+      },
+      "latency_ms": 0.7586670108139515,
+      "started_at": "2026-10-29T09:25:17.528440+00:00"
+    }
+  ],
+  "cache_hit": false,
+  "candidate": null,
+  "retrieval_score": 0,
+  "retrieval_margin": 0,
+  "rejection": null,
+  "replans": 0,
+  "error": null,
+  "timings_ms": {
+    "binding": 0.07062498480081558,
+    "retrieval_validation": 0.00016600824892520905,
+    "planning": 2044.1490829689428,
+    "answer": 1630.509875016287,
+    "tools": 0.7586670108139515,
+    "runtime": 3696.6721669305116
+  },
+  "cost_usd": 0.0014154,
+  "trace_id": null
+}

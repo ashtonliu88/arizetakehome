@@ -1,0 +1,86 @@
+{
+  "run_id": "83242cc6e90cc893d8ee33f5",
+  "policy": "ordinary",
+  "bank_state": "warm",
+  "status": "completed",
+  "bindings": {
+    "slots": {
+      "number0": 4.0,
+      "number1": 10408.0
+    },
+    "slot_types": {
+      "number0": "number",
+      "number1": "number"
+    },
+    "skeleton": "calculate <number0> minus <number1>",
+    "namespace": "ea951e30ddc2e3fbc06eb8d343acee8d3e1b560636c67748159d683fa73a5e54",
+    "unresolved": [],
+    "semantics": [
+      "count:number:2",
+      "subtract"
+    ]
+  },
+  "answer": "The provided tool result calculated addition, yielding 10412.0, not the requested subtraction.",
+  "calls": [
+    {
+      "reservation": "1d4f52a5670344ea8317f08c0aa8379d",
+      "stage": "core",
+      "run_id": "83242cc6e90cc893d8ee33f5",
+      "kind": "answer",
+      "state": "measured",
+      "cost_usd": 0.000662,
+      "timestamp": "2026-10-29T09:32:55.628420+00:00",
+      "cost_estimated": false,
+      "usage": {
+        "input_tokens": 216,
+        "output_tokens": 23,
+        "cache_read_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "error": null,
+      "latency_ms": 2012.8151249373332,
+      "response_id": "resp_0e7a48a81efbfccf016ae312c7c5cc87d0b64c2146bbea9f28",
+      "output": "The provided tool result calculated addition, yielding 10412.0, not the requested subtraction."
+    }
+  ],
+  "executions": [
+    {
+      "tool": "calculate",
+      "arguments": {
+        "operation": "add",
+        "left": 4.0,
+        "right": 10408.0
+      },
+      "bindings": {
+        "operation": "add",
+        "left": 4.0,
+        "right": 10408.0
+      },
+      "tenant": "acme",
+      "state_version": "d94a545425d395938e62797477cfb975b5ccc9397a716464c577b45cf08ba9bc",
+      "result": {
+        "found": true,
+        "value": 10412.0
+      },
+      "latency_ms": 0.7751249941065907,
+      "started_at": "2026-10-29T09:32:55.613764+00:00"
+    }
+  ],
+  "cache_hit": true,
+  "candidate": "ea1c859e996822c18e76",
+  "retrieval_score": 0.4840876523177682,
+  "retrieval_margin": 0.276761819330045,
+  "rejection": null,
+  "replans": 0,
+  "error": null,
+  "timings_ms": {
+    "binding": 0.09270908776670694,
+    "retrieval_validation": 0.2960410201922059,
+    "planning": 0,
+    "answer": 2012.8151249373332,
+    "tools": 0.7751249941065907,
+    "runtime": 2028.371167019941
+  },
+  "cost_usd": 0.000662,
+  "trace_id": null
+}

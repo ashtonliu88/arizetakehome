@@ -1,0 +1,86 @@
+{
+  "run_id": "76274fa0c66fabcddab0c0fe",
+  "policy": "exact",
+  "bank_state": "warm",
+  "status": "completed",
+  "bindings": {
+    "slots": {
+      "query0": "retry policy"
+    },
+    "slot_types": {
+      "query0": "query"
+    },
+    "skeleton": "search documentation for <query0>",
+    "namespace": "ea951e30ddc2e3fbc06eb8d343acee8d3e1b560636c67748159d683fa73a5e54",
+    "unresolved": [],
+    "semantics": [
+      "count:query:1",
+      "docs"
+    ]
+  },
+  "answer": "**retry-guide**: Retry policy: use exponential backoff.",
+  "calls": [
+    {
+      "reservation": "bea7418b81e64b0b8e9dbb0766c76824",
+      "stage": "core",
+      "run_id": "76274fa0c66fabcddab0c0fe",
+      "kind": "answer",
+      "state": "measured",
+      "cost_usd": 0.000582,
+      "timestamp": "2026-10-29T09:29:24.250073+00:00",
+      "cost_estimated": false,
+      "usage": {
+        "input_tokens": 206,
+        "output_tokens": 17,
+        "cache_read_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "error": null,
+      "latency_ms": 1400.2648330060765,
+      "response_id": "resp_020fb5aa62c60197016ae311f4637887d0967d245fd3ffb273",
+      "output": "**retry-guide**: Retry policy: use exponential backoff."
+    }
+  ],
+  "executions": [
+    {
+      "tool": "search_docs",
+      "arguments": {
+        "query": "retry policy"
+      },
+      "bindings": {
+        "query": "retry policy"
+      },
+      "tenant": "acme",
+      "state_version": "d7a3c49b57296748955fb287a796212c0145c3cf678bf377602c97e1ee2417d4",
+      "result": {
+        "found": true,
+        "records": [
+          {
+            "id": "retry-guide",
+            "text": "Retry policy: use exponential backoff."
+          }
+        ],
+        "error": null
+      },
+      "latency_ms": 0.6919169100001454,
+      "started_at": "2026-10-29T09:29:24.238990+00:00"
+    }
+  ],
+  "cache_hit": true,
+  "candidate": "5a6babb91be38b4c6c4f",
+  "retrieval_score": 1.0,
+  "retrieval_margin": 1.0,
+  "rejection": null,
+  "replans": 0,
+  "error": null,
+  "timings_ms": {
+    "binding": 0.08400005754083395,
+    "retrieval_validation": 0.9821249404922128,
+    "planning": 0,
+    "answer": 1400.2648330060765,
+    "tools": 0.6919169100001454,
+    "runtime": 1413.2512910291553
+  },
+  "cost_usd": 0.000582,
+  "trace_id": null
+}

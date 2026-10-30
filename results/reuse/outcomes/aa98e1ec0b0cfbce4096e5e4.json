@@ -1,0 +1,57 @@
+{
+  "run_id": "aa98e1ec0b0cfbce4096e5e4",
+  "policy": "ordinary",
+  "bank_state": "warm",
+  "status": "clarified",
+  "bindings": {
+    "slots": {},
+    "slot_types": {},
+    "skeleton": "get stored test results",
+    "namespace": "ea951e30ddc2e3fbc06eb8d343acee8d3e1b560636c67748159d683fa73a5e54",
+    "unresolved": [
+      "missing test run identifier"
+    ],
+    "semantics": []
+  },
+  "answer": "What test-run ID (for example, TR-123) should I retrieve stored results for?",
+  "calls": [
+    {
+      "reservation": "615087c5c5d94cb9bfac12d8f080a714",
+      "stage": "core",
+      "run_id": "aa98e1ec0b0cfbce4096e5e4",
+      "kind": "planning",
+      "state": "measured",
+      "cost_usd": 0.0005072,
+      "timestamp": "2026-10-29T09:11:21.485713+00:00",
+      "cost_estimated": false,
+      "usage": {
+        "input_tokens": 1215,
+        "output_tokens": 38,
+        "cache_read_tokens": 1212,
+        "cache_write_tokens": 0
+      },
+      "error": null,
+      "latency_ms": 2022.6443749852479,
+      "response_id": "resp_0134dca7a1b387ed016ae30db9a55487d0a3667292aa3d05bb",
+      "output": "{\"kind\":\"clarify\",\"steps\":[],\"response\":\"What test-run ID (for example, TR-123) should I retrieve stored results for?\"}"
+    }
+  ],
+  "executions": [],
+  "cache_hit": false,
+  "candidate": null,
+  "retrieval_score": 0,
+  "retrieval_margin": 0,
+  "rejection": null,
+  "replans": 0,
+  "error": null,
+  "timings_ms": {
+    "binding": 0.10250008199363947,
+    "retrieval_validation": 0.000208965502679348,
+    "planning": 2022.6443749852479,
+    "answer": 0,
+    "tools": 0,
+    "runtime": 2030.0917910644785
+  },
+  "cost_usd": 0.0005072,
+  "trace_id": null
+}

@@ -1,0 +1,13 @@
+{
+  "timestamp": "2026-10-29T09:55:18.056969+00:00",
+  "frozen_verified": true,
+  "matrix_endpoints": 768,
+  "condition_cells": 384,
+  "repetitions_per_cell": 2,
+  "distinct_published_roots": 768,
+  "published_rows_hash_matches": true,
+  "pending_endpoints": 0,
+  "five_graphics_visually_checked": true,
+  "preflight_tests": 113,
+  "lint": "passed"
+}

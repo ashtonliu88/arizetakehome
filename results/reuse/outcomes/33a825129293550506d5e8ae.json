@@ -1,0 +1,86 @@
+{
+  "run_id": "33a825129293550506d5e8ae",
+  "policy": "ordinary",
+  "bank_state": "warm",
+  "status": "completed",
+  "bindings": {
+    "slots": {
+      "number0": 10411.0,
+      "number1": 5.0
+    },
+    "slot_types": {
+      "number0": "number",
+      "number1": "number"
+    },
+    "skeleton": "calculate <number0> times <number1>",
+    "namespace": "ea951e30ddc2e3fbc06eb8d343acee8d3e1b560636c67748159d683fa73a5e54",
+    "unresolved": [],
+    "semantics": [
+      "count:number:2",
+      "multiply"
+    ]
+  },
+  "answer": "The provided tool result used addition, not multiplication: 10411 + 5 = 10416.0. No multiplication result was provided.",
+  "calls": [
+    {
+      "reservation": "89f28d8a9e544792a931f4c3bd841117",
+      "stage": "core",
+      "run_id": "33a825129293550506d5e8ae",
+      "kind": "answer",
+      "state": "measured",
+      "cost_usd": 0.001272,
+      "timestamp": "2026-10-29T09:33:56.456839+00:00",
+      "cost_estimated": false,
+      "usage": {
+        "input_tokens": 216,
+        "output_tokens": 84,
+        "cache_read_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "error": null,
+      "latency_ms": 2960.256166057661,
+      "response_id": "resp_07f43ed4b3fccf37016ae313049a1887d0a183ac7fe80ccea2",
+      "output": "The provided tool result used addition, not multiplication: 10411 + 5 = 10416.0. No multiplication result was provided."
+    }
+  ],
+  "executions": [
+    {
+      "tool": "calculate",
+      "arguments": {
+        "operation": "add",
+        "left": 10411.0,
+        "right": 5.0
+      },
+      "bindings": {
+        "operation": "add",
+        "left": 10411.0,
+        "right": 5.0
+      },
+      "tenant": "acme",
+      "state_version": "af72a73ded4106568bbb66940e54b376bf29606f0b0a6123778be6098dc85540",
+      "result": {
+        "found": true,
+        "value": 10416.0
+      },
+      "latency_ms": 0.8567499462515116,
+      "started_at": "2026-10-29T09:33:56.442157+00:00"
+    }
+  ],
+  "cache_hit": true,
+  "candidate": "ea1c859e996822c18e76",
+  "retrieval_score": 0.4840876523177682,
+  "retrieval_margin": 0.276761819330045,
+  "rejection": null,
+  "replans": 0,
+  "error": null,
+  "timings_ms": {
+    "binding": 0.10775006376206875,
+    "retrieval_validation": 0.3657920751720667,
+    "planning": 0,
+    "answer": 2960.256166057661,
+    "tools": 0.8567499462515116,
+    "runtime": 2975.8269999874756
+  },
+  "cost_usd": 0.001272,
+  "trace_id": null
+}

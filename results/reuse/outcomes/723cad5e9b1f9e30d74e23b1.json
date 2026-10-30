@@ -1,0 +1,82 @@
+{
+  "run_id": "723cad5e9b1f9e30d74e23b1",
+  "policy": "exact",
+  "bank_state": "warm",
+  "status": "completed",
+  "bindings": {
+    "slots": {
+      "test0": "TR-1200"
+    },
+    "slot_types": {
+      "test0": "test"
+    },
+    "skeleton": "get stored test results <test0>",
+    "namespace": "ea951e30ddc2e3fbc06eb8d343acee8d3e1b560636c67748159d683fa73a5e54",
+    "unresolved": [],
+    "semantics": [
+      "count:test:1"
+    ]
+  },
+  "answer": "TR-1200: stored test outcome is **passed**.",
+  "calls": [
+    {
+      "reservation": "62c57bc03f7145bf8c2fb1bafeccdda7",
+      "stage": "pilot",
+      "run_id": "723cad5e9b1f9e30d74e23b1",
+      "kind": "answer",
+      "state": "measured",
+      "cost_usd": 0.000604,
+      "timestamp": "2026-10-29T08:52:21.462379+00:00",
+      "cost_estimated": false,
+      "usage": {
+        "input_tokens": 217,
+        "output_tokens": 17,
+        "cache_read_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "error": null,
+      "latency_ms": 1458.0720000667498,
+      "response_id": "resp_0168285584499bc9016ae30945ab7c87d080b9db3acb643e8f",
+      "output": "TR-1200: stored test outcome is **passed**."
+    }
+  ],
+  "executions": [
+    {
+      "tool": "lookup_test_results",
+      "arguments": {
+        "test_run_id": "TR-1200"
+      },
+      "bindings": {
+        "test_run_id": "TR-1200"
+      },
+      "tenant": "acme",
+      "state_version": "43b51c6babd4cd6488921d7c06d7a63c7dbee9dd08f6439791067dc82ea71526",
+      "result": {
+        "found": true,
+        "record": {
+          "test_run_id": "TR-1200",
+          "outcome": "passed"
+        },
+        "error": null
+      },
+      "latency_ms": 0.8272500708699226
+    }
+  ],
+  "cache_hit": true,
+  "candidate": "eed78624419f7e11d474",
+  "retrieval_score": 1.0,
+  "retrieval_margin": 1.0,
+  "rejection": null,
+  "replans": 0,
+  "error": null,
+  "timings_ms": {
+    "binding": 0.0908339861780405,
+    "retrieval_validation": 1.3675420777872205,
+    "planning": 0,
+    "answer": 1458.0720000667498,
+    "tools": 0.8272500708699226,
+    "runtime": 1464.6124590653926
+  },
+  "cost_usd": 0.000604,
+  "trace_id": null
+}

@@ -1,0 +1,58 @@
+{
+  "run_id": "582cab6ead25c56f1dc7f895",
+  "policy": "exact",
+  "bank_state": "warm",
+  "status": "clarified",
+  "bindings": {
+    "slots": {},
+    "slot_types": {},
+    "skeleton": "show deployed version",
+    "namespace": "ea951e30ddc2e3fbc06eb8d343acee8d3e1b560636c67748159d683fa73a5e54",
+    "unresolved": [
+      "missing service",
+      "missing environment"
+    ],
+    "semantics": []
+  },
+  "answer": "Which service and environment (production, staging, or development) should I check?",
+  "calls": [
+    {
+      "reservation": "c77dd17b03284ec5a1b592b2a12ec52b",
+      "stage": "core",
+      "run_id": "582cab6ead25c56f1dc7f895",
+      "kind": "planning",
+      "state": "measured",
+      "cost_usd": 0.0004772,
+      "timestamp": "2026-10-29T09:49:26.477387+00:00",
+      "cost_estimated": false,
+      "usage": {
+        "input_tokens": 1215,
+        "output_tokens": 35,
+        "cache_read_tokens": 1212,
+        "cache_write_tokens": 0
+      },
+      "error": null,
+      "latency_ms": 1994.837542064488,
+      "response_id": "resp_095094fb62a2cf6c016ae316a6a0ac87d086e89f1869e4da10",
+      "output": "{\"kind\":\"clarify\",\"steps\":[],\"response\":\"Which service and environment (production, staging, or development) should I check?\"}"
+    }
+  ],
+  "executions": [],
+  "cache_hit": false,
+  "candidate": null,
+  "retrieval_score": 0,
+  "retrieval_margin": 0,
+  "rejection": null,
+  "replans": 0,
+  "error": null,
+  "timings_ms": {
+    "binding": 0.07579196244478226,
+    "retrieval_validation": 0.00029103830456733704,
+    "planning": 1994.837542064488,
+    "answer": 0,
+    "tools": 0,
+    "runtime": 2013.0203339504078
+  },
+  "cost_usd": 0.0004772,
+  "trace_id": null
+}

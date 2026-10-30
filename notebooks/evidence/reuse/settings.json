@@ -1,0 +1,10 @@
+{
+  "threshold": 0.35,
+  "margin": 0.0,
+  "pilot_cap": 3,
+  "core_cap": 20,
+  "ordinary_subset": false,
+  "seed": 1729,
+  "planner_tokens": 1536,
+  "answer_tokens": 512
+}

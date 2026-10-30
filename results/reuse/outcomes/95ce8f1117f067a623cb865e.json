@@ -1,0 +1,86 @@
+{
+  "run_id": "95ce8f1117f067a623cb865e",
+  "policy": "exact",
+  "bank_state": "warm",
+  "status": "completed",
+  "bindings": {
+    "slots": {
+      "number0": 10402.0,
+      "number1": 2.0
+    },
+    "slot_types": {
+      "number0": "number",
+      "number1": "number"
+    },
+    "skeleton": "calculate <number0> plus <number1>",
+    "namespace": "ea951e30ddc2e3fbc06eb8d343acee8d3e1b560636c67748159d683fa73a5e54",
+    "unresolved": [],
+    "semantics": [
+      "add",
+      "count:number:2"
+    ]
+  },
+  "answer": "10404",
+  "calls": [
+    {
+      "reservation": "17dd053c82e94b8abb16a34fcd576f5a",
+      "stage": "core",
+      "run_id": "95ce8f1117f067a623cb865e",
+      "kind": "answer",
+      "state": "measured",
+      "cost_usd": 0.000506,
+      "timestamp": "2026-10-29T09:31:53.331949+00:00",
+      "cost_estimated": false,
+      "usage": {
+        "input_tokens": 223,
+        "output_tokens": 6,
+        "cache_read_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "error": null,
+      "latency_ms": 1708.7347500491887,
+      "response_id": "resp_0c5b0f01cfecfb5e016ae312897ca487d0b80be7fe3777f036",
+      "output": "10404"
+    }
+  ],
+  "executions": [
+    {
+      "tool": "calculate",
+      "arguments": {
+        "operation": "add",
+        "left": 10402.0,
+        "right": 2.0
+      },
+      "bindings": {
+        "operation": "add",
+        "left": 10402.0,
+        "right": 2.0
+      },
+      "tenant": "acme",
+      "state_version": "03bf4735092a79f4ba9c0c711d06c9bdaefeb1d7ca764e1dc96ea76d18fba824",
+      "result": {
+        "found": true,
+        "value": 10404.0
+      },
+      "latency_ms": 0.7936659967526793,
+      "started_at": "2026-10-29T09:31:53.315151+00:00"
+    }
+  ],
+  "cache_hit": true,
+  "candidate": "ea1c859e996822c18e76",
+  "retrieval_score": 1.0,
+  "retrieval_margin": 1.0,
+  "rejection": null,
+  "replans": 0,
+  "error": null,
+  "timings_ms": {
+    "binding": 0.09354192297905684,
+    "retrieval_validation": 1.0662500280886889,
+    "planning": 0,
+    "answer": 1708.7347500491887,
+    "tools": 0.7936659967526793,
+    "runtime": 1727.3589170072228
+  },
+  "cost_usd": 0.000506,
+  "trace_id": null
+}

@@ -1,0 +1,41 @@
+{
+  "timestamp": "2026-10-28T23:22:06.211116+00:00",
+  "status": "offline implementation verified; model findings and human audits pending",
+  "commands": [
+    "uv sync --locked --group dev",
+    "uv run ruff check src tests",
+    "uv run pytest -q",
+    "uv run router-lab privacy prepare",
+    "uv run router-lab privacy replay --split dev --judge evidence",
+    "uv run router-lab privacy replay --split dev --judge exact",
+    "uv run router-lab privacy analyze --split dev --judge evidence",
+    "uv run router-lab privacy analyze --split dev --judge exact"
+  ],
+  "tests": {
+    "passed": 73,
+    "failed": 0,
+    "privacy_tests": 14
+  },
+  "ruff": "passed",
+  "locked_environment": "passed",
+  "real_phoenix_integration": {
+    "representations": 4,
+    "dataset_rows_per_representation": 48,
+    "saved_experiment_rows_per_representation": 48,
+    "publication_resume": "passed"
+  },
+  "offline_corpus": {
+    "episodes": 72,
+    "views": 288,
+    "blanket_identical_pairs": 29,
+    "guarantee": "seeded-entity offline contract only; no general PII or live-export guarantee"
+  },
+  "development_code_baseline_judgments_per_judge": 192,
+  "completed_replay_resume": "192 saved; zero new judgments",
+  "held_out_guard": "refuses missing freeze before model client initialization",
+  "paid_model_calls_this_work": 0,
+  "api_spend_this_work_usd": 0,
+  "human_reviews_created_by_agent": 0,
+  "context_hash": "a866ece0fc835575f84e3980165dfd4d74627bfbd8a378c5857dd19434eb50aa",
+  "measurement": "synthetic controls and code baselines; no measured model findings"
+}

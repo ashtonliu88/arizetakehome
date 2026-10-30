@@ -1,0 +1,90 @@
+{
+  "run_id": "65ee7341d24ff24bf858bcf0",
+  "policy": "exact",
+  "bank_state": "warm",
+  "status": "completed",
+  "bindings": {
+    "slots": {
+      "service0": "gateway",
+      "environment0": "production"
+    },
+    "slot_types": {
+      "service0": "service",
+      "environment0": "environment"
+    },
+    "skeleton": "show deployment for service <service0> in <environment0>",
+    "namespace": "ea951e30ddc2e3fbc06eb8d343acee8d3e1b560636c67748159d683fa73a5e54",
+    "unresolved": [],
+    "semantics": [
+      "count:environment:1",
+      "count:service:1"
+    ]
+  },
+  "answer": "Deployment for `gateway` in `production`: version `v3.1`, status `healthy`.",
+  "calls": [
+    {
+      "reservation": "ab4c84fac7e248d08f640c8520d662e6",
+      "stage": "core",
+      "run_id": "65ee7341d24ff24bf858bcf0",
+      "kind": "answer",
+      "state": "measured",
+      "cost_usd": 0.000694,
+      "timestamp": "2026-10-29T09:04:31.841754+00:00",
+      "cost_estimated": false,
+      "usage": {
+        "input_tokens": 227,
+        "output_tokens": 24,
+        "cache_read_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "error": null,
+      "latency_ms": 1799.2515829391778,
+      "response_id": "resp_002592e75d5c1c5d016ae30c200ab087d0977b54681e96b2de",
+      "output": "Deployment for `gateway` in `production`: version `v3.1`, status `healthy`."
+    }
+  ],
+  "executions": [
+    {
+      "tool": "lookup_deployment",
+      "arguments": {
+        "service": "gateway",
+        "environment": "production"
+      },
+      "bindings": {
+        "service": "gateway",
+        "environment": "production"
+      },
+      "tenant": "acme",
+      "state_version": "86a1f17a5f5819a13954bd8cb15022e40c307e0ec949924d1dbdaeb46226a38a",
+      "result": {
+        "found": true,
+        "record": {
+          "service": "gateway",
+          "environment": "production",
+          "version": "v3.1",
+          "status": "healthy"
+        },
+        "error": null
+      },
+      "latency_ms": 1.1202089954167604,
+      "started_at": "2026-10-29T09:04:31.834607+00:00"
+    }
+  ],
+  "cache_hit": true,
+  "candidate": "9b9ba1104e3b1eda934e",
+  "retrieval_score": 1.0,
+  "retrieval_margin": 1.0,
+  "rejection": null,
+  "replans": 0,
+  "error": null,
+  "timings_ms": {
+    "binding": 0.1427079550921917,
+    "retrieval_validation": 1.5073749236762524,
+    "planning": 0,
+    "answer": 1799.2515829391778,
+    "tools": 1.1202089954167604,
+    "runtime": 1811.0754169756547
+  },
+  "cost_usd": 0.000694,
+  "trace_id": null
+}

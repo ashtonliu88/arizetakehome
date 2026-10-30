@@ -1,0 +1,57 @@
+{
+  "run_id": "eb60c79661ca659041842c2c",
+  "policy": "fused",
+  "bank_state": "empty",
+  "status": "completed",
+  "bindings": {
+    "slots": {},
+    "slot_types": {},
+    "skeleton": "explain recursion",
+    "namespace": "ea951e30ddc2e3fbc06eb8d343acee8d3e1b560636c67748159d683fa73a5e54",
+    "unresolved": [],
+    "semantics": [
+      "requires_planning"
+    ]
+  },
+  "answer": "Recursion is a technique where a function solves a problem by calling itself on a smaller version of that problem.\n\nIt needs two parts:\n- A base case that returns an answer without another recursive call.\n- A recursive case that moves toward the base case.\n\nFor example, factorial computes n! = n × (n−1) × … × 1:\n\n```python\ndef factorial(n):  # n must be a nonnegative integer\n    if n == 0:\n        return 1  # Base case\n    return n * factorial(n - 1)  # Recursive case\n```\n\n`factorial(3)` becomes `3 * factorial(2)`, then `3 * 2 * factorial(1)`, and finally `3 * 2 * 1 * 1 = 6`.\n\nEach call waits for the smaller call to return. Without a reachable base case, recursion continues until the program hits a recursion or memory limit. Recursion is especially useful for nested structures such as trees and folders.",
+  "calls": [
+    {
+      "reservation": "5e0cbb1746e44be1987ade5d154de609",
+      "stage": "core",
+      "run_id": "eb60c79661ca659041842c2c",
+      "kind": "planning",
+      "state": "measured",
+      "cost_usd": 0.0025268,
+      "timestamp": "2026-10-29T09:46:07.670809+00:00",
+      "cost_estimated": false,
+      "usage": {
+        "input_tokens": 1211,
+        "output_tokens": 240,
+        "cache_read_tokens": 1208,
+        "cache_write_tokens": 0
+      },
+      "error": null,
+      "latency_ms": 4989.869875018485,
+      "response_id": "resp_0edf918d10bf0c07016ae315dfc58c87d091ff7984465ab95c",
+      "output": "{\"kind\":\"direct\",\"steps\":[],\"response\":\"Recursion is a technique where a function solves a problem by calling itself on a smaller version of that problem.\\n\\nIt needs two parts:\\n- A base case that returns an answer without another recursive call.\\n- A recursive case that moves toward the base case.\\n\\nFor example, factorial computes n! = n × (n−1) × … × 1:\\n\\n```python\\ndef factorial(n):  # n must be a nonnegative integer\\n    if n == 0:\\n        return 1  # Base case\\n    return n * factorial(n - 1)  # Recursive case\\n```\\n\\n`factorial(3)` becomes `3 * factorial(2)`, then `3 * 2 * factorial(1)`, and finally `3 * 2 * 1 * 1 = 6`.\\n\\nEach call waits for the smaller call to return. Without a reachable base case, recursion continues until the program hits a recursion or memory limit. Recursion is especially useful for nested structures such as trees and folders.\"}"
+    }
+  ],
+  "executions": [],
+  "cache_hit": false,
+  "candidate": null,
+  "retrieval_score": 0,
+  "retrieval_margin": 0,
+  "rejection": null,
+  "replans": 0,
+  "error": null,
+  "timings_ms": {
+    "binding": 0.07054198067635298,
+    "retrieval_validation": 0.000125030055642128,
+    "planning": 4989.869875018485,
+    "answer": 0,
+    "tools": 0,
+    "runtime": 5030.688000028022
+  },
+  "cost_usd": 0.0025268,
+  "trace_id": null
+}

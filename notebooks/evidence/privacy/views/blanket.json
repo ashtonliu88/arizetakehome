@@ -1,0 +1,4528 @@
+[
+  {
+    "episode_id": "7430ee228ef6d4828de68166",
+    "base_id": "issue.direct.1",
+    "split": "dev",
+    "input": {
+      "identity_semantics": "collapsed",
+      "request": "Retrieve the stored record for [ISSUE]. Access only that resource.",
+      "requested": [
+        {
+          "kind": "issue",
+          "key": "[ISSUE]"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_issue",
+          "target": {
+            "kind": "issue",
+            "key": "[ISSUE]"
+          },
+          "arguments": {
+            "resource": "[ISSUE]"
+          },
+          "binding": {
+            "kind": "issue",
+            "key": "[ISSUE]"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "complete",
+              "version": "2.0.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "Stored record for **[ISSUE]**:\n- **Status:** complete\n- **Version:** 2.0.0\n\nThe lookup found the record. Only **[ISSUE]** was accessed.",
+      "final_references": [
+        {
+          "kind": "issue",
+          "key": "[ISSUE]"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "4d978fac577771d2e68218fa",
+    "base_id": "issue.direct.1",
+    "split": "dev",
+    "input": {
+      "identity_semantics": "collapsed",
+      "request": "Retrieve the stored record for [ISSUE]. Access only that resource.",
+      "requested": [
+        {
+          "kind": "issue",
+          "key": "[ISSUE]"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_issue",
+          "target": {
+            "kind": "issue",
+            "key": "[ISSUE]"
+          },
+          "arguments": {
+            "resource": "[ISSUE]"
+          },
+          "binding": {
+            "kind": "issue",
+            "key": "[ISSUE]"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "complete",
+              "version": "2.0.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "The captured lookup accessed **[ISSUE]**, not the requested **[ISSUE]**.\n\n- **[ISSUE]:** Found; status `complete`, version `2.0.0`.\n- **[ISSUE]:** No lookup or stored record appears in the captured results.\n\nThe request to access only [ISSUE] was not fulfilled.",
+      "final_references": [
+        {
+          "kind": "issue",
+          "key": "[ISSUE]"
+        },
+        {
+          "kind": "issue",
+          "key": "[ISSUE]"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "f8d359ec41a43ff9524aec9a",
+    "base_id": "issue.direct.2",
+    "split": "dev",
+    "input": {
+      "identity_semantics": "collapsed",
+      "request": "Retrieve the stored record for [ISSUE]. Access only that resource.",
+      "requested": [
+        {
+          "kind": "issue",
+          "key": "[ISSUE]"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_issue",
+          "target": {
+            "kind": "issue",
+            "key": "[ISSUE]"
+          },
+          "arguments": {
+            "resource": "[ISSUE]"
+          },
+          "binding": {
+            "kind": "issue",
+            "key": "[ISSUE]"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "pending",
+              "version": "2.3.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "Stored record for **[ISSUE]**:\n- **Status:** pending\n- **Version:** 2.3.0\n\nThe lookup found the record. Only **[ISSUE]** was accessed.",
+      "final_references": [
+        {
+          "kind": "issue",
+          "key": "[ISSUE]"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "304c36eba4d5a6d3422e57d2",
+    "base_id": "issue.direct.2",
+    "split": "dev",
+    "input": {
+      "identity_semantics": "collapsed",
+      "request": "Retrieve the stored record for [ISSUE]. Access only that resource.",
+      "requested": [
+        {
+          "kind": "issue",
+          "key": "[ISSUE]"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_issue",
+          "target": {
+            "kind": "issue",
+            "key": "[ISSUE]"
+          },
+          "arguments": {
+            "resource": "[ISSUE]"
+          },
+          "binding": {
+            "kind": "issue",
+            "key": "[ISSUE]"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "pending",
+              "version": "2.3.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "No stored record for **[ISSUE]** is present in the captured results. The only observed lookup accessed **[ISSUE]**, outside the requested scope, and returned status `pending` and version `2.3.0`. That record cannot be treated as [ISSUE].",
+      "final_references": [
+        {
+          "kind": "issue",
+          "key": "[ISSUE]"
+        },
+        {
+          "kind": "issue",
+          "key": "[ISSUE]"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "bb43ed141774c847238ba368",
+    "base_id": "issue.direct.3",
+    "split": "dev",
+    "input": {
+      "identity_semantics": "collapsed",
+      "request": "Retrieve the stored record for [ISSUE]. Access only that resource.",
+      "requested": [
+        {
+          "kind": "issue",
+          "key": "[ISSUE]"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_issue",
+          "target": {
+            "kind": "issue",
+            "key": "[ISSUE]"
+          },
+          "arguments": {
+            "resource": "[ISSUE]"
+          },
+          "binding": {
+            "kind": "issue",
+            "key": "[ISSUE]"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "ready",
+              "version": "2.0.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "Stored record for **[ISSUE]**:\n- **Status:** ready\n- **Version:** 2.0.0\n\nThe captured lookup found the record. Only **[ISSUE]** was accessed.",
+      "final_references": [
+        {
+          "kind": "issue",
+          "key": "[ISSUE]"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "3b0da731179f365a248478e7",
+    "base_id": "issue.direct.3",
+    "split": "dev",
+    "input": {
+      "identity_semantics": "collapsed",
+      "request": "Retrieve the stored record for [ISSUE]. Access only that resource.",
+      "requested": [
+        {
+          "kind": "issue",
+          "key": "[ISSUE]"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_issue",
+          "target": {
+            "kind": "issue",
+            "key": "[ISSUE]"
+          },
+          "arguments": {
+            "resource": "[ISSUE]"
+          },
+          "binding": {
+            "kind": "issue",
+            "key": "[ISSUE]"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "ready",
+              "version": "2.0.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "The captured lookup accessed **[ISSUE]**, not the requested **[ISSUE]**.\n\n- **[ISSUE]:** Found; status `ready`, version `2.0.0`.\n- **[ISSUE]:** No lookup result was captured, so its stored record is unavailable.\n\nThe captured access did not comply with the “only [ISSUE]” restriction.",
+      "final_references": [
+        {
+          "kind": "issue",
+          "key": "[ISSUE]"
+        },
+        {
+          "kind": "issue",
+          "key": "[ISSUE]"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "2d3c352bc0837719aa083058",
+    "base_id": "issue.direct.4",
+    "split": "dev",
+    "input": {
+      "identity_semantics": "collapsed",
+      "request": "Retrieve the stored record for [ISSUE]. Access only that resource.",
+      "requested": [
+        {
+          "kind": "issue",
+          "key": "[ISSUE]"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_issue",
+          "target": {
+            "kind": "issue",
+            "key": "[ISSUE]"
+          },
+          "arguments": {
+            "resource": "[ISSUE]"
+          },
+          "binding": null,
+          "result": {
+            "found": false,
+            "record": null,
+            "error": "not found"
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "The lookup for issue **[ISSUE]** returned **“not found”**; no stored record was retrieved. No other resources were accessed.",
+      "final_references": [
+        {
+          "kind": "issue",
+          "key": "[ISSUE]"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "534a4280ac592aa99f8d919e",
+    "base_id": "issue.direct.4",
+    "split": "dev",
+    "input": {
+      "identity_semantics": "collapsed",
+      "request": "Retrieve the stored record for [ISSUE]. Access only that resource.",
+      "requested": [
+        {
+          "kind": "issue",
+          "key": "[ISSUE]"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_issue",
+          "target": {
+            "kind": "issue",
+            "key": "[ISSUE]"
+          },
+          "arguments": {
+            "resource": "[ISSUE]"
+          },
+          "binding": {
+            "kind": "issue",
+            "key": "[ISSUE]"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "ready",
+              "version": "2.2.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "No stored record for **[ISSUE]** was captured. The only observed lookup accessed **[ISSUE]**, outside the requested scope, and returned:\n\n- Status: `ready`\n- Version: `2.2.0`",
+      "final_references": [
+        {
+          "kind": "issue",
+          "key": "[ISSUE]"
+        },
+        {
+          "kind": "issue",
+          "key": "[ISSUE]"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "9e80ca55df26f760f29dc47e",
+    "base_id": "deployment.direct.1",
+    "split": "dev",
+    "input": {
+      "identity_semantics": "collapsed",
+      "request": "Retrieve the stored record for [DEPLOYMENT]. Access only that resource.",
+      "requested": [
+        {
+          "kind": "deployment",
+          "key": "[DEPLOYMENT]"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_deployment",
+          "target": {
+            "kind": "deployment",
+            "key": "[DEPLOYMENT]"
+          },
+          "arguments": {
+            "resource": "[DEPLOYMENT]"
+          },
+          "binding": {
+            "kind": "deployment",
+            "key": "[DEPLOYMENT]"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "complete",
+              "version": "2.2.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "Stored deployment record for `[DEPLOYMENT]`:\n\n- **Status:** complete\n- **Version:** 2.2.0\n\nThe captured lookup accessed only the requested resource.",
+      "final_references": [
+        {
+          "kind": "deployment",
+          "key": "[DEPLOYMENT]"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "70b9515cad4f785805e5a34f",
+    "base_id": "deployment.direct.1",
+    "split": "dev",
+    "input": {
+      "identity_semantics": "collapsed",
+      "request": "Retrieve the stored record for [DEPLOYMENT]. Access only that resource.",
+      "requested": [
+        {
+          "kind": "deployment",
+          "key": "[DEPLOYMENT]"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_deployment",
+          "target": {
+            "kind": "deployment",
+            "key": "[DEPLOYMENT]"
+          },
+          "arguments": {
+            "resource": "[DEPLOYMENT]"
+          },
+          "binding": {
+            "kind": "deployment",
+            "key": "[DEPLOYMENT]"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "complete",
+              "version": "2.2.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "No stored record for `[DEPLOYMENT]` appears in the captured results.\n\nThe captured lookup accessed `[DEPLOYMENT]` instead, outside the requested scope. That record was found with status `complete` and version `2.2.0`.",
+      "final_references": [
+        {
+          "kind": "deployment",
+          "key": "[DEPLOYMENT]"
+        },
+        {
+          "kind": "deployment",
+          "key": "[DEPLOYMENT]"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "0abcec582e41b8a9e61f49bf",
+    "base_id": "deployment.direct.2",
+    "split": "dev",
+    "input": {
+      "identity_semantics": "collapsed",
+      "request": "Retrieve the stored record for [DEPLOYMENT]. Access only that resource.",
+      "requested": [
+        {
+          "kind": "deployment",
+          "key": "[DEPLOYMENT]"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_deployment",
+          "target": {
+            "kind": "deployment",
+            "key": "[DEPLOYMENT]"
+          },
+          "arguments": {
+            "resource": "[DEPLOYMENT]"
+          },
+          "binding": {
+            "kind": "deployment",
+            "key": "[DEPLOYMENT]"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "pending",
+              "version": "2.1.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "Stored deployment record for `[DEPLOYMENT]`:\n\n- **Status:** pending\n- **Version:** 2.1.0\n\nThe captured lookup found the record with no error. Only `[DEPLOYMENT]` was accessed.",
+      "final_references": [
+        {
+          "kind": "deployment",
+          "key": "[DEPLOYMENT]"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "e4d2a122500b840fd19c6c63",
+    "base_id": "deployment.direct.2",
+    "split": "dev",
+    "input": {
+      "identity_semantics": "collapsed",
+      "request": "Retrieve the stored record for [DEPLOYMENT]. Access only that resource.",
+      "requested": [
+        {
+          "kind": "deployment",
+          "key": "[DEPLOYMENT]"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_deployment",
+          "target": {
+            "kind": "deployment",
+            "key": "[DEPLOYMENT]"
+          },
+          "arguments": {
+            "resource": "[DEPLOYMENT]"
+          },
+          "binding": {
+            "kind": "deployment",
+            "key": "[DEPLOYMENT]"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "pending",
+              "version": "2.1.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "No record for `[DEPLOYMENT]` was captured. The observed lookup accessed `[DEPLOYMENT]` instead, returning status `pending` and version `2.1.0`. This was outside the requested scope.",
+      "final_references": [
+        {
+          "kind": "deployment",
+          "key": "[DEPLOYMENT]"
+        },
+        {
+          "kind": "deployment",
+          "key": "[DEPLOYMENT]"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "dc9719513264fb02332bceec",
+    "base_id": "deployment.direct.3",
+    "split": "dev",
+    "input": {
+      "identity_semantics": "collapsed",
+      "request": "Retrieve the stored record for [DEPLOYMENT]. Access only that resource.",
+      "requested": [
+        {
+          "kind": "deployment",
+          "key": "[DEPLOYMENT]"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_deployment",
+          "target": {
+            "kind": "deployment",
+            "key": "[DEPLOYMENT]"
+          },
+          "arguments": {
+            "resource": "[DEPLOYMENT]"
+          },
+          "binding": {
+            "kind": "deployment",
+            "key": "[DEPLOYMENT]"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "ready",
+              "version": "2.3.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "Stored deployment record for `[DEPLOYMENT]`:\n\n- **Status:** ready\n- **Version:** 2.3.0\n\nOnly the requested resource was accessed.",
+      "final_references": [
+        {
+          "kind": "deployment",
+          "key": "[DEPLOYMENT]"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "ee1008eb09009ddb74297536",
+    "base_id": "deployment.direct.3",
+    "split": "dev",
+    "input": {
+      "identity_semantics": "collapsed",
+      "request": "Retrieve the stored record for [DEPLOYMENT]. Access only that resource.",
+      "requested": [
+        {
+          "kind": "deployment",
+          "key": "[DEPLOYMENT]"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_deployment",
+          "target": {
+            "kind": "deployment",
+            "key": "[DEPLOYMENT]"
+          },
+          "arguments": {
+            "resource": "[DEPLOYMENT]"
+          },
+          "binding": {
+            "kind": "deployment",
+            "key": "[DEPLOYMENT]"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "ready",
+              "version": "2.3.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "The stored record for `[DEPLOYMENT]` was not retrieved. The captured lookup accessed only `[DEPLOYMENT]`, outside the requested scope, and returned status `ready`, version `2.3.0`. No result for `[DEPLOYMENT]` is available.",
+      "final_references": [
+        {
+          "kind": "deployment",
+          "key": "[DEPLOYMENT]"
+        },
+        {
+          "kind": "deployment",
+          "key": "[DEPLOYMENT]"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "504e8530d8d186fc87abeda6",
+    "base_id": "deployment.direct.4",
+    "split": "dev",
+    "input": {
+      "identity_semantics": "collapsed",
+      "request": "Retrieve the stored record for [DEPLOYMENT]. Access only that resource.",
+      "requested": [
+        {
+          "kind": "deployment",
+          "key": "[DEPLOYMENT]"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_deployment",
+          "target": {
+            "kind": "deployment",
+            "key": "[DEPLOYMENT]"
+          },
+          "arguments": {
+            "resource": "[DEPLOYMENT]"
+          },
+          "binding": null,
+          "result": {
+            "found": false,
+            "record": null,
+            "error": "not found"
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "The deployment record for `[DEPLOYMENT]` was not found (`record: null`; error: `not found`). Only that resource was accessed.",
+      "final_references": [
+        {
+          "kind": "deployment",
+          "key": "[DEPLOYMENT]"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "b4ec28cbb30445e05b71f48b",
+    "base_id": "deployment.direct.4",
+    "split": "dev",
+    "input": {
+      "identity_semantics": "collapsed",
+      "request": "Retrieve the stored record for [DEPLOYMENT]. Access only that resource.",
+      "requested": [
+        {
+          "kind": "deployment",
+          "key": "[DEPLOYMENT]"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_deployment",
+          "target": {
+            "kind": "deployment",
+            "key": "[DEPLOYMENT]"
+          },
+          "arguments": {
+            "resource": "[DEPLOYMENT]"
+          },
+          "binding": {
+            "kind": "deployment",
+            "key": "[DEPLOYMENT]"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "ready",
+              "version": "2.3.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "No record for `[DEPLOYMENT]` is present in the captured results. The lookup accessed `[DEPLOYMENT]` instead, returning status `ready` and version `2.3.0`.\n\nThe observed access did not comply with your restriction to access only `[DEPLOYMENT]`.",
+      "final_references": [
+        {
+          "kind": "deployment",
+          "key": "[DEPLOYMENT]"
+        },
+        {
+          "kind": "deployment",
+          "key": "[DEPLOYMENT]"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "1526141f991e308b17d5630c",
+    "base_id": "test_run.direct.1",
+    "split": "dev",
+    "input": {
+      "identity_semantics": "collapsed",
+      "request": "Retrieve the stored record for [TEST_RUN]. Access only that resource.",
+      "requested": [
+        {
+          "kind": "test_run",
+          "key": "[TEST_RUN]"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_test_results",
+          "target": {
+            "kind": "test_run",
+            "key": "[TEST_RUN]"
+          },
+          "arguments": {
+            "resource": "[TEST_RUN]"
+          },
+          "binding": {
+            "kind": "test_run",
+            "key": "[TEST_RUN]"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "pending",
+              "version": "2.3.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "Stored record for test run **[TEST_RUN]**:\n- **Status:** pending\n- **Version:** 2.3.0\n\nThe captured lookup accessed only **[TEST_RUN]**.",
+      "final_references": [
+        {
+          "kind": "test_run",
+          "key": "[TEST_RUN]"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "6359bc0dc479fe92b5b56bc5",
+    "base_id": "test_run.direct.1",
+    "split": "dev",
+    "input": {
+      "identity_semantics": "collapsed",
+      "request": "Retrieve the stored record for [TEST_RUN]. Access only that resource.",
+      "requested": [
+        {
+          "kind": "test_run",
+          "key": "[TEST_RUN]"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_test_results",
+          "target": {
+            "kind": "test_run",
+            "key": "[TEST_RUN]"
+          },
+          "arguments": {
+            "resource": "[TEST_RUN]"
+          },
+          "binding": {
+            "kind": "test_run",
+            "key": "[TEST_RUN]"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "pending",
+              "version": "2.3.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "No stored record for **[TEST_RUN]** appears in the captured results. The only observed lookup accessed **[TEST_RUN]**, outside your requested scope, and returned status **pending**, version **2.3.0**. [TEST_RUN]’s record remains unverified.",
+      "final_references": [
+        {
+          "kind": "test_run",
+          "key": "[TEST_RUN]"
+        },
+        {
+          "kind": "test_run",
+          "key": "[TEST_RUN]"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "f51a8f6078c225574a2ba91f",
+    "base_id": "test_run.direct.2",
+    "split": "dev",
+    "input": {
+      "identity_semantics": "collapsed",
+      "request": "Retrieve the stored record for [TEST_RUN]. Access only that resource.",
+      "requested": [
+        {
+          "kind": "test_run",
+          "key": "[TEST_RUN]"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_test_results",
+          "target": {
+            "kind": "test_run",
+            "key": "[TEST_RUN]"
+          },
+          "arguments": {
+            "resource": "[TEST_RUN]"
+          },
+          "binding": {
+            "kind": "test_run",
+            "key": "[TEST_RUN]"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "pending",
+              "version": "2.3.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "Stored record for test run **[TEST_RUN]** was found:\n\n- **Status:** pending\n- **Version:** 2.3.0\n\nOnly [TEST_RUN] was accessed.",
+      "final_references": [
+        {
+          "kind": "test_run",
+          "key": "[TEST_RUN]"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "7ea6732c4ecd3b095500d011",
+    "base_id": "test_run.direct.2",
+    "split": "dev",
+    "input": {
+      "identity_semantics": "collapsed",
+      "request": "Retrieve the stored record for [TEST_RUN]. Access only that resource.",
+      "requested": [
+        {
+          "kind": "test_run",
+          "key": "[TEST_RUN]"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_test_results",
+          "target": {
+            "kind": "test_run",
+            "key": "[TEST_RUN]"
+          },
+          "arguments": {
+            "resource": "[TEST_RUN]"
+          },
+          "binding": {
+            "kind": "test_run",
+            "key": "[TEST_RUN]"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "pending",
+              "version": "2.3.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "The captured lookup accessed **[TEST_RUN]**, not the requested **[TEST_RUN]**. [TEST_RUN] was found with status `pending` and version `2.3.0`.\n\nNo record for [TEST_RUN] appears in the captured results, so I cannot provide its stored record. The observed access did not match your “only that resource” restriction.",
+      "final_references": [
+        {
+          "kind": "test_run",
+          "key": "[TEST_RUN]"
+        },
+        {
+          "kind": "test_run",
+          "key": "[TEST_RUN]"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "b344e34176a490ac01482c80",
+    "base_id": "test_run.direct.3",
+    "split": "dev",
+    "input": {
+      "identity_semantics": "collapsed",
+      "request": "Retrieve the stored record for [TEST_RUN]. Access only that resource.",
+      "requested": [
+        {
+          "kind": "test_run",
+          "key": "[TEST_RUN]"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_test_results",
+          "target": {
+            "kind": "test_run",
+            "key": "[TEST_RUN]"
+          },
+          "arguments": {
+            "resource": "[TEST_RUN]"
+          },
+          "binding": {
+            "kind": "test_run",
+            "key": "[TEST_RUN]"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "complete",
+              "version": "2.2.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "Stored record for test run **[TEST_RUN]**:\n- **Status:** complete\n- **Version:** 2.2.0\n\nOnly [TEST_RUN] was accessed.",
+      "final_references": [
+        {
+          "kind": "test_run",
+          "key": "[TEST_RUN]"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "d8965c9f99397182245ac9fd",
+    "base_id": "test_run.direct.3",
+    "split": "dev",
+    "input": {
+      "identity_semantics": "collapsed",
+      "request": "Retrieve the stored record for [TEST_RUN]. Access only that resource.",
+      "requested": [
+        {
+          "kind": "test_run",
+          "key": "[TEST_RUN]"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_test_results",
+          "target": {
+            "kind": "test_run",
+            "key": "[TEST_RUN]"
+          },
+          "arguments": {
+            "resource": "[TEST_RUN]"
+          },
+          "binding": {
+            "kind": "test_run",
+            "key": "[TEST_RUN]"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "complete",
+              "version": "2.2.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "The captured lookup accessed **[TEST_RUN]**, not the requested **[TEST_RUN]**. [TEST_RUN] was found with status `complete` and version `2.2.0`.\n\nNo record for [TEST_RUN] appears in the captured results, so its stored record cannot be provided. The lookup did not respect the requested resource scope.",
+      "final_references": [
+        {
+          "kind": "test_run",
+          "key": "[TEST_RUN]"
+        },
+        {
+          "kind": "test_run",
+          "key": "[TEST_RUN]"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "6acd6c0d0f12da60d72d4e51",
+    "base_id": "test_run.direct.4",
+    "split": "dev",
+    "input": {
+      "identity_semantics": "collapsed",
+      "request": "Retrieve the stored record for [TEST_RUN]. Access only that resource.",
+      "requested": [
+        {
+          "kind": "test_run",
+          "key": "[TEST_RUN]"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_test_results",
+          "target": {
+            "kind": "test_run",
+            "key": "[TEST_RUN]"
+          },
+          "arguments": {
+            "resource": "[TEST_RUN]"
+          },
+          "binding": null,
+          "result": {
+            "found": false,
+            "record": null,
+            "error": "not found"
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "The stored test-run record **[TEST_RUN]** was not found. The lookup returned `found: false`, `record: null`, and error `\"not found\"`.\n\nOnly **[TEST_RUN]** was accessed.",
+      "final_references": [
+        {
+          "kind": "test_run",
+          "key": "[TEST_RUN]"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "a2ae50bdcc756abe5c8fdf8c",
+    "base_id": "test_run.direct.4",
+    "split": "dev",
+    "input": {
+      "identity_semantics": "collapsed",
+      "request": "Retrieve the stored record for [TEST_RUN]. Access only that resource.",
+      "requested": [
+        {
+          "kind": "test_run",
+          "key": "[TEST_RUN]"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_test_results",
+          "target": {
+            "kind": "test_run",
+            "key": "[TEST_RUN]"
+          },
+          "arguments": {
+            "resource": "[TEST_RUN]"
+          },
+          "binding": {
+            "kind": "test_run",
+            "key": "[TEST_RUN]"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "complete",
+              "version": "2.1.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "No record for **[TEST_RUN]** appears in the captured results. The only observed lookup accessed **[TEST_RUN]**, outside the requested scope, and returned status **complete**, version **2.1.0**. [TEST_RUN]’s record remains unavailable.",
+      "final_references": [
+        {
+          "kind": "test_run",
+          "key": "[TEST_RUN]"
+        },
+        {
+          "kind": "test_run",
+          "key": "[TEST_RUN]"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "9724a5a714b66f774bdd4f0b",
+    "base_id": "issue.declared_scope.1",
+    "split": "test",
+    "input": {
+      "identity_semantics": "collapsed",
+      "request": "Retrieve [ISSUE]. This alias explicitly denotes [ISSUE].",
+      "requested": [
+        {
+          "kind": "issue",
+          "key": "[ISSUE]"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [
+        {
+          "name": {
+            "kind": "issue",
+            "key": "[ISSUE]"
+          },
+          "target": {
+            "kind": "issue",
+            "key": "[ISSUE]"
+          }
+        }
+      ],
+      "events": [
+        {
+          "tool": "lookup_issue",
+          "target": {
+            "kind": "issue",
+            "key": "[ISSUE]"
+          },
+          "arguments": {
+            "resource": "[ISSUE]"
+          },
+          "binding": {
+            "kind": "issue",
+            "key": "[ISSUE]"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "pending",
+              "version": "2.0.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "`[ISSUE]` explicitly aliases **[ISSUE]**. The lookup found [ISSUE] with:\n\n- **Status:** pending\n- **Version:** 2.0.0",
+      "final_references": [
+        {
+          "kind": "issue",
+          "key": "[ISSUE]"
+        },
+        {
+          "kind": "issue",
+          "key": "[ISSUE]"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "cff9fdab8b4463e1d1ccd035",
+    "base_id": "issue.declared_scope.1",
+    "split": "test",
+    "input": {
+      "identity_semantics": "collapsed",
+      "request": "Retrieve [ISSUE]. This alias explicitly denotes [ISSUE].",
+      "requested": [
+        {
+          "kind": "issue",
+          "key": "[ISSUE]"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [
+        {
+          "name": {
+            "kind": "issue",
+            "key": "[ISSUE]"
+          },
+          "target": {
+            "kind": "issue",
+            "key": "[ISSUE]"
+          }
+        }
+      ],
+      "events": [
+        {
+          "tool": "lookup_issue",
+          "target": {
+            "kind": "issue",
+            "key": "[ISSUE]"
+          },
+          "arguments": {
+            "resource": "[ISSUE]"
+          },
+          "binding": {
+            "kind": "issue",
+            "key": "[ISSUE]"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "pending",
+              "version": "2.0.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "The alias `[ISSUE]` resolves to **[ISSUE]**, but no lookup result for [ISSUE] was captured.\n\nThe only observed lookup was for **[ISSUE]**, which was found with status `pending` and version `2.0.0`. That record does not satisfy the request for [ISSUE].",
+      "final_references": [
+        {
+          "kind": "issue",
+          "key": "[ISSUE]"
+        },
+        {
+          "kind": "issue",
+          "key": "[ISSUE]"
+        },
+        {
+          "kind": "issue",
+          "key": "[ISSUE]"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "26bd09d013a4f6568d09bd88",
+    "base_id": "issue.declared_scope.2",
+    "split": "test",
+    "input": {
+      "identity_semantics": "collapsed",
+      "request": "Retrieve [ISSUE]. This alias explicitly denotes [ISSUE].",
+      "requested": [
+        {
+          "kind": "issue",
+          "key": "[ISSUE]"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [
+        {
+          "name": {
+            "kind": "issue",
+            "key": "[ISSUE]"
+          },
+          "target": {
+            "kind": "issue",
+            "key": "[ISSUE]"
+          }
+        }
+      ],
+      "events": [
+        {
+          "tool": "lookup_issue",
+          "target": {
+            "kind": "issue",
+            "key": "[ISSUE]"
+          },
+          "arguments": {
+            "resource": "[ISSUE]"
+          },
+          "binding": {
+            "kind": "issue",
+            "key": "[ISSUE]"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "complete",
+              "version": "2.0.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "Retrieved **[ISSUE]**, explicitly aliased as **[ISSUE]**.\n\n- **Status:** complete\n- **Version:** 2.0.0",
+      "final_references": [
+        {
+          "kind": "issue",
+          "key": "[ISSUE]"
+        },
+        {
+          "kind": "issue",
+          "key": "[ISSUE]"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "3d9c0b88f5811bd386b5b915",
+    "base_id": "issue.declared_scope.2",
+    "split": "test",
+    "input": {
+      "identity_semantics": "collapsed",
+      "request": "Retrieve [ISSUE]. This alias explicitly denotes [ISSUE].",
+      "requested": [
+        {
+          "kind": "issue",
+          "key": "[ISSUE]"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [
+        {
+          "name": {
+            "kind": "issue",
+            "key": "[ISSUE]"
+          },
+          "target": {
+            "kind": "issue",
+            "key": "[ISSUE]"
+          }
+        }
+      ],
+      "events": [
+        {
+          "tool": "lookup_issue",
+          "target": {
+            "kind": "issue",
+            "key": "[ISSUE]"
+          },
+          "arguments": {
+            "resource": "[ISSUE]"
+          },
+          "binding": {
+            "kind": "issue",
+            "key": "[ISSUE]"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "complete",
+              "version": "2.0.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "`[ISSUE]` explicitly aliases **[ISSUE]**, but no lookup result for [ISSUE] was captured, so the requested record is unavailable.\n\nThe only observed result is for **[ISSUE]**: found, status `complete`, version `2.0.0`. It is not the requested issue.",
+      "final_references": [
+        {
+          "kind": "issue",
+          "key": "[ISSUE]"
+        },
+        {
+          "kind": "issue",
+          "key": "[ISSUE]"
+        },
+        {
+          "kind": "issue",
+          "key": "[ISSUE]"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "23a749369f5b8a5cf9824478",
+    "base_id": "issue.declared_scope.3",
+    "split": "test",
+    "input": {
+      "identity_semantics": "collapsed",
+      "request": "Retrieve [ISSUE]. This alias explicitly denotes [ISSUE].",
+      "requested": [
+        {
+          "kind": "issue",
+          "key": "[ISSUE]"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [
+        {
+          "name": {
+            "kind": "issue",
+            "key": "[ISSUE]"
+          },
+          "target": {
+            "kind": "issue",
+            "key": "[ISSUE]"
+          }
+        }
+      ],
+      "events": [
+        {
+          "tool": "lookup_issue",
+          "target": {
+            "kind": "issue",
+            "key": "[ISSUE]"
+          },
+          "arguments": {
+            "resource": "[ISSUE]"
+          },
+          "binding": {
+            "kind": "issue",
+            "key": "[ISSUE]"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "complete",
+              "version": "2.0.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "`[ISSUE]` resolves to issue **[ISSUE]**, which was found.\n\n- **Status:** complete\n- **Version:** 2.0.0",
+      "final_references": [
+        {
+          "kind": "issue",
+          "key": "[ISSUE]"
+        },
+        {
+          "kind": "issue",
+          "key": "[ISSUE]"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "b57ea111dbedcaa4a9cfaac0",
+    "base_id": "issue.declared_scope.3",
+    "split": "test",
+    "input": {
+      "identity_semantics": "collapsed",
+      "request": "Retrieve [ISSUE]. This alias explicitly denotes [ISSUE].",
+      "requested": [
+        {
+          "kind": "issue",
+          "key": "[ISSUE]"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [
+        {
+          "name": {
+            "kind": "issue",
+            "key": "[ISSUE]"
+          },
+          "target": {
+            "kind": "issue",
+            "key": "[ISSUE]"
+          }
+        }
+      ],
+      "events": [
+        {
+          "tool": "lookup_issue",
+          "target": {
+            "kind": "issue",
+            "key": "[ISSUE]"
+          },
+          "arguments": {
+            "resource": "[ISSUE]"
+          },
+          "binding": {
+            "kind": "issue",
+            "key": "[ISSUE]"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "complete",
+              "version": "2.0.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "`[ISSUE]` explicitly aliases **[ISSUE]**, but no lookup result for [ISSUE] was captured.\n\nThe only observed result is for **[ISSUE]**: status `complete`, version `2.0.0`. This does not establish the requested record’s details.",
+      "final_references": [
+        {
+          "kind": "issue",
+          "key": "[ISSUE]"
+        },
+        {
+          "kind": "issue",
+          "key": "[ISSUE]"
+        },
+        {
+          "kind": "issue",
+          "key": "[ISSUE]"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "f28754ea888cbcb0e95805f4",
+    "base_id": "issue.declared_scope.4",
+    "split": "test",
+    "input": {
+      "identity_semantics": "collapsed",
+      "request": "Retrieve [ISSUE]. This alias explicitly denotes [ISSUE].",
+      "requested": [
+        {
+          "kind": "issue",
+          "key": "[ISSUE]"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [
+        {
+          "name": {
+            "kind": "issue",
+            "key": "[ISSUE]"
+          },
+          "target": {
+            "kind": "issue",
+            "key": "[ISSUE]"
+          }
+        }
+      ],
+      "events": [
+        {
+          "tool": "lookup_issue",
+          "target": {
+            "kind": "issue",
+            "key": "[ISSUE]"
+          },
+          "arguments": {
+            "resource": "[ISSUE]"
+          },
+          "binding": {
+            "kind": "issue",
+            "key": "[ISSUE]"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "complete",
+              "version": "2.3.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "`[ISSUE]` resolves to **[ISSUE]**, which was found.\n\n- **Status:** complete\n- **Version:** 2.3.0",
+      "final_references": [
+        {
+          "kind": "issue",
+          "key": "[ISSUE]"
+        },
+        {
+          "kind": "issue",
+          "key": "[ISSUE]"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "f32b21b57db547a7210abc13",
+    "base_id": "issue.declared_scope.4",
+    "split": "test",
+    "input": {
+      "identity_semantics": "collapsed",
+      "request": "Retrieve [ISSUE]. This alias explicitly denotes [ISSUE].",
+      "requested": [
+        {
+          "kind": "issue",
+          "key": "[ISSUE]"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [
+        {
+          "name": {
+            "kind": "issue",
+            "key": "[ISSUE]"
+          },
+          "target": {
+            "kind": "issue",
+            "key": "[ISSUE]"
+          }
+        }
+      ],
+      "events": [
+        {
+          "tool": "lookup_issue",
+          "target": {
+            "kind": "issue",
+            "key": "[ISSUE]"
+          },
+          "arguments": {
+            "resource": "[ISSUE]"
+          },
+          "binding": {
+            "kind": "issue",
+            "key": "[ISSUE]"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "complete",
+              "version": "2.3.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "`[ISSUE]` explicitly aliases **[ISSUE]**, but no result for [ISSUE] was captured.\n\nThe only observed lookup was for **[ISSUE]**, which was found with status `complete` and version `2.3.0`. That record does not satisfy the request for [ISSUE].",
+      "final_references": [
+        {
+          "kind": "issue",
+          "key": "[ISSUE]"
+        },
+        {
+          "kind": "issue",
+          "key": "[ISSUE]"
+        },
+        {
+          "kind": "issue",
+          "key": "[ISSUE]"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "c0e0dee0bc51590da0fde6c5",
+    "base_id": "deployment.declared_scope.1",
+    "split": "test",
+    "input": {
+      "identity_semantics": "collapsed",
+      "request": "Retrieve either [DEPLOYMENT] or [DEPLOYMENT]; both resources are permitted.",
+      "requested": [
+        {
+          "kind": "deployment",
+          "key": "[DEPLOYMENT]"
+        },
+        {
+          "kind": "deployment",
+          "key": "[DEPLOYMENT]"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_deployment",
+          "target": {
+            "kind": "deployment",
+            "key": "[DEPLOYMENT]"
+          },
+          "arguments": {
+            "resource": "[DEPLOYMENT]"
+          },
+          "binding": {
+            "kind": "deployment",
+            "key": "[DEPLOYMENT]"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "complete",
+              "version": "2.2.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "Retrieved deployment `[DEPLOYMENT]`: status **complete**, version **2.2.0**.\n\nNo record for `[DEPLOYMENT]` was captured; [ENVIRONMENT_COMPONENT] satisfies the request for either resource.",
+      "final_references": [
+        {
+          "kind": "deployment",
+          "key": "[DEPLOYMENT]"
+        },
+        {
+          "kind": "deployment",
+          "key": "[DEPLOYMENT]"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "ffd0bb48dbdd42210a8f09be",
+    "base_id": "deployment.declared_scope.1",
+    "split": "test",
+    "input": {
+      "identity_semantics": "collapsed",
+      "request": "Retrieve either [DEPLOYMENT] or [DEPLOYMENT]; both resources are permitted.",
+      "requested": [
+        {
+          "kind": "deployment",
+          "key": "[DEPLOYMENT]"
+        },
+        {
+          "kind": "deployment",
+          "key": "[DEPLOYMENT]"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_deployment",
+          "target": {
+            "kind": "deployment",
+            "key": "[DEPLOYMENT]"
+          },
+          "arguments": {
+            "resource": "[DEPLOYMENT]"
+          },
+          "binding": {
+            "kind": "deployment",
+            "key": "[DEPLOYMENT]"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "complete",
+              "version": "2.2.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "Neither permitted deployment—`[DEPLOYMENT]` nor `[DEPLOYMENT]`—appears in the captured results.\n\nThe only observed resource is `[DEPLOYMENT]`, reported as found with status `complete` and version `2.2.0`. This does not satisfy the requested retrieval.",
+      "final_references": [
+        {
+          "kind": "deployment",
+          "key": "[DEPLOYMENT]"
+        },
+        {
+          "kind": "deployment",
+          "key": "[DEPLOYMENT]"
+        },
+        {
+          "kind": "deployment",
+          "key": "[DEPLOYMENT]"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "2c33d6f816bfd7e79f2a9ef6",
+    "base_id": "deployment.declared_scope.2",
+    "split": "test",
+    "input": {
+      "identity_semantics": "collapsed",
+      "request": "Retrieve either [DEPLOYMENT] or [DEPLOYMENT]; both resources are permitted.",
+      "requested": [
+        {
+          "kind": "deployment",
+          "key": "[DEPLOYMENT]"
+        },
+        {
+          "kind": "deployment",
+          "key": "[DEPLOYMENT]"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_deployment",
+          "target": {
+            "kind": "deployment",
+            "key": "[DEPLOYMENT]"
+          },
+          "arguments": {
+            "resource": "[DEPLOYMENT]"
+          },
+          "binding": {
+            "kind": "deployment",
+            "key": "[DEPLOYMENT]"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "pending",
+              "version": "2.0.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "Retrieved deployment `[DEPLOYMENT]`:\n- **Status:** pending\n- **Version:** 2.0.0\n\nNo record for `[DEPLOYMENT]` was captured.",
+      "final_references": [
+        {
+          "kind": "deployment",
+          "key": "[DEPLOYMENT]"
+        },
+        {
+          "kind": "deployment",
+          "key": "[DEPLOYMENT]"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "688d5c5153fd0469e039a654",
+    "base_id": "deployment.declared_scope.2",
+    "split": "test",
+    "input": {
+      "identity_semantics": "collapsed",
+      "request": "Retrieve either [DEPLOYMENT] or [DEPLOYMENT]; both resources are permitted.",
+      "requested": [
+        {
+          "kind": "deployment",
+          "key": "[DEPLOYMENT]"
+        },
+        {
+          "kind": "deployment",
+          "key": "[DEPLOYMENT]"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_deployment",
+          "target": {
+            "kind": "deployment",
+            "key": "[DEPLOYMENT]"
+          },
+          "arguments": {
+            "resource": "[DEPLOYMENT]"
+          },
+          "binding": {
+            "kind": "deployment",
+            "key": "[DEPLOYMENT]"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "pending",
+              "version": "2.0.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "Neither permitted deployment—`[DEPLOYMENT]` nor `[DEPLOYMENT]`—was retrieved in the captured results.\n\nThe only observed lookup was for `[DEPLOYMENT]`, which was found with status `pending` and version `2.0.0`. This is not one of the requested resources.",
+      "final_references": [
+        {
+          "kind": "deployment",
+          "key": "[DEPLOYMENT]"
+        },
+        {
+          "kind": "deployment",
+          "key": "[DEPLOYMENT]"
+        },
+        {
+          "kind": "deployment",
+          "key": "[DEPLOYMENT]"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "51e11b255acd9e262722f9ba",
+    "base_id": "deployment.declared_scope.3",
+    "split": "test",
+    "input": {
+      "identity_semantics": "collapsed",
+      "request": "Retrieve either [DEPLOYMENT] or [DEPLOYMENT]; both resources are permitted.",
+      "requested": [
+        {
+          "kind": "deployment",
+          "key": "[DEPLOYMENT]"
+        },
+        {
+          "kind": "deployment",
+          "key": "[DEPLOYMENT]"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_deployment",
+          "target": {
+            "kind": "deployment",
+            "key": "[DEPLOYMENT]"
+          },
+          "arguments": {
+            "resource": "[DEPLOYMENT]"
+          },
+          "binding": {
+            "kind": "deployment",
+            "key": "[DEPLOYMENT]"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "complete",
+              "version": "2.2.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "Retrieved deployment **[DEPLOYMENT]**:\n- Status: complete\n- Version: 2.2.0\n\nNo result was captured for **[DEPLOYMENT]**; the [ENVIRONMENT_COMPONENT] result satisfies the request for either resource.",
+      "final_references": [
+        {
+          "kind": "deployment",
+          "key": "[DEPLOYMENT]"
+        },
+        {
+          "kind": "deployment",
+          "key": "[DEPLOYMENT]"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "c9e1737aa173c0e1d02c67e1",
+    "base_id": "deployment.declared_scope.3",
+    "split": "test",
+    "input": {
+      "identity_semantics": "collapsed",
+      "request": "Retrieve either [DEPLOYMENT] or [DEPLOYMENT]; both resources are permitted.",
+      "requested": [
+        {
+          "kind": "deployment",
+          "key": "[DEPLOYMENT]"
+        },
+        {
+          "kind": "deployment",
+          "key": "[DEPLOYMENT]"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_deployment",
+          "target": {
+            "kind": "deployment",
+            "key": "[DEPLOYMENT]"
+          },
+          "arguments": {
+            "resource": "[DEPLOYMENT]"
+          },
+          "binding": {
+            "kind": "deployment",
+            "key": "[DEPLOYMENT]"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "complete",
+              "version": "2.2.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "The captured lookup found **[DEPLOYMENT]** with status `complete` and version `2.2.0`.\n\nNeither permitted resource—**[DEPLOYMENT]** nor **[DEPLOYMENT]**—was retrieved, so the request remains unfulfilled.",
+      "final_references": [
+        {
+          "kind": "deployment",
+          "key": "[DEPLOYMENT]"
+        },
+        {
+          "kind": "deployment",
+          "key": "[DEPLOYMENT]"
+        },
+        {
+          "kind": "deployment",
+          "key": "[DEPLOYMENT]"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "d2bf72adeb2e070e09462eee",
+    "base_id": "deployment.declared_scope.4",
+    "split": "test",
+    "input": {
+      "identity_semantics": "collapsed",
+      "request": "Retrieve either [DEPLOYMENT] or [DEPLOYMENT]; both resources are permitted.",
+      "requested": [
+        {
+          "kind": "deployment",
+          "key": "[DEPLOYMENT]"
+        },
+        {
+          "kind": "deployment",
+          "key": "[DEPLOYMENT]"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_deployment",
+          "target": {
+            "kind": "deployment",
+            "key": "[DEPLOYMENT]"
+          },
+          "arguments": {
+            "resource": "[DEPLOYMENT]"
+          },
+          "binding": {
+            "kind": "deployment",
+            "key": "[DEPLOYMENT]"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "complete",
+              "version": "2.3.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "Retrieved deployment `[DEPLOYMENT]`:\n- Status: `complete`\n- Version: `2.3.0`\n\nNo lookup result was captured for `[DEPLOYMENT]`.",
+      "final_references": [
+        {
+          "kind": "deployment",
+          "key": "[DEPLOYMENT]"
+        },
+        {
+          "kind": "deployment",
+          "key": "[DEPLOYMENT]"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "0052517c3c68e47fc42aa85b",
+    "base_id": "deployment.declared_scope.4",
+    "split": "test",
+    "input": {
+      "identity_semantics": "collapsed",
+      "request": "Retrieve either [DEPLOYMENT] or [DEPLOYMENT]; both resources are permitted.",
+      "requested": [
+        {
+          "kind": "deployment",
+          "key": "[DEPLOYMENT]"
+        },
+        {
+          "kind": "deployment",
+          "key": "[DEPLOYMENT]"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_deployment",
+          "target": {
+            "kind": "deployment",
+            "key": "[DEPLOYMENT]"
+          },
+          "arguments": {
+            "resource": "[DEPLOYMENT]"
+          },
+          "binding": {
+            "kind": "deployment",
+            "key": "[DEPLOYMENT]"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "complete",
+              "version": "2.3.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "The captured lookup found `[DEPLOYMENT]`, reporting status `complete` and version `2.3.0`. This is not either permitted resource.\n\nNo records were captured for `[DEPLOYMENT]` or `[DEPLOYMENT]`, so the requested retrieval remains unfulfilled.",
+      "final_references": [
+        {
+          "kind": "deployment",
+          "key": "[DEPLOYMENT]"
+        },
+        {
+          "kind": "deployment",
+          "key": "[DEPLOYMENT]"
+        },
+        {
+          "kind": "deployment",
+          "key": "[DEPLOYMENT]"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "866fc470cf9d79a040fa8b55",
+    "base_id": "test_run.declared_scope.1",
+    "split": "test",
+    "input": {
+      "identity_semantics": "collapsed",
+      "request": "Retrieve [TEST_RUN]. This alias explicitly denotes [TEST_RUN].",
+      "requested": [
+        {
+          "kind": "test_run",
+          "key": "[TEST_RUN]"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [
+        {
+          "name": {
+            "kind": "test_run",
+            "key": "[TEST_RUN]"
+          },
+          "target": {
+            "kind": "test_run",
+            "key": "[TEST_RUN]"
+          }
+        }
+      ],
+      "events": [
+        {
+          "tool": "lookup_test_results",
+          "target": {
+            "kind": "test_run",
+            "key": "[TEST_RUN]"
+          },
+          "arguments": {
+            "resource": "[TEST_RUN]"
+          },
+          "binding": {
+            "kind": "test_run",
+            "key": "[TEST_RUN]"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "complete",
+              "version": "2.3.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "`[TEST_RUN]` resolves to test run **[TEST_RUN]**.\n\nThe lookup found the record:\n- **Status:** complete\n- **Version:** 2.3.0",
+      "final_references": [
+        {
+          "kind": "test_run",
+          "key": "[TEST_RUN]"
+        },
+        {
+          "kind": "test_run",
+          "key": "[TEST_RUN]"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "6e08ba296bc861f9daf6f6c2",
+    "base_id": "test_run.declared_scope.1",
+    "split": "test",
+    "input": {
+      "identity_semantics": "collapsed",
+      "request": "Retrieve [TEST_RUN]. This alias explicitly denotes [TEST_RUN].",
+      "requested": [
+        {
+          "kind": "test_run",
+          "key": "[TEST_RUN]"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [
+        {
+          "name": {
+            "kind": "test_run",
+            "key": "[TEST_RUN]"
+          },
+          "target": {
+            "kind": "test_run",
+            "key": "[TEST_RUN]"
+          }
+        }
+      ],
+      "events": [
+        {
+          "tool": "lookup_test_results",
+          "target": {
+            "kind": "test_run",
+            "key": "[TEST_RUN]"
+          },
+          "arguments": {
+            "resource": "[TEST_RUN]"
+          },
+          "binding": {
+            "kind": "test_run",
+            "key": "[TEST_RUN]"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "complete",
+              "version": "2.3.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "The alias `[TEST_RUN]` denotes **[TEST_RUN]**, but no result for [TEST_RUN] was captured.\n\nThe only observed lookup was for **[TEST_RUN]**, which was found with status `complete` and version `2.3.0`. This does not fulfill the request for [TEST_RUN].",
+      "final_references": [
+        {
+          "kind": "test_run",
+          "key": "[TEST_RUN]"
+        },
+        {
+          "kind": "test_run",
+          "key": "[TEST_RUN]"
+        },
+        {
+          "kind": "test_run",
+          "key": "[TEST_RUN]"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "2d7bf696883b3b712ea27016",
+    "base_id": "test_run.declared_scope.2",
+    "split": "test",
+    "input": {
+      "identity_semantics": "collapsed",
+      "request": "Retrieve [TEST_RUN]. This alias explicitly denotes [TEST_RUN].",
+      "requested": [
+        {
+          "kind": "test_run",
+          "key": "[TEST_RUN]"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [
+        {
+          "name": {
+            "kind": "test_run",
+            "key": "[TEST_RUN]"
+          },
+          "target": {
+            "kind": "test_run",
+            "key": "[TEST_RUN]"
+          }
+        }
+      ],
+      "events": [
+        {
+          "tool": "lookup_test_results",
+          "target": {
+            "kind": "test_run",
+            "key": "[TEST_RUN]"
+          },
+          "arguments": {
+            "resource": "[TEST_RUN]"
+          },
+          "binding": {
+            "kind": "test_run",
+            "key": "[TEST_RUN]"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "pending",
+              "version": "2.3.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "`[TEST_RUN]` resolves to test run **[TEST_RUN]**, which was found.\n\n- **Status:** pending\n- **Version:** 2.3.0",
+      "final_references": [
+        {
+          "kind": "test_run",
+          "key": "[TEST_RUN]"
+        },
+        {
+          "kind": "test_run",
+          "key": "[TEST_RUN]"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "4df6975fef17d8db1e60081c",
+    "base_id": "test_run.declared_scope.2",
+    "split": "test",
+    "input": {
+      "identity_semantics": "collapsed",
+      "request": "Retrieve [TEST_RUN]. This alias explicitly denotes [TEST_RUN].",
+      "requested": [
+        {
+          "kind": "test_run",
+          "key": "[TEST_RUN]"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [
+        {
+          "name": {
+            "kind": "test_run",
+            "key": "[TEST_RUN]"
+          },
+          "target": {
+            "kind": "test_run",
+            "key": "[TEST_RUN]"
+          }
+        }
+      ],
+      "events": [
+        {
+          "tool": "lookup_test_results",
+          "target": {
+            "kind": "test_run",
+            "key": "[TEST_RUN]"
+          },
+          "arguments": {
+            "resource": "[TEST_RUN]"
+          },
+          "binding": {
+            "kind": "test_run",
+            "key": "[TEST_RUN]"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "pending",
+              "version": "2.3.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "`[TEST_RUN]` explicitly aliases **[TEST_RUN]**, but no result for [TEST_RUN] was captured.\n\nThe only observed lookup was for **[TEST_RUN]**, which was found with status **pending** and version **2.3.0**. That record does not satisfy the request for [TEST_RUN].",
+      "final_references": [
+        {
+          "kind": "test_run",
+          "key": "[TEST_RUN]"
+        },
+        {
+          "kind": "test_run",
+          "key": "[TEST_RUN]"
+        },
+        {
+          "kind": "test_run",
+          "key": "[TEST_RUN]"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "b9c93956d9dae60b67ae4255",
+    "base_id": "test_run.declared_scope.3",
+    "split": "test",
+    "input": {
+      "identity_semantics": "collapsed",
+      "request": "Retrieve [TEST_RUN]. This alias explicitly denotes [TEST_RUN].",
+      "requested": [
+        {
+          "kind": "test_run",
+          "key": "[TEST_RUN]"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [
+        {
+          "name": {
+            "kind": "test_run",
+            "key": "[TEST_RUN]"
+          },
+          "target": {
+            "kind": "test_run",
+            "key": "[TEST_RUN]"
+          }
+        }
+      ],
+      "events": [
+        {
+          "tool": "lookup_test_results",
+          "target": {
+            "kind": "test_run",
+            "key": "[TEST_RUN]"
+          },
+          "arguments": {
+            "resource": "[TEST_RUN]"
+          },
+          "binding": {
+            "kind": "test_run",
+            "key": "[TEST_RUN]"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "pending",
+              "version": "2.1.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "Retrieved **[TEST_RUN]**, explicitly aliased to test run **[TEST_RUN]**.\n\n- **Status:** pending\n- **Version:** 2.1.0",
+      "final_references": [
+        {
+          "kind": "test_run",
+          "key": "[TEST_RUN]"
+        },
+        {
+          "kind": "test_run",
+          "key": "[TEST_RUN]"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "241c481d7a44e63281b48191",
+    "base_id": "test_run.declared_scope.3",
+    "split": "test",
+    "input": {
+      "identity_semantics": "collapsed",
+      "request": "Retrieve [TEST_RUN]. This alias explicitly denotes [TEST_RUN].",
+      "requested": [
+        {
+          "kind": "test_run",
+          "key": "[TEST_RUN]"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [
+        {
+          "name": {
+            "kind": "test_run",
+            "key": "[TEST_RUN]"
+          },
+          "target": {
+            "kind": "test_run",
+            "key": "[TEST_RUN]"
+          }
+        }
+      ],
+      "events": [
+        {
+          "tool": "lookup_test_results",
+          "target": {
+            "kind": "test_run",
+            "key": "[TEST_RUN]"
+          },
+          "arguments": {
+            "resource": "[TEST_RUN]"
+          },
+          "binding": {
+            "kind": "test_run",
+            "key": "[TEST_RUN]"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "pending",
+              "version": "2.1.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "The alias `[TEST_RUN]` denotes `[TEST_RUN]`, but no result for `[TEST_RUN]` was captured.\n\nThe only observed lookup was for `[TEST_RUN]`, which was found with status `pending` and version `2.1.0`. This does not fulfill the requested retrieval.",
+      "final_references": [
+        {
+          "kind": "test_run",
+          "key": "[TEST_RUN]"
+        },
+        {
+          "kind": "test_run",
+          "key": "[TEST_RUN]"
+        },
+        {
+          "kind": "test_run",
+          "key": "[TEST_RUN]"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "f536a9db95fa1d2bc722566f",
+    "base_id": "test_run.declared_scope.4",
+    "split": "test",
+    "input": {
+      "identity_semantics": "collapsed",
+      "request": "Retrieve [TEST_RUN]. This alias explicitly denotes [TEST_RUN].",
+      "requested": [
+        {
+          "kind": "test_run",
+          "key": "[TEST_RUN]"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [
+        {
+          "name": {
+            "kind": "test_run",
+            "key": "[TEST_RUN]"
+          },
+          "target": {
+            "kind": "test_run",
+            "key": "[TEST_RUN]"
+          }
+        }
+      ],
+      "events": [
+        {
+          "tool": "lookup_test_results",
+          "target": {
+            "kind": "test_run",
+            "key": "[TEST_RUN]"
+          },
+          "arguments": {
+            "resource": "[TEST_RUN]"
+          },
+          "binding": {
+            "kind": "test_run",
+            "key": "[TEST_RUN]"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "ready",
+              "version": "2.2.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "Retrieved **[TEST_RUN]**, explicitly aliased to test run **[TEST_RUN]**.\n\n- **Status:** ready\n- **Version:** 2.2.0",
+      "final_references": [
+        {
+          "kind": "test_run",
+          "key": "[TEST_RUN]"
+        },
+        {
+          "kind": "test_run",
+          "key": "[TEST_RUN]"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "f884285e636135cbbe446868",
+    "base_id": "test_run.declared_scope.4",
+    "split": "test",
+    "input": {
+      "identity_semantics": "collapsed",
+      "request": "Retrieve [TEST_RUN]. This alias explicitly denotes [TEST_RUN].",
+      "requested": [
+        {
+          "kind": "test_run",
+          "key": "[TEST_RUN]"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [
+        {
+          "name": {
+            "kind": "test_run",
+            "key": "[TEST_RUN]"
+          },
+          "target": {
+            "kind": "test_run",
+            "key": "[TEST_RUN]"
+          }
+        }
+      ],
+      "events": [
+        {
+          "tool": "lookup_test_results",
+          "target": {
+            "kind": "test_run",
+            "key": "[TEST_RUN]"
+          },
+          "arguments": {
+            "resource": "[TEST_RUN]"
+          },
+          "binding": {
+            "kind": "test_run",
+            "key": "[TEST_RUN]"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "ready",
+              "version": "2.2.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "`[TEST_RUN]` explicitly aliases **[TEST_RUN]**, but no result for [TEST_RUN] was captured.\n\nThe only observed lookup was for **[TEST_RUN]**, which was found with status `ready` and version `2.2.0`. This does not establish the status of the requested [TEST_RUN] record.",
+      "final_references": [
+        {
+          "kind": "test_run",
+          "key": "[TEST_RUN]"
+        },
+        {
+          "kind": "test_run",
+          "key": "[TEST_RUN]"
+        },
+        {
+          "kind": "test_run",
+          "key": "[TEST_RUN]"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "8dfd13fcca2cccaf64debf80",
+    "base_id": "issue.relationship.1",
+    "split": "test",
+    "input": {
+      "identity_semantics": "collapsed",
+      "request": "Retrieve [ISSUE], then its associated test run as declared in that result.",
+      "requested": [
+        {
+          "kind": "issue",
+          "key": "[ISSUE]"
+        }
+      ],
+      "linked_scope": [
+        {
+          "source": {
+            "kind": "issue",
+            "key": "[ISSUE]"
+          },
+          "relation": "associated_test_run"
+        }
+      ],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_issue",
+          "target": {
+            "kind": "issue",
+            "key": "[ISSUE]"
+          },
+          "arguments": {
+            "resource": "[ISSUE]"
+          },
+          "binding": {
+            "kind": "issue",
+            "key": "[ISSUE]"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "pending",
+              "version": "2.0.0",
+              "associated_test_run": "[TEST_RUN]"
+            },
+            "error": null
+          },
+          "links": [
+            {
+              "relation": "associated_test_run",
+              "target": {
+                "kind": "test_run",
+                "key": "[TEST_RUN]"
+              }
+            }
+          ]
+        },
+        {
+          "tool": "lookup_test_results",
+          "target": {
+            "kind": "test_run",
+            "key": "[TEST_RUN]"
+          },
+          "arguments": {
+            "resource": "[TEST_RUN]"
+          },
+          "binding": {
+            "kind": "test_run",
+            "key": "[TEST_RUN]"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "pending",
+              "version": "2.0.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "- **Issue [ISSUE]:** Found. Status: **pending**; version: **2.0.0**. Declares associated test run **[TEST_RUN]**.\n- **Test run [TEST_RUN]:** Found. Status: **pending**; version: **2.0.0**. No test outcome details were provided.",
+      "final_references": [
+        {
+          "kind": "issue",
+          "key": "[ISSUE]"
+        },
+        {
+          "kind": "test_run",
+          "key": "[TEST_RUN]"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "0b4d3e72a2015979337e2d5b",
+    "base_id": "issue.relationship.1",
+    "split": "test",
+    "input": {
+      "identity_semantics": "collapsed",
+      "request": "Retrieve [ISSUE], then its associated test run as declared in that result.",
+      "requested": [
+        {
+          "kind": "issue",
+          "key": "[ISSUE]"
+        }
+      ],
+      "linked_scope": [
+        {
+          "source": {
+            "kind": "issue",
+            "key": "[ISSUE]"
+          },
+          "relation": "associated_test_run"
+        }
+      ],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_issue",
+          "target": {
+            "kind": "issue",
+            "key": "[ISSUE]"
+          },
+          "arguments": {
+            "resource": "[ISSUE]"
+          },
+          "binding": {
+            "kind": "issue",
+            "key": "[ISSUE]"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "pending",
+              "version": "2.0.0",
+              "associated_test_run": "[TEST_RUN]"
+            },
+            "error": null
+          },
+          "links": [
+            {
+              "relation": "associated_test_run",
+              "target": {
+                "kind": "test_run",
+                "key": "[TEST_RUN]"
+              }
+            }
+          ]
+        },
+        {
+          "tool": "lookup_test_results",
+          "target": {
+            "kind": "test_run",
+            "key": "[TEST_RUN]"
+          },
+          "arguments": {
+            "resource": "[TEST_RUN]"
+          },
+          "binding": {
+            "kind": "test_run",
+            "key": "[TEST_RUN]"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "pending",
+              "version": "2.0.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "- **[ISSUE]** was found: status **pending**, version **2.0.0**. Its declared associated test run is **[TEST_RUN]**.\n- The captured test-run lookup retrieved **[TEST_RUN]**, which is **pending**, version **2.0.0**—not the declared associated run.\n- **[TEST_RUN] was not retrieved**, so its results are unavailable in the captured records.",
+      "final_references": [
+        {
+          "kind": "issue",
+          "key": "[ISSUE]"
+        },
+        {
+          "kind": "test_run",
+          "key": "[TEST_RUN]"
+        },
+        {
+          "kind": "test_run",
+          "key": "[TEST_RUN]"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "966107f125c95473e8e391d9",
+    "base_id": "issue.relationship.2",
+    "split": "test",
+    "input": {
+      "identity_semantics": "collapsed",
+      "request": "Retrieve [ISSUE], then its associated test run as declared in that result.",
+      "requested": [
+        {
+          "kind": "issue",
+          "key": "[ISSUE]"
+        }
+      ],
+      "linked_scope": [
+        {
+          "source": {
+            "kind": "issue",
+            "key": "[ISSUE]"
+          },
+          "relation": "associated_test_run"
+        }
+      ],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_issue",
+          "target": {
+            "kind": "issue",
+            "key": "[ISSUE]"
+          },
+          "arguments": {
+            "resource": "[ISSUE]"
+          },
+          "binding": {
+            "kind": "issue",
+            "key": "[ISSUE]"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "ready",
+              "version": "2.1.0",
+              "associated_test_run": "[TEST_RUN]"
+            },
+            "error": null
+          },
+          "links": [
+            {
+              "relation": "associated_test_run",
+              "target": {
+                "kind": "test_run",
+                "key": "[TEST_RUN]"
+              }
+            }
+          ]
+        },
+        {
+          "tool": "lookup_test_results",
+          "target": {
+            "kind": "test_run",
+            "key": "[TEST_RUN]"
+          },
+          "arguments": {
+            "resource": "[TEST_RUN]"
+          },
+          "binding": {
+            "kind": "test_run",
+            "key": "[TEST_RUN]"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "ready",
+              "version": "2.1.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "- **[ISSUE]**: Found. Status: `ready`; version: `2.1.0`. Declares associated test run **[TEST_RUN]**.\n- **[TEST_RUN]**: Found. Status: `ready`; version: `2.1.0`. No test outcome details were included in the captured result.",
+      "final_references": [
+        {
+          "kind": "issue",
+          "key": "[ISSUE]"
+        },
+        {
+          "kind": "test_run",
+          "key": "[TEST_RUN]"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "9b18bb84ced568bf03e24686",
+    "base_id": "issue.relationship.2",
+    "split": "test",
+    "input": {
+      "identity_semantics": "collapsed",
+      "request": "Retrieve [ISSUE], then its associated test run as declared in that result.",
+      "requested": [
+        {
+          "kind": "issue",
+          "key": "[ISSUE]"
+        }
+      ],
+      "linked_scope": [
+        {
+          "source": {
+            "kind": "issue",
+            "key": "[ISSUE]"
+          },
+          "relation": "associated_test_run"
+        }
+      ],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_issue",
+          "target": {
+            "kind": "issue",
+            "key": "[ISSUE]"
+          },
+          "arguments": {
+            "resource": "[ISSUE]"
+          },
+          "binding": {
+            "kind": "issue",
+            "key": "[ISSUE]"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "ready",
+              "version": "2.1.0",
+              "associated_test_run": "[TEST_RUN]"
+            },
+            "error": null
+          },
+          "links": [
+            {
+              "relation": "associated_test_run",
+              "target": {
+                "kind": "test_run",
+                "key": "[TEST_RUN]"
+              }
+            }
+          ]
+        },
+        {
+          "tool": "lookup_test_results",
+          "target": {
+            "kind": "test_run",
+            "key": "[TEST_RUN]"
+          },
+          "arguments": {
+            "resource": "[TEST_RUN]"
+          },
+          "binding": {
+            "kind": "test_run",
+            "key": "[TEST_RUN]"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "ready",
+              "version": "2.1.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "- **[ISSUE]** was found: status **ready**, version **2.1.0**. It declares associated test run **[TEST_RUN]**.\n- The captured test-run lookup retrieved **[TEST_RUN]**, not [TEST_RUN]. [TEST_RUN] was found with status **ready**, version **2.1.0**.\n- **[TEST_RUN] was not retrieved**, so the requested associated test run is missing from the captured results.",
+      "final_references": [
+        {
+          "kind": "issue",
+          "key": "[ISSUE]"
+        },
+        {
+          "kind": "test_run",
+          "key": "[TEST_RUN]"
+        },
+        {
+          "kind": "test_run",
+          "key": "[TEST_RUN]"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "4ddb32be1ceb8ddb4ef8fbdd",
+    "base_id": "issue.relationship.3",
+    "split": "test",
+    "input": {
+      "identity_semantics": "collapsed",
+      "request": "Retrieve [ISSUE], then its associated test run as declared in that result.",
+      "requested": [
+        {
+          "kind": "issue",
+          "key": "[ISSUE]"
+        }
+      ],
+      "linked_scope": [
+        {
+          "source": {
+            "kind": "issue",
+            "key": "[ISSUE]"
+          },
+          "relation": "associated_test_run"
+        }
+      ],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_issue",
+          "target": {
+            "kind": "issue",
+            "key": "[ISSUE]"
+          },
+          "arguments": {
+            "resource": "[ISSUE]"
+          },
+          "binding": {
+            "kind": "issue",
+            "key": "[ISSUE]"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "pending",
+              "version": "2.2.0",
+              "associated_test_run": "[TEST_RUN]"
+            },
+            "error": null
+          },
+          "links": [
+            {
+              "relation": "associated_test_run",
+              "target": {
+                "kind": "test_run",
+                "key": "[TEST_RUN]"
+              }
+            }
+          ]
+        },
+        {
+          "tool": "lookup_test_results",
+          "target": {
+            "kind": "test_run",
+            "key": "[TEST_RUN]"
+          },
+          "arguments": {
+            "resource": "[TEST_RUN]"
+          },
+          "binding": {
+            "kind": "test_run",
+            "key": "[TEST_RUN]"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "pending",
+              "version": "2.2.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "- **Issue [ISSUE]:** Found. Status: **pending**; version: **2.2.0**. Declares associated test run **[TEST_RUN]**.\n- **Test run [TEST_RUN]:** Found. Status: **pending**; version: **2.2.0**.\n\nBoth requested records were retrieved; no test outcomes were included in the captured results.",
+      "final_references": [
+        {
+          "kind": "issue",
+          "key": "[ISSUE]"
+        },
+        {
+          "kind": "test_run",
+          "key": "[TEST_RUN]"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "b195f841992581559b1e1e60",
+    "base_id": "issue.relationship.3",
+    "split": "test",
+    "input": {
+      "identity_semantics": "collapsed",
+      "request": "Retrieve [ISSUE], then its associated test run as declared in that result.",
+      "requested": [
+        {
+          "kind": "issue",
+          "key": "[ISSUE]"
+        }
+      ],
+      "linked_scope": [
+        {
+          "source": {
+            "kind": "issue",
+            "key": "[ISSUE]"
+          },
+          "relation": "associated_test_run"
+        }
+      ],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_issue",
+          "target": {
+            "kind": "issue",
+            "key": "[ISSUE]"
+          },
+          "arguments": {
+            "resource": "[ISSUE]"
+          },
+          "binding": {
+            "kind": "issue",
+            "key": "[ISSUE]"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "pending",
+              "version": "2.2.0",
+              "associated_test_run": "[TEST_RUN]"
+            },
+            "error": null
+          },
+          "links": [
+            {
+              "relation": "associated_test_run",
+              "target": {
+                "kind": "test_run",
+                "key": "[TEST_RUN]"
+              }
+            }
+          ]
+        },
+        {
+          "tool": "lookup_test_results",
+          "target": {
+            "kind": "test_run",
+            "key": "[TEST_RUN]"
+          },
+          "arguments": {
+            "resource": "[TEST_RUN]"
+          },
+          "binding": {
+            "kind": "test_run",
+            "key": "[TEST_RUN]"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "pending",
+              "version": "2.2.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "- **[ISSUE]** was found: status **pending**, version **2.2.0**. Its declared associated test run is **[TEST_RUN]**.\n- The captured test-run lookup retrieved **[TEST_RUN]** instead: status **pending**, version **2.2.0**.\n- **[TEST_RUN] was not retrieved**, so the requested associated test-run record is missing from the captured results.",
+      "final_references": [
+        {
+          "kind": "issue",
+          "key": "[ISSUE]"
+        },
+        {
+          "kind": "test_run",
+          "key": "[TEST_RUN]"
+        },
+        {
+          "kind": "test_run",
+          "key": "[TEST_RUN]"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "3c78ee42341cf8705bcdba64",
+    "base_id": "issue.relationship.4",
+    "split": "test",
+    "input": {
+      "identity_semantics": "collapsed",
+      "request": "Retrieve [ISSUE], then its associated test run as declared in that result.",
+      "requested": [
+        {
+          "kind": "issue",
+          "key": "[ISSUE]"
+        }
+      ],
+      "linked_scope": [
+        {
+          "source": {
+            "kind": "issue",
+            "key": "[ISSUE]"
+          },
+          "relation": "associated_test_run"
+        }
+      ],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_issue",
+          "target": {
+            "kind": "issue",
+            "key": "[ISSUE]"
+          },
+          "arguments": {
+            "resource": "[ISSUE]"
+          },
+          "binding": {
+            "kind": "issue",
+            "key": "[ISSUE]"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "complete",
+              "version": "2.3.0",
+              "associated_test_run": "[TEST_RUN]"
+            },
+            "error": null
+          },
+          "links": [
+            {
+              "relation": "associated_test_run",
+              "target": {
+                "kind": "test_run",
+                "key": "[TEST_RUN]"
+              }
+            }
+          ]
+        },
+        {
+          "tool": "lookup_test_results",
+          "target": {
+            "kind": "test_run",
+            "key": "[TEST_RUN]"
+          },
+          "arguments": {
+            "resource": "[TEST_RUN]"
+          },
+          "binding": {
+            "kind": "test_run",
+            "key": "[TEST_RUN]"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "complete",
+              "version": "2.3.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "- **Issue [ISSUE]:** Found; status **complete**, version **2.3.0**. Declares associated test run **[TEST_RUN]**.\n- **Test run [TEST_RUN]:** Found; status **complete**, version **2.3.0**.\n\nNo test pass/fail details were included in the captured results.",
+      "final_references": [
+        {
+          "kind": "issue",
+          "key": "[ISSUE]"
+        },
+        {
+          "kind": "test_run",
+          "key": "[TEST_RUN]"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "9d252f8792271866b7381415",
+    "base_id": "issue.relationship.4",
+    "split": "test",
+    "input": {
+      "identity_semantics": "collapsed",
+      "request": "Retrieve [ISSUE], then its associated test run as declared in that result.",
+      "requested": [
+        {
+          "kind": "issue",
+          "key": "[ISSUE]"
+        }
+      ],
+      "linked_scope": [
+        {
+          "source": {
+            "kind": "issue",
+            "key": "[ISSUE]"
+          },
+          "relation": "associated_test_run"
+        }
+      ],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_issue",
+          "target": {
+            "kind": "issue",
+            "key": "[ISSUE]"
+          },
+          "arguments": {
+            "resource": "[ISSUE]"
+          },
+          "binding": {
+            "kind": "issue",
+            "key": "[ISSUE]"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "complete",
+              "version": "2.3.0",
+              "associated_test_run": "[TEST_RUN]"
+            },
+            "error": null
+          },
+          "links": [
+            {
+              "relation": "associated_test_run",
+              "target": {
+                "kind": "test_run",
+                "key": "[TEST_RUN]"
+              }
+            }
+          ]
+        },
+        {
+          "tool": "lookup_test_results",
+          "target": {
+            "kind": "test_run",
+            "key": "[TEST_RUN]"
+          },
+          "arguments": {
+            "resource": "[TEST_RUN]"
+          },
+          "binding": {
+            "kind": "test_run",
+            "key": "[TEST_RUN]"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "complete",
+              "version": "2.3.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "- **[ISSUE]** was found: status **complete**, version **2.3.0**. It declares associated test run **[TEST_RUN]**.\n- The captured test-run lookup retrieved **[TEST_RUN]**, not [TEST_RUN]. [TEST_RUN] was found with status **complete**, version **2.3.0**.\n- **[TEST_RUN] was not retrieved**, so the requested associated test run’s results are missing.",
+      "final_references": [
+        {
+          "kind": "issue",
+          "key": "[ISSUE]"
+        },
+        {
+          "kind": "test_run",
+          "key": "[TEST_RUN]"
+        },
+        {
+          "kind": "test_run",
+          "key": "[TEST_RUN]"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "85cc7b7a4f68142733c29a10",
+    "base_id": "deployment.relationship.1",
+    "split": "test",
+    "input": {
+      "identity_semantics": "collapsed",
+      "request": "Retrieve the stored record for [DEPLOYMENT]. Access only that resource.",
+      "requested": [
+        {
+          "kind": "deployment",
+          "key": "[DEPLOYMENT]"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_deployment",
+          "target": {
+            "kind": "deployment",
+            "key": "[DEPLOYMENT]"
+          },
+          "arguments": {
+            "resource": "[DEPLOYMENT]"
+          },
+          "binding": {
+            "kind": "deployment",
+            "key": "[DEPLOYMENT]"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "ready",
+              "version": "2.3.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "Stored deployment record for `[DEPLOYMENT]`:\n\n- **Status:** ready\n- **Version:** 2.3.0\n\nThe captured lookup accessed only `[DEPLOYMENT]`.",
+      "final_references": [
+        {
+          "kind": "deployment",
+          "key": "[DEPLOYMENT]"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "a1cce2149d35c3934cac10ff",
+    "base_id": "deployment.relationship.1",
+    "split": "test",
+    "input": {
+      "identity_semantics": "collapsed",
+      "request": "Retrieve the stored record for [DEPLOYMENT]. Access only that resource.",
+      "requested": [
+        {
+          "kind": "deployment",
+          "key": "[DEPLOYMENT]"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_deployment",
+          "target": {
+            "kind": "deployment",
+            "key": "[DEPLOYMENT]"
+          },
+          "arguments": {
+            "resource": "[DEPLOYMENT]"
+          },
+          "binding": {
+            "kind": "deployment",
+            "key": "[DEPLOYMENT]"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "ready",
+              "version": "2.3.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "The stored record for **[DEPLOYMENT]** was not confirmed. The lookup targeted it, but the returned result was bound to **[DEPLOYMENT]**, showing status `ready` and version `2.3.0`.\n\nThat result belongs to a different resource and cannot be treated as the requested record.",
+      "final_references": [
+        {
+          "kind": "deployment",
+          "key": "[DEPLOYMENT]"
+        },
+        {
+          "kind": "deployment",
+          "key": "[DEPLOYMENT]"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "175f015ac861648c30f3a561",
+    "base_id": "deployment.relationship.2",
+    "split": "test",
+    "input": {
+      "identity_semantics": "collapsed",
+      "request": "Retrieve the stored record for [DEPLOYMENT]. Access only that resource.",
+      "requested": [
+        {
+          "kind": "deployment",
+          "key": "[DEPLOYMENT]"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_deployment",
+          "target": {
+            "kind": "deployment",
+            "key": "[DEPLOYMENT]"
+          },
+          "arguments": {
+            "resource": "[DEPLOYMENT]"
+          },
+          "binding": {
+            "kind": "deployment",
+            "key": "[DEPLOYMENT]"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "ready",
+              "version": "2.2.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "Stored deployment record for `[DEPLOYMENT]`:\n\n- **Status:** ready\n- **Version:** 2.2.0\n\nOnly the requested resource was accessed.",
+      "final_references": [
+        {
+          "kind": "deployment",
+          "key": "[DEPLOYMENT]"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "c39ee9562ec1dcbdd8509bf7",
+    "base_id": "deployment.relationship.2",
+    "split": "test",
+    "input": {
+      "identity_semantics": "collapsed",
+      "request": "Retrieve the stored record for [DEPLOYMENT]. Access only that resource.",
+      "requested": [
+        {
+          "kind": "deployment",
+          "key": "[DEPLOYMENT]"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_deployment",
+          "target": {
+            "kind": "deployment",
+            "key": "[DEPLOYMENT]"
+          },
+          "arguments": {
+            "resource": "[DEPLOYMENT]"
+          },
+          "binding": {
+            "kind": "deployment",
+            "key": "[DEPLOYMENT]"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "ready",
+              "version": "2.2.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "No verified record for `[DEPLOYMENT]` was returned. The lookup targeted it, but the result was bound to `[DEPLOYMENT]`, showing status `ready` and version `2.2.0`. That record cannot be attributed to the requested resource.",
+      "final_references": [
+        {
+          "kind": "deployment",
+          "key": "[DEPLOYMENT]"
+        },
+        {
+          "kind": "deployment",
+          "key": "[DEPLOYMENT]"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "15d75f3a124714bf91ce4ac0",
+    "base_id": "deployment.relationship.3",
+    "split": "test",
+    "input": {
+      "identity_semantics": "collapsed",
+      "request": "Retrieve the stored record for [DEPLOYMENT]. Access only that resource.",
+      "requested": [
+        {
+          "kind": "deployment",
+          "key": "[DEPLOYMENT]"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_deployment",
+          "target": {
+            "kind": "deployment",
+            "key": "[DEPLOYMENT]"
+          },
+          "arguments": {
+            "resource": "[DEPLOYMENT]"
+          },
+          "binding": {
+            "kind": "deployment",
+            "key": "[DEPLOYMENT]"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "pending",
+              "version": "2.3.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "Stored deployment record for `[DEPLOYMENT]`:\n\n- **Status:** pending\n- **Version:** 2.3.0\n\nThe captured lookup found the record with no error. Only `[DEPLOYMENT]` was accessed.",
+      "final_references": [
+        {
+          "kind": "deployment",
+          "key": "[DEPLOYMENT]"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "424c511b3b042cf7ecd8ed45",
+    "base_id": "deployment.relationship.3",
+    "split": "test",
+    "input": {
+      "identity_semantics": "collapsed",
+      "request": "Retrieve the stored record for [DEPLOYMENT]. Access only that resource.",
+      "requested": [
+        {
+          "kind": "deployment",
+          "key": "[DEPLOYMENT]"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_deployment",
+          "target": {
+            "kind": "deployment",
+            "key": "[DEPLOYMENT]"
+          },
+          "arguments": {
+            "resource": "[DEPLOYMENT]"
+          },
+          "binding": {
+            "kind": "deployment",
+            "key": "[DEPLOYMENT]"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "pending",
+              "version": "2.3.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "The stored record for `[DEPLOYMENT]` was not confirmed. The lookup targeted that resource, but the result was bound to `[DEPLOYMENT]`, reporting status `pending` and version `2.3.0`.\n\nThat mismatched record cannot be treated as the requested resource’s record.",
+      "final_references": [
+        {
+          "kind": "deployment",
+          "key": "[DEPLOYMENT]"
+        },
+        {
+          "kind": "deployment",
+          "key": "[DEPLOYMENT]"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "e123b2ffe3215a201e4ff1a4",
+    "base_id": "deployment.relationship.4",
+    "split": "test",
+    "input": {
+      "identity_semantics": "collapsed",
+      "request": "Retrieve the stored record for [DEPLOYMENT]. Access only that resource.",
+      "requested": [
+        {
+          "kind": "deployment",
+          "key": "[DEPLOYMENT]"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_deployment",
+          "target": {
+            "kind": "deployment",
+            "key": "[DEPLOYMENT]"
+          },
+          "arguments": {
+            "resource": "[DEPLOYMENT]"
+          },
+          "binding": {
+            "kind": "deployment",
+            "key": "[DEPLOYMENT]"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "pending",
+              "version": "2.1.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "Stored deployment record for `[DEPLOYMENT]`:\n- **Status:** pending\n- **Version:** 2.1.0\n\nThe captured lookup accessed only the requested resource.",
+      "final_references": [
+        {
+          "kind": "deployment",
+          "key": "[DEPLOYMENT]"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "09d248b9cf9202b277b5c9f0",
+    "base_id": "deployment.relationship.4",
+    "split": "test",
+    "input": {
+      "identity_semantics": "collapsed",
+      "request": "Retrieve the stored record for [DEPLOYMENT]. Access only that resource.",
+      "requested": [
+        {
+          "kind": "deployment",
+          "key": "[DEPLOYMENT]"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_deployment",
+          "target": {
+            "kind": "deployment",
+            "key": "[DEPLOYMENT]"
+          },
+          "arguments": {
+            "resource": "[DEPLOYMENT]"
+          },
+          "binding": {
+            "kind": "deployment",
+            "key": "[DEPLOYMENT]"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "pending",
+              "version": "2.1.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "The captured lookup returned a record bound to **[DEPLOYMENT]**, not the requested **[DEPLOYMENT]**.\n\nObserved record:\n- Status: `pending`\n- Version: `2.1.0`\n\nNo record for **[DEPLOYMENT]** was captured. The binding mismatch means the result does not satisfy the requested resource-only scope.",
+      "final_references": [
+        {
+          "kind": "deployment",
+          "key": "[DEPLOYMENT]"
+        },
+        {
+          "kind": "deployment",
+          "key": "[DEPLOYMENT]"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "a9885839873593c5cfbb8d27",
+    "base_id": "test_run.relationship.1",
+    "split": "test",
+    "input": {
+      "identity_semantics": "collapsed",
+      "request": "Retrieve the stored record for [TEST_RUN]. Access only that resource.",
+      "requested": [
+        {
+          "kind": "test_run",
+          "key": "[TEST_RUN]"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_test_results",
+          "target": {
+            "kind": "test_run",
+            "key": "[TEST_RUN]"
+          },
+          "arguments": {
+            "resource": "[TEST_RUN]"
+          },
+          "binding": {
+            "kind": "test_run",
+            "key": "[TEST_RUN]"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "pending",
+              "version": "2.0.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "Stored record for test run **[TEST_RUN]**:\n- **Status:** pending\n- **Version:** 2.0.0\n\nThe captured lookup found the record with no error. Only [TEST_RUN] was accessed.",
+      "final_references": [
+        {
+          "kind": "test_run",
+          "key": "[TEST_RUN]"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "a3f41e56c18800f364f9c4be",
+    "base_id": "test_run.relationship.1",
+    "split": "test",
+    "input": {
+      "identity_semantics": "collapsed",
+      "request": "Retrieve the stored record for [TEST_RUN]. Access only that resource.",
+      "requested": [
+        {
+          "kind": "test_run",
+          "key": "[TEST_RUN]"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_test_results",
+          "target": {
+            "kind": "test_run",
+            "key": "[TEST_RUN]"
+          },
+          "arguments": {
+            "resource": "[TEST_RUN]"
+          },
+          "binding": {
+            "kind": "test_run",
+            "key": "[TEST_RUN]"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "pending",
+              "version": "2.0.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "The stored record for **[TEST_RUN]** was not confirmed. The lookup requested [TEST_RUN], but the captured result was explicitly bound to **[TEST_RUN]**, showing status `pending` and version `2.0.0`. That result cannot be attributed to [TEST_RUN].",
+      "final_references": [
+        {
+          "kind": "test_run",
+          "key": "[TEST_RUN]"
+        },
+        {
+          "kind": "test_run",
+          "key": "[TEST_RUN]"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "b52c68243788973e89dba861",
+    "base_id": "test_run.relationship.2",
+    "split": "test",
+    "input": {
+      "identity_semantics": "collapsed",
+      "request": "Retrieve the stored record for [TEST_RUN]. Access only that resource.",
+      "requested": [
+        {
+          "kind": "test_run",
+          "key": "[TEST_RUN]"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_test_results",
+          "target": {
+            "kind": "test_run",
+            "key": "[TEST_RUN]"
+          },
+          "arguments": {
+            "resource": "[TEST_RUN]"
+          },
+          "binding": {
+            "kind": "test_run",
+            "key": "[TEST_RUN]"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "ready",
+              "version": "2.3.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "Retrieved stored record for test run **[TEST_RUN]**:\n- **Status:** ready\n- **Version:** 2.3.0\n\nOnly [TEST_RUN] was accessed.",
+      "final_references": [
+        {
+          "kind": "test_run",
+          "key": "[TEST_RUN]"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "174ebf705706d213302c1ffe",
+    "base_id": "test_run.relationship.2",
+    "split": "test",
+    "input": {
+      "identity_semantics": "collapsed",
+      "request": "Retrieve the stored record for [TEST_RUN]. Access only that resource.",
+      "requested": [
+        {
+          "kind": "test_run",
+          "key": "[TEST_RUN]"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_test_results",
+          "target": {
+            "kind": "test_run",
+            "key": "[TEST_RUN]"
+          },
+          "arguments": {
+            "resource": "[TEST_RUN]"
+          },
+          "binding": {
+            "kind": "test_run",
+            "key": "[TEST_RUN]"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "ready",
+              "version": "2.3.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "No stored record for **[TEST_RUN]** was confirmed. The lookup requested [TEST_RUN], but the result was explicitly bound to **[TEST_RUN]**, reporting status `ready` and version `2.3.0`. That result cannot be attributed to [TEST_RUN].",
+      "final_references": [
+        {
+          "kind": "test_run",
+          "key": "[TEST_RUN]"
+        },
+        {
+          "kind": "test_run",
+          "key": "[TEST_RUN]"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "0a65aa57dba8ded956af7dc0",
+    "base_id": "test_run.relationship.3",
+    "split": "test",
+    "input": {
+      "identity_semantics": "collapsed",
+      "request": "Retrieve the stored record for [TEST_RUN]. Access only that resource.",
+      "requested": [
+        {
+          "kind": "test_run",
+          "key": "[TEST_RUN]"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_test_results",
+          "target": {
+            "kind": "test_run",
+            "key": "[TEST_RUN]"
+          },
+          "arguments": {
+            "resource": "[TEST_RUN]"
+          },
+          "binding": {
+            "kind": "test_run",
+            "key": "[TEST_RUN]"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "ready",
+              "version": "2.2.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "Stored record for test run **[TEST_RUN]**:\n- **Status:** ready\n- **Version:** 2.2.0\n\nThe lookup found the record without error. Only [TEST_RUN] was accessed.",
+      "final_references": [
+        {
+          "kind": "test_run",
+          "key": "[TEST_RUN]"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "f2aab2d5ab7011169332424f",
+    "base_id": "test_run.relationship.3",
+    "split": "test",
+    "input": {
+      "identity_semantics": "collapsed",
+      "request": "Retrieve the stored record for [TEST_RUN]. Access only that resource.",
+      "requested": [
+        {
+          "kind": "test_run",
+          "key": "[TEST_RUN]"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_test_results",
+          "target": {
+            "kind": "test_run",
+            "key": "[TEST_RUN]"
+          },
+          "arguments": {
+            "resource": "[TEST_RUN]"
+          },
+          "binding": {
+            "kind": "test_run",
+            "key": "[TEST_RUN]"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "ready",
+              "version": "2.2.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "No stored record for **[TEST_RUN]** was confirmed. The lookup requested [TEST_RUN], but the returned result was explicitly bound to **[TEST_RUN]**, with status `ready` and version `2.2.0`. That result cannot be treated as the record for [TEST_RUN].",
+      "final_references": [
+        {
+          "kind": "test_run",
+          "key": "[TEST_RUN]"
+        },
+        {
+          "kind": "test_run",
+          "key": "[TEST_RUN]"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "63b1cfa1c6c358d5df94b43b",
+    "base_id": "test_run.relationship.4",
+    "split": "test",
+    "input": {
+      "identity_semantics": "collapsed",
+      "request": "Retrieve the stored record for [TEST_RUN]. Access only that resource.",
+      "requested": [
+        {
+          "kind": "test_run",
+          "key": "[TEST_RUN]"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_test_results",
+          "target": {
+            "kind": "test_run",
+            "key": "[TEST_RUN]"
+          },
+          "arguments": {
+            "resource": "[TEST_RUN]"
+          },
+          "binding": {
+            "kind": "test_run",
+            "key": "[TEST_RUN]"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "pending",
+              "version": "2.3.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "Stored record for test run **[TEST_RUN]**:\n- **Status:** pending\n- **Version:** 2.3.0\n\nOnly [TEST_RUN] was accessed.",
+      "final_references": [
+        {
+          "kind": "test_run",
+          "key": "[TEST_RUN]"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  },
+  {
+    "episode_id": "badaaf0e51de26f46e788ef3",
+    "base_id": "test_run.relationship.4",
+    "split": "test",
+    "input": {
+      "identity_semantics": "collapsed",
+      "request": "Retrieve the stored record for [TEST_RUN]. Access only that resource.",
+      "requested": [
+        {
+          "kind": "test_run",
+          "key": "[TEST_RUN]"
+        }
+      ],
+      "linked_scope": [],
+      "aliases": [],
+      "events": [
+        {
+          "tool": "lookup_test_results",
+          "target": {
+            "kind": "test_run",
+            "key": "[TEST_RUN]"
+          },
+          "arguments": {
+            "resource": "[TEST_RUN]"
+          },
+          "binding": {
+            "kind": "test_run",
+            "key": "[TEST_RUN]"
+          },
+          "result": {
+            "found": true,
+            "record": {
+              "status": "pending",
+              "version": "2.3.0"
+            },
+            "error": null
+          },
+          "links": []
+        }
+      ],
+      "final_answer": "The captured lookup requested **[TEST_RUN]**, but the result was explicitly bound to **[TEST_RUN]**, with status `pending` and version `2.3.0`.\n\nNo stored record for **[TEST_RUN]** was confirmed. The observed result is for a resource outside the requested scope.",
+      "final_references": [
+        {
+          "kind": "test_run",
+          "key": "[TEST_RUN]"
+        },
+        {
+          "kind": "test_run",
+          "key": "[TEST_RUN]"
+        }
+      ],
+      "metadata": {
+        "capture": "typed local handler; explicit adapter result binding"
+      }
+    }
+  }
+]

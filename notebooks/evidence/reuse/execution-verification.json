@@ -1,0 +1,51 @@
+{
+  "configuration": "24b5d76b2aaecc355758bd2fb234ba22eb3d3a7f60c461c7aecf21aa60cf279a",
+  "endpoints_all_phases": 1024,
+  "held_out_endpoints": 768,
+  "earlier_configuration_endpoints": 96,
+  "model_calls": 1537,
+  "usage_unknown_calls": 0,
+  "reuse_committed_usd": 1.5393638,
+  "global_committed_usd": 2.0411898,
+  "held_out_incorrect_reuse_by_family": {
+    "issues": 4,
+    "sources": 4,
+    "calculations": 8,
+    "comparisons": 2
+  },
+  "held_out_incorrect_reuse_runs": [
+    "16504ed6c98ced5fb3d9460b",
+    "d470fae90112ad541bdf51f8",
+    "6c5935036f682cb54e9d05f4",
+    "063c2fa0a7c4b2eb51ffc128",
+    "838b8daee43ed08206191237",
+    "f868842a48d828095986d509",
+    "4f3580a38632288c70e2f21b",
+    "25d8fbd213a1e968ddde61f5",
+    "83242cc6e90cc893d8ee33f5",
+    "7e53b2b3fd38974ff31f35c3",
+    "711792e143424b5fbad7831a",
+    "33a825129293550506d5e8ae",
+    "757a79c49462a285605c192e",
+    "c76ad8a4548df88d842012d3",
+    "c69ff6d0a9762642826960c3",
+    "d461ecabf81f667f546c3740",
+    "e38fbe79984ec52a01e7dada",
+    "8749daef966740675ccd1fd7"
+  ],
+  "p95_reduction_paired_cluster_bootstrap_95pct_exploratory": {
+    "exact": [
+      -0.06176258616194674,
+      0.16739550520585303
+    ],
+    "verified": [
+      -0.07794642431506316,
+      0.18071936153834534
+    ]
+  },
+  "family_dependence_zero_harm_95pct_upper_sensitivity": 0.31234397806636793,
+  "exact_meets_core_targets_without_observed_harmful_clusters": true,
+  "recommendation": "Prefer exact-skeleton reuse for v1: it meets the engineering cost/median-latency targets with no observed harmful clusters. Semantic compatibility remains useful evidence, but this workload does not require its added complexity to meet those targets.",
+  "empty_bank_verified_p95_change_vs_fused": 0.0815792237409172,
+  "report_script_hash": "a6226a2467d36ca2dbc36a0e5d38b7d1b477632915226607b8f05634bbab688b"
+}

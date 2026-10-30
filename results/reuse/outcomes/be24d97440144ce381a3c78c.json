@@ -1,0 +1,106 @@
+{
+  "run_id": "be24d97440144ce381a3c78c",
+  "policy": "ordinary",
+  "bank_state": "warm",
+  "status": "completed",
+  "bindings": {
+    "slots": {
+      "issue0": "ENG-10612"
+    },
+    "slot_types": {
+      "issue0": "issue"
+    },
+    "skeleton": "get issue <issue0> and its associated test results",
+    "namespace": "ea951e30ddc2e3fbc06eb8d343acee8d3e1b560636c67748159d683fa73a5e54",
+    "unresolved": [],
+    "semantics": [
+      "count:issue:1",
+      "linked"
+    ]
+  },
+  "answer": "- Issue **ENG-10612**: **open**\n- Associated test run **TR-10613**: **failed**",
+  "calls": [
+    {
+      "reservation": "139cde496f6d412d98a6680b85defea5",
+      "stage": "core",
+      "run_id": "be24d97440144ce381a3c78c",
+      "kind": "answer",
+      "state": "measured",
+      "cost_usd": 0.000988,
+      "timestamp": "2026-10-29T09:43:38.677243+00:00",
+      "cost_estimated": false,
+      "usage": {
+        "input_tokens": 344,
+        "output_tokens": 30,
+        "cache_read_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "error": null,
+      "latency_ms": 1395.0829160166904,
+      "response_id": "resp_0aa7f2f1b574117a016ae3154ac70c87d0b895b9d8e9607e29",
+      "output": "- Issue **ENG-10612**: **open**\n- Associated test run **TR-10613**: **failed**"
+    }
+  ],
+  "executions": [
+    {
+      "tool": "lookup_issue",
+      "arguments": {
+        "issue_id": "ENG-10612"
+      },
+      "bindings": {
+        "issue_id": "ENG-10612"
+      },
+      "tenant": "acme",
+      "state_version": "50a084210ff250d7518455e03a229f157f9e21ab2d1c604eb5606dd1c3cf74db",
+      "result": {
+        "found": true,
+        "record": {
+          "issue_id": "ENG-10612",
+          "status": "open",
+          "test_run_id": "TR-10613"
+        },
+        "error": null
+      },
+      "latency_ms": 0.685499981045723,
+      "started_at": "2026-10-29T09:43:38.662838+00:00"
+    },
+    {
+      "tool": "lookup_test_results",
+      "arguments": {
+        "test_run_id": "TR-10613"
+      },
+      "bindings": {
+        "test_run_id": "TR-10613"
+      },
+      "tenant": "acme",
+      "state_version": "50a084210ff250d7518455e03a229f157f9e21ab2d1c604eb5606dd1c3cf74db",
+      "result": {
+        "found": true,
+        "record": {
+          "test_run_id": "TR-10613",
+          "outcome": "failed"
+        },
+        "error": null
+      },
+      "latency_ms": 0.4163749981671572,
+      "started_at": "2026-10-29T09:43:38.663530+00:00"
+    }
+  ],
+  "cache_hit": true,
+  "candidate": "2b48aa625dff961ecbde",
+  "retrieval_score": 1.0,
+  "retrieval_margin": 0.7361327236389976,
+  "rejection": null,
+  "replans": 0,
+  "error": null,
+  "timings_ms": {
+    "binding": 0.09770900942385197,
+    "retrieval_validation": 0.2662079641595483,
+    "planning": 0,
+    "answer": 1395.0829160166904,
+    "tools": 1.1018749792128801,
+    "runtime": 1410.3023750940338
+  },
+  "cost_usd": 0.000988,
+  "trace_id": null
+}

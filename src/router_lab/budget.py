@@ -56,6 +56,11 @@ class Budget:
         return reservation
 
     def settle(self, reservation: str, amount: float, estimated=False):
+        # Unknown usage cannot release a reservation: the provider may have billed
+        # the entire call even when interruption left no response to measure.
+        if estimated:
+            reserved = [r["amount"] for r in read_jsonl(self.path) if r["id"] == reservation]
+            amount = max([amount, *reserved])
         append_jsonl(
             self.path,
             {

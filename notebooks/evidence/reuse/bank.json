@@ -1,0 +1,418 @@
+[
+  {
+    "template_id": "f8242edb8a292b282604",
+    "skeleton": "show issue <issue0>",
+    "namespace": "ea951e30ddc2e3fbc06eb8d343acee8d3e1b560636c67748159d683fa73a5e54",
+    "slot_types": {
+      "issue0": "issue"
+    },
+    "semantics": [
+      "count:issue:1"
+    ],
+    "steps": [
+      {
+        "tool": "lookup_issue",
+        "arguments": {
+          "issue_id": "$slot.issue0"
+        }
+      }
+    ],
+    "contracts": {
+      "lookup_issue": "b3237f078f6bd5e7a836784b9b6ab7c161b91742603ae8b4a67d4048206b71ed"
+    },
+    "provenance": {
+      "history_run": "3d99a75bb812b78163e2c302",
+      "source": "06244a59130ecd247266193858151e3e41d49ebbc7db7781af4235caa8d251bf"
+    }
+  },
+  {
+    "template_id": "4966afc017e4dd1c54d6",
+    "skeleton": "please retrieve current status for ticket <issue0>",
+    "namespace": "ea951e30ddc2e3fbc06eb8d343acee8d3e1b560636c67748159d683fa73a5e54",
+    "slot_types": {
+      "issue0": "issue"
+    },
+    "semantics": [
+      "count:issue:1"
+    ],
+    "steps": [
+      {
+        "tool": "lookup_issue",
+        "arguments": {
+          "issue_id": "$slot.issue0"
+        }
+      }
+    ],
+    "contracts": {
+      "lookup_issue": "b3237f078f6bd5e7a836784b9b6ab7c161b91742603ae8b4a67d4048206b71ed"
+    },
+    "provenance": {
+      "history_run": "0585e7ce0c53b5be5749faf3",
+      "source": "06244a59130ecd247266193858151e3e41d49ebbc7db7781af4235caa8d251bf"
+    }
+  },
+  {
+    "template_id": "9b9ba1104e3b1eda934e",
+    "skeleton": "show deployment for service <service0> in <environment0>",
+    "namespace": "ea951e30ddc2e3fbc06eb8d343acee8d3e1b560636c67748159d683fa73a5e54",
+    "slot_types": {
+      "service0": "service",
+      "environment0": "environment"
+    },
+    "semantics": [
+      "count:environment:1",
+      "count:service:1"
+    ],
+    "steps": [
+      {
+        "tool": "lookup_deployment",
+        "arguments": {
+          "service": "$slot.service0",
+          "environment": "$slot.environment0"
+        }
+      }
+    ],
+    "contracts": {
+      "lookup_deployment": "5c15c04b50830017104f714326aa35d80ff47507d866b5809089929cd4a4c03c"
+    },
+    "provenance": {
+      "history_run": "d9ee20ea519f48917e7986d8",
+      "source": "06244a59130ecd247266193858151e3e41d49ebbc7db7781af4235caa8d251bf"
+    }
+  },
+  {
+    "template_id": "7b0c23a31e4c83ea5298",
+    "skeleton": "get deployed version for service <service0> in <environment0>",
+    "namespace": "ea951e30ddc2e3fbc06eb8d343acee8d3e1b560636c67748159d683fa73a5e54",
+    "slot_types": {
+      "service0": "service",
+      "environment0": "environment"
+    },
+    "semantics": [
+      "count:environment:1",
+      "count:service:1"
+    ],
+    "steps": [
+      {
+        "tool": "lookup_deployment",
+        "arguments": {
+          "service": "$slot.service0",
+          "environment": "$slot.environment0"
+        }
+      }
+    ],
+    "contracts": {
+      "lookup_deployment": "5c15c04b50830017104f714326aa35d80ff47507d866b5809089929cd4a4c03c"
+    },
+    "provenance": {
+      "history_run": "22e8e7c30fe18ea4c93d68a6",
+      "source": "06244a59130ecd247266193858151e3e41d49ebbc7db7781af4235caa8d251bf"
+    }
+  },
+  {
+    "template_id": "eed78624419f7e11d474",
+    "skeleton": "get stored test results <test0>",
+    "namespace": "ea951e30ddc2e3fbc06eb8d343acee8d3e1b560636c67748159d683fa73a5e54",
+    "slot_types": {
+      "test0": "test"
+    },
+    "semantics": [
+      "count:test:1"
+    ],
+    "steps": [
+      {
+        "tool": "lookup_test_results",
+        "arguments": {
+          "test_run_id": "$slot.test0"
+        }
+      }
+    ],
+    "contracts": {
+      "lookup_test_results": "2c8da19dc098e31ae6622b795eae677a9bc1f512fa65951da995f437b9e1de3e"
+    },
+    "provenance": {
+      "history_run": "3b8769211279484592804824",
+      "source": "06244a59130ecd247266193858151e3e41d49ebbc7db7781af4235caa8d251bf"
+    }
+  },
+  {
+    "template_id": "2755124c52efe82e5842",
+    "skeleton": "retrieve outcome for test run <test0>",
+    "namespace": "ea951e30ddc2e3fbc06eb8d343acee8d3e1b560636c67748159d683fa73a5e54",
+    "slot_types": {
+      "test0": "test"
+    },
+    "semantics": [
+      "count:test:1"
+    ],
+    "steps": [
+      {
+        "tool": "lookup_test_results",
+        "arguments": {
+          "test_run_id": "$slot.test0"
+        }
+      }
+    ],
+    "contracts": {
+      "lookup_test_results": "2c8da19dc098e31ae6622b795eae677a9bc1f512fa65951da995f437b9e1de3e"
+    },
+    "provenance": {
+      "history_run": "7f5d64760d66cf0a9f710a76",
+      "source": "06244a59130ecd247266193858151e3e41d49ebbc7db7781af4235caa8d251bf"
+    }
+  },
+  {
+    "template_id": "5a6babb91be38b4c6c4f",
+    "skeleton": "search documentation for <query0>",
+    "namespace": "ea951e30ddc2e3fbc06eb8d343acee8d3e1b560636c67748159d683fa73a5e54",
+    "slot_types": {
+      "query0": "query"
+    },
+    "semantics": [
+      "count:query:1",
+      "docs"
+    ],
+    "steps": [
+      {
+        "tool": "search_docs",
+        "arguments": {
+          "query": "$slot.query0"
+        }
+      }
+    ],
+    "contracts": {
+      "search_docs": "48b4bc6344a1c4b47c8b93e3e50c50a5b07dbece9c691d5cd9437d153e98acb0"
+    },
+    "provenance": {
+      "history_run": "91073985d79cb76494bfc2d4",
+      "source": "06244a59130ecd247266193858151e3e41d49ebbc7db7781af4235caa8d251bf"
+    }
+  },
+  {
+    "template_id": "970935972911bb8904d4",
+    "skeleton": "search code for <query0>",
+    "namespace": "ea951e30ddc2e3fbc06eb8d343acee8d3e1b560636c67748159d683fa73a5e54",
+    "slot_types": {
+      "query0": "query"
+    },
+    "semantics": [
+      "code",
+      "count:query:1"
+    ],
+    "steps": [
+      {
+        "tool": "search_code",
+        "arguments": {
+          "query": "$slot.query0"
+        }
+      }
+    ],
+    "contracts": {
+      "search_code": "bac2bbbb80763812fffe798964861c38c9a45ccbb0e26238dac90c192255c461"
+    },
+    "provenance": {
+      "history_run": "e8681d78e9d4f815ae2cd8d6",
+      "source": "06244a59130ecd247266193858151e3e41d49ebbc7db7781af4235caa8d251bf"
+    }
+  },
+  {
+    "template_id": "ea1c859e996822c18e76",
+    "skeleton": "calculate <number0> plus <number1>",
+    "namespace": "ea951e30ddc2e3fbc06eb8d343acee8d3e1b560636c67748159d683fa73a5e54",
+    "slot_types": {
+      "number0": "number",
+      "number1": "number"
+    },
+    "semantics": [
+      "add",
+      "count:number:2"
+    ],
+    "steps": [
+      {
+        "tool": "calculate",
+        "arguments": {
+          "operation": "add",
+          "left": "$slot.number0",
+          "right": "$slot.number1"
+        }
+      }
+    ],
+    "contracts": {
+      "calculate": "7d9857a6d1d5e9594bac5fa77bc206c66a275360d3f3b48d6a32331fa372ceff"
+    },
+    "provenance": {
+      "history_run": "bf898603f9b1d78c0e416dd2",
+      "source": "06244a59130ecd247266193858151e3e41d49ebbc7db7781af4235caa8d251bf"
+    }
+  },
+  {
+    "template_id": "eb7ae17d3f6ad40df008",
+    "skeleton": "subtract <number0> from <number1>",
+    "namespace": "ea951e30ddc2e3fbc06eb8d343acee8d3e1b560636c67748159d683fa73a5e54",
+    "slot_types": {
+      "number0": "number",
+      "number1": "number"
+    },
+    "semantics": [
+      "count:number:2",
+      "subtract",
+      "subtract_from"
+    ],
+    "steps": [
+      {
+        "tool": "calculate",
+        "arguments": {
+          "operation": "subtract",
+          "left": "$slot.number1",
+          "right": "$slot.number0"
+        }
+      }
+    ],
+    "contracts": {
+      "calculate": "7d9857a6d1d5e9594bac5fa77bc206c66a275360d3f3b48d6a32331fa372ceff"
+    },
+    "provenance": {
+      "history_run": "a288939c2981c60335498f82",
+      "source": "06244a59130ecd247266193858151e3e41d49ebbc7db7781af4235caa8d251bf"
+    }
+  },
+  {
+    "template_id": "6470de3612218f6307d0",
+    "skeleton": "compare source <issue0> with target <issue1>",
+    "namespace": "ea951e30ddc2e3fbc06eb8d343acee8d3e1b560636c67748159d683fa73a5e54",
+    "slot_types": {
+      "issue0": "issue",
+      "issue1": "issue"
+    },
+    "semantics": [
+      "code",
+      "compare",
+      "count:issue:2",
+      "role:source:issue0",
+      "role:target:issue1"
+    ],
+    "steps": [
+      {
+        "tool": "lookup_issue",
+        "arguments": {
+          "issue_id": "$slot.issue0"
+        }
+      },
+      {
+        "tool": "lookup_issue",
+        "arguments": {
+          "issue_id": "$slot.issue1"
+        }
+      }
+    ],
+    "contracts": {
+      "lookup_issue": "b3237f078f6bd5e7a836784b9b6ab7c161b91742603ae8b4a67d4048206b71ed"
+    },
+    "provenance": {
+      "history_run": "20146af556faf2c03a70c9e9",
+      "source": "06244a59130ecd247266193858151e3e41d49ebbc7db7781af4235caa8d251bf"
+    }
+  },
+  {
+    "template_id": "66a8f84a2d609ae73dd5",
+    "skeleton": "compare issue <issue0> against issue <issue1>",
+    "namespace": "ea951e30ddc2e3fbc06eb8d343acee8d3e1b560636c67748159d683fa73a5e54",
+    "slot_types": {
+      "issue0": "issue",
+      "issue1": "issue"
+    },
+    "semantics": [
+      "compare",
+      "count:issue:2"
+    ],
+    "steps": [
+      {
+        "tool": "lookup_issue",
+        "arguments": {
+          "issue_id": "$slot.issue0"
+        }
+      },
+      {
+        "tool": "lookup_issue",
+        "arguments": {
+          "issue_id": "$slot.issue1"
+        }
+      }
+    ],
+    "contracts": {
+      "lookup_issue": "b3237f078f6bd5e7a836784b9b6ab7c161b91742603ae8b4a67d4048206b71ed"
+    },
+    "provenance": {
+      "history_run": "730177437cddb93541f41494",
+      "source": "06244a59130ecd247266193858151e3e41d49ebbc7db7781af4235caa8d251bf"
+    }
+  },
+  {
+    "template_id": "2b48aa625dff961ecbde",
+    "skeleton": "get issue <issue0> and its associated test results",
+    "namespace": "ea951e30ddc2e3fbc06eb8d343acee8d3e1b560636c67748159d683fa73a5e54",
+    "slot_types": {
+      "issue0": "issue"
+    },
+    "semantics": [
+      "count:issue:1",
+      "linked"
+    ],
+    "steps": [
+      {
+        "tool": "lookup_issue",
+        "arguments": {
+          "issue_id": "$slot.issue0"
+        }
+      },
+      {
+        "tool": "lookup_test_results",
+        "arguments": {
+          "test_run_id": "$step.0.record.test_run_id"
+        }
+      }
+    ],
+    "contracts": {
+      "lookup_issue": "b3237f078f6bd5e7a836784b9b6ab7c161b91742603ae8b4a67d4048206b71ed",
+      "lookup_test_results": "2c8da19dc098e31ae6622b795eae677a9bc1f512fa65951da995f437b9e1de3e"
+    },
+    "provenance": {
+      "history_run": "5878d1a35d9c2c47e7800f1a",
+      "source": "06244a59130ecd247266193858151e3e41d49ebbc7db7781af4235caa8d251bf"
+    }
+  },
+  {
+    "template_id": "58e5a6a41ca3593e9313",
+    "skeleton": "retrieve issue <issue0> then linked test run results",
+    "namespace": "ea951e30ddc2e3fbc06eb8d343acee8d3e1b560636c67748159d683fa73a5e54",
+    "slot_types": {
+      "issue0": "issue"
+    },
+    "semantics": [
+      "count:issue:1",
+      "linked"
+    ],
+    "steps": [
+      {
+        "tool": "lookup_issue",
+        "arguments": {
+          "issue_id": "$slot.issue0"
+        }
+      },
+      {
+        "tool": "lookup_test_results",
+        "arguments": {
+          "test_run_id": "$step.0.record.test_run_id"
+        }
+      }
+    ],
+    "contracts": {
+      "lookup_issue": "b3237f078f6bd5e7a836784b9b6ab7c161b91742603ae8b4a67d4048206b71ed",
+      "lookup_test_results": "2c8da19dc098e31ae6622b795eae677a9bc1f512fa65951da995f437b9e1de3e"
+    },
+    "provenance": {
+      "history_run": "f60697d243e071eb48d13979",
+      "source": "06244a59130ecd247266193858151e3e41d49ebbc7db7781af4235caa8d251bf"
+    }
+  }
+]

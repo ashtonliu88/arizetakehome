@@ -1,0 +1,90 @@
+{
+  "run_id": "73900529714ffab704dc20bb",
+  "policy": "exact",
+  "bank_state": "warm",
+  "status": "completed",
+  "bindings": {
+    "slots": {
+      "service0": "gateway",
+      "environment0": "production"
+    },
+    "slot_types": {
+      "service0": "service",
+      "environment0": "environment"
+    },
+    "skeleton": "show deployment for service <service0> in <environment0>",
+    "namespace": "ea951e30ddc2e3fbc06eb8d343acee8d3e1b560636c67748159d683fa73a5e54",
+    "unresolved": [],
+    "semantics": [
+      "count:environment:1",
+      "count:service:1"
+    ]
+  },
+  "answer": "Service `gateway` in `production`: version `v9.8`, status `healthy`.",
+  "calls": [
+    {
+      "reservation": "8c60eef5911b42a6b46d5c7df34256b9",
+      "stage": "core",
+      "run_id": "73900529714ffab704dc20bb",
+      "kind": "answer",
+      "state": "measured",
+      "cost_usd": 0.000682,
+      "timestamp": "2026-10-29T09:19:58.976964+00:00",
+      "cost_estimated": false,
+      "usage": {
+        "input_tokens": 226,
+        "output_tokens": 23,
+        "cache_read_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "error": null,
+      "latency_ms": 1679.7363340156153,
+      "response_id": "resp_0e485c8c0f7800b9016ae30fbf1d2c87d0aed370cd545388e1",
+      "output": "Service `gateway` in `production`: version `v9.8`, status `healthy`."
+    }
+  ],
+  "executions": [
+    {
+      "tool": "lookup_deployment",
+      "arguments": {
+        "service": "gateway",
+        "environment": "production"
+      },
+      "bindings": {
+        "service": "gateway",
+        "environment": "production"
+      },
+      "tenant": "acme",
+      "state_version": "716070e9383cc26d0c25d00ac2d610cc206e3a92718643c8a8741ead2d866cd9",
+      "result": {
+        "found": true,
+        "record": {
+          "service": "gateway",
+          "environment": "production",
+          "version": "v9.8",
+          "status": "healthy"
+        },
+        "error": null
+      },
+      "latency_ms": 1.0363329201936722,
+      "started_at": "2026-10-29T09:19:58.941499+00:00"
+    }
+  ],
+  "cache_hit": true,
+  "candidate": "9b9ba1104e3b1eda934e",
+  "retrieval_score": 1.0,
+  "retrieval_margin": 1.0,
+  "rejection": null,
+  "replans": 0,
+  "error": null,
+  "timings_ms": {
+    "binding": 0.1533749746158719,
+    "retrieval_validation": 2.534167026169598,
+    "planning": 0,
+    "answer": 1679.7363340156153,
+    "tools": 1.0363329201936722,
+    "runtime": 1718.3672500541434
+  },
+  "cost_usd": 0.000682,
+  "trace_id": null
+}

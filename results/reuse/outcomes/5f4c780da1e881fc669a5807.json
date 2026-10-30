@@ -1,0 +1,64 @@
+{
+  "run_id": "5f4c780da1e881fc669a5807",
+  "policy": "exact",
+  "bank_state": "warm",
+  "status": "abstained",
+  "bindings": {
+    "slots": {
+      "test0": "TR-10221"
+    },
+    "slot_types": {
+      "test0": "test"
+    },
+    "skeleton": "run tests for <test0>",
+    "namespace": "ea951e30ddc2e3fbc06eb8d343acee8d3e1b560636c67748159d683fa73a5e54",
+    "unresolved": [
+      "test execution unavailable"
+    ],
+    "semantics": [
+      "count:test:1",
+      "unknown:tests"
+    ]
+  },
+  "answer": "I can’t run tests for TR-10221. The available tools can only retrieve stored test results, not execute tests.",
+  "calls": [
+    {
+      "reservation": "9d72d865f2784dc980657f99c0049b00",
+      "stage": "core",
+      "run_id": "5f4c780da1e881fc669a5807",
+      "kind": "planning",
+      "state": "measured",
+      "cost_usd": 0.0005801000000000001,
+      "timestamp": "2026-10-29T09:26:44.870459+00:00",
+      "cost_estimated": false,
+      "usage": {
+        "input_tokens": 1244,
+        "output_tokens": 45,
+        "cache_read_tokens": 1241,
+        "cache_write_tokens": 0
+      },
+      "error": null,
+      "latency_ms": 2487.525291973725,
+      "response_id": "resp_0b7a62623c805337016ae311550ac487d0a56bf0550c9c6527",
+      "output": "{\"kind\":\"abstain\",\"steps\":[],\"response\":\"I can’t run tests for TR-10221. The available tools can only retrieve stored test results, not execute tests.\"}"
+    }
+  ],
+  "executions": [],
+  "cache_hit": false,
+  "candidate": null,
+  "retrieval_score": 0,
+  "retrieval_margin": 0,
+  "rejection": null,
+  "replans": 0,
+  "error": null,
+  "timings_ms": {
+    "binding": 0.1188330352306366,
+    "retrieval_validation": 0.00037497375160455704,
+    "planning": 2487.525291973725,
+    "answer": 0,
+    "tools": 0,
+    "runtime": 2501.746124937199
+  },
+  "cost_usd": 0.0005801000000000001,
+  "trace_id": null
+}

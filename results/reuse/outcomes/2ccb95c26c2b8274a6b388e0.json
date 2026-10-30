@@ -1,0 +1,126 @@
+{
+  "run_id": "2ccb95c26c2b8274a6b388e0",
+  "policy": "fused",
+  "bank_state": "warm",
+  "status": "completed",
+  "bindings": {
+    "slots": {
+      "issue0": "ENG-1603"
+    },
+    "slot_types": {
+      "issue0": "issue"
+    },
+    "skeleton": "fetch issue <issue0> with its linked test results",
+    "namespace": "ea951e30ddc2e3fbc06eb8d343acee8d3e1b560636c67748159d683fa73a5e54",
+    "unresolved": [],
+    "semantics": [
+      "count:issue:1",
+      "linked"
+    ]
+  },
+  "answer": "Issue **ENG-1603** is **open**. Its linked test run **TR-1603** has outcome **passed**.",
+  "calls": [
+    {
+      "reservation": "6deb8c89e1db4bd68a003852f7003b21",
+      "stage": "core",
+      "run_id": "2ccb95c26c2b8274a6b388e0",
+      "kind": "planning",
+      "state": "measured",
+      "cost_usd": 0.0012905,
+      "timestamp": "2026-10-29T09:09:48.254095+00:00",
+      "cost_estimated": false,
+      "usage": {
+        "input_tokens": 1248,
+        "output_tokens": 116,
+        "cache_read_tokens": 1245,
+        "cache_write_tokens": 0
+      },
+      "error": null,
+      "latency_ms": 2094.326541060582,
+      "response_id": "resp_02ecbf8333d5aa2e016ae30d5c664487d0847439bc26a57051",
+      "output": "{\"kind\":\"tools\",\"steps\":[{\"tool\":\"lookup_issue\",\"arguments\":{\"issue_id\":\"$slot.issue0\",\"test_run_id\":null,\"service\":null,\"environment\":null,\"query\":null,\"operation\":null,\"left\":null,\"right\":null}},{\"tool\":\"lookup_test_results\",\"arguments\":{\"issue_id\":null,\"test_run_id\":\"$step.0.record.test_run_id\",\"service\":null,\"environment\":null,\"query\":null,\"operation\":null,\"left\":null,\"right\":null}}],\"response\":\"\"}"
+    },
+    {
+      "reservation": "5a5b60333a384fa394e1a6872ffb8f8a",
+      "stage": "core",
+      "run_id": "2ccb95c26c2b8274a6b388e0",
+      "kind": "answer",
+      "state": "measured",
+      "cost_usd": 0.001036,
+      "timestamp": "2026-10-29T09:09:50.358131+00:00",
+      "cost_estimated": false,
+      "usage": {
+        "input_tokens": 358,
+        "output_tokens": 32,
+        "cache_read_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "error": null,
+      "latency_ms": 1569.6803330210969,
+      "response_id": "resp_06bcb1c6f4420514016ae30d5e83c887d09e6559de3610d144",
+      "output": "Issue **ENG-1603** is **open**. Its linked test run **TR-1603** has outcome **passed**."
+    }
+  ],
+  "executions": [
+    {
+      "tool": "lookup_issue",
+      "arguments": {
+        "issue_id": "ENG-1603"
+      },
+      "bindings": {
+        "issue_id": "ENG-1603"
+      },
+      "tenant": "acme",
+      "state_version": "2bd8c2a98b6ced82a1e255ac9b256a507e4d9ec11da9080f11c7b1b8ed12cd8b",
+      "result": {
+        "found": true,
+        "record": {
+          "issue_id": "ENG-1603",
+          "status": "open",
+          "test_run_id": "TR-1603"
+        },
+        "error": null
+      },
+      "latency_ms": 0.9660000214353204,
+      "started_at": "2026-10-29T09:09:50.349200+00:00"
+    },
+    {
+      "tool": "lookup_test_results",
+      "arguments": {
+        "test_run_id": "TR-1603"
+      },
+      "bindings": {
+        "test_run_id": "TR-1603"
+      },
+      "tenant": "acme",
+      "state_version": "2bd8c2a98b6ced82a1e255ac9b256a507e4d9ec11da9080f11c7b1b8ed12cd8b",
+      "result": {
+        "found": true,
+        "record": {
+          "test_run_id": "TR-1603",
+          "outcome": "passed"
+        },
+        "error": null
+      },
+      "latency_ms": 0.6240830989554524,
+      "started_at": "2026-10-29T09:09:50.350176+00:00"
+    }
+  ],
+  "cache_hit": false,
+  "candidate": null,
+  "retrieval_score": 0,
+  "retrieval_margin": 0,
+  "rejection": null,
+  "replans": 0,
+  "error": null,
+  "timings_ms": {
+    "binding": 0.1616249792277813,
+    "retrieval_validation": 0.00016693957149982452,
+    "planning": 2094.326541060582,
+    "answer": 1569.6803330210969,
+    "tools": 1.5900831203907728,
+    "runtime": 3681.9518340053037
+  },
+  "cost_usd": 0.0023265,
+  "trace_id": null
+}
