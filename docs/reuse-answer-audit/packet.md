@@ -1,6 +1,6 @@
 # Diagnostic human answer audit
 
-Status: **pending actual human judgments**. This sample is deliberately selected and diagnostic. Do not estimate general success rates from it. Policy names and mechanical grades are withheld from this packet. The separate reference key is for comparison after initial review.
+Status: **24/24 judgments confirmed by Ashton Liu on 2026-10-30**. Confirmation followed review of the findings; no independent blinded review is claimed. This sample is deliberately selected and diagnostic. Do not estimate general success rates from it. Policy names and mechanical grades are withheld from this packet. The separate reference key is for comparison after initial review.
 
 Read each request, permission context, fixture facts, captured tool evidence, status, and answer. In a copy of `review-template.jsonl`, supply your name, an ISO 8601 timestamp with timezone, an evidence-specific note (at least 20 characters), and all four judgments. Do not change IDs.
 
@@ -11,7 +11,7 @@ Read each request, permission context, fixture facts, captured tool evidence, st
 
 Completion means the request is resolved with support from the evidence. Appropriate clarification is a useful request for necessary missing context; appropriate abstention is a justified refusal or inability to answer and remains separate from successful resolution. Judge the response, including any unresolved operation, even if it notices a tool mistake.
 
-All facts below are synthetic current fixtures from saved measured endpoints. Tool evidence is captured execution evidence, not a new run. Empty tool evidence can be appropriate for direct answers or clarification. Initial review must be your own judgment; no agent has supplied a reviewer identity, note, or approval. Preserve initial judgments; record any later adjudication in a separate file.
+All facts below are synthetic current fixtures from saved measured endpoints. Tool evidence is captured execution evidence, not a new run. Empty tool evidence can be appropriate for direct answers or clarification. For an additional independent review, record your own judgments before consulting the reference key. Preserve initial judgments; record any later adjudication in a separate file.
 
 ## A01
 

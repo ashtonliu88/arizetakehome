@@ -32,15 +32,17 @@
     "source_hashes": 12
   },
   "human_answer_audit": {
-    "completed": 0,
-    "pending": 24,
+    "completed": 24,
+    "pending": 0,
     "source_hashes_verified": 35,
-    "artifact_hashes_verified": 4
+    "artifact_hashes_verified": 4,
+    "review_basis": "Candidate-confirmed judgments",
+    "confirmed_at": "2026-10-30T21:10:46+00:00"
   },
-  "local_links_checked": 69,
+  "local_links_checked": 70,
   "presentation_pdf": {
     "path": "project-overview.pdf",
-    "sha256": "f5189a38e47ab05cedfe41f5fe29f2ecbb8668328a24df63e8a0bb35438337e7",
+    "sha256": "54e40ddee70be03f104bb1652b3913072837607d2d016c5283d93db980d3e124",
     "pages": 4,
     "all_pages_rendered_and_visually_inspected": true,
     "clipping_or_overlap": "none observed"
@@ -58,5 +60,19 @@
     "branch": "main",
     "publication_status": "published via authenticated GitHub Desktop; push complete observed",
     "verified_cleanup_commit": "80a1cbca49c48c736f19b3177c13d9115e9d8833"
+  },
+  "submission_update": {
+    "verified_at": "2026-10-30T21:12:38.172362+00:00",
+    "scope": "Minimal submission documentation and candidate-confirmed diagnostic answer review; no new model calls or Phoenix publication",
+    "source_code_and_tests_changed": false,
+    "notebook_code_cells_unchanged": 15,
+    "bundled_evidence_files_verified": 38,
+    "audit_judgments_verified": 24,
+    "audit_report_sha256": "b17253c28307f1bbe04b7f0eaff5f01e44c3f2ac0760e9b48f4c2fb322235c14",
+    "audit_manifest_sha256": "09785a8022af2f76b3966cd6486b6fb086df8261ac806c26ebddb21b593b094b",
+    "pdf_pages_rendered_and_visually_inspected": 4,
+    "local_markdown_links_checked": 70,
+    "github_updates_published": false,
+    "reviewer_sharing": "Candidate will handle sharing"
   }
 }

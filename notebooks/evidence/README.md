@@ -29,7 +29,5 @@ environment described in `../requirements-cookbook.txt`. Set `COOKBOOK_EVIDENCE`
 override the snapshot location and `COOKBOOK_OUTPUT` to override analysis outputs.
 No application import, original results directory or Phoenix server is needed.
 
-To intentionally refresh from local originals, run
-`python3 scripts/snapshot_cookbook_evidence.py` from the repository root. This requires
-the ignored original privacy files. Refreshing is never part of a normal document
-build; it requires rebuilding and checking the narrative against the new evidence.
+This is a fixed, hash-checked snapshot of the saved study. No snapshot-refresh helper
+is included; normal notebook execution reads these files without refreshing them.

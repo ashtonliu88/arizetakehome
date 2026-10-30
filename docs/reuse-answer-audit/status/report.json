@@ -1,19 +1,251 @@
 {
   "schema_version": 1,
   "sample_kind": "deliberately selected and diagnostic; no general success-rate estimate",
-  "status": "pending actual human judgments",
-  "completed_reviews": 0,
-  "pending_reviews": 24,
-  "outcome_counts": {},
-  "successful_resolution_count": 0,
-  "appropriate_abstention_count": 0,
+  "status": "completed; candidate-confirmed judgments",
+  "reviewer": "Ashton Liu",
+  "confirmed_at": "2026-10-30T21:10:46+00:00",
+  "review_basis": "Candidate confirmed the reviewed judgments; no independent blinded review is claimed.",
+  "completed_reviews": 24,
+  "pending_reviews": 0,
+  "outcome_counts": {
+    "completed": 16,
+    "incomplete": 2,
+    "appropriate clarification": 2,
+    "appropriate abstention": 3,
+    "incorrect": 1
+  },
+  "completed_answer_count": 16,
+  "completed_within_scope_count": 15,
+  "appropriate_clarification_count": 2,
+  "successful_resolution_count": 17,
+  "appropriate_abstention_count": 3,
+  "success_rule": "Completed answer or appropriate clarification, appropriate resource scope, no unsupported claim and no contradiction. Appropriate abstention is separate.",
   "mechanical_disagreements": 0,
-  "scope_errors": 0,
-  "uncertainties": 0,
-  "unsupported_claims": 0,
+  "mechanical_disagreement_ids": [],
+  "completion_scope_difference_count": 1,
+  "scope_errors": 3,
+  "uncertainties": 1,
+  "unsupported_claims": 1,
   "contradictions": 0,
-  "judgments_sha256": "0563d45cc75c06c1fe9deb6f085772776b4d196c84f3bb70a8eba736e6bc84cb",
-  "manifest_sha256": "88cc578f326f4092483d6d463e9b1cee40827ccb5ff91cf73c305a11c928ac51",
-  "interpretation": "Human judgments are separate from mechanical CODE scoring. Appropriate abstention remains separate from successful resolution. These diagnostic counts do not estimate general success rates. Disagreements qualify the submission interpretation; frozen measurements and original scores are unchanged. Preserve initial judgments and record adjudication separately.",
-  "individual_examples": []
+  "judgments_sha256": "a741b6526d6adfdce04cbfd6fc1e394f0ead585e541c29d98370641dba584b6b",
+  "manifest_sha256": "09785a8022af2f76b3966cd6486b6fb086df8261ac806c26ebddb21b593b094b",
+  "interpretation": "These candidate-confirmed diagnostic judgments do not estimate a general success rate. All 17 scope-sensitive successes agree with the original mechanical grades. A08 completes the requested answer but adds an unnecessary lookup, so its mechanical failure remains defensible. Three appropriate abstentions remain separate from successful resolution. Frozen measurements and original scores are unchanged. Preserve these judgments and record any later adjudication separately.",
+  "individual_examples": [
+    {
+      "audit_id": "A01",
+      "outcome": "completed",
+      "resource_scope": "appropriate",
+      "unsupported_claims": "no",
+      "contradictions": "no",
+      "mechanical_success": true,
+      "evidence_note": "Source and target roles, statuses and test-run identifiers match both captured issue lookups."
+    },
+    {
+      "audit_id": "A02",
+      "outcome": "incomplete",
+      "resource_scope": "appropriate",
+      "unsupported_claims": "no",
+      "contradictions": "no",
+      "mechanical_success": false,
+      "evidence_note": "The permitted source lookup succeeds, but the empty answer provides no access explanation or useful partial response."
+    },
+    {
+      "audit_id": "A03",
+      "outcome": "completed",
+      "resource_scope": "appropriate",
+      "unsupported_claims": "no",
+      "contradictions": "no",
+      "mechanical_success": true,
+      "evidence_note": "ENG-10015, its open status and TR-10015 match the requested issue record."
+    },
+    {
+      "audit_id": "A04",
+      "outcome": "appropriate clarification",
+      "resource_scope": "appropriate",
+      "unsupported_claims": "no",
+      "contradictions": "no",
+      "mechanical_success": true,
+      "evidence_note": "The request and context omit the environment; asking which gateway environment to inspect is necessary."
+    },
+    {
+      "audit_id": "A05",
+      "outcome": "completed",
+      "resource_scope": "appropriate",
+      "unsupported_claims": "no",
+      "contradictions": "no",
+      "mechanical_success": true,
+      "evidence_note": "The answer reports failed for TR-10212, matching the stored-results evidence."
+    },
+    {
+      "audit_id": "A06",
+      "outcome": "completed",
+      "resource_scope": "appropriate",
+      "unsupported_claims": "no",
+      "contradictions": "no",
+      "mechanical_success": true,
+      "evidence_note": "The answer reports failed for TR-10212, matching the stored-results evidence."
+    },
+    {
+      "audit_id": "A07",
+      "outcome": "completed",
+      "resource_scope": "appropriate",
+      "unsupported_claims": "no",
+      "contradictions": "no",
+      "mechanical_success": true,
+      "evidence_note": "The lookup follows the actual TR-10613 association and reports its failed outcome, rather than assuming TR-10612."
+    },
+    {
+      "audit_id": "A08",
+      "outcome": "completed",
+      "resource_scope": "excessive/wrong",
+      "unsupported_claims": "no",
+      "contradictions": "no",
+      "mechanical_success": false,
+      "evidence_note": "The requested issue facts are correct, but the extra test-results lookup and reported test outcome were not requested."
+    },
+    {
+      "audit_id": "A09",
+      "outcome": "appropriate abstention",
+      "resource_scope": "appropriate",
+      "unsupported_claims": "no",
+      "contradictions": "no",
+      "mechanical_success": false,
+      "evidence_note": "The response accurately explains that ENG-10516 is outside the source-only ENG-10515 access grant."
+    },
+    {
+      "audit_id": "A10",
+      "outcome": "completed",
+      "resource_scope": "appropriate",
+      "unsupported_claims": "no",
+      "contradictions": "no",
+      "mechanical_success": true,
+      "evidence_note": "The explanation correctly describes a base case, a reducing recursive step and factorial for nonnegative integers."
+    },
+    {
+      "audit_id": "A11",
+      "outcome": "incorrect",
+      "resource_scope": "excessive/wrong",
+      "unsupported_claims": "yes",
+      "contradictions": "uncertain",
+      "mechanical_success": false,
+      "evidence_note": "The system searches code despite the explicit documentation-not-code request; no documentation search supports the availability claim, and the fixture contains retry-guide. The availability wording is ambiguous, so contradiction is uncertain."
+    },
+    {
+      "audit_id": "A12",
+      "outcome": "completed",
+      "resource_scope": "appropriate",
+      "unsupported_claims": "no",
+      "contradictions": "no",
+      "mechanical_success": true,
+      "evidence_note": "The system searches documentation and accurately quotes the retry-guide result about exponential backoff."
+    },
+    {
+      "audit_id": "A13",
+      "outcome": "incomplete",
+      "resource_scope": "excessive/wrong",
+      "unsupported_claims": "no",
+      "contradictions": "no",
+      "mechanical_success": false,
+      "evidence_note": "The response identifies addition instead of requested subtraction, but never performs subtraction or supplies the required -10404 result."
+    },
+    {
+      "audit_id": "A14",
+      "outcome": "appropriate abstention",
+      "resource_scope": "appropriate",
+      "unsupported_claims": "no",
+      "contradictions": "no",
+      "mechanical_success": false,
+      "evidence_note": "The response correctly explains that read-only stored-result tools cannot execute tests for TR-10221."
+    },
+    {
+      "audit_id": "A15",
+      "outcome": "completed",
+      "resource_scope": "appropriate",
+      "unsupported_claims": "no",
+      "contradictions": "no",
+      "mechanical_success": true,
+      "evidence_note": "The production gateway version v9.8 and healthy status match the current deployment evidence."
+    },
+    {
+      "audit_id": "A16",
+      "outcome": "completed",
+      "resource_scope": "appropriate",
+      "unsupported_claims": "no",
+      "contradictions": "no",
+      "mechanical_success": true,
+      "evidence_note": "The production gateway version v9.8 and healthy status match the current deployment evidence."
+    },
+    {
+      "audit_id": "A17",
+      "outcome": "completed",
+      "resource_scope": "appropriate",
+      "unsupported_claims": "no",
+      "contradictions": "no",
+      "mechanical_success": true,
+      "evidence_note": "The recursion explanation and factorial example are correct for the stated nonnegative-integer domain."
+    },
+    {
+      "audit_id": "A18",
+      "outcome": "appropriate abstention",
+      "resource_scope": "appropriate",
+      "unsupported_claims": "no",
+      "contradictions": "no",
+      "mechanical_success": false,
+      "evidence_note": "The response correctly distinguishes retrieving stored test results from executing tests."
+    },
+    {
+      "audit_id": "A19",
+      "outcome": "completed",
+      "resource_scope": "appropriate",
+      "unsupported_claims": "no",
+      "contradictions": "no",
+      "mechanical_success": true,
+      "evidence_note": "The calculation uses subtraction in the requested operand order and reports the correct result -10404."
+    },
+    {
+      "audit_id": "A20",
+      "outcome": "completed",
+      "resource_scope": "appropriate",
+      "unsupported_claims": "no",
+      "contradictions": "no",
+      "mechanical_success": true,
+      "evidence_note": "Source and target roles and issue facts match both captured lookups."
+    },
+    {
+      "audit_id": "A21",
+      "outcome": "completed",
+      "resource_scope": "appropriate",
+      "unsupported_claims": "no",
+      "contradictions": "no",
+      "mechanical_success": true,
+      "evidence_note": "The requested ENG-10015 issue has the reported open status and TR-10015 association."
+    },
+    {
+      "audit_id": "A22",
+      "outcome": "completed",
+      "resource_scope": "appropriate",
+      "unsupported_claims": "no",
+      "contradictions": "no",
+      "mechanical_success": true,
+      "evidence_note": "The system retrieves the issue-associated TR-10613, rather than assuming TR-10612, and correctly reports failed."
+    },
+    {
+      "audit_id": "A23",
+      "outcome": "completed",
+      "resource_scope": "appropriate",
+      "unsupported_claims": "no",
+      "contradictions": "no",
+      "mechanical_success": true,
+      "evidence_note": "The answer correctly reports ENG-10012 as in_progress with TR-10012, without an extra result lookup."
+    },
+    {
+      "audit_id": "A24",
+      "outcome": "appropriate clarification",
+      "resource_scope": "appropriate",
+      "unsupported_claims": "no",
+      "contradictions": "no",
+      "mechanical_success": true,
+      "evidence_note": "The response asks for the missing gateway environment instead of selecting one without support."
+    }
+  ]
 }

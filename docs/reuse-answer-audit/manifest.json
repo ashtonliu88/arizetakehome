@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "sample_kind": "deliberately selected and diagnostic; no general success-rate estimate",
-  "status": "pending actual human judgments",
+  "status": "completed; candidate-confirmed judgments",
   "seed": 1729,
   "configuration": "24b5d76b2aaecc355758bd2fb234ba22eb3d3a7f60c461c7aecf21aa60cf279a",
   "split": "test",
@@ -58,8 +58,11 @@
   },
   "artifact_hashes": {
     "packet.json": "3422b549b01214bce674c1d5ed5c45d7a2350f0c835a3608a6e8ce7a4767177f",
-    "packet.md": "1969fa7cb01d1b5a95fdca5f5b1ebbbad63928deaa4704644c976fc4db370012",
+    "packet.md": "8f93d5487b4bb50eac77e105375a4b0ab770820f18ca134c0a69b837953e60d7",
     "review-template.jsonl": "0563d45cc75c06c1fe9deb6f085772776b4d196c84f3bb70a8eba736e6bc84cb",
     "reference-key.json": "19e543d5f3116db6039fe3bf5499c4084c8cce3560a09caaed909fe6cdb841d9"
-  }
+  },
+  "reviewer": "Ashton Liu",
+  "confirmed_at": "2026-10-30T21:10:46+00:00",
+  "review_basis": "Candidate confirmed the reviewed judgments; no independent blinded review is claimed."
 }

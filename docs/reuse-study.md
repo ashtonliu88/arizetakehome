@@ -20,27 +20,27 @@ The four policies are `fused`, `exact`, `ordinary`, and `verified`. Ordinary sem
 
 ## Run the study
 
-Use the existing environment and configuration:
+For a new paid study, use a fresh directory directly under `results/`. The commands below use `results/reuse-review`; choose another unused name if it already exists. Keep the checked-in `results/reuse` as saved evidence.
 
 ```sh
-uv run router-lab reuse prepare
-uv run router-lab reuse review-family --family issues --reviewer NAME --approve --note 'Reviewed positive and adverse examples'
+uv run router-lab reuse --dir results/reuse-review prepare
+uv run router-lab reuse --dir results/reuse-review review-family --family issues --reviewer NAME --approve --note 'Reviewed positive and adverse examples'
 # Repeat the review for deployments, tests, sources, calculations, comparisons, linked, direct.
 uv run pytest tests/test_reuse.py
-uv run --env-file .env router-lab reuse seed
-uv run --env-file .env router-lab reuse pilot
-uv run --env-file .env router-lab reuse run --split dev
-uv run router-lab reuse analyze --split dev --calibrate
+uv run --env-file .env router-lab reuse --dir results/reuse-review seed
+uv run --env-file .env router-lab reuse --dir results/reuse-review pilot
+uv run --env-file .env router-lab reuse --dir results/reuse-review run --split dev
+uv run router-lab reuse --dir results/reuse-review analyze --split dev --calibrate
 ```
 
-Inspect `calibration.json`. Set `threshold` and `margin` in `results/reuse/settings.json` to its selection, then rerun development and calibration if the configuration changed. An exact configuration resumes completed work; changed configurations have separate identities. Pilot rows count toward development only for the exact final configuration. Calibration evaluates a fixed threshold/margin grid on development references only, maximizing accepted correct plans with zero incorrect hits and breaking ties toward stricter settings. History and held-out labels never participate in calibration.
+Inspect `results/reuse-review/calibration.json`. Set `threshold` and `margin` in `results/reuse-review/settings.json` to its selection, then rerun development and calibration if the configuration changed. An exact configuration resumes completed work; changed configurations have separate identities. Pilot rows count toward development only for the exact final configuration. Calibration evaluates a fixed threshold/margin grid on development references only, maximizing accepted correct plans with zero incorrect hits and breaking ties toward stricter settings. History and held-out labels never participate in calibration.
 
 ```sh
-uv run router-lab reuse analyze --split dev
-uv run router-lab reuse freeze
-uv run --env-file .env router-lab reuse run --split test
-uv run router-lab reuse analyze --split test
-PHOENIX_COLLECTOR_ENDPOINT=http://localhost:6006/v1/traces uv run --env-file .env router-lab reuse publish
+uv run router-lab reuse --dir results/reuse-review analyze --split dev
+uv run router-lab reuse --dir results/reuse-review freeze
+uv run --env-file .env router-lab reuse --dir results/reuse-review run --split test
+uv run router-lab reuse --dir results/reuse-review analyze --split test
+PHOENIX_COLLECTOR_ENDPOINT=http://localhost:6006/v1/traces uv run --env-file .env router-lab reuse --dir results/reuse-review publish
 ```
 
 `freeze` requires all eight approved contract hashes, the complete final development matrix, matching calibration, zero observed incorrect verified development hits, and an affordable remaining-work projection. It fixes source, inputs, references, bank, model settings, endpoint, tool contracts, pricing assumptions, and reviews. Source or configuration changes after freeze invalidate held-out execution. Test-time admission is disabled.
