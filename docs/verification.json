@@ -53,7 +53,10 @@
   },
   "github": {
     "target": "ashtonliu88/arizetakehome",
-    "visibility": "private unless candidate requests public",
-    "publication_status": "prepared for publishing"
+    "url": "https://github.com/ashtonliu88/arizetakehome",
+    "visibility": "private",
+    "branch": "main",
+    "publication_status": "published via authenticated GitHub Desktop; push complete observed",
+    "verified_cleanup_commit": "80a1cbca49c48c736f19b3177c13d9115e9d8833"
   }
 }
