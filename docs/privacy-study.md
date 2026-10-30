@@ -1,9 +1,6 @@
 # Privacy-preserving trace evaluation
 
-For the current run with completed development judgments, use the ordered
-[remaining commands and correctness notes](privacy-next-steps.md).
-
-This is a privacy extension to the completed [workflow reuse submission](submission.md). The original [Topic 1 proposal](research/topic-1-privacy-preserving-trace-evaluation.md) remains a historical design record.
+This study is one part of the [project overview](../project-overview.pdf), alongside workflow reuse and confidence routing.
 The implementation compares what a fixed evaluator can establish about resource scope from four views
 of the **same execution**. The saved run has 72 canonical answers and 192 development model judgments; raw, pseudonym and relation each match all 48 fixture labels, while blanket abstains on all 48. Both code baselines agree. Human audits and held-out judge conclusions remain pending.
 The original routing dataset, results, CLI commands, and gate-selection workflow are separate.

@@ -4,7 +4,7 @@
 
 These four actual Phoenix UI captures investigate the completed workflow-reuse study. They use the existing populated `verified-plan-reuse` project, without republishing or changing instrumentation. The subtraction case is `test-calculations-02`, held-out split, warm bank, repetition 1. The positive pair is `test-issues-00` under the same split, bank and repetition.
 
-The [trace index](trace-index.md) links six saved measurements, including exact and fused subtraction comparators. The [JSON sidecar](selected-records.json) preserves the selected measurement rows, original outcome files, requests/context/fixture state, published trace identifiers, existing Phoenix spans and CODE annotations, and source/screenshot hashes. It remains useful without a running Phoenix server. Run `python3 docs/phoenix-measured/verify.py` from the repository root to check the saved provenance offline.
+The [trace index](trace-index.md) links six saved measurements, including exact and fused subtraction comparators. The [JSON sidecar](selected-records.json) preserves the selected measurement rows, original outcome files, requests/context/fixture state, published trace identifiers, existing Phoenix spans and CODE annotations, and source/screenshot hashes. It remains useful without a running Phoenix server. The [verification receipt](../verification.json) records the checked source and screenshot hashes.
 
 ## 1. Ordinary semantic reuse: unsuccessful resolution
 

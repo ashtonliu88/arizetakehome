@@ -1,0 +1,59 @@
+{
+  "verified_at": "2026-10-30T08:37:13.761417+00:00",
+  "scope": "Presentation cleanup; no new model calls or Phoenix publication",
+  "application_tests": {
+    "tests": 113,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "command": "uv run --no-sync python -m pytest -q"
+  },
+  "ruff": {
+    "command": "uv run ruff check src tests",
+    "status": "passed",
+    "preserved_exceptions": "Original notebook whole-tree lint findings and src/router_lab/experiments.py formatting difference remain unchanged"
+  },
+  "protected_source_and_evidence_files_unchanged": 1288,
+  "documentation_only_exception": "data/README.md updated after its removed authoring helper was archived",
+  "frozen_reuse_source_fingerprint": "e6534fa67768683e6d92c9ad6044de432ba9c469b9168e1018be943d1e597703",
+  "frozen_fingerprint_verified": true,
+  "notebook_code_cells_unchanged": 15,
+  "bundled_evidence_files_verified": 38,
+  "portable_notebook": {
+    "passed": true,
+    "application_source_present": false,
+    "credentials_removed": true,
+    "external_socket_connections_blocked": true,
+    "metrics_equal": true
+  },
+  "phoenix_gallery": {
+    "selected_endpoints": 6,
+    "screenshots": 4,
+    "source_hashes": 12
+  },
+  "human_answer_audit": {
+    "completed": 0,
+    "pending": 24,
+    "source_hashes_verified": 35,
+    "artifact_hashes_verified": 4
+  },
+  "local_links_checked": 69,
+  "presentation_pdf": {
+    "path": "project-overview.pdf",
+    "sha256": "f5189a38e47ab05cedfe41f5fe29f2ecbb8668328a24df63e8a0bb35438337e7",
+    "pages": 4,
+    "all_pages_rendered_and_visually_inspected": true,
+    "clipping_or_overlap": "none observed"
+  },
+  "cleanup": {
+    "visible_pdf_count": 1,
+    "standalone_helper_scripts_present": false,
+    "presentation_speaking_scripts_present": false,
+    "prior_materials": "Recoverable local archive outside the repository plus previous Git history; no credentials or Phoenix database included"
+  },
+  "github": {
+    "target": "ashtonliu88/arizetakehome",
+    "visibility": "private unless candidate requests public",
+    "publication_status": "prepared for publishing"
+  }
+}

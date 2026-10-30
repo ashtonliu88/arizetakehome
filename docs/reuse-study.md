@@ -41,12 +41,11 @@ uv run router-lab reuse freeze
 uv run --env-file .env router-lab reuse run --split test
 uv run router-lab reuse analyze --split test
 PHOENIX_COLLECTOR_ENDPOINT=http://localhost:6006/v1/traces uv run --env-file .env router-lab reuse publish
-uv run python scripts/reuse_report.py
 ```
 
 `freeze` requires all eight approved contract hashes, the complete final development matrix, matching calibration, zero observed incorrect verified development hits, and an affordable remaining-work projection. It fixes source, inputs, references, bank, model settings, endpoint, tool contracts, pricing assumptions, and reviews. Source or configuration changes after freeze invalidate held-out execution. Test-time admission is disabled.
 
-Phoenix publication expects the full OTLP HTTP collector URL, including `/v1/traces`. The offline findings script adds the recommendation, global spending audit, exploratory paired p95 interval, and a sensitivity bound for shared family wording; its hash is saved with the execution verification.
+Phoenix publication expects the full OTLP HTTP collector URL, including `/v1/traces`. The saved findings retain the recommendation, global spending audit, exploratory paired p95 interval and sensitivity bound for shared family wording. Their original generation provenance remains in the execution verification.
 
 The pilot cap is $3. The core cap is $20 including history construction and pilot calls. The global ceiling is $50 with at least $5 reserved. Unknown provider usage retains the full estimate. Paid execution is sequential. A failed projection requires selecting the prespecified ordinary-policy diagnostic subset (first two clusters per family: 16 held-out clusters) before freeze; if that still exceeds the cap, stop at the pilot. Report that limitation rather than silently shrinking other conditions.
 

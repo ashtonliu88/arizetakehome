@@ -1,6 +1,6 @@
 # Benchmark audit
 
-`benchmark.jsonl` is the versioned experiment dataset. `scripts/build_dataset.py` is its authoring source. Each example has a stable ID, request, one next-action label, rationale, category tags, paraphrase group, and dev/test split. The validator checks exact counts, unique normalized requests and IDs, valid labels and group leakage.
+`benchmark.jsonl` is the versioned experiment dataset. The authored dataset is committed for inspection. Each example has a stable ID, request, one next-action label, rationale, category tags, paraphrase group, and dev/test split. The validator checks exact counts, unique normalized requests and IDs, valid labels and group leakage.
 
 The examples were authored during implementation and have **not been certified as human reviewed**. `review-label` records a real reviewer's decision against an exact example hash; do not batch-generate approvals. If a label is unresolved, rewrite it and rerun the validator before freezing. Paraphrase-group auditing also requires semantic human judgment: unique IDs alone cannot prove absence of near-paraphrases.
 

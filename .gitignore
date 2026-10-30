@@ -1,21 +1,19 @@
-# Python-generated files
+# Python and local environments
 __pycache__/
 *.py[oc]
+*.egg-info/
+.venv/
+.env
+.pytest_cache/
+.ruff_cache/
 build/
 dist/
 wheels/
-*.egg-info
 
-# Virtual environments
-.venv
-.env
-.venv/
+# Local execution and analysis artifacts
 .phoenix/
-__pycache__/
-.pytest_cache/
-.ruff_cache/
-*.egg-info/
 .DS_Store
 tmp/
+output/
 results/.run.lock
 results/privacy/

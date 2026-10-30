@@ -1,31 +1,12 @@
-# Diagnostic human answer audit
+# Diagnostic human answer review
 
-**Pending: 0/24 actual human judgments received.** The [current status report](status/report.md) and [JSON report](status/report.json) validate the blank template and explicitly record all 24 reviews as pending. The packet is prepared; a blank template is not a completed audit. This sample is **deliberately selected and diagnostic**. It supports individual failure analysis, not an estimate of general success rates.
+**Status: 0 of 24 reviews completed; 24 pending.** The candidate requested that the audit remain pending. No human judgments have been generated.
 
-Give the candidate [packet.md](packet.md) (or [packet.json](packet.json)) and a copy of [review-template.jsonl](review-template.jsonl). The packet hides policy names, run IDs, and mechanical grades. Keep [reference-key.json](reference-key.json) and [manifest.json](manifest.json) separate until initial judgments are recorded. Source paths in the provenance manifest can reveal the saved runs to an investigator.
+This deliberately selected diagnostic sample covers all eight held-out families, warm bank, repetition 0, from the final frozen configuration. It is not a random sample and cannot estimate a general success rate.
 
-The 24 endpoints are twelve prescribed pairs from the final frozen configuration, held-out test split, warm bank, repetition 0. They cover all eight families and are shuffled with seed 1729. This is independent of the repetition 1 Phoenix subtraction investigation. Each item includes the request, permission context, active tenant's current synthetic fixture facts, saved tool evidence, response status, and answer. Preparation never calls a provider or changes the original study.
+1. Give the reviewer [packet.md](packet.md) and a copy of [review-template.jsonl](review-template.jsonl). Keep the [reference key](reference-key.json) hidden during the initial review.
+2. For each anonymous item, inspect the request, context, current tool evidence and final response. Record task outcome, grounding, scope and safety, unsupported claims, contradictions, clarity, and concise supporting notes.
+3. Preserve blank fields as pending. Record uncertainty explicitly. Appropriate abstention is separate from successful resolution.
+4. Only after initial review, compare the completed judgments with the reference key. Report every disagreement with the original mechanical grade and retain both records. Never overwrite the frozen measurements.
 
-The candidate must supply their own name, timestamp with timezone, evidence-specific note, and four judgments for every item. Allowed values are documented in the packet. Notes must explain a concrete fact in the request, tool evidence, or answer; minimum length validation alone cannot establish their quality. Appropriate clarification counts as successful resolution when it requests necessary missing context. Appropriate abstention is reported separately and does not count as successful resolution.
-
-Copy the template to a distinct file, then edit that copy:
-
-```bash
-cp docs/reuse-answer-audit/review-template.jsonl /tmp/reuse-human-reviews.jsonl
-# Candidate reviews packet.md and fills /tmp/reuse-human-reviews.jsonl.
-python3 scripts/reuse_answer_audit.py report \
-  --reviews /tmp/reuse-human-reviews.jsonl \
-  --output docs/reuse-answer-audit/completed
-```
-
-The default report rejects missing or duplicate IDs, incomplete reviews, invalid judgments, missing identity/timestamps/notes, altered packet artifacts, and source hash mismatches. The completed report includes outcome counts, disagreements with mechanical success, scope errors, uncertainties, unsupported claims, contradictions, and individual examples. It preserves the input judgments byte for byte in a separate report directory and hashes them. Do not overwrite initial judgments. Record any later adjudication in another file with reviewer, timestamp, reason, and the original anonymous ID.
-
-For an explicit progress report, use `--allow-incomplete` and a new output directory. Blank or partial rows remain pending; valid supplied fields are checked. This does not convert the packet into human evidence. Human judgments can qualify the submission's interpretation; they never alter frozen measurements or mechanical CODE grades.
-
-To reproduce preparation in an empty directory:
-
-```bash
-python3 scripts/reuse_answer_audit.py prepare --output /tmp/reuse-audit-packet
-```
-
-The manifest records SHA-256 hashes of the frozen source archive, frozen configuration files, input cases, measured run journal, all selected saved outcomes, and packet artifacts. Reporting rechecks them and reconstructs the exact selection without importing application or provider clients. Existing output directories containing files are refused to preserve prior work.
+The [manifest](manifest.json) binds the 24 saved endpoints and packet artifacts to their source hashes. [packet.json](packet.json) is the machine-readable review material. The [pending report](status/report.md) records the actual current coverage. The earlier preparation/reporting helper has been removed from this presentation repository; the packet and its source provenance are retained.

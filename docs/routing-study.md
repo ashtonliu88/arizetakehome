@@ -8,7 +8,7 @@
 
 Arize already demonstrated decision tracing and confidence-gated fallback in a shopping agent. This project acknowledges [that experiment](https://arize.com/blog/ai-agent-tool-selection-decision-tracing/) and asks the next question: does uncertainty identify cases another model can actually rescue? A matched-rate random fallback control separates useful selection from simply buying additional inference.
 
-**Current evidence status:** the implementation and offline checks are available. Live model access, measured development/test results, the selected gate, human label review, and live demo evidence are pending. The API key will be added later. No benchmark conclusion is claimed. `results/offline-example/` is a clearly marked **synthetic test fixture**, not a model experiment. The existing [take-home email](../takehomeemail.md) and [research report](../deep-research-report.md) are preserved.
+**Current evidence status:** the implementation and offline checks are available. Live model access, measured development/test results, the selected gate, human label review, and live demo evidence are pending. The API key will be added later. No benchmark conclusion is claimed. `results/offline-example/` is a clearly marked **synthetic test fixture**, not a model experiment. The existing project brief retained in the local archive and historical research notes retained in the local archive are preserved.
 
 ## Reproduce locally without API spending
 
@@ -19,8 +19,8 @@ uv python install 3.12
 uv sync --locked --python 3.12
 uv run router-lab validate-data
 uv run pytest -q
-uv run ruff check src scripts tests
-uv run ruff format --check src scripts tests
+uv run ruff check src tests
+uv run ruff format --check src tests
 uv run router-lab analyze --input results/offline-example/runs.jsonl --synthetic --output results/offline-example/analysis
 ```
 
@@ -142,9 +142,9 @@ uv run --env-file .env router-lab review-demo --id lookup_issue-01 --policy hybr
 
 Show a real rescue only if one occurs. A correct final answer may conceal an incorrect initial decision; this implementation evaluates one next action and does not claim autonomous multi-step recovery.
 
-## Evidence and walkthrough
+## Saved evidence
 
-Local checks pass: 59 tests, including real Phoenix persistence/splits/annotations, an 80-row mocked benchmark with resume, and the 24-case mocked demo; Ruff also passes. See [verification details](../results/verification.json), [setup screenshots](evidence/README.md), [the walkthrough checklist](walkthrough.md) and [completion status](status.md). Future routing presentation evidence would require measured trace captures; no routing recording is part of this submission. A local URL cannot be opened by interviewers. Exported figures, JSONL and screenshots belong with the submitted repository; `.phoenix/` and credentials remain local.
+The original routing verification recorded 59 tests, including real Phoenix persistence/splits/annotations, an 80-row mocked benchmark with resume, and the 24-case mocked demo; Ruff also passes. See [verification details](../results/verification.json), [setup screenshots](evidence/README.md), [the project overview](../project-overview.pdf) and [completion status](status.md). Future routing presentation evidence would require measured trace captures; no routing recording is part of this submission. A local URL cannot be opened by interviewers. Exported figures, JSONL and screenshots belong with the submitted repository; `.phoenix/` and credentials remain local.
 
 Three implementation lessons already supported by local checks are: preserve initial and final responsibility in separate annotations; include Decisions/cache usage in combined cost accounting; and treat repeated measurements as clusters of questions. Workload-specific developer lessons about confidence or fallback usefulness must wait for measured observations.
 
